@@ -1,0 +1,11 @@
+﻿Client,Product,Amount (万),Region,Sales Rep
+Client_0,Standard,145,西南,李四
+Client_1,Premium,196,华北,王五
+Client_2,Standard,181,华南,赵六
+Client_3,Premium,125,华东,李四
+Client_4,Enterprise,26,华南,张三
+Client_5,Premium,151,华北,孙七
+Client_6,Enterprise,11,华东,张三
+Client_7,Enterprise,27,华东,王五
+Client_8,Enterprise,141,华北,王五
+Client_9,Premium,134,华北,孙七

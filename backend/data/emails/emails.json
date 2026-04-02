@@ -1,0 +1,3425 @@
+[
+  {
+    "id": "email_001",
+    "from": {
+      "name": "林涛",
+      "email": "lintao@techcorp.com"
+    },
+    "to": [
+      {
+        "name": "张三",
+        "email": "zhangsan@techcorp.com"
+      }
+    ],
+    "cc": [],
+    "subject": "Phoenix项目周报 - 2025-01",
+    "body": "各位好，\n\n以下是Phoenix项目的周报：\n\n1. 本周完成了核心模块的开发和测试\n2. 解决了3个关键bug，系统稳定性提升20%\n3. 与客户完成了第1轮需求确认\n4. 下周计划进入集成测试阶段\n\n详情见附件。\n\n林涛",
+    "date": "2025-01-14 00:00:00",
+    "tags": [
+      "项目",
+      "Phoenix"
+    ],
+    "attachments": [
+      {
+        "filename": "Phoenix_progress_1.docx",
+        "type": "docx"
+      }
+    ]
+  },
+  {
+    "id": "email_002",
+    "from": {
+      "name": "赵六",
+      "email": "zhaoliu@techcorp.com"
+    },
+    "to": [
+      {
+        "name": "王五",
+        "email": "wangwu@techcorp.com"
+      }
+    ],
+    "cc": [],
+    "subject": "Aurora项目月度汇报 - 2025-01",
+    "body": "各位好，\n\n以下是Aurora项目的月度汇报：\n\n1. 本周完成了核心模块的开发和测试\n2. 解决了3个关键bug，系统稳定性提升20%\n3. 与客户完成了第2轮需求确认\n4. 下周计划进入集成测试阶段\n\n详情见附件。\n\n赵六",
+    "date": "2025-01-12 00:00:00",
+    "tags": [
+      "项目",
+      "Aurora"
+    ],
+    "attachments": [
+      {
+        "filename": "Aurora_presentation_2.pptx",
+        "type": "pptx"
+      }
+    ]
+  },
+  {
+    "id": "email_003",
+    "from": {
+      "name": "李四",
+      "email": "lisi@techcorp.com"
+    },
+    "to": [
+      {
+        "name": "郑十",
+        "email": "zhengshi@techcorp.com"
+      },
+      {
+        "name": "张三",
+        "email": "zhangsan@techcorp.com"
+      },
+      {
+        "name": "杨帆",
+        "email": "yangfan@clientcorp.com"
+      }
+    ],
+    "cc": [],
+    "subject": "Titan项目里程碑报告 - 2024-02",
+    "body": "各位好，\n\n以下是Titan项目的里程碑报告：\n\n1. 本周完成了核心模块的开发和测试\n2. 解决了3个关键bug，系统稳定性提升20%\n3. 与客户完成了第3轮需求确认\n4. 下周计划进入集成测试阶段\n\n详情见附件。\n\n李四",
+    "date": "2024-02-17 00:00:00",
+    "tags": [
+      "项目",
+      "Titan"
+    ],
+    "attachments": [
+      {
+        "filename": "Titan_tasks_3.xlsx",
+        "type": "xlsx"
+      }
+    ]
+  },
+  {
+    "id": "email_004",
+    "from": {
+      "name": "赵六",
+      "email": "zhaoliu@techcorp.com"
+    },
+    "to": [
+      {
+        "name": "陈静",
+        "email": "chenjing@techcorp.com"
+      }
+    ],
+    "cc": [],
+    "subject": "Neptune项目周报 - 2024-11",
+    "body": "各位好，\n\n以下是Neptune项目的周报：\n\n1. 本周完成了核心模块的开发和测试\n2. 解决了3个关键bug，系统稳定性提升20%\n3. 与客户完成了第4轮需求确认\n4. 下周计划进入集成测试阶段\n\n详情见附件。\n\n赵六",
+    "date": "2024-11-04 00:00:00",
+    "tags": [
+      "项目",
+      "Neptune"
+    ],
+    "attachments": [
+      {
+        "filename": "Neptune_progress_4.docx",
+        "type": "docx"
+      }
+    ]
+  },
+  {
+    "id": "email_005",
+    "from": {
+      "name": "钱磊",
+      "email": "qianlei@techcorp.com"
+    },
+    "to": [
+      {
+        "name": "刘洋",
+        "email": "liuyang@clientcorp.com"
+      }
+    ],
+    "cc": [],
+    "subject": "Atlas项目月度汇报 - 2024-11",
+    "body": "各位好，\n\n以下是Atlas项目的月度汇报：\n\n1. 本周完成了核心模块的开发和测试\n2. 解决了3个关键bug，系统稳定性提升20%\n3. 与客户完成了第5轮需求确认\n4. 下周计划进入集成测试阶段\n\n详情见附件。\n\n钱磊",
+    "date": "2024-11-28 00:00:00",
+    "tags": [
+      "项目",
+      "Atlas"
+    ],
+    "attachments": [
+      {
+        "filename": "Atlas_presentation_5.pptx",
+        "type": "pptx"
+      }
+    ]
+  },
+  {
+    "id": "email_006",
+    "from": {
+      "name": "赵六",
+      "email": "zhaoliu@techcorp.com"
+    },
+    "to": [
+      {
+        "name": "林涛",
+        "email": "lintao@techcorp.com"
+      },
+      {
+        "name": "周八",
+        "email": "zhouba@techcorp.com"
+      }
+    ],
+    "cc": [],
+    "subject": "Phoenix项目里程碑报告 - 2025-02",
+    "body": "各位好，\n\n以下是Phoenix项目的里程碑报告：\n\n1. 本周完成了核心模块的开发和测试\n2. 解决了3个关键bug，系统稳定性提升20%\n3. 与客户完成了第6轮需求确认\n4. 下周计划进入集成测试阶段\n\n详情见附件。\n\n赵六",
+    "date": "2025-02-18 00:00:00",
+    "tags": [
+      "项目",
+      "Phoenix"
+    ],
+    "attachments": [
+      {
+        "filename": "Phoenix_tasks_6.xlsx",
+        "type": "xlsx"
+      }
+    ]
+  },
+  {
+    "id": "email_007",
+    "from": {
+      "name": "杨帆",
+      "email": "yangfan@clientcorp.com"
+    },
+    "to": [
+      {
+        "name": "刘洋",
+        "email": "liuyang@clientcorp.com"
+      }
+    ],
+    "cc": [],
+    "subject": "Aurora项目周报 - 2025-02",
+    "body": "各位好，\n\n以下是Aurora项目的周报：\n\n1. 本周完成了核心模块的开发和测试\n2. 解决了3个关键bug，系统稳定性提升20%\n3. 与客户完成了第7轮需求确认\n4. 下周计划进入集成测试阶段\n\n详情见附件。\n\n杨帆",
+    "date": "2025-02-16 00:00:00",
+    "tags": [
+      "项目",
+      "Aurora"
+    ],
+    "attachments": [
+      {
+        "filename": "Aurora_progress_7.docx",
+        "type": "docx"
+      }
+    ]
+  },
+  {
+    "id": "email_008",
+    "from": {
+      "name": "黄蕾",
+      "email": "huanglei@techcorp.com"
+    },
+    "to": [
+      {
+        "name": "周八",
+        "email": "zhouba@techcorp.com"
+      },
+      {
+        "name": "孙七",
+        "email": "sunqi@techcorp.com"
+      }
+    ],
+    "cc": [],
+    "subject": "Titan项目月度汇报 - 2024-03",
+    "body": "各位好，\n\n以下是Titan项目的月度汇报：\n\n1. 本周完成了核心模块的开发和测试\n2. 解决了3个关键bug，系统稳定性提升20%\n3. 与客户完成了第8轮需求确认\n4. 下周计划进入集成测试阶段\n\n详情见附件。\n\n黄蕾",
+    "date": "2024-03-20 00:00:00",
+    "tags": [
+      "项目",
+      "Titan"
+    ],
+    "attachments": [
+      {
+        "filename": "Titan_presentation_8.pptx",
+        "type": "pptx"
+      }
+    ]
+  },
+  {
+    "id": "email_009",
+    "from": {
+      "name": "李四",
+      "email": "lisi@techcorp.com"
+    },
+    "to": [
+      {
+        "name": "郑十",
+        "email": "zhengshi@techcorp.com"
+      }
+    ],
+    "cc": [],
+    "subject": "Neptune项目里程碑报告 - 2024-02",
+    "body": "各位好，\n\n以下是Neptune项目的里程碑报告：\n\n1. 本周完成了核心模块的开发和测试\n2. 解决了3个关键bug，系统稳定性提升20%\n3. 与客户完成了第9轮需求确认\n4. 下周计划进入集成测试阶段\n\n详情见附件。\n\n李四",
+    "date": "2024-02-19 00:00:00",
+    "tags": [
+      "项目",
+      "Neptune"
+    ],
+    "attachments": [
+      {
+        "filename": "Neptune_tasks_9.xlsx",
+        "type": "xlsx"
+      }
+    ]
+  },
+  {
+    "id": "email_010",
+    "from": {
+      "name": "周八",
+      "email": "zhouba@techcorp.com"
+    },
+    "to": [
+      {
+        "name": "林涛",
+        "email": "lintao@techcorp.com"
+      },
+      {
+        "name": "孙七",
+        "email": "sunqi@techcorp.com"
+      }
+    ],
+    "cc": [],
+    "subject": "Atlas项目周报 - 2025-02",
+    "body": "各位好，\n\n以下是Atlas项目的周报：\n\n1. 本周完成了核心模块的开发和测试\n2. 解决了3个关键bug，系统稳定性提升20%\n3. 与客户完成了第10轮需求确认\n4. 下周计划进入集成测试阶段\n\n详情见附件。\n\n周八",
+    "date": "2025-02-17 00:00:00",
+    "tags": [
+      "项目",
+      "Atlas"
+    ],
+    "attachments": [
+      {
+        "filename": "Atlas_progress_10.docx",
+        "type": "docx"
+      }
+    ]
+  },
+  {
+    "id": "email_011",
+    "from": {
+      "name": "黄蕾",
+      "email": "huanglei@techcorp.com"
+    },
+    "to": [
+      {
+        "name": "钱磊",
+        "email": "qianlei@techcorp.com"
+      },
+      {
+        "name": "李四",
+        "email": "lisi@techcorp.com"
+      }
+    ],
+    "cc": [],
+    "subject": "Phoenix项目月度汇报 - 2024-07",
+    "body": "各位好，\n\n以下是Phoenix项目的月度汇报：\n\n1. 本周完成了核心模块的开发和测试\n2. 解决了3个关键bug，系统稳定性提升20%\n3. 与客户完成了第11轮需求确认\n4. 下周计划进入集成测试阶段\n\n详情见附件。\n\n黄蕾",
+    "date": "2024-07-12 00:00:00",
+    "tags": [
+      "项目",
+      "Phoenix"
+    ],
+    "attachments": [
+      {
+        "filename": "Phoenix_presentation_11.pptx",
+        "type": "pptx"
+      }
+    ]
+  },
+  {
+    "id": "email_012",
+    "from": {
+      "name": "孙七",
+      "email": "sunqi@techcorp.com"
+    },
+    "to": [
+      {
+        "name": "林涛",
+        "email": "lintao@techcorp.com"
+      },
+      {
+        "name": "吴九",
+        "email": "wujiu@techcorp.com"
+      },
+      {
+        "name": "马丽",
+        "email": "mali@partnercorp.com"
+      }
+    ],
+    "cc": [],
+    "subject": "Aurora项目里程碑报告 - 2024-04",
+    "body": "各位好，\n\n以下是Aurora项目的里程碑报告：\n\n1. 本周完成了核心模块的开发和测试\n2. 解决了3个关键bug，系统稳定性提升20%\n3. 与客户完成了第12轮需求确认\n4. 下周计划进入集成测试阶段\n\n详情见附件。\n\n孙七",
+    "date": "2024-04-08 00:00:00",
+    "tags": [
+      "项目",
+      "Aurora"
+    ],
+    "attachments": [
+      {
+        "filename": "Aurora_tasks_12.xlsx",
+        "type": "xlsx"
+      }
+    ]
+  },
+  {
+    "id": "email_013",
+    "from": {
+      "name": "黄蕾",
+      "email": "huanglei@techcorp.com"
+    },
+    "to": [
+      {
+        "name": "张三",
+        "email": "zhangsan@techcorp.com"
+      }
+    ],
+    "cc": [],
+    "subject": "Titan项目周报 - 2024-12",
+    "body": "各位好，\n\n以下是Titan项目的周报：\n\n1. 本周完成了核心模块的开发和测试\n2. 解决了3个关键bug，系统稳定性提升20%\n3. 与客户完成了第13轮需求确认\n4. 下周计划进入集成测试阶段\n\n详情见附件。\n\n黄蕾",
+    "date": "2024-12-04 00:00:00",
+    "tags": [
+      "项目",
+      "Titan"
+    ],
+    "attachments": [
+      {
+        "filename": "Titan_progress_13.docx",
+        "type": "docx"
+      }
+    ]
+  },
+  {
+    "id": "email_014",
+    "from": {
+      "name": "刘洋",
+      "email": "liuyang@clientcorp.com"
+    },
+    "to": [
+      {
+        "name": "李四",
+        "email": "lisi@techcorp.com"
+      },
+      {
+        "name": "赵六",
+        "email": "zhaoliu@techcorp.com"
+      }
+    ],
+    "cc": [],
+    "subject": "Neptune项目月度汇报 - 2025-03",
+    "body": "各位好，\n\n以下是Neptune项目的月度汇报：\n\n1. 本周完成了核心模块的开发和测试\n2. 解决了3个关键bug，系统稳定性提升20%\n3. 与客户完成了第14轮需求确认\n4. 下周计划进入集成测试阶段\n\n详情见附件。\n\n刘洋",
+    "date": "2025-03-19 00:00:00",
+    "tags": [
+      "项目",
+      "Neptune"
+    ],
+    "attachments": [
+      {
+        "filename": "Neptune_presentation_14.pptx",
+        "type": "pptx"
+      }
+    ]
+  },
+  {
+    "id": "email_015",
+    "from": {
+      "name": "孙七",
+      "email": "sunqi@techcorp.com"
+    },
+    "to": [
+      {
+        "name": "黄蕾",
+        "email": "huanglei@techcorp.com"
+      },
+      {
+        "name": "吴九",
+        "email": "wujiu@techcorp.com"
+      }
+    ],
+    "cc": [],
+    "subject": "Atlas项目里程碑报告 - 2024-03",
+    "body": "各位好，\n\n以下是Atlas项目的里程碑报告：\n\n1. 本周完成了核心模块的开发和测试\n2. 解决了3个关键bug，系统稳定性提升20%\n3. 与客户完成了第15轮需求确认\n4. 下周计划进入集成测试阶段\n\n详情见附件。\n\n孙七",
+    "date": "2024-03-24 00:00:00",
+    "tags": [
+      "项目",
+      "Atlas"
+    ],
+    "attachments": [
+      {
+        "filename": "Atlas_tasks_15.xlsx",
+        "type": "xlsx"
+      }
+    ]
+  },
+  {
+    "id": "email_016",
+    "from": {
+      "name": "周八",
+      "email": "zhouba@techcorp.com"
+    },
+    "to": [
+      {
+        "name": "赵六",
+        "email": "zhaoliu@techcorp.com"
+      },
+      {
+        "name": "黄蕾",
+        "email": "huanglei@techcorp.com"
+      }
+    ],
+    "cc": [
+      {
+        "name": "孙七",
+        "email": "sunqi@techcorp.com"
+      }
+    ],
+    "subject": "2024年Q1销售报告",
+    "body": "各位领导好，\n\n附件为2024年Q1的销售报告，请查阅。\n\n本季度概要：\n- 营收：1937万元，同比增长24%\n- 成本：273万元\n- 净利润：1664万元\n- 新签客户：50家\n\n如有疑问请随时沟通。\n\n周八",
+    "date": "2024-05-16 00:00:00",
+    "tags": [
+      "财务",
+      "销售报告"
+    ],
+    "attachments": [
+      {
+        "filename": "finance_Q1_2024_1.xlsx",
+        "type": "xlsx"
+      }
+    ]
+  },
+  {
+    "id": "email_017",
+    "from": {
+      "name": "郑十",
+      "email": "zhengshi@techcorp.com"
+    },
+    "to": [
+      {
+        "name": "孙七",
+        "email": "sunqi@techcorp.com"
+      },
+      {
+        "name": "黄蕾",
+        "email": "huanglei@techcorp.com"
+      }
+    ],
+    "cc": [
+      {
+        "name": "孙七",
+        "email": "sunqi@techcorp.com"
+      }
+    ],
+    "subject": "2024年Q2预算执行表",
+    "body": "各位领导好，\n\n附件为2024年Q2的预算执行表，请查阅。\n\n本季度概要：\n- 营收：1640万元，同比增长26%\n- 成本：424万元\n- 净利润：1216万元\n- 新签客户：30家\n\n如有疑问请随时沟通。\n\n郑十",
+    "date": "2024-12-18 00:00:00",
+    "tags": [
+      "财务",
+      "预算执行表"
+    ],
+    "attachments": [
+      {
+        "filename": "finance_Q2_2024_2.pdf",
+        "type": "pdf"
+      }
+    ]
+  },
+  {
+    "id": "email_018",
+    "from": {
+      "name": "赵六",
+      "email": "zhaoliu@techcorp.com"
+    },
+    "to": [
+      {
+        "name": "杨帆",
+        "email": "yangfan@clientcorp.com"
+      }
+    ],
+    "cc": [
+      {
+        "name": "孙七",
+        "email": "sunqi@techcorp.com"
+      }
+    ],
+    "subject": "2024年Q3成本分析",
+    "body": "各位领导好，\n\n附件为2024年Q3的成本分析，请查阅。\n\n本季度概要：\n- 营收：1321万元，同比增长7%\n- 成本：474万元\n- 净利润：847万元\n- 新签客户：23家\n\n如有疑问请随时沟通。\n\n赵六",
+    "date": "2024-06-10 00:00:00",
+    "tags": [
+      "财务",
+      "成本分析"
+    ],
+    "attachments": [
+      {
+        "filename": "sales_data_Q3_2024_3.csv",
+        "type": "csv"
+      }
+    ]
+  },
+  {
+    "id": "email_019",
+    "from": {
+      "name": "杨帆",
+      "email": "yangfan@clientcorp.com"
+    },
+    "to": [
+      {
+        "name": "钱磊",
+        "email": "qianlei@techcorp.com"
+      },
+      {
+        "name": "陈静",
+        "email": "chenjing@techcorp.com"
+      },
+      {
+        "name": "赵六",
+        "email": "zhaoliu@techcorp.com"
+      }
+    ],
+    "cc": [
+      {
+        "name": "孙七",
+        "email": "sunqi@techcorp.com"
+      }
+    ],
+    "subject": "2024年Q4收入统计",
+    "body": "各位领导好，\n\n附件为2024年Q4的收入统计，请查阅。\n\n本季度概要：\n- 营收：1265万元，同比增长22%\n- 成本：365万元\n- 净利润：900万元\n- 新签客户：43家\n\n如有疑问请随时沟通。\n\n杨帆",
+    "date": "2024-03-19 00:00:00",
+    "tags": [
+      "财务",
+      "收入统计"
+    ],
+    "attachments": [
+      {
+        "filename": "finance_Q4_2024_4.xlsx",
+        "type": "xlsx"
+      }
+    ]
+  },
+  {
+    "id": "email_020",
+    "from": {
+      "name": "张三",
+      "email": "zhangsan@techcorp.com"
+    },
+    "to": [
+      {
+        "name": "吴九",
+        "email": "wujiu@techcorp.com"
+      }
+    ],
+    "cc": [
+      {
+        "name": "孙七",
+        "email": "sunqi@techcorp.com"
+      }
+    ],
+    "subject": "2025年Q1利润报表",
+    "body": "各位领导好，\n\n附件为2025年Q1的利润报表，请查阅。\n\n本季度概要：\n- 营收：1129万元，同比增长6%\n- 成本：445万元\n- 净利润：684万元\n- 新签客户：25家\n\n如有疑问请随时沟通。\n\n张三",
+    "date": "2025-03-25 00:00:00",
+    "tags": [
+      "财务",
+      "利润报表"
+    ],
+    "attachments": [
+      {
+        "filename": "finance_Q1_2025_5.pdf",
+        "type": "pdf"
+      }
+    ]
+  },
+  {
+    "id": "email_021",
+    "from": {
+      "name": "李四",
+      "email": "lisi@techcorp.com"
+    },
+    "to": [
+      {
+        "name": "钱磊",
+        "email": "qianlei@techcorp.com"
+      },
+      {
+        "name": "王五",
+        "email": "wangwu@techcorp.com"
+      },
+      {
+        "name": "陈静",
+        "email": "chenjing@techcorp.com"
+      }
+    ],
+    "cc": [
+      {
+        "name": "孙七",
+        "email": "sunqi@techcorp.com"
+      }
+    ],
+    "subject": "2025年Q2销售报告",
+    "body": "各位领导好，\n\n附件为2025年Q2的销售报告，请查阅。\n\n本季度概要：\n- 营收：757万元，同比增长26%\n- 成本：331万元\n- 净利润：426万元\n- 新签客户：40家\n\n如有疑问请随时沟通。\n\n李四",
+    "date": "2025-01-27 00:00:00",
+    "tags": [
+      "财务",
+      "销售报告"
+    ],
+    "attachments": [
+      {
+        "filename": "sales_data_Q2_2025_6.csv",
+        "type": "csv"
+      }
+    ]
+  },
+  {
+    "id": "email_022",
+    "from": {
+      "name": "王五",
+      "email": "wangwu@techcorp.com"
+    },
+    "to": [
+      {
+        "name": "林涛",
+        "email": "lintao@techcorp.com"
+      },
+      {
+        "name": "马丽",
+        "email": "mali@partnercorp.com"
+      },
+      {
+        "name": "钱磊",
+        "email": "qianlei@techcorp.com"
+      }
+    ],
+    "cc": [
+      {
+        "name": "孙七",
+        "email": "sunqi@techcorp.com"
+      }
+    ],
+    "subject": "2024年Q3预算执行表",
+    "body": "各位领导好，\n\n附件为2024年Q3的预算执行表，请查阅。\n\n本季度概要：\n- 营收：1468万元，同比增长11%\n- 成本：616万元\n- 净利润：852万元\n- 新签客户：16家\n\n如有疑问请随时沟通。\n\n王五",
+    "date": "2024-05-04 00:00:00",
+    "tags": [
+      "财务",
+      "预算执行表"
+    ],
+    "attachments": [
+      {
+        "filename": "finance_Q3_2024_7.xlsx",
+        "type": "xlsx"
+      }
+    ]
+  },
+  {
+    "id": "email_023",
+    "from": {
+      "name": "吴九",
+      "email": "wujiu@techcorp.com"
+    },
+    "to": [
+      {
+        "name": "马丽",
+        "email": "mali@partnercorp.com"
+      },
+      {
+        "name": "刘洋",
+        "email": "liuyang@clientcorp.com"
+      }
+    ],
+    "cc": [
+      {
+        "name": "孙七",
+        "email": "sunqi@techcorp.com"
+      }
+    ],
+    "subject": "2024年Q4成本分析",
+    "body": "各位领导好，\n\n附件为2024年Q4的成本分析，请查阅。\n\n本季度概要：\n- 营收：1879万元，同比增长6%\n- 成本：300万元\n- 净利润：1579万元\n- 新签客户：35家\n\n如有疑问请随时沟通。\n\n吴九",
+    "date": "2024-01-28 00:00:00",
+    "tags": [
+      "财务",
+      "成本分析"
+    ],
+    "attachments": [
+      {
+        "filename": "finance_Q4_2024_8.pdf",
+        "type": "pdf"
+      }
+    ]
+  },
+  {
+    "id": "email_024",
+    "from": {
+      "name": "杨帆",
+      "email": "yangfan@clientcorp.com"
+    },
+    "to": [
+      {
+        "name": "赵六",
+        "email": "zhaoliu@techcorp.com"
+      }
+    ],
+    "cc": [
+      {
+        "name": "孙七",
+        "email": "sunqi@techcorp.com"
+      }
+    ],
+    "subject": "2024年Q1收入统计",
+    "body": "各位领导好，\n\n附件为2024年Q1的收入统计，请查阅。\n\n本季度概要：\n- 营收：889万元，同比增长19%\n- 成本：749万元\n- 净利润：140万元\n- 新签客户：18家\n\n如有疑问请随时沟通。\n\n杨帆",
+    "date": "2024-04-08 00:00:00",
+    "tags": [
+      "财务",
+      "收入统计"
+    ],
+    "attachments": [
+      {
+        "filename": "sales_data_Q1_2024_9.csv",
+        "type": "csv"
+      }
+    ]
+  },
+  {
+    "id": "email_025",
+    "from": {
+      "name": "李四",
+      "email": "lisi@techcorp.com"
+    },
+    "to": [
+      {
+        "name": "孙七",
+        "email": "sunqi@techcorp.com"
+      },
+      {
+        "name": "林涛",
+        "email": "lintao@techcorp.com"
+      },
+      {
+        "name": "杨帆",
+        "email": "yangfan@clientcorp.com"
+      }
+    ],
+    "cc": [
+      {
+        "name": "孙七",
+        "email": "sunqi@techcorp.com"
+      }
+    ],
+    "subject": "2024年Q2利润报表",
+    "body": "各位领导好，\n\n附件为2024年Q2的利润报表，请查阅。\n\n本季度概要：\n- 营收：1768万元，同比增长18%\n- 成本：283万元\n- 净利润：1485万元\n- 新签客户：47家\n\n如有疑问请随时沟通。\n\n李四",
+    "date": "2024-01-21 00:00:00",
+    "tags": [
+      "财务",
+      "利润报表"
+    ],
+    "attachments": [
+      {
+        "filename": "finance_Q2_2024_10.xlsx",
+        "type": "xlsx"
+      }
+    ]
+  },
+  {
+    "id": "email_026",
+    "from": {
+      "name": "赵六",
+      "email": "zhaoliu@techcorp.com"
+    },
+    "to": [
+      {
+        "name": "刘洋",
+        "email": "liuyang@clientcorp.com"
+      },
+      {
+        "name": "吴九",
+        "email": "wujiu@techcorp.com"
+      },
+      {
+        "name": "孙七",
+        "email": "sunqi@techcorp.com"
+      }
+    ],
+    "cc": [
+      {
+        "name": "孙七",
+        "email": "sunqi@techcorp.com"
+      }
+    ],
+    "subject": "2024年Q3销售报告",
+    "body": "各位领导好，\n\n附件为2024年Q3的销售报告，请查阅。\n\n本季度概要：\n- 营收：1310万元，同比增长26%\n- 成本：334万元\n- 净利润：976万元\n- 新签客户：29家\n\n如有疑问请随时沟通。\n\n赵六",
+    "date": "2024-05-15 00:00:00",
+    "tags": [
+      "财务",
+      "销售报告"
+    ],
+    "attachments": [
+      {
+        "filename": "finance_Q3_2024_11.pdf",
+        "type": "pdf"
+      }
+    ]
+  },
+  {
+    "id": "email_027",
+    "from": {
+      "name": "刘洋",
+      "email": "liuyang@clientcorp.com"
+    },
+    "to": [
+      {
+        "name": "张三",
+        "email": "zhangsan@techcorp.com"
+      }
+    ],
+    "cc": [
+      {
+        "name": "孙七",
+        "email": "sunqi@techcorp.com"
+      }
+    ],
+    "subject": "2024年Q4预算执行表",
+    "body": "各位领导好，\n\n附件为2024年Q4的预算执行表，请查阅。\n\n本季度概要：\n- 营收：1772万元，同比增长8%\n- 成本：776万元\n- 净利润：996万元\n- 新签客户：14家\n\n如有疑问请随时沟通。\n\n刘洋",
+    "date": "2024-08-22 00:00:00",
+    "tags": [
+      "财务",
+      "预算执行表"
+    ],
+    "attachments": [
+      {
+        "filename": "sales_data_Q4_2024_12.csv",
+        "type": "csv"
+      }
+    ]
+  },
+  {
+    "id": "email_028",
+    "from": {
+      "name": "张三",
+      "email": "zhangsan@techcorp.com"
+    },
+    "to": [
+      {
+        "name": "杨帆",
+        "email": "yangfan@clientcorp.com"
+      },
+      {
+        "name": "赵六",
+        "email": "zhaoliu@techcorp.com"
+      }
+    ],
+    "cc": [
+      {
+        "name": "孙七",
+        "email": "sunqi@techcorp.com"
+      }
+    ],
+    "subject": "2024年Q1成本分析",
+    "body": "各位领导好，\n\n附件为2024年Q1的成本分析，请查阅。\n\n本季度概要：\n- 营收：1036万元，同比增长28%\n- 成本：365万元\n- 净利润：671万元\n- 新签客户：38家\n\n如有疑问请随时沟通。\n\n张三",
+    "date": "2024-11-22 00:00:00",
+    "tags": [
+      "财务",
+      "成本分析"
+    ],
+    "attachments": [
+      {
+        "filename": "finance_Q1_2024_13.xlsx",
+        "type": "xlsx"
+      }
+    ]
+  },
+  {
+    "id": "email_029",
+    "from": {
+      "name": "李四",
+      "email": "lisi@techcorp.com"
+    },
+    "to": [
+      {
+        "name": "刘洋",
+        "email": "liuyang@clientcorp.com"
+      }
+    ],
+    "cc": [
+      {
+        "name": "孙七",
+        "email": "sunqi@techcorp.com"
+      }
+    ],
+    "subject": "2024年Q2收入统计",
+    "body": "各位领导好，\n\n附件为2024年Q2的收入统计，请查阅。\n\n本季度概要：\n- 营收：1617万元，同比增长16%\n- 成本：236万元\n- 净利润：1381万元\n- 新签客户：47家\n\n如有疑问请随时沟通。\n\n李四",
+    "date": "2024-03-17 00:00:00",
+    "tags": [
+      "财务",
+      "收入统计"
+    ],
+    "attachments": [
+      {
+        "filename": "finance_Q2_2024_14.pdf",
+        "type": "pdf"
+      }
+    ]
+  },
+  {
+    "id": "email_030",
+    "from": {
+      "name": "王五",
+      "email": "wangwu@techcorp.com"
+    },
+    "to": [
+      {
+        "name": "周八",
+        "email": "zhouba@techcorp.com"
+      }
+    ],
+    "cc": [
+      {
+        "name": "孙七",
+        "email": "sunqi@techcorp.com"
+      }
+    ],
+    "subject": "2024年Q3利润报表",
+    "body": "各位领导好，\n\n附件为2024年Q3的利润报表，请查阅。\n\n本季度概要：\n- 营收：581万元，同比增长11%\n- 成本：566万元\n- 净利润：15万元\n- 新签客户：25家\n\n如有疑问请随时沟通。\n\n王五",
+    "date": "2024-07-05 00:00:00",
+    "tags": [
+      "财务",
+      "利润报表"
+    ],
+    "attachments": [
+      {
+        "filename": "sales_data_Q3_2024_15.csv",
+        "type": "csv"
+      }
+    ]
+  },
+  {
+    "id": "email_031",
+    "from": {
+      "name": "周八",
+      "email": "zhouba@techcorp.com"
+    },
+    "to": [
+      {
+        "name": "黄蕾",
+        "email": "huanglei@techcorp.com"
+      },
+      {
+        "name": "陈静",
+        "email": "chenjing@techcorp.com"
+      },
+      {
+        "name": "吴九",
+        "email": "wujiu@techcorp.com"
+      },
+      {
+        "name": "张三",
+        "email": "zhangsan@techcorp.com"
+      },
+      {
+        "name": "李四",
+        "email": "lisi@techcorp.com"
+      },
+      {
+        "name": "孙七",
+        "email": "sunqi@techcorp.com"
+      }
+    ],
+    "cc": [],
+    "subject": "第38周周会纪要",
+    "body": "各位同事，\n\n以下是本次周会的会议纪要，详细内容见附件。\n\n会议时间：2024-04-01 00:00:00\n参会人员：黄蕾, 陈静, 吴九, 张三, 李四, 孙七\n\n主要议题：\n1. 新产品线规划\n2. 人员招聘进度\n3. 跨部门协作流程\n\nAction Items 见附件。\n\n周八",
+    "date": "2024-04-01 00:00:00",
+    "tags": [
+      "会议",
+      "周会"
+    ],
+    "attachments": [
+      {
+        "filename": "meeting_minutes_w38_1.docx",
+        "type": "docx"
+      }
+    ]
+  },
+  {
+    "id": "email_032",
+    "from": {
+      "name": "吴九",
+      "email": "wujiu@techcorp.com"
+    },
+    "to": [
+      {
+        "name": "刘洋",
+        "email": "liuyang@clientcorp.com"
+      },
+      {
+        "name": "杨帆",
+        "email": "yangfan@clientcorp.com"
+      },
+      {
+        "name": "周八",
+        "email": "zhouba@techcorp.com"
+      },
+      {
+        "name": "郑十",
+        "email": "zhengshi@techcorp.com"
+      },
+      {
+        "name": "林涛",
+        "email": "lintao@techcorp.com"
+      }
+    ],
+    "cc": [],
+    "subject": "第8周技术评审会纪要",
+    "body": "各位同事，\n\n以下是本次技术评审会的会议纪要，详细内容见附件。\n\n会议时间：2024-09-18 00:00:00\n参会人员：刘洋, 杨帆, 周八, 郑十, 林涛\n\n主要议题：\n1. 客户反馈处理流程优化\n2. 技术债务清理\n3. 客户满意度提升\n\nAction Items 见附件。\n\n吴九",
+    "date": "2024-09-18 00:00:00",
+    "tags": [
+      "会议",
+      "技术评审会"
+    ],
+    "attachments": [
+      {
+        "filename": "meeting_notes_w8_2.txt",
+        "type": "txt"
+      }
+    ]
+  },
+  {
+    "id": "email_033",
+    "from": {
+      "name": "吴九",
+      "email": "wujiu@techcorp.com"
+    },
+    "to": [
+      {
+        "name": "陈静",
+        "email": "chenjing@techcorp.com"
+      },
+      {
+        "name": "杨帆",
+        "email": "yangfan@clientcorp.com"
+      },
+      {
+        "name": "马丽",
+        "email": "mali@partnercorp.com"
+      }
+    ],
+    "cc": [],
+    "subject": "第47周产品规划会纪要",
+    "body": "各位同事，\n\n以下是本次产品规划会的会议纪要，详细内容见附件。\n\n会议时间：2024-12-17 00:00:00\n参会人员：陈静, 杨帆, 马丽\n\n主要议题：\n1. Q3目标回顾与Q4规划\n2. 用户增长策略\n3. 成本控制措施\n\nAction Items 见附件。\n\n吴九",
+    "date": "2024-12-17 00:00:00",
+    "tags": [
+      "会议",
+      "产品规划会"
+    ],
+    "attachments": [
+      {
+        "filename": "meeting_minutes_w47_3.docx",
+        "type": "docx"
+      }
+    ]
+  },
+  {
+    "id": "email_034",
+    "from": {
+      "name": "林涛",
+      "email": "lintao@techcorp.com"
+    },
+    "to": [
+      {
+        "name": "陈静",
+        "email": "chenjing@techcorp.com"
+      },
+      {
+        "name": "周八",
+        "email": "zhouba@techcorp.com"
+      },
+      {
+        "name": "黄蕾",
+        "email": "huanglei@techcorp.com"
+      },
+      {
+        "name": "李四",
+        "email": "lisi@techcorp.com"
+      },
+      {
+        "name": "孙七",
+        "email": "sunqi@techcorp.com"
+      }
+    ],
+    "cc": [],
+    "subject": "第20周部门例会纪要",
+    "body": "各位同事，\n\n以下是本次部门例会的会议纪要，详细内容见附件。\n\n会议时间：2024-09-16 00:00:00\n参会人员：陈静, 周八, 黄蕾, 李四, 孙七\n\n主要议题：\n1. 客户反馈处理流程优化\n2. 用户增长策略\n3. 成本控制措施\n\nAction Items 见附件。\n\n林涛",
+    "date": "2024-09-16 00:00:00",
+    "tags": [
+      "会议",
+      "部门例会"
+    ],
+    "attachments": [
+      {
+        "filename": "meeting_notes_w20_4.txt",
+        "type": "txt"
+      }
+    ]
+  },
+  {
+    "id": "email_035",
+    "from": {
+      "name": "钱磊",
+      "email": "qianlei@techcorp.com"
+    },
+    "to": [
+      {
+        "name": "赵六",
+        "email": "zhaoliu@techcorp.com"
+      },
+      {
+        "name": "吴九",
+        "email": "wujiu@techcorp.com"
+      },
+      {
+        "name": "黄蕾",
+        "email": "huanglei@techcorp.com"
+      },
+      {
+        "name": "杨帆",
+        "email": "yangfan@clientcorp.com"
+      }
+    ],
+    "cc": [],
+    "subject": "第48周战略研讨会纪要",
+    "body": "各位同事，\n\n以下是本次战略研讨会的会议纪要，详细内容见附件。\n\n会议时间：2024-12-12 00:00:00\n参会人员：赵六, 吴九, 黄蕾, 杨帆\n\n主要议题：\n1. Q3目标回顾与Q4规划\n2. 用户增长策略\n3. 成本控制措施\n\nAction Items 见附件。\n\n钱磊",
+    "date": "2024-12-12 00:00:00",
+    "tags": [
+      "会议",
+      "战略研讨会"
+    ],
+    "attachments": [
+      {
+        "filename": "meeting_minutes_w48_5.docx",
+        "type": "docx"
+      }
+    ]
+  },
+  {
+    "id": "email_036",
+    "from": {
+      "name": "杨帆",
+      "email": "yangfan@clientcorp.com"
+    },
+    "to": [
+      {
+        "name": "孙七",
+        "email": "sunqi@techcorp.com"
+      },
+      {
+        "name": "马丽",
+        "email": "mali@partnercorp.com"
+      },
+      {
+        "name": "赵六",
+        "email": "zhaoliu@techcorp.com"
+      }
+    ],
+    "cc": [],
+    "subject": "第51周复盘会纪要",
+    "body": "各位同事，\n\n以下是本次复盘会的会议纪要，详细内容见附件。\n\n会议时间：2024-08-08 00:00:00\n参会人员：孙七, 马丽, 赵六\n\n主要议题：\n1. 新产品线规划\n2. 预算调整\n3. 成本控制措施\n\nAction Items 见附件。\n\n杨帆",
+    "date": "2024-08-08 00:00:00",
+    "tags": [
+      "会议",
+      "复盘会"
+    ],
+    "attachments": [
+      {
+        "filename": "meeting_notes_w51_6.txt",
+        "type": "txt"
+      }
+    ]
+  },
+  {
+    "id": "email_037",
+    "from": {
+      "name": "赵六",
+      "email": "zhaoliu@techcorp.com"
+    },
+    "to": [
+      {
+        "name": "杨帆",
+        "email": "yangfan@clientcorp.com"
+      },
+      {
+        "name": "马丽",
+        "email": "mali@partnercorp.com"
+      },
+      {
+        "name": "刘洋",
+        "email": "liuyang@clientcorp.com"
+      },
+      {
+        "name": "王五",
+        "email": "wangwu@techcorp.com"
+      },
+      {
+        "name": "李四",
+        "email": "lisi@techcorp.com"
+      },
+      {
+        "name": "周八",
+        "email": "zhouba@techcorp.com"
+      }
+    ],
+    "cc": [],
+    "subject": "第43周周会纪要",
+    "body": "各位同事，\n\n以下是本次周会的会议纪要，详细内容见附件。\n\n会议时间：2024-09-20 00:00:00\n参会人员：杨帆, 马丽, 刘洋, 王五, 李四, 周八\n\n主要议题：\n1. 新产品线规划\n2. 人员招聘进度\n3. 代码审查规范\n\nAction Items 见附件。\n\n赵六",
+    "date": "2024-09-20 00:00:00",
+    "tags": [
+      "会议",
+      "周会"
+    ],
+    "attachments": [
+      {
+        "filename": "meeting_minutes_w43_7.docx",
+        "type": "docx"
+      }
+    ]
+  },
+  {
+    "id": "email_038",
+    "from": {
+      "name": "孙七",
+      "email": "sunqi@techcorp.com"
+    },
+    "to": [
+      {
+        "name": "杨帆",
+        "email": "yangfan@clientcorp.com"
+      },
+      {
+        "name": "赵六",
+        "email": "zhaoliu@techcorp.com"
+      },
+      {
+        "name": "王五",
+        "email": "wangwu@techcorp.com"
+      },
+      {
+        "name": "张三",
+        "email": "zhangsan@techcorp.com"
+      }
+    ],
+    "cc": [],
+    "subject": "第16周技术评审会纪要",
+    "body": "各位同事，\n\n以下是本次技术评审会的会议纪要，详细内容见附件。\n\n会议时间：2024-01-24 00:00:00\n参会人员：杨帆, 赵六, 王五, 张三\n\n主要议题：\n1. 客户反馈处理流程优化\n2. 人员招聘进度\n3. 成本控制措施\n\nAction Items 见附件。\n\n孙七",
+    "date": "2024-01-24 00:00:00",
+    "tags": [
+      "会议",
+      "技术评审会"
+    ],
+    "attachments": [
+      {
+        "filename": "meeting_notes_w16_8.txt",
+        "type": "txt"
+      }
+    ]
+  },
+  {
+    "id": "email_039",
+    "from": {
+      "name": "陈静",
+      "email": "chenjing@techcorp.com"
+    },
+    "to": [
+      {
+        "name": "刘洋",
+        "email": "liuyang@clientcorp.com"
+      },
+      {
+        "name": "马丽",
+        "email": "mali@partnercorp.com"
+      },
+      {
+        "name": "吴九",
+        "email": "wujiu@techcorp.com"
+      },
+      {
+        "name": "郑十",
+        "email": "zhengshi@techcorp.com"
+      }
+    ],
+    "cc": [],
+    "subject": "第16周产品规划会纪要",
+    "body": "各位同事，\n\n以下是本次产品规划会的会议纪要，详细内容见附件。\n\n会议时间：2024-07-23 00:00:00\n参会人员：刘洋, 马丽, 吴九, 郑十\n\n主要议题：\n1. Q3目标回顾与Q4规划\n2. 人员招聘进度\n3. 跨部门协作流程\n\nAction Items 见附件。\n\n陈静",
+    "date": "2024-07-23 00:00:00",
+    "tags": [
+      "会议",
+      "产品规划会"
+    ],
+    "attachments": [
+      {
+        "filename": "meeting_minutes_w16_9.docx",
+        "type": "docx"
+      }
+    ]
+  },
+  {
+    "id": "email_040",
+    "from": {
+      "name": "赵六",
+      "email": "zhaoliu@techcorp.com"
+    },
+    "to": [
+      {
+        "name": "杨帆",
+        "email": "yangfan@clientcorp.com"
+      },
+      {
+        "name": "刘洋",
+        "email": "liuyang@clientcorp.com"
+      },
+      {
+        "name": "陈静",
+        "email": "chenjing@techcorp.com"
+      },
+      {
+        "name": "钱磊",
+        "email": "qianlei@techcorp.com"
+      }
+    ],
+    "cc": [],
+    "subject": "第36周部门例会纪要",
+    "body": "各位同事，\n\n以下是本次部门例会的会议纪要，详细内容见附件。\n\n会议时间：2024-01-26 00:00:00\n参会人员：杨帆, 刘洋, 陈静, 钱磊\n\n主要议题：\n1. Q3目标回顾与Q4规划\n2. 人员招聘进度\n3. 成本控制措施\n\nAction Items 见附件。\n\n赵六",
+    "date": "2024-01-26 00:00:00",
+    "tags": [
+      "会议",
+      "部门例会"
+    ],
+    "attachments": [
+      {
+        "filename": "meeting_notes_w36_10.txt",
+        "type": "txt"
+      }
+    ]
+  },
+  {
+    "id": "email_041",
+    "from": {
+      "name": "林涛",
+      "email": "lintao@techcorp.com"
+    },
+    "to": [
+      {
+        "name": "杨帆",
+        "email": "yangfan@clientcorp.com"
+      },
+      {
+        "name": "郑十",
+        "email": "zhengshi@techcorp.com"
+      },
+      {
+        "name": "陈静",
+        "email": "chenjing@techcorp.com"
+      },
+      {
+        "name": "钱磊",
+        "email": "qianlei@techcorp.com"
+      },
+      {
+        "name": "吴九",
+        "email": "wujiu@techcorp.com"
+      }
+    ],
+    "cc": [],
+    "subject": "第36周战略研讨会纪要",
+    "body": "各位同事，\n\n以下是本次战略研讨会的会议纪要，详细内容见附件。\n\n会议时间：2025-03-01 00:00:00\n参会人员：杨帆, 郑十, 陈静, 钱磊, 吴九\n\n主要议题：\n1. 客户反馈处理流程优化\n2. 技术债务清理\n3. 成本控制措施\n\nAction Items 见附件。\n\n林涛",
+    "date": "2025-03-01 00:00:00",
+    "tags": [
+      "会议",
+      "战略研讨会"
+    ],
+    "attachments": [
+      {
+        "filename": "meeting_minutes_w36_11.docx",
+        "type": "docx"
+      }
+    ]
+  },
+  {
+    "id": "email_042",
+    "from": {
+      "name": "孙七",
+      "email": "sunqi@techcorp.com"
+    },
+    "to": [
+      {
+        "name": "马丽",
+        "email": "mali@partnercorp.com"
+      },
+      {
+        "name": "黄蕾",
+        "email": "huanglei@techcorp.com"
+      },
+      {
+        "name": "周八",
+        "email": "zhouba@techcorp.com"
+      },
+      {
+        "name": "陈静",
+        "email": "chenjing@techcorp.com"
+      }
+    ],
+    "cc": [],
+    "subject": "第41周复盘会纪要",
+    "body": "各位同事，\n\n以下是本次复盘会的会议纪要，详细内容见附件。\n\n会议时间：2024-09-05 00:00:00\n参会人员：马丽, 黄蕾, 周八, 陈静\n\n主要议题：\n1. Q3目标回顾与Q4规划\n2. 用户增长策略\n3. 成本控制措施\n\nAction Items 见附件。\n\n孙七",
+    "date": "2024-09-05 00:00:00",
+    "tags": [
+      "会议",
+      "复盘会"
+    ],
+    "attachments": [
+      {
+        "filename": "meeting_notes_w41_12.txt",
+        "type": "txt"
+      }
+    ]
+  },
+  {
+    "id": "email_043",
+    "from": {
+      "name": "孙七",
+      "email": "sunqi@techcorp.com"
+    },
+    "to": [
+      {
+        "name": "周八",
+        "email": "zhouba@techcorp.com"
+      }
+    ],
+    "cc": [
+      {
+        "name": "郑十",
+        "email": "zhengshi@techcorp.com"
+      }
+    ],
+    "subject": "[法务] 服务协议 - CT-2024-6238",
+    "body": "您好，\n\n附件为服务协议（合同编号：CT-2024-6238），请审阅。\n\n合同要点：\n- 合同期限：3年\n- 合同金额：51万元\n- 生效日期：2024-06-20\n- 付款方式：季付\n\n请在4个工作日内完成审阅并反馈意见。\n\n孙七\n法务部",
+    "date": "2024-06-20 00:00:00",
+    "tags": [
+      "法务",
+      "合同"
+    ],
+    "attachments": [
+      {
+        "filename": "contract_CT-2024-6238.pdf",
+        "type": "pdf"
+      }
+    ]
+  },
+  {
+    "id": "email_044",
+    "from": {
+      "name": "赵六",
+      "email": "zhaoliu@techcorp.com"
+    },
+    "to": [
+      {
+        "name": "刘洋",
+        "email": "liuyang@clientcorp.com"
+      },
+      {
+        "name": "王五",
+        "email": "wangwu@techcorp.com"
+      }
+    ],
+    "cc": [
+      {
+        "name": "郑十",
+        "email": "zhengshi@techcorp.com"
+      }
+    ],
+    "subject": "[法务] 采购合同 - CT-2024-4505",
+    "body": "您好，\n\n附件为采购合同（合同编号：CT-2024-4505），请审阅。\n\n合同要点：\n- 合同期限：1年\n- 合同金额：222万元\n- 生效日期：2024-12-27\n- 付款方式：里程碑付款\n\n请在5个工作日内完成审阅并反馈意见。\n\n赵六\n法务部",
+    "date": "2024-12-27 00:00:00",
+    "tags": [
+      "法务",
+      "合同"
+    ],
+    "attachments": [
+      {
+        "filename": "contract_CT-2024-4505.docx",
+        "type": "docx"
+      }
+    ]
+  },
+  {
+    "id": "email_045",
+    "from": {
+      "name": "郑十",
+      "email": "zhengshi@techcorp.com"
+    },
+    "to": [
+      {
+        "name": "张三",
+        "email": "zhangsan@techcorp.com"
+      },
+      {
+        "name": "赵六",
+        "email": "zhaoliu@techcorp.com"
+      }
+    ],
+    "cc": [
+      {
+        "name": "郑十",
+        "email": "zhengshi@techcorp.com"
+      }
+    ],
+    "subject": "[法务] 保密协议(NDA) - CT-2025-7883",
+    "body": "您好，\n\n附件为保密协议(NDA)（合同编号：CT-2025-7883），请审阅。\n\n合同要点：\n- 合同期限：2年\n- 合同金额：473万元\n- 生效日期：2025-03-02\n- 付款方式：月付\n\n请在7个工作日内完成审阅并反馈意见。\n\n郑十\n法务部",
+    "date": "2025-03-02 00:00:00",
+    "tags": [
+      "法务",
+      "合同"
+    ],
+    "attachments": [
+      {
+        "filename": "contract_CT-2025-7883.pdf",
+        "type": "pdf"
+      }
+    ]
+  },
+  {
+    "id": "email_046",
+    "from": {
+      "name": "吴九",
+      "email": "wujiu@techcorp.com"
+    },
+    "to": [
+      {
+        "name": "张三",
+        "email": "zhangsan@techcorp.com"
+      },
+      {
+        "name": "周八",
+        "email": "zhouba@techcorp.com"
+      }
+    ],
+    "cc": [
+      {
+        "name": "郑十",
+        "email": "zhengshi@techcorp.com"
+      }
+    ],
+    "subject": "[法务] 合作框架协议 - CT-2024-7389",
+    "body": "您好，\n\n附件为合作框架协议（合同编号：CT-2024-7389），请审阅。\n\n合同要点：\n- 合同期限：2年\n- 合同金额：285万元\n- 生效日期：2024-06-01\n- 付款方式：季付\n\n请在6个工作日内完成审阅并反馈意见。\n\n吴九\n法务部",
+    "date": "2024-06-01 00:00:00",
+    "tags": [
+      "法务",
+      "合同"
+    ],
+    "attachments": [
+      {
+        "filename": "contract_CT-2024-7389.docx",
+        "type": "docx"
+      }
+    ]
+  },
+  {
+    "id": "email_047",
+    "from": {
+      "name": "孙七",
+      "email": "sunqi@techcorp.com"
+    },
+    "to": [
+      {
+        "name": "钱磊",
+        "email": "qianlei@techcorp.com"
+      },
+      {
+        "name": "张三",
+        "email": "zhangsan@techcorp.com"
+      }
+    ],
+    "cc": [
+      {
+        "name": "郑十",
+        "email": "zhengshi@techcorp.com"
+      }
+    ],
+    "subject": "[法务] 软件许可协议 - CT-2024-6507",
+    "body": "您好，\n\n附件为软件许可协议（合同编号：CT-2024-6507），请审阅。\n\n合同要点：\n- 合同期限：3年\n- 合同金额：357万元\n- 生效日期：2024-07-18\n- 付款方式：里程碑付款\n\n请在4个工作日内完成审阅并反馈意见。\n\n孙七\n法务部",
+    "date": "2024-07-18 00:00:00",
+    "tags": [
+      "法务",
+      "合同"
+    ],
+    "attachments": [
+      {
+        "filename": "contract_CT-2024-6507.pdf",
+        "type": "pdf"
+      }
+    ]
+  },
+  {
+    "id": "email_048",
+    "from": {
+      "name": "杨帆",
+      "email": "yangfan@clientcorp.com"
+    },
+    "to": [
+      {
+        "name": "王五",
+        "email": "wangwu@techcorp.com"
+      },
+      {
+        "name": "陈静",
+        "email": "chenjing@techcorp.com"
+      }
+    ],
+    "cc": [
+      {
+        "name": "郑十",
+        "email": "zhengshi@techcorp.com"
+      }
+    ],
+    "subject": "[法务] 数据处理协议 - CT-2024-1441",
+    "body": "您好，\n\n附件为数据处理协议（合同编号：CT-2024-1441），请审阅。\n\n合同要点：\n- 合同期限：2年\n- 合同金额：313万元\n- 生效日期：2024-09-30\n- 付款方式：月付\n\n请在3个工作日内完成审阅并反馈意见。\n\n杨帆\n法务部",
+    "date": "2024-09-30 00:00:00",
+    "tags": [
+      "法务",
+      "合同"
+    ],
+    "attachments": [
+      {
+        "filename": "contract_CT-2024-1441.docx",
+        "type": "docx"
+      }
+    ]
+  },
+  {
+    "id": "email_049",
+    "from": {
+      "name": "吴九",
+      "email": "wujiu@techcorp.com"
+    },
+    "to": [
+      {
+        "name": "马丽",
+        "email": "mali@partnercorp.com"
+      }
+    ],
+    "cc": [
+      {
+        "name": "郑十",
+        "email": "zhengshi@techcorp.com"
+      }
+    ],
+    "subject": "[法务] 竞业禁止协议 - CT-2024-3977",
+    "body": "您好，\n\n附件为竞业禁止协议（合同编号：CT-2024-3977），请审阅。\n\n合同要点：\n- 合同期限：1年\n- 合同金额：143万元\n- 生效日期：2024-08-24\n- 付款方式：里程碑付款\n\n请在5个工作日内完成审阅并反馈意见。\n\n吴九\n法务部",
+    "date": "2024-08-24 00:00:00",
+    "tags": [
+      "法务",
+      "合同"
+    ],
+    "attachments": [
+      {
+        "filename": "contract_CT-2024-3977.pdf",
+        "type": "pdf"
+      }
+    ]
+  },
+  {
+    "id": "email_050",
+    "from": {
+      "name": "赵六",
+      "email": "zhaoliu@techcorp.com"
+    },
+    "to": [
+      {
+        "name": "吴九",
+        "email": "wujiu@techcorp.com"
+      },
+      {
+        "name": "马丽",
+        "email": "mali@partnercorp.com"
+      }
+    ],
+    "cc": [
+      {
+        "name": "郑十",
+        "email": "zhengshi@techcorp.com"
+      }
+    ],
+    "subject": "[法务] 劳动合同补充 - CT-2025-7211",
+    "body": "您好，\n\n附件为劳动合同补充（合同编号：CT-2025-7211），请审阅。\n\n合同要点：\n- 合同期限：2年\n- 合同金额：395万元\n- 生效日期：2025-01-24\n- 付款方式：里程碑付款\n\n请在5个工作日内完成审阅并反馈意见。\n\n赵六\n法务部",
+    "date": "2025-01-24 00:00:00",
+    "tags": [
+      "法务",
+      "合同"
+    ],
+    "attachments": [
+      {
+        "filename": "contract_CT-2025-7211.docx",
+        "type": "docx"
+      }
+    ]
+  },
+  {
+    "id": "email_051",
+    "from": {
+      "name": "李四",
+      "email": "lisi@techcorp.com"
+    },
+    "to": [
+      {
+        "name": "张三",
+        "email": "zhangsan@techcorp.com"
+      },
+      {
+        "name": "刘洋",
+        "email": "liuyang@clientcorp.com"
+      }
+    ],
+    "cc": [
+      {
+        "name": "郑十",
+        "email": "zhengshi@techcorp.com"
+      }
+    ],
+    "subject": "[法务] 知识产权协议 - CT-2024-1853",
+    "body": "您好，\n\n附件为知识产权协议（合同编号：CT-2024-1853），请审阅。\n\n合同要点：\n- 合同期限：2年\n- 合同金额：124万元\n- 生效日期：2024-10-03\n- 付款方式：月付\n\n请在3个工作日内完成审阅并反馈意见。\n\n李四\n法务部",
+    "date": "2024-10-03 00:00:00",
+    "tags": [
+      "法务",
+      "合同"
+    ],
+    "attachments": [
+      {
+        "filename": "contract_CT-2024-1853.pdf",
+        "type": "pdf"
+      }
+    ]
+  },
+  {
+    "id": "email_052",
+    "from": {
+      "name": "刘洋",
+      "email": "liuyang@clientcorp.com"
+    },
+    "to": [
+      {
+        "name": "赵六",
+        "email": "zhaoliu@techcorp.com"
+      }
+    ],
+    "cc": [
+      {
+        "name": "郑十",
+        "email": "zhengshi@techcorp.com"
+      }
+    ],
+    "subject": "[法务] 外包服务合同 - CT-2024-1333",
+    "body": "您好，\n\n附件为外包服务合同（合同编号：CT-2024-1333），请审阅。\n\n合同要点：\n- 合同期限：3年\n- 合同金额：88万元\n- 生效日期：2024-04-12\n- 付款方式：季付\n\n请在4个工作日内完成审阅并反馈意见。\n\n刘洋\n法务部",
+    "date": "2024-04-12 00:00:00",
+    "tags": [
+      "法务",
+      "合同"
+    ],
+    "attachments": [
+      {
+        "filename": "contract_CT-2024-1333.docx",
+        "type": "docx"
+      }
+    ]
+  },
+  {
+    "id": "email_053",
+    "from": {
+      "name": "林涛",
+      "email": "lintao@techcorp.com"
+    },
+    "to": [
+      {
+        "name": "陈静",
+        "email": "chenjing@techcorp.com"
+      }
+    ],
+    "cc": [],
+    "subject": "[技术] 微服务架构设计文档 v2.4",
+    "body": "Hi all,\n\n附件是最新版本的微服务架构设计文档（v2.4），主要更新：\n\n1. 根据上次评审意见修改了架构方案\n2. 补充了异常处理和降级策略\n3. 更新了技术栈版本号\n\n请大家review后提出意见，计划在本周五前定稿。\n\n林涛",
+    "date": "2024-04-21 00:00:00",
+    "tags": [
+      "技术",
+      "architecture"
+    ],
+    "attachments": [
+      {
+        "filename": "tech_architecture_v2.4.pdf",
+        "type": "pdf"
+      }
+    ]
+  },
+  {
+    "id": "email_054",
+    "from": {
+      "name": "刘洋",
+      "email": "liuyang@clientcorp.com"
+    },
+    "to": [
+      {
+        "name": "王五",
+        "email": "wangwu@techcorp.com"
+      },
+      {
+        "name": "陈静",
+        "email": "chenjing@techcorp.com"
+      }
+    ],
+    "cc": [],
+    "subject": "[技术] API接口规范 v2.0 v3.1",
+    "body": "Hi all,\n\n附件是最新版本的API接口规范 v2.0（v3.1），主要更新：\n\n1. 根据上次评审意见修改了架构方案\n2. 补充了异常处理和降级策略\n3. 更新了技术栈版本号\n\n请大家review后提出意见，计划在本周五前定稿。\n\n刘洋",
+    "date": "2024-11-06 00:00:00",
+    "tags": [
+      "技术",
+      "api_spec"
+    ],
+    "attachments": [
+      {
+        "filename": "tech_api_spec_v3.1.txt",
+        "type": "txt"
+      }
+    ]
+  },
+  {
+    "id": "email_055",
+    "from": {
+      "name": "刘洋",
+      "email": "liuyang@clientcorp.com"
+    },
+    "to": [
+      {
+        "name": "孙七",
+        "email": "sunqi@techcorp.com"
+      }
+    ],
+    "cc": [],
+    "subject": "[技术] 数据库设计说明书 v3.0",
+    "body": "Hi all,\n\n附件是最新版本的数据库设计说明书（v3.0），主要更新：\n\n1. 根据上次评审意见修改了架构方案\n2. 补充了异常处理和降级策略\n3. 更新了技术栈版本号\n\n请大家review后提出意见，计划在本周五前定稿。\n\n刘洋",
+    "date": "2024-02-25 00:00:00",
+    "tags": [
+      "技术",
+      "db_design"
+    ],
+    "attachments": [
+      {
+        "filename": "tech_db_design_v3.0.zip",
+        "type": "zip"
+      }
+    ]
+  },
+  {
+    "id": "email_056",
+    "from": {
+      "name": "马丽",
+      "email": "mali@partnercorp.com"
+    },
+    "to": [
+      {
+        "name": "陈静",
+        "email": "chenjing@techcorp.com"
+      },
+      {
+        "name": "林涛",
+        "email": "lintao@techcorp.com"
+      }
+    ],
+    "cc": [],
+    "subject": "[技术] 部署运维手册 v2.3",
+    "body": "Hi all,\n\n附件是最新版本的部署运维手册（v2.3），主要更新：\n\n1. 根据上次评审意见修改了架构方案\n2. 补充了异常处理和降级策略\n3. 更新了技术栈版本号\n\n请大家review后提出意见，计划在本周五前定稿。\n\n马丽",
+    "date": "2024-07-11 00:00:00",
+    "tags": [
+      "技术",
+      "deployment"
+    ],
+    "attachments": [
+      {
+        "filename": "tech_deployment_v2.3.pdf",
+        "type": "pdf"
+      }
+    ]
+  },
+  {
+    "id": "email_057",
+    "from": {
+      "name": "李四",
+      "email": "lisi@techcorp.com"
+    },
+    "to": [
+      {
+        "name": "刘洋",
+        "email": "liuyang@clientcorp.com"
+      },
+      {
+        "name": "黄蕾",
+        "email": "huanglei@techcorp.com"
+      },
+      {
+        "name": "孙七",
+        "email": "sunqi@techcorp.com"
+      }
+    ],
+    "cc": [],
+    "subject": "[技术] 安全审计报告 v3.4",
+    "body": "Hi all,\n\n附件是最新版本的安全审计报告（v3.4），主要更新：\n\n1. 根据上次评审意见修改了架构方案\n2. 补充了异常处理和降级策略\n3. 更新了技术栈版本号\n\n请大家review后提出意见，计划在本周五前定稿。\n\n李四",
+    "date": "2024-02-22 00:00:00",
+    "tags": [
+      "技术",
+      "security"
+    ],
+    "attachments": [
+      {
+        "filename": "tech_security_v3.4.pdf",
+        "type": "pdf"
+      }
+    ]
+  },
+  {
+    "id": "email_058",
+    "from": {
+      "name": "杨帆",
+      "email": "yangfan@clientcorp.com"
+    },
+    "to": [
+      {
+        "name": "陈静",
+        "email": "chenjing@techcorp.com"
+      },
+      {
+        "name": "刘洋",
+        "email": "liuyang@clientcorp.com"
+      },
+      {
+        "name": "李四",
+        "email": "lisi@techcorp.com"
+      }
+    ],
+    "cc": [],
+    "subject": "[技术] 性能测试报告 v3.0",
+    "body": "Hi all,\n\n附件是最新版本的性能测试报告（v3.0），主要更新：\n\n1. 根据上次评审意见修改了架构方案\n2. 补充了异常处理和降级策略\n3. 更新了技术栈版本号\n\n请大家review后提出意见，计划在本周五前定稿。\n\n杨帆",
+    "date": "2025-02-11 00:00:00",
+    "tags": [
+      "技术",
+      "perf_test"
+    ],
+    "attachments": [
+      {
+        "filename": "tech_perf_test_v3.0.txt",
+        "type": "txt"
+      }
+    ]
+  },
+  {
+    "id": "email_059",
+    "from": {
+      "name": "周八",
+      "email": "zhouba@techcorp.com"
+    },
+    "to": [
+      {
+        "name": "郑十",
+        "email": "zhengshi@techcorp.com"
+      },
+      {
+        "name": "黄蕾",
+        "email": "huanglei@techcorp.com"
+      },
+      {
+        "name": "吴九",
+        "email": "wujiu@techcorp.com"
+      }
+    ],
+    "cc": [],
+    "subject": "[技术] 技术选型评估 v3.5",
+    "body": "Hi all,\n\n附件是最新版本的技术选型评估（v3.5），主要更新：\n\n1. 根据上次评审意见修改了架构方案\n2. 补充了异常处理和降级策略\n3. 更新了技术栈版本号\n\n请大家review后提出意见，计划在本周五前定稿。\n\n周八",
+    "date": "2024-02-05 00:00:00",
+    "tags": [
+      "技术",
+      "tech_eval"
+    ],
+    "attachments": [
+      {
+        "filename": "tech_tech_eval_v3.5.zip",
+        "type": "zip"
+      }
+    ]
+  },
+  {
+    "id": "email_060",
+    "from": {
+      "name": "张三",
+      "email": "zhangsan@techcorp.com"
+    },
+    "to": [
+      {
+        "name": "马丽",
+        "email": "mali@partnercorp.com"
+      },
+      {
+        "name": "钱磊",
+        "email": "qianlei@techcorp.com"
+      }
+    ],
+    "cc": [],
+    "subject": "[技术] 代码规范指南 v2.5",
+    "body": "Hi all,\n\n附件是最新版本的代码规范指南（v2.5），主要更新：\n\n1. 根据上次评审意见修改了架构方案\n2. 补充了异常处理和降级策略\n3. 更新了技术栈版本号\n\n请大家review后提出意见，计划在本周五前定稿。\n\n张三",
+    "date": "2024-02-24 00:00:00",
+    "tags": [
+      "技术",
+      "code_style"
+    ],
+    "attachments": [
+      {
+        "filename": "tech_code_style_v2.5.pdf",
+        "type": "pdf"
+      }
+    ]
+  },
+  {
+    "id": "email_061",
+    "from": {
+      "name": "林涛",
+      "email": "lintao@techcorp.com"
+    },
+    "to": [
+      {
+        "name": "刘洋",
+        "email": "liuyang@clientcorp.com"
+      },
+      {
+        "name": "王五",
+        "email": "wangwu@techcorp.com"
+      }
+    ],
+    "cc": [],
+    "subject": "[技术] 灾备方案 v1.8",
+    "body": "Hi all,\n\n附件是最新版本的灾备方案（v1.8），主要更新：\n\n1. 根据上次评审意见修改了架构方案\n2. 补充了异常处理和降级策略\n3. 更新了技术栈版本号\n\n请大家review后提出意见，计划在本周五前定稿。\n\n林涛",
+    "date": "2024-08-10 00:00:00",
+    "tags": [
+      "技术",
+      "disaster_recovery"
+    ],
+    "attachments": [
+      {
+        "filename": "tech_disaster_recovery_v1.8.pdf",
+        "type": "pdf"
+      }
+    ]
+  },
+  {
+    "id": "email_062",
+    "from": {
+      "name": "林涛",
+      "email": "lintao@techcorp.com"
+    },
+    "to": [
+      {
+        "name": "陈静",
+        "email": "chenjing@techcorp.com"
+      },
+      {
+        "name": "杨帆",
+        "email": "yangfan@clientcorp.com"
+      }
+    ],
+    "cc": [],
+    "subject": "[技术] 监控告警方案 v2.7",
+    "body": "Hi all,\n\n附件是最新版本的监控告警方案（v2.7），主要更新：\n\n1. 根据上次评审意见修改了架构方案\n2. 补充了异常处理和降级策略\n3. 更新了技术栈版本号\n\n请大家review后提出意见，计划在本周五前定稿。\n\n林涛",
+    "date": "2024-10-02 00:00:00",
+    "tags": [
+      "技术",
+      "monitoring"
+    ],
+    "attachments": [
+      {
+        "filename": "tech_monitoring_v2.7.txt",
+        "type": "txt"
+      }
+    ]
+  },
+  {
+    "id": "email_063",
+    "from": {
+      "name": "吴九",
+      "email": "wujiu@techcorp.com"
+    },
+    "to": [
+      {
+        "name": "林涛",
+        "email": "lintao@techcorp.com"
+      },
+      {
+        "name": "孙七",
+        "email": "sunqi@techcorp.com"
+      },
+      {
+        "name": "周八",
+        "email": "zhouba@techcorp.com"
+      }
+    ],
+    "cc": [],
+    "subject": "[技术] CI/CD流水线配置 v1.1",
+    "body": "Hi all,\n\n附件是最新版本的CI/CD流水线配置（v1.1），主要更新：\n\n1. 根据上次评审意见修改了架构方案\n2. 补充了异常处理和降级策略\n3. 更新了技术栈版本号\n\n请大家review后提出意见，计划在本周五前定稿。\n\n吴九",
+    "date": "2025-03-12 00:00:00",
+    "tags": [
+      "技术",
+      "cicd"
+    ],
+    "attachments": [
+      {
+        "filename": "tech_cicd_v1.1.zip",
+        "type": "zip"
+      }
+    ]
+  },
+  {
+    "id": "email_064",
+    "from": {
+      "name": "孙七",
+      "email": "sunqi@techcorp.com"
+    },
+    "to": [
+      {
+        "name": "赵六",
+        "email": "zhaoliu@techcorp.com"
+      },
+      {
+        "name": "杨帆",
+        "email": "yangfan@clientcorp.com"
+      }
+    ],
+    "cc": [],
+    "subject": "[技术] 容器化迁移方案 v3.9",
+    "body": "Hi all,\n\n附件是最新版本的容器化迁移方案（v3.9），主要更新：\n\n1. 根据上次评审意见修改了架构方案\n2. 补充了异常处理和降级策略\n3. 更新了技术栈版本号\n\n请大家review后提出意见，计划在本周五前定稿。\n\n孙七",
+    "date": "2024-08-25 00:00:00",
+    "tags": [
+      "技术",
+      "containerization"
+    ],
+    "attachments": [
+      {
+        "filename": "tech_containerization_v3.9.pdf",
+        "type": "pdf"
+      }
+    ]
+  },
+  {
+    "id": "email_065",
+    "from": {
+      "name": "赵六",
+      "email": "zhaoliu@techcorp.com"
+    },
+    "to": [
+      {
+        "name": "郑十",
+        "email": "zhengshi@techcorp.com"
+      },
+      {
+        "name": "吴九",
+        "email": "wujiu@techcorp.com"
+      },
+      {
+        "name": "张三",
+        "email": "zhangsan@techcorp.com"
+      },
+      {
+        "name": "钱磊",
+        "email": "qianlei@techcorp.com"
+      },
+      {
+        "name": "杨帆",
+        "email": "yangfan@clientcorp.com"
+      },
+      {
+        "name": "王五",
+        "email": "wangwu@techcorp.com"
+      },
+      {
+        "name": "黄蕾",
+        "email": "huanglei@techcorp.com"
+      },
+      {
+        "name": "李四",
+        "email": "lisi@techcorp.com"
+      }
+    ],
+    "cc": [],
+    "subject": "[人事] 月度考勤统计 - 2024年5月",
+    "body": "全体同事好，\n\n现发送2024年5月月度考勤统计，详情见附件。\n\n请各位核对个人考勤数据，如有异议请于3个工作日内反馈。\n\n谢谢！\n赵六\n人事行政部",
+    "date": "2024-06-30 00:00:00",
+    "tags": [
+      "人事",
+      "月度考勤统计"
+    ],
+    "attachments": [
+      {
+        "filename": "hr_月度考勤统计_5_1.xlsx",
+        "type": "xlsx"
+      }
+    ]
+  },
+  {
+    "id": "email_066",
+    "from": {
+      "name": "赵六",
+      "email": "zhaoliu@techcorp.com"
+    },
+    "to": [
+      {
+        "name": "周八",
+        "email": "zhouba@techcorp.com"
+      },
+      {
+        "name": "马丽",
+        "email": "mali@partnercorp.com"
+      },
+      {
+        "name": "杨帆",
+        "email": "yangfan@clientcorp.com"
+      },
+      {
+        "name": "孙七",
+        "email": "sunqi@techcorp.com"
+      },
+      {
+        "name": "李四",
+        "email": "lisi@techcorp.com"
+      },
+      {
+        "name": "黄蕾",
+        "email": "huanglei@techcorp.com"
+      }
+    ],
+    "cc": [],
+    "subject": "[人事] 培训计划通知 - 2024年2月",
+    "body": "全体同事好，\n\n现发送2024年2月培训计划通知，详情见附件。\n\n本次培训主题为「AI应用」，请相关同事准时参加。\n\n谢谢！\n赵六\n人事行政部",
+    "date": "2024-06-10 00:00:00",
+    "tags": [
+      "人事",
+      "培训计划通知"
+    ],
+    "attachments": [
+      {
+        "filename": "hr_培训计划通知_2_2.pdf",
+        "type": "pdf"
+      }
+    ]
+  },
+  {
+    "id": "email_067",
+    "from": {
+      "name": "赵六",
+      "email": "zhaoliu@techcorp.com"
+    },
+    "to": [
+      {
+        "name": "孙七",
+        "email": "sunqi@techcorp.com"
+      },
+      {
+        "name": "刘洋",
+        "email": "liuyang@clientcorp.com"
+      },
+      {
+        "name": "钱磊",
+        "email": "qianlei@techcorp.com"
+      },
+      {
+        "name": "周八",
+        "email": "zhouba@techcorp.com"
+      }
+    ],
+    "cc": [],
+    "subject": "[人事] 年度体检安排 - 2025年10月",
+    "body": "全体同事好，\n\n现发送2025年10月年度体检安排，详情见附件。\n\n\n谢谢！\n赵六\n人事行政部",
+    "date": "2025-01-05 00:00:00",
+    "tags": [
+      "人事",
+      "年度体检安排"
+    ],
+    "attachments": [
+      {
+        "filename": "hr_年度体检安排_10_3.xlsx",
+        "type": "xlsx"
+      }
+    ]
+  },
+  {
+    "id": "email_068",
+    "from": {
+      "name": "赵六",
+      "email": "zhaoliu@techcorp.com"
+    },
+    "to": [
+      {
+        "name": "周八",
+        "email": "zhouba@techcorp.com"
+      },
+      {
+        "name": "李四",
+        "email": "lisi@techcorp.com"
+      },
+      {
+        "name": "孙七",
+        "email": "sunqi@techcorp.com"
+      },
+      {
+        "name": "杨帆",
+        "email": "yangfan@clientcorp.com"
+      },
+      {
+        "name": "陈静",
+        "email": "chenjing@techcorp.com"
+      },
+      {
+        "name": "郑十",
+        "email": "zhengshi@techcorp.com"
+      },
+      {
+        "name": "刘洋",
+        "email": "liuyang@clientcorp.com"
+      }
+    ],
+    "cc": [],
+    "subject": "[人事] 绩效考核通知 - 2025年9月",
+    "body": "全体同事好，\n\n现发送2025年9月绩效考核通知，详情见附件。\n\n请各部门经理于月底前完成绩效评估并提交。\n\n谢谢！\n赵六\n人事行政部",
+    "date": "2025-02-01 00:00:00",
+    "tags": [
+      "人事",
+      "绩效考核通知"
+    ],
+    "attachments": [
+      {
+        "filename": "hr_绩效考核通知_9_4.pdf",
+        "type": "pdf"
+      }
+    ]
+  },
+  {
+    "id": "email_069",
+    "from": {
+      "name": "赵六",
+      "email": "zhaoliu@techcorp.com"
+    },
+    "to": [
+      {
+        "name": "钱磊",
+        "email": "qianlei@techcorp.com"
+      },
+      {
+        "name": "马丽",
+        "email": "mali@partnercorp.com"
+      },
+      {
+        "name": "周八",
+        "email": "zhouba@techcorp.com"
+      },
+      {
+        "name": "林涛",
+        "email": "lintao@techcorp.com"
+      },
+      {
+        "name": "郑十",
+        "email": "zhengshi@techcorp.com"
+      },
+      {
+        "name": "刘洋",
+        "email": "liuyang@clientcorp.com"
+      }
+    ],
+    "cc": [],
+    "subject": "[人事] 员工活动通知 - 2024年10月",
+    "body": "全体同事好，\n\n现发送2024年10月员工活动通知，详情见附件。\n\n\n谢谢！\n赵六\n人事行政部",
+    "date": "2024-10-18 00:00:00",
+    "tags": [
+      "人事",
+      "员工活动通知"
+    ],
+    "attachments": [
+      {
+        "filename": "hr_员工活动通知_10_5.xlsx",
+        "type": "xlsx"
+      }
+    ]
+  },
+  {
+    "id": "email_070",
+    "from": {
+      "name": "赵六",
+      "email": "zhaoliu@techcorp.com"
+    },
+    "to": [
+      {
+        "name": "杨帆",
+        "email": "yangfan@clientcorp.com"
+      },
+      {
+        "name": "周八",
+        "email": "zhouba@techcorp.com"
+      },
+      {
+        "name": "林涛",
+        "email": "lintao@techcorp.com"
+      },
+      {
+        "name": "刘洋",
+        "email": "liuyang@clientcorp.com"
+      }
+    ],
+    "cc": [],
+    "subject": "[人事] 办公用品采购 - 2024年8月",
+    "body": "全体同事好，\n\n现发送2024年8月办公用品采购，详情见附件。\n\n\n谢谢！\n赵六\n人事行政部",
+    "date": "2024-05-27 00:00:00",
+    "tags": [
+      "人事",
+      "办公用品采购"
+    ],
+    "attachments": [
+      {
+        "filename": "hr_办公用品采购_8_6.pdf",
+        "type": "pdf"
+      }
+    ]
+  },
+  {
+    "id": "email_071",
+    "from": {
+      "name": "赵六",
+      "email": "zhaoliu@techcorp.com"
+    },
+    "to": [
+      {
+        "name": "钱磊",
+        "email": "qianlei@techcorp.com"
+      },
+      {
+        "name": "刘洋",
+        "email": "liuyang@clientcorp.com"
+      },
+      {
+        "name": "周八",
+        "email": "zhouba@techcorp.com"
+      }
+    ],
+    "cc": [],
+    "subject": "[人事] 新员工入职指南 - 2024年7月",
+    "body": "全体同事好，\n\n现发送2024年7月新员工入职指南，详情见附件。\n\n\n谢谢！\n赵六\n人事行政部",
+    "date": "2024-12-24 00:00:00",
+    "tags": [
+      "人事",
+      "新员工入职指南"
+    ],
+    "attachments": [
+      {
+        "filename": "hr_新员工入职指南_7_7.xlsx",
+        "type": "xlsx"
+      }
+    ]
+  },
+  {
+    "id": "email_072",
+    "from": {
+      "name": "赵六",
+      "email": "zhaoliu@techcorp.com"
+    },
+    "to": [
+      {
+        "name": "郑十",
+        "email": "zhengshi@techcorp.com"
+      },
+      {
+        "name": "杨帆",
+        "email": "yangfan@clientcorp.com"
+      },
+      {
+        "name": "陈静",
+        "email": "chenjing@techcorp.com"
+      },
+      {
+        "name": "张三",
+        "email": "zhangsan@techcorp.com"
+      },
+      {
+        "name": "钱磊",
+        "email": "qianlei@techcorp.com"
+      },
+      {
+        "name": "李四",
+        "email": "lisi@techcorp.com"
+      },
+      {
+        "name": "吴九",
+        "email": "wujiu@techcorp.com"
+      },
+      {
+        "name": "王五",
+        "email": "wangwu@techcorp.com"
+      }
+    ],
+    "cc": [],
+    "subject": "[人事] 假期安排通知 - 2024年2月",
+    "body": "全体同事好，\n\n现发送2024年2月假期安排通知，详情见附件。\n\n\n谢谢！\n赵六\n人事行政部",
+    "date": "2024-06-14 00:00:00",
+    "tags": [
+      "人事",
+      "假期安排通知"
+    ],
+    "attachments": [
+      {
+        "filename": "hr_假期安排通知_2_8.pdf",
+        "type": "pdf"
+      }
+    ]
+  },
+  {
+    "id": "email_073",
+    "from": {
+      "name": "赵六",
+      "email": "zhaoliu@techcorp.com"
+    },
+    "to": [
+      {
+        "name": "马丽",
+        "email": "mali@partnercorp.com"
+      },
+      {
+        "name": "陈静",
+        "email": "chenjing@techcorp.com"
+      },
+      {
+        "name": "张三",
+        "email": "zhangsan@techcorp.com"
+      },
+      {
+        "name": "黄蕾",
+        "email": "huanglei@techcorp.com"
+      },
+      {
+        "name": "杨帆",
+        "email": "yangfan@clientcorp.com"
+      },
+      {
+        "name": "钱磊",
+        "email": "qianlei@techcorp.com"
+      }
+    ],
+    "cc": [],
+    "subject": "[人事] 薪酬调整通知 - 2024年1月",
+    "body": "全体同事好，\n\n现发送2024年1月薪酬调整通知，详情见附件。\n\n\n谢谢！\n赵六\n人事行政部",
+    "date": "2024-07-30 00:00:00",
+    "tags": [
+      "人事",
+      "薪酬调整通知"
+    ],
+    "attachments": [
+      {
+        "filename": "hr_薪酬调整通知_1_9.xlsx",
+        "type": "xlsx"
+      }
+    ]
+  },
+  {
+    "id": "email_074",
+    "from": {
+      "name": "赵六",
+      "email": "zhaoliu@techcorp.com"
+    },
+    "to": [
+      {
+        "name": "郑十",
+        "email": "zhengshi@techcorp.com"
+      },
+      {
+        "name": "孙七",
+        "email": "sunqi@techcorp.com"
+      },
+      {
+        "name": "林涛",
+        "email": "lintao@techcorp.com"
+      },
+      {
+        "name": "陈静",
+        "email": "chenjing@techcorp.com"
+      }
+    ],
+    "cc": [],
+    "subject": "[人事] 部门组织架构调整 - 2025年3月",
+    "body": "全体同事好，\n\n现发送2025年3月部门组织架构调整，详情见附件。\n\n\n谢谢！\n赵六\n人事行政部",
+    "date": "2025-01-17 00:00:00",
+    "tags": [
+      "人事",
+      "部门组织架构调整"
+    ],
+    "attachments": [
+      {
+        "filename": "hr_部门组织架构调整_3_10.pdf",
+        "type": "pdf"
+      }
+    ]
+  },
+  {
+    "id": "email_075",
+    "from": {
+      "name": "杨帆",
+      "email": "yangfan@clientcorp.com"
+    },
+    "to": [
+      {
+        "name": "孙七",
+        "email": "sunqi@techcorp.com"
+      }
+    ],
+    "cc": [],
+    "subject": "线上问题反馈：用户登录异常",
+    "body": "Hi 孙七，\n\n关于线上问题反馈：用户登录异常的情况说明：\n\n现象：功能异常，影响范围：测试环境。\n\n初步分析原因是第三方服务异常，目前正在排查中。\n\n预计1小时内修复。\n\n杨帆",
+    "date": "2025-01-30 00:00:00",
+    "tags": [
+      "日常沟通"
+    ],
+    "attachments": []
+  },
+  {
+    "id": "email_076",
+    "from": {
+      "name": "孙七",
+      "email": "sunqi@techcorp.com"
+    },
+    "to": [
+      {
+        "name": "周八",
+        "email": "zhouba@techcorp.com"
+      },
+      {
+        "name": "林涛",
+        "email": "lintao@techcorp.com"
+      },
+      {
+        "name": "杨帆",
+        "email": "yangfan@clientcorp.com"
+      }
+    ],
+    "cc": [],
+    "subject": "产品截图确认",
+    "body": "Hi 周八，\n\n附件是相关截图，请确认是否符合预期。\n\n具体问题：\n1. 页面列表页样式需要调整\n2. 间距与设计稿不一致\n\n孙七",
+    "date": "2024-12-03 00:00:00",
+    "tags": [
+      "日常沟通"
+    ],
+    "attachments": [
+      {
+        "filename": "screenshot_screenshot_review_2.png",
+        "type": "png"
+      }
+    ]
+  },
+  {
+    "id": "email_077",
+    "from": {
+      "name": "郑十",
+      "email": "zhengshi@techcorp.com"
+    },
+    "to": [
+      {
+        "name": "钱磊",
+        "email": "qianlei@techcorp.com"
+      },
+      {
+        "name": "周八",
+        "email": "zhouba@techcorp.com"
+      },
+      {
+        "name": "杨帆",
+        "email": "yangfan@clientcorp.com"
+      }
+    ],
+    "cc": [],
+    "subject": "环境配置问题求助",
+    "body": "Hi 钱磊，\n\n关于环境配置问题求助的情况说明：\n\n现象：功能异常，影响范围：内部系统。\n\n初步分析原因是第三方服务异常，目前正在排查中。\n\n预计2小时内修复。\n\n郑十",
+    "date": "2024-10-09 00:00:00",
+    "tags": [
+      "日常沟通"
+    ],
+    "attachments": []
+  },
+  {
+    "id": "email_078",
+    "from": {
+      "name": "黄蕾",
+      "email": "huanglei@techcorp.com"
+    },
+    "to": [
+      {
+        "name": "陈静",
+        "email": "chenjing@techcorp.com"
+      }
+    ],
+    "cc": [],
+    "subject": "代码Review意见",
+    "body": "Hi 陈静，\n\n关于代码Review意见的情况说明：\n\n现象：页面白屏，影响范围：内部系统。\n\n初步分析原因是配置错误，目前正在排查中。\n\n预计半天内修复。\n\n黄蕾",
+    "date": "2024-07-15 00:00:00",
+    "tags": [
+      "日常沟通"
+    ],
+    "attachments": []
+  },
+  {
+    "id": "email_079",
+    "from": {
+      "name": "黄蕾",
+      "email": "huanglei@techcorp.com"
+    },
+    "to": [
+      {
+        "name": "刘洋",
+        "email": "liuyang@clientcorp.com"
+      },
+      {
+        "name": "杨帆",
+        "email": "yangfan@clientcorp.com"
+      }
+    ],
+    "cc": [],
+    "subject": "接口联调问题",
+    "body": "Hi 刘洋，\n\n关于接口联调问题的情况说明：\n\n现象：功能异常，影响范围：全量用户。\n\n初步分析原因是数据库连接池满，目前正在排查中。\n\n预计1小时内修复。\n\n黄蕾",
+    "date": "2024-07-14 00:00:00",
+    "tags": [
+      "日常沟通"
+    ],
+    "attachments": []
+  },
+  {
+    "id": "email_080",
+    "from": {
+      "name": "王五",
+      "email": "wangwu@techcorp.com"
+    },
+    "to": [
+      {
+        "name": "林涛",
+        "email": "lintao@techcorp.com"
+      },
+      {
+        "name": "吴九",
+        "email": "wujiu@techcorp.com"
+      },
+      {
+        "name": "李四",
+        "email": "lisi@techcorp.com"
+      }
+    ],
+    "cc": [],
+    "subject": "测试环境故障通知",
+    "body": "Hi 林涛，\n\n关于测试环境故障通知的情况说明：\n\n现象：功能异常，影响范围：部分用户。\n\n初步分析原因是数据库连接池满，目前正在排查中。\n\n预计1小时内修复。\n\n王五",
+    "date": "2025-03-23 00:00:00",
+    "tags": [
+      "日常沟通"
+    ],
+    "attachments": []
+  },
+  {
+    "id": "email_081",
+    "from": {
+      "name": "黄蕾",
+      "email": "huanglei@techcorp.com"
+    },
+    "to": [
+      {
+        "name": "吴九",
+        "email": "wujiu@techcorp.com"
+      }
+    ],
+    "cc": [],
+    "subject": "功能验收反馈",
+    "body": "Hi 吴九，\n\n关于功能验收反馈的情况说明：\n\n现象：页面白屏，影响范围：部分用户。\n\n初步分析原因是数据库连接池满，目前正在排查中。\n\n预计半天内修复。\n\n黄蕾",
+    "date": "2025-03-21 00:00:00",
+    "tags": [
+      "日常沟通"
+    ],
+    "attachments": []
+  },
+  {
+    "id": "email_082",
+    "from": {
+      "name": "周八",
+      "email": "zhouba@techcorp.com"
+    },
+    "to": [
+      {
+        "name": "刘洋",
+        "email": "liuyang@clientcorp.com"
+      },
+      {
+        "name": "郑十",
+        "email": "zhengshi@techcorp.com"
+      },
+      {
+        "name": "黄蕾",
+        "email": "huanglei@techcorp.com"
+      }
+    ],
+    "cc": [],
+    "subject": "UI设计稿确认",
+    "body": "Hi 刘洋，\n\n附件是相关截图，请确认是否符合预期。\n\n具体问题：\n1. 页面弹窗样式需要调整\n2. 对齐方式与设计稿不一致\n\n周八",
+    "date": "2024-02-11 00:00:00",
+    "tags": [
+      "日常沟通"
+    ],
+    "attachments": [
+      {
+        "filename": "screenshot_ui_design_8.jpg",
+        "type": "jpg"
+      }
+    ]
+  },
+  {
+    "id": "email_083",
+    "from": {
+      "name": "周八",
+      "email": "zhouba@techcorp.com"
+    },
+    "to": [
+      {
+        "name": "刘洋",
+        "email": "liuyang@clientcorp.com"
+      },
+      {
+        "name": "杨帆",
+        "email": "yangfan@clientcorp.com"
+      },
+      {
+        "name": "钱磊",
+        "email": "qianlei@techcorp.com"
+      }
+    ],
+    "cc": [],
+    "subject": "数据库慢查询告警",
+    "body": "Hi 刘洋，\n\n关于数据库慢查询告警的情况说明：\n\n现象：接口超时，影响范围：部分用户。\n\n初步分析原因是代码逻辑问题，目前正在排查中。\n\n预计半天内修复。\n\n周八",
+    "date": "2025-03-22 00:00:00",
+    "tags": [
+      "日常沟通"
+    ],
+    "attachments": []
+  },
+  {
+    "id": "email_084",
+    "from": {
+      "name": "赵六",
+      "email": "zhaoliu@techcorp.com"
+    },
+    "to": [
+      {
+        "name": "李四",
+        "email": "lisi@techcorp.com"
+      },
+      {
+        "name": "郑十",
+        "email": "zhengshi@techcorp.com"
+      },
+      {
+        "name": "马丽",
+        "email": "mali@partnercorp.com"
+      }
+    ],
+    "cc": [],
+    "subject": "上线checklist确认",
+    "body": "Hi 李四，\n\n关于上线checklist确认的情况说明：\n\n现象：接口超时，影响范围：内部系统。\n\n初步分析原因是代码逻辑问题，目前正在排查中。\n\n预计半天内修复。\n\n赵六",
+    "date": "2025-01-24 00:00:00",
+    "tags": [
+      "日常沟通"
+    ],
+    "attachments": []
+  },
+  {
+    "id": "email_085",
+    "from": {
+      "name": "马丽",
+      "email": "mali@partnercorp.com"
+    },
+    "to": [
+      {
+        "name": "张三",
+        "email": "zhangsan@techcorp.com"
+      }
+    ],
+    "cc": [],
+    "subject": "Bug修复进度同步",
+    "body": "Hi 张三，\n\n关于Bug修复进度同步的情况说明：\n\n现象：接口超时，影响范围：测试环境。\n\n初步分析原因是第三方服务异常，目前正在排查中。\n\n预计半天内修复。\n\n马丽",
+    "date": "2024-06-15 00:00:00",
+    "tags": [
+      "日常沟通"
+    ],
+    "attachments": []
+  },
+  {
+    "id": "email_086",
+    "from": {
+      "name": "吴九",
+      "email": "wujiu@techcorp.com"
+    },
+    "to": [
+      {
+        "name": "赵六",
+        "email": "zhaoliu@techcorp.com"
+      }
+    ],
+    "cc": [],
+    "subject": "需求变更沟通",
+    "body": "Hi 赵六，\n\n关于需求变更沟通的情况说明：\n\n现象：功能异常，影响范围：全量用户。\n\n初步分析原因是代码逻辑问题，目前正在排查中。\n\n预计2小时内修复。\n\n吴九",
+    "date": "2024-09-28 00:00:00",
+    "tags": [
+      "日常沟通"
+    ],
+    "attachments": []
+  },
+  {
+    "id": "email_087",
+    "from": {
+      "name": "李四",
+      "email": "lisi@techcorp.com"
+    },
+    "to": [
+      {
+        "name": "马丽",
+        "email": "mali@partnercorp.com"
+      },
+      {
+        "name": "郑十",
+        "email": "zhengshi@techcorp.com"
+      },
+      {
+        "name": "林涛",
+        "email": "lintao@techcorp.com"
+      }
+    ],
+    "cc": [],
+    "subject": "[CloudMax] 报价单 - PRJ-346",
+    "body": "Dear 马丽，\n\n附件为CloudMax项目（PRJ-346）的报价单，请查阅。\n\n本次报价总金额：559万元\n有效期：30天\n包含：软件开发、测试、部署及3个月免费维护期\n\n祝好！\n李四",
+    "date": "2024-12-15 00:00:00",
+    "tags": [
+      "客户",
+      "CloudMax"
+    ],
+    "attachments": [
+      {
+        "filename": "client_CloudMax_quotation_PRJ-346.pdf",
+        "type": "pdf"
+      }
+    ]
+  },
+  {
+    "id": "email_088",
+    "from": {
+      "name": "马丽",
+      "email": "mali@partnercorp.com"
+    },
+    "to": [
+      {
+        "name": "王五",
+        "email": "wangwu@techcorp.com"
+      },
+      {
+        "name": "赵六",
+        "email": "zhaoliu@techcorp.com"
+      },
+      {
+        "name": "郑十",
+        "email": "zhengshi@techcorp.com"
+      }
+    ],
+    "cc": [],
+    "subject": "[DataPeak] 需求确认书 - PRJ-360",
+    "body": "Dear 王五，\n\n附件为DataPeak项目（PRJ-360）的需求确认书，请查阅。\n\n经与DataPeak确认，需求要点如下：\n- 用户管理模块：支持RBAC权限体系\n- 数据分析模块：实时报表和数据可视化\n- 系统对接：与现有ERP系统API对接\n\n祝好！\n马丽",
+    "date": "2024-11-22 00:00:00",
+    "tags": [
+      "客户",
+      "DataPeak"
+    ],
+    "attachments": [
+      {
+        "filename": "client_DataPeak_requirements_PRJ-360.docx",
+        "type": "docx"
+      }
+    ]
+  },
+  {
+    "id": "email_089",
+    "from": {
+      "name": "林涛",
+      "email": "lintao@techcorp.com"
+    },
+    "to": [
+      {
+        "name": "王五",
+        "email": "wangwu@techcorp.com"
+      },
+      {
+        "name": "李四",
+        "email": "lisi@techcorp.com"
+      },
+      {
+        "name": "郑十",
+        "email": "zhengshi@techcorp.com"
+      }
+    ],
+    "cc": [],
+    "subject": "[SmartFlow] 验收报告 - PRJ-701",
+    "body": "Dear 王五，\n\n附件为SmartFlow项目（PRJ-701）的验收报告，请查阅。\n\n项目已完成全部交付物，主要成果：\n- 系统功能97%完成\n- 测试用例通过率100%\n- 性能指标全部达标\n\n祝好！\n林涛",
+    "date": "2024-06-25 00:00:00",
+    "tags": [
+      "客户",
+      "SmartFlow"
+    ],
+    "attachments": [
+      {
+        "filename": "client_SmartFlow_acceptance_PRJ-701.xlsx",
+        "type": "xlsx"
+      }
+    ]
+  },
+  {
+    "id": "email_090",
+    "from": {
+      "name": "周八",
+      "email": "zhouba@techcorp.com"
+    },
+    "to": [
+      {
+        "name": "孙七",
+        "email": "sunqi@techcorp.com"
+      },
+      {
+        "name": "刘洋",
+        "email": "liuyang@clientcorp.com"
+      },
+      {
+        "name": "马丽",
+        "email": "mali@partnercorp.com"
+      }
+    ],
+    "cc": [],
+    "subject": "[NetWave] 技术方案 - PRJ-949",
+    "body": "Dear 孙七，\n\n附件为NetWave项目（PRJ-949）的技术方案，请查阅。\n\n请在收到后3个工作日内反馈意见。\n\n祝好！\n周八",
+    "date": "2024-01-12 00:00:00",
+    "tags": [
+      "客户",
+      "NetWave"
+    ],
+    "attachments": [
+      {
+        "filename": "client_NetWave_proposal_PRJ-949.pdf",
+        "type": "pdf"
+      }
+    ]
+  },
+  {
+    "id": "email_091",
+    "from": {
+      "name": "林涛",
+      "email": "lintao@techcorp.com"
+    },
+    "to": [
+      {
+        "name": "孙七",
+        "email": "sunqi@techcorp.com"
+      },
+      {
+        "name": "张三",
+        "email": "zhangsan@techcorp.com"
+      }
+    ],
+    "cc": [],
+    "subject": "[InfoLink] 项目计划 - PRJ-985",
+    "body": "Dear 孙七，\n\n附件为InfoLink项目（PRJ-985）的项目计划，请查阅。\n\n请在收到后3个工作日内反馈意见。\n\n祝好！\n林涛",
+    "date": "2024-10-16 00:00:00",
+    "tags": [
+      "客户",
+      "InfoLink"
+    ],
+    "attachments": [
+      {
+        "filename": "client_InfoLink_plan_PRJ-985.docx",
+        "type": "docx"
+      }
+    ]
+  },
+  {
+    "id": "email_092",
+    "from": {
+      "name": "刘洋",
+      "email": "liuyang@clientcorp.com"
+    },
+    "to": [
+      {
+        "name": "赵六",
+        "email": "zhaoliu@techcorp.com"
+      },
+      {
+        "name": "林涛",
+        "email": "lintao@techcorp.com"
+      }
+    ],
+    "cc": [],
+    "subject": "[DigiCore] 变更申请 - PRJ-735",
+    "body": "Dear 赵六，\n\n附件为DigiCore项目（PRJ-735）的变更申请，请查阅。\n\n请在收到后3个工作日内反馈意见。\n\n祝好！\n刘洋",
+    "date": "2024-04-07 00:00:00",
+    "tags": [
+      "客户",
+      "DigiCore"
+    ],
+    "attachments": [
+      {
+        "filename": "client_DigiCore_change_request_PRJ-735.xlsx",
+        "type": "xlsx"
+      }
+    ]
+  },
+  {
+    "id": "email_093",
+    "from": {
+      "name": "陈静",
+      "email": "chenjing@techcorp.com"
+    },
+    "to": [
+      {
+        "name": "刘洋",
+        "email": "liuyang@clientcorp.com"
+      },
+      {
+        "name": "王五",
+        "email": "wangwu@techcorp.com"
+      }
+    ],
+    "cc": [],
+    "subject": "[ByteRun] 服务协议 - PRJ-402",
+    "body": "Dear 刘洋，\n\n附件为ByteRun项目（PRJ-402）的服务协议，请查阅。\n\n请在收到后3个工作日内反馈意见。\n\n祝好！\n陈静",
+    "date": "2024-02-16 00:00:00",
+    "tags": [
+      "客户",
+      "ByteRun"
+    ],
+    "attachments": [
+      {
+        "filename": "client_ByteRun_service_agreement_PRJ-402.pdf",
+        "type": "pdf"
+      }
+    ]
+  },
+  {
+    "id": "email_094",
+    "from": {
+      "name": "周八",
+      "email": "zhouba@techcorp.com"
+    },
+    "to": [
+      {
+        "name": "郑十",
+        "email": "zhengshi@techcorp.com"
+      },
+      {
+        "name": "王五",
+        "email": "wangwu@techcorp.com"
+      },
+      {
+        "name": "赵六",
+        "email": "zhaoliu@techcorp.com"
+      }
+    ],
+    "cc": [],
+    "subject": "[CloudMax] 报价单 - PRJ-905",
+    "body": "Dear 郑十，\n\n附件为CloudMax项目（PRJ-905）的报价单，请查阅。\n\n本次报价总金额：602万元\n有效期：30天\n包含：软件开发、测试、部署及3个月免费维护期\n\n祝好！\n周八",
+    "date": "2024-03-08 00:00:00",
+    "tags": [
+      "客户",
+      "CloudMax"
+    ],
+    "attachments": [
+      {
+        "filename": "client_CloudMax_quotation_PRJ-905.docx",
+        "type": "docx"
+      }
+    ]
+  },
+  {
+    "id": "email_095",
+    "from": {
+      "name": "孙七",
+      "email": "sunqi@techcorp.com"
+    },
+    "to": [
+      {
+        "name": "杨帆",
+        "email": "yangfan@clientcorp.com"
+      },
+      {
+        "name": "周八",
+        "email": "zhouba@techcorp.com"
+      }
+    ],
+    "cc": [],
+    "subject": "[DataPeak] 需求确认书 - PRJ-991",
+    "body": "Dear 杨帆，\n\n附件为DataPeak项目（PRJ-991）的需求确认书，请查阅。\n\n经与DataPeak确认，需求要点如下：\n- 用户管理模块：支持RBAC权限体系\n- 数据分析模块：实时报表和数据可视化\n- 系统对接：与现有ERP系统API对接\n\n祝好！\n孙七",
+    "date": "2025-01-17 00:00:00",
+    "tags": [
+      "客户",
+      "DataPeak"
+    ],
+    "attachments": [
+      {
+        "filename": "client_DataPeak_requirements_PRJ-991.xlsx",
+        "type": "xlsx"
+      }
+    ]
+  },
+  {
+    "id": "email_096",
+    "from": {
+      "name": "李四",
+      "email": "lisi@techcorp.com"
+    },
+    "to": [
+      {
+        "name": "张三",
+        "email": "zhangsan@techcorp.com"
+      },
+      {
+        "name": "周八",
+        "email": "zhouba@techcorp.com"
+      }
+    ],
+    "cc": [],
+    "subject": "[SmartFlow] 验收报告 - PRJ-226",
+    "body": "Dear 张三，\n\n附件为SmartFlow项目（PRJ-226）的验收报告，请查阅。\n\n项目已完成全部交付物，主要成果：\n- 系统功能98%完成\n- 测试用例通过率99%\n- 性能指标全部达标\n\n祝好！\n李四",
+    "date": "2024-10-01 00:00:00",
+    "tags": [
+      "客户",
+      "SmartFlow"
+    ],
+    "attachments": [
+      {
+        "filename": "client_SmartFlow_acceptance_PRJ-226.pdf",
+        "type": "pdf"
+      }
+    ]
+  },
+  {
+    "id": "email_097",
+    "from": {
+      "name": "林涛",
+      "email": "lintao@techcorp.com"
+    },
+    "to": [
+      {
+        "name": "黄蕾",
+        "email": "huanglei@techcorp.com"
+      },
+      {
+        "name": "孙七",
+        "email": "sunqi@techcorp.com"
+      },
+      {
+        "name": "陈静",
+        "email": "chenjing@techcorp.com"
+      }
+    ],
+    "cc": [],
+    "subject": "[NetWave] 技术方案 - PRJ-942",
+    "body": "Dear 黄蕾，\n\n附件为NetWave项目（PRJ-942）的技术方案，请查阅。\n\n请在收到后3个工作日内反馈意见。\n\n祝好！\n林涛",
+    "date": "2024-07-14 00:00:00",
+    "tags": [
+      "客户",
+      "NetWave"
+    ],
+    "attachments": [
+      {
+        "filename": "client_NetWave_proposal_PRJ-942.docx",
+        "type": "docx"
+      }
+    ]
+  },
+  {
+    "id": "email_098",
+    "from": {
+      "name": "陈静",
+      "email": "chenjing@techcorp.com"
+    },
+    "to": [
+      {
+        "name": "周八",
+        "email": "zhouba@techcorp.com"
+      },
+      {
+        "name": "林涛",
+        "email": "lintao@techcorp.com"
+      },
+      {
+        "name": "赵六",
+        "email": "zhaoliu@techcorp.com"
+      }
+    ],
+    "cc": [],
+    "subject": "[InfoLink] 项目计划 - PRJ-164",
+    "body": "Dear 周八，\n\n附件为InfoLink项目（PRJ-164）的项目计划，请查阅。\n\n请在收到后3个工作日内反馈意见。\n\n祝好！\n陈静",
+    "date": "2024-11-27 00:00:00",
+    "tags": [
+      "客户",
+      "InfoLink"
+    ],
+    "attachments": [
+      {
+        "filename": "client_InfoLink_plan_PRJ-164.xlsx",
+        "type": "xlsx"
+      }
+    ]
+  },
+  {
+    "id": "email_099",
+    "from": {
+      "name": "李四",
+      "email": "lisi@techcorp.com"
+    },
+    "to": [
+      {
+        "name": "孙七",
+        "email": "sunqi@techcorp.com"
+      }
+    ],
+    "cc": [],
+    "subject": "[DigiCore] 变更申请 - PRJ-238",
+    "body": "Dear 孙七，\n\n附件为DigiCore项目（PRJ-238）的变更申请，请查阅。\n\n请在收到后3个工作日内反馈意见。\n\n祝好！\n李四",
+    "date": "2024-10-02 00:00:00",
+    "tags": [
+      "客户",
+      "DigiCore"
+    ],
+    "attachments": [
+      {
+        "filename": "client_DigiCore_change_request_PRJ-238.pdf",
+        "type": "pdf"
+      }
+    ]
+  },
+  {
+    "id": "email_100",
+    "from": {
+      "name": "吴九",
+      "email": "wujiu@techcorp.com"
+    },
+    "to": [
+      {
+        "name": "周八",
+        "email": "zhouba@techcorp.com"
+      },
+      {
+        "name": "黄蕾",
+        "email": "huanglei@techcorp.com"
+      }
+    ],
+    "cc": [],
+    "subject": "[ByteRun] 服务协议 - PRJ-813",
+    "body": "Dear 周八，\n\n附件为ByteRun项目（PRJ-813）的服务协议，请查阅。\n\n请在收到后3个工作日内反馈意见。\n\n祝好！\n吴九",
+    "date": "2025-01-15 00:00:00",
+    "tags": [
+      "客户",
+      "ByteRun"
+    ],
+    "attachments": [
+      {
+        "filename": "client_ByteRun_service_agreement_PRJ-813.docx",
+        "type": "docx"
+      }
+    ]
+  }
+]

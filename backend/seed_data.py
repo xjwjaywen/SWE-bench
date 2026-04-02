@@ -1,7 +1,6 @@
-"""生成100封假邮件数据和对应附件文件。"""
+"""生成100封假邮件数据和对应附件文件 — 金融信托公司场景。"""
 
 import csv
-import io
 import json
 import os
 import random
@@ -11,7 +10,7 @@ from pathlib import Path
 
 from docx import Document
 from openpyxl import Workbook
-from PIL import Image, ImageDraw, ImageFont
+from PIL import Image, ImageDraw
 from pptx import Presentation as PptxPresentation
 from reportlab.lib.pagesizes import A4
 from reportlab.pdfgen import canvas as pdf_canvas
@@ -23,24 +22,24 @@ EMAILS_DIR = DATA_DIR / "emails"
 ATTACHMENTS_DIR = DATA_DIR / "attachments"
 
 # ============================================================
-# 人员和公司数据
+# 人员和公司数据 — 华信金融信托有限公司
 # ============================================================
 PEOPLE = [
-    {"name": "张三", "email": "zhangsan@techcorp.com", "dept": "技术部"},
-    {"name": "李四", "email": "lisi@techcorp.com", "dept": "销售部"},
-    {"name": "王五", "email": "wangwu@techcorp.com", "dept": "财务部"},
-    {"name": "赵六", "email": "zhaoliu@techcorp.com", "dept": "人事部"},
-    {"name": "孙七", "email": "sunqi@techcorp.com", "dept": "市场部"},
-    {"name": "周八", "email": "zhouba@techcorp.com", "dept": "产品部"},
-    {"name": "吴九", "email": "wujiu@techcorp.com", "dept": "运维部"},
-    {"name": "郑十", "email": "zhengshi@techcorp.com", "dept": "法务部"},
-    {"name": "钱磊", "email": "qianlei@techcorp.com", "dept": "技术部"},
-    {"name": "陈静", "email": "chenjing@techcorp.com", "dept": "销售部"},
-    {"name": "林涛", "email": "lintao@techcorp.com", "dept": "技术部"},
-    {"name": "黄蕾", "email": "huanglei@techcorp.com", "dept": "财务部"},
-    {"name": "刘洋", "email": "liuyang@clientcorp.com", "dept": "客户方"},
-    {"name": "杨帆", "email": "yangfan@clientcorp.com", "dept": "客户方"},
-    {"name": "马丽", "email": "mali@partnercorp.com", "dept": "合作方"},
+    {"name": "张明远", "email": "zhangmy@huaxintrust.com", "dept": "信托业务部"},
+    {"name": "李文博", "email": "liwb@huaxintrust.com", "dept": "财富管理部"},
+    {"name": "王建华", "email": "wangjh@huaxintrust.com", "dept": "风控合规部"},
+    {"name": "赵雪梅", "email": "zhaoxm@huaxintrust.com", "dept": "法务部"},
+    {"name": "孙浩然", "email": "sunhr@huaxintrust.com", "dept": "资产管理部"},
+    {"name": "周丽萍", "email": "zhoulp@huaxintrust.com", "dept": "运营管理部"},
+    {"name": "吴志强", "email": "wuzq@huaxintrust.com", "dept": "投资研究部"},
+    {"name": "郑晓东", "email": "zhengxd@huaxintrust.com", "dept": "合规审计部"},
+    {"name": "钱海燕", "email": "qianhy@huaxintrust.com", "dept": "客户服务部"},
+    {"name": "陈思远", "email": "chensy@huaxintrust.com", "dept": "信托业务部"},
+    {"name": "林国栋", "email": "lingd@huaxintrust.com", "dept": "投资研究部"},
+    {"name": "黄永华", "email": "huangyh@huaxintrust.com", "dept": "财务部"},
+    {"name": "刘德伟", "email": "liudw@hengfundinvest.com", "dept": "恒丰投资"},
+    {"name": "杨芳", "email": "yangf@longtaiwealth.com", "dept": "龙泰财富"},
+    {"name": "马骏", "email": "maj@zhongyuancapital.com", "dept": "中原资本"},
 ]
 
 
@@ -61,7 +60,7 @@ def random_date(start_year=2024):
 
 
 # ============================================================
-# 附件生成器
+# 附件生成器（不变）
 # ============================================================
 
 def make_pdf(filepath: str, title: str, content: str):
@@ -99,11 +98,9 @@ def make_xlsx(filepath: str, title: str, rows: list[list]):
 
 def make_pptx(filepath: str, title: str, slides_content: list[tuple[str, str]]):
     prs = PptxPresentation()
-    # Title slide
     slide = prs.slides.add_slide(prs.slide_layouts[0])
     slide.shapes.title.text = title
-    slide.placeholders[1].text = "TechCorp Internal"
-    # Content slides
+    slide.placeholders[1].text = "Huaxin Trust Co., Ltd."
     for slide_title, slide_body in slides_content:
         slide = prs.slides.add_slide(prs.slide_layouts[1])
         slide.shapes.title.text = slide_title
@@ -145,72 +142,168 @@ def make_zip(filepath: str, files_content: dict[str, str]):
 
 
 # ============================================================
-# 邮件模板 — 8个业务场景
+# 邮件模板 — 8个金融业务场景
 # ============================================================
 
-def gen_project_emails(start_id: int) -> list[dict]:
-    """项目进度汇报 — 15封"""
+def gen_trust_emails(start_id: int) -> list[dict]:
+    """信托业务 — 15封：信托计划设立、管理、清算"""
     emails = []
-    projects = ["Phoenix", "Aurora", "Titan", "Neptune", "Atlas"]
-    report_types = ["周报", "月度汇报", "里程碑报告"]
+    trust_names = [
+        "华信·稳健增长1号集合资金信托计划",
+        "华信·产业投资2号单一资金信托计划",
+        "华信·城市发展3号集合资金信托计划",
+        "华信·医疗健康专项信托计划",
+        "华信·科技创新股权投资信托计划",
+    ]
+    topics = [
+        ("信托计划设立方案", "setup"),
+        ("信托计划推介材料", "pitch"),
+        ("信托合同定稿", "contract"),
+        ("受托人报告", "trustee_report"),
+        ("信托财产管理报告", "asset_report"),
+        ("信托计划季度运营报告", "quarterly"),
+        ("信托资金投放通知", "funding"),
+        ("信托收益分配方案", "distribution"),
+        ("信托计划延期公告", "extension"),
+        ("信托清算报告", "liquidation"),
+        ("信托项目尽调报告", "due_diligence"),
+        ("信托计划变更公告", "amendment"),
+        ("委托人大会通知", "meeting"),
+        ("信托登记信息", "registration"),
+        ("信托项目风险评估", "risk_assessment"),
+    ]
 
     for i in range(15):
         eid = f"email_{start_id + i:03d}"
-        proj = projects[i % len(projects)]
-        rtype = report_types[i % len(report_types)]
+        trust = trust_names[i % len(trust_names)]
+        topic_name, topic_key = topics[i]
         sender = pick_sender()
         recipients = pick_recipients(sender["email"])
         date = random_date()
-        subject = f"{proj}项目{rtype} - {date[:7]}"
+        subject = f"[信托业务] {trust} - {topic_name}"
 
-        body_text = (
-            f"各位好，\n\n以下是{proj}项目的{rtype}：\n\n"
-            f"1. 本周完成了核心模块的开发和测试\n"
-            f"2. 解决了3个关键bug，系统稳定性提升20%\n"
-            f"3. 与客户完成了第{i+1}轮需求确认\n"
-            f"4. 下周计划进入集成测试阶段\n\n"
-            f"详情见附件。\n\n{sender['name']}"
-        )
+        # 根据不同主题生成不同邮件正文
+        if "设立" in topic_name:
+            body_text = (
+                f"各位同事好，\n\n"
+                f"关于{trust}的设立方案，现将相关材料发送如下：\n\n"
+                f"一、信托计划基本要素：\n"
+                f"- 信托规模：{random.choice(['5000万', '1亿', '2亿', '5亿', '10亿'])}元\n"
+                f"- 信托期限：{random.choice(['12个月', '18个月', '24个月', '36个月'])}\n"
+                f"- 预期收益率：{random.uniform(5.0, 8.5):.2f}%/年\n"
+                f"- 投资方向：{random.choice(['基础设施建设', '房地产开发', '工商企业贷款', '证券投资', '股权投资'])}\n"
+                f"- 风控措施：{random.choice(['土地抵押+应收账款质押', '股权质押+担保', '优先/劣后结构化设计'])}\n\n"
+                f"二、信托计划设立流程：\n"
+                f"1. 项目立项审批\n"
+                f"2. 尽职调查\n"
+                f"3. 信托文件起草与审批\n"
+                f"4. 监管报备\n"
+                f"5. 产品推介与资金募集\n"
+                f"6. 信托计划成立\n\n"
+                f"请审阅附件中的详细方案，如有意见请于本周五前反馈。\n\n{sender['name']}\n信托业务部"
+            )
+        elif "尽调" in topic_name:
+            body_text = (
+                f"各位好，\n\n"
+                f"附件为{trust}的尽职调查报告，主要调查结果如下：\n\n"
+                f"1. 融资方主体信用评级：{random.choice(['AA+', 'AA', 'AA-', 'A+'])}\n"
+                f"2. 融资方近三年营收复合增长率：{random.randint(8, 25)}%\n"
+                f"3. 资产负债率：{random.randint(40, 70)}%\n"
+                f"4. 抵押物评估价值：{random.randint(2, 20)}亿元\n"
+                f"5. 抵押率：{random.randint(40, 65)}%\n\n"
+                f"风险提示：\n"
+                f"- {random.choice(['融资方所在行业存在周期性波动', '抵押物变现存在一定流动性风险', '区域经济下行压力需关注'])}\n"
+                f"- 建议增加{random.choice(['保证金账户监管', '现金流归集', '信息披露频率'])}要求\n\n"
+                f"{sender['name']}"
+            )
+        elif "收益分配" in topic_name:
+            body_text = (
+                f"各位委托人/同事好，\n\n"
+                f"关于{trust}的收益分配事宜，通知如下：\n\n"
+                f"本期分配方案：\n"
+                f"- 分配基准日：{date[:10]}\n"
+                f"- 本期应分配收益：{random.randint(500, 5000)}万元\n"
+                f"- 年化收益率：{random.uniform(5.5, 8.0):.2f}%\n"
+                f"- 分配方式：银行转账至委托人指定账户\n"
+                f"- 预计到账时间：T+3个工作日\n\n"
+                f"请各位确认账户信息是否有变更。\n\n{sender['name']}"
+            )
+        elif "清算" in topic_name:
+            body_text = (
+                f"各位好，\n\n"
+                f"{trust}已于{date[:10]}到期，现进入清算阶段。\n\n"
+                f"清算情况：\n"
+                f"- 信托本金：已全额收回\n"
+                f"- 累计收益：{random.randint(800, 8000)}万元\n"
+                f"- 清算费用：{random.randint(10, 50)}万元\n"
+                f"- 预计分配总额：{random.randint(10000, 50000)}万元\n\n"
+                f"清算报告详见附件，请审阅。\n\n{sender['name']}"
+            )
+        else:
+            body_text = (
+                f"各位同事好，\n\n"
+                f"附件为{trust}的{topic_name}，请审阅。\n\n"
+                f"主要内容：\n"
+                f"- 信托资产运行情况正常\n"
+                f"- 融资方按期支付利息\n"
+                f"- 抵押物价值稳定\n"
+                f"- 合规审查无异常\n\n"
+                f"如有疑问请联系信托业务部。\n\n{sender['name']}"
+            )
 
         attachments = []
         if i % 3 == 0:
-            fname = f"{proj}_progress_{i+1}.docx"
+            fname = f"trust_{topic_key}_{i+1}.docx"
             att_path = str(ATTACHMENTS_DIR / fname)
-            make_docx(att_path, f"{proj}项目{rtype}", (
-                f"{proj}项目进度报告\n\n"
-                f"报告周期: {date[:7]}\n\n"
-                f"一、工作完成情况\n\n"
-                f"本周期内，{proj}项目团队完成了以下工作：\n"
-                f"- 完成了用户认证模块的开发，支持OAuth2.0和SAML\n"
-                f"- 数据库性能优化，查询速度提升35%\n"
-                f"- 前端页面重构，用户体验评分从7.2提升到8.5\n"
-                f"- 修复了{random.randint(5, 15)}个已知缺陷\n\n"
-                f"二、风险与问题\n\n"
-                f"- 第三方API接口响应时间不稳定，需要增加缓存层\n"
-                f"- 新需求可能影响原有排期\n\n"
-                f"三、下阶段计划\n\n"
-                f"- 集成测试\n- 性能压测\n- 用户验收测试"
+            make_docx(att_path, f"{trust} - {topic_name}", (
+                f"华信金融信托有限公司\n{topic_name}\n\n"
+                f"信托计划名称：{trust}\n"
+                f"编制日期：{date[:10]}\n"
+                f"编制部门：信托业务部\n\n"
+                f"一、信托计划概况\n\n"
+                f"本信托计划由华信金融信托有限公司作为受托人，按照委托人意愿，以受托人名义对信托财产进行管理和处分。"
+                f"信托目的为通过专业化的资产管理，实现信托财产的保值增值。\n\n"
+                f"二、信托财产管理情况\n\n"
+                f"截至报告期末，信托财产总规模为{random.randint(5000, 50000)}万元，其中：\n"
+                f"- 贷款类资产：{random.randint(3000, 30000)}万元\n"
+                f"- 现金及银行存款：{random.randint(500, 3000)}万元\n"
+                f"- 应收利息：{random.randint(100, 800)}万元\n\n"
+                f"三、风险管理\n\n"
+                f"本报告期内，信托项目运行正常，融资方财务状况稳定，抵押物价值充足，"
+                f"各项风控措施执行到位。受托人已按照信托合同约定履行管理职责。\n\n"
+                f"四、合规情况\n\n"
+                f"本信托计划的管理运营符合《信托法》《信托公司管理办法》等法律法规要求，"
+                f"已按规定完成信息披露和监管报备。"
             ))
             attachments.append({"filename": fname, "type": "docx"})
         elif i % 3 == 1:
-            fname = f"{proj}_presentation_{i+1}.pptx"
+            fname = f"trust_{topic_key}_{i+1}.pptx"
             att_path = str(ATTACHMENTS_DIR / fname)
-            make_pptx(att_path, f"{proj} Project Update", [
-                ("Progress Overview", f"Sprint {i+1} completed\nVelocity: {random.randint(20,40)} story points\nBurn-down on track"),
-                ("Key Achievements", f"- Module A delivered\n- Performance improved {random.randint(10,50)}%\n- Zero critical bugs in production"),
-                ("Next Steps", "- Integration testing\n- Security audit\n- UAT preparation"),
+            make_pptx(att_path, f"{trust}", [
+                ("Trust Plan Overview",
+                 f"Scale: {random.randint(50, 500)} million RMB\n"
+                 f"Duration: {random.choice(['12', '18', '24', '36'])} months\n"
+                 f"Expected Return: {random.uniform(5.5, 8.5):.1f}% p.a."),
+                ("Investment Structure",
+                 f"Senior Tranche: {random.randint(60, 80)}%\n"
+                 f"Subordinate Tranche: {random.randint(20, 40)}%\n"
+                 f"Risk Mitigation: Land mortgage + Equity pledge"),
+                ("Risk Assessment",
+                 f"Credit Rating: {random.choice(['AA+', 'AA', 'AA-'])}\n"
+                 f"LTV Ratio: {random.randint(40, 60)}%\n"
+                 f"Debt Service Coverage: {random.uniform(1.2, 2.0):.1f}x"),
             ])
             attachments.append({"filename": fname, "type": "pptx"})
         else:
-            fname = f"{proj}_tasks_{i+1}.xlsx"
+            fname = f"trust_{topic_key}_{i+1}.xlsx"
             att_path = str(ATTACHMENTS_DIR / fname)
-            make_xlsx(att_path, "Tasks", [
-                ["Task ID", "Task Name", "Status", "Assignee", "Due Date"],
-                [f"T-{i*10+1}", "Backend API development", "Completed", sender["name"], date[:10]],
-                [f"T-{i*10+2}", "Frontend integration", "In Progress", recipients[0]["name"], date[:10]],
-                [f"T-{i*10+3}", "Database optimization", "Completed", sender["name"], date[:10]],
-                [f"T-{i*10+4}", "Unit testing", "In Progress", recipients[0]["name"], date[:10]],
-                [f"T-{i*10+5}", "Documentation", "Pending", sender["name"], date[:10]],
+            make_xlsx(att_path, "Trust Data", [
+                ["Item", "Amount (万元)", "Ratio", "Status", "Due Date"],
+                ["Trust Principal", random.randint(10000, 50000), "100%", "Normal", date[:10]],
+                ["Accrued Interest", random.randint(200, 2000), f"{random.uniform(5, 8):.1f}%", "Received", date[:10]],
+                ["Management Fee", random.randint(50, 300), "0.3%", "Collected", date[:10]],
+                ["Custody Fee", random.randint(10, 50), "0.05%", "Collected", date[:10]],
+                ["Reserve Fund", random.randint(100, 500), "1%", "Adequate", date[:10]],
             ])
             attachments.append({"filename": fname, "type": "xlsx"})
 
@@ -222,82 +315,106 @@ def gen_project_emails(start_id: int) -> list[dict]:
             "subject": subject,
             "body": body_text,
             "date": date,
-            "tags": ["项目", proj],
+            "tags": ["信托业务", topic_key],
             "attachments": attachments,
         })
     return emails
 
 
-def gen_finance_emails(start_id: int) -> list[dict]:
-    """财务/销售报表 — 15封"""
+def gen_fund_emails(start_id: int) -> list[dict]:
+    """基金/投资报告 — 15封"""
     emails = []
+    fund_names = [
+        "华信价值成长混合基金", "华信稳健债券基金", "华信量化对冲基金",
+        "华信新能源产业基金", "华信医药健康基金",
+    ]
     quarters = ["Q1", "Q2", "Q3", "Q4"]
-    report_names = ["销售报告", "预算执行表", "成本分析", "收入统计", "利润报表"]
+    report_types = ["净值报告", "投资运作报告", "基金年报", "持仓分析", "业绩归因"]
 
     for i in range(15):
         eid = f"email_{start_id + i:03d}"
+        fund = fund_names[i % len(fund_names)]
         q = quarters[i % 4]
-        rname = report_names[i % 5]
+        rtype = report_types[i % 5]
         sender = pick_sender()
         recipients = pick_recipients(sender["email"])
         date = random_date()
         year = date[:4]
-        subject = f"{year}年{q}{rname}"
+        subject = f"[投资] {fund} {year}{q} {rtype}"
 
-        revenue = random.randint(500, 2000)
-        cost = random.randint(200, 800)
-        profit = revenue - cost
+        nav = round(random.uniform(0.85, 1.65), 4)
+        total_nav = round(nav + random.uniform(0.1, 0.5), 4)
+        aum = random.randint(5000, 80000)
 
         body_text = (
-            f"各位领导好，\n\n"
-            f"附件为{year}年{q}的{rname}，请查阅。\n\n"
-            f"本季度概要：\n"
-            f"- 营收：{revenue}万元，同比增长{random.randint(5,30)}%\n"
-            f"- 成本：{cost}万元\n"
-            f"- 净利润：{profit}万元\n"
-            f"- 新签客户：{random.randint(10,50)}家\n\n"
-            f"如有疑问请随时沟通。\n\n{sender['name']}"
+            f"各位好，\n\n"
+            f"附件为{fund}{year}年{q}的{rtype}。\n\n"
+            f"基金概况：\n"
+            f"- 单位净值：{nav}元\n"
+            f"- 累计净值：{total_nav}元\n"
+            f"- 基金规模：{aum}万元\n"
+            f"- 本季度收益率：{random.uniform(-3.0, 8.0):.2f}%\n"
+            f"- 同期业绩基准：{random.uniform(-1.0, 5.0):.2f}%\n\n"
+            f"市场分析：\n"
+            f"本季度{random.choice(['A股市场震荡上行', '债券市场利率下行', '港股市场波动加剧', '大宗商品价格上涨'])}，"
+            f"基金通过{random.choice(['增持科技板块', '降低仓位控制回撤', '增配高等级信用债', '调整行业配置'])}应对市场变化。\n\n"
+            f"详情见附件。\n\n{sender['name']}\n投资研究部"
         )
 
         attachments = []
         if i % 3 == 0:
-            fname = f"finance_{q}_{year}_{i+1}.xlsx"
+            fname = f"fund_{q}_{year}_{i+1}.xlsx"
             att_path = str(ATTACHMENTS_DIR / fname)
-            months = [f"{q[1]}月{j}" for j in ["上旬", "中旬", "下旬"]]
-            make_xlsx(att_path, f"{q} Finance", [
-                ["Period", "Revenue (万)", "Cost (万)", "Profit (万)", "Growth %"],
-                [months[0], revenue // 3, cost // 3, profit // 3, f"{random.randint(5,25)}%"],
-                [months[1], revenue // 3 + 10, cost // 3, profit // 3 + 10, f"{random.randint(5,25)}%"],
-                [months[2], revenue // 3 + 20, cost // 3 - 5, profit // 3 + 25, f"{random.randint(5,25)}%"],
-                ["Total", revenue, cost, profit, f"{random.randint(10,30)}%"],
+            make_xlsx(att_path, f"{q} NAV", [
+                ["Date", "Unit NAV", "Cumulative NAV", "Daily Return %", "AUM (万元)"],
+                [f"{year}-{i%12+1:02d}-05", nav - 0.02, total_nav - 0.02, f"{random.uniform(-1, 1):.3f}", aum],
+                [f"{year}-{i%12+1:02d}-15", nav - 0.01, total_nav - 0.01, f"{random.uniform(-1, 1):.3f}", aum + 100],
+                [f"{year}-{i%12+1:02d}-25", nav, total_nav, f"{random.uniform(-1, 1):.3f}", aum + 200],
+                ["", "", "", "", ""],
+                ["Top Holdings", "Weight %", "Sector", "P/E", "Rating"],
+                [random.choice(["Kweichow Moutai", "CATL", "BYD"]), f"{random.randint(3,8)}%", "Consumer", random.randint(15, 40), "Buy"],
+                [random.choice(["China Merchants Bank", "Ping An", "ICBC"]), f"{random.randint(3,8)}%", "Finance", random.randint(5, 15), "Hold"],
+                [random.choice(["Longi Green", "Sungrow", "Ganfeng Lithium"]), f"{random.randint(2,6)}%", "New Energy", random.randint(20, 60), "Buy"],
             ])
             attachments.append({"filename": fname, "type": "xlsx"})
         elif i % 3 == 1:
-            fname = f"finance_{q}_{year}_{i+1}.pdf"
+            fname = f"fund_{q}_{year}_{i+1}.pdf"
             att_path = str(ATTACHMENTS_DIR / fname)
-            make_pdf(att_path, f"{year} {q} Financial Report", (
-                f"Financial Summary for {q} {year}\n\n"
-                f"Total Revenue: {revenue}0,000 RMB\n"
-                f"Total Cost: {cost}0,000 RMB\n"
-                f"Net Profit: {profit}0,000 RMB\n"
-                f"YoY Growth: {random.randint(5,30)}%\n\n"
-                f"Key Highlights:\n"
-                f"- New client acquisition exceeded targets by {random.randint(10,40)}%\n"
-                f"- Operating costs reduced through process optimization\n"
-                f"- Subscription revenue grew {random.randint(15,45)}% quarter-over-quarter"
+            make_pdf(att_path, f"{fund} {q} Report", (
+                f"Fund Performance Report\n\n"
+                f"Fund Name: {fund}\n"
+                f"Report Period: {year} {q}\n"
+                f"NAV per Unit: {nav}\n"
+                f"AUM: RMB {aum}0,000\n\n"
+                f"Asset Allocation:\n"
+                f"- Equities: {random.randint(50, 80)}%\n"
+                f"- Fixed Income: {random.randint(10, 30)}%\n"
+                f"- Cash: {random.randint(5, 15)}%\n"
+                f"- Others: {random.randint(0, 10)}%\n\n"
+                f"Performance Attribution:\n"
+                f"- Sector allocation: +{random.uniform(0.5, 3.0):.2f}%\n"
+                f"- Stock selection: {random.uniform(-1.0, 2.0):+.2f}%\n"
+                f"- Timing: {random.uniform(-0.5, 1.0):+.2f}%\n\n"
+                f"Risk Metrics:\n"
+                f"- Sharpe Ratio: {random.uniform(0.5, 2.0):.2f}\n"
+                f"- Max Drawdown: -{random.uniform(3, 15):.2f}%\n"
+                f"- Volatility: {random.uniform(8, 25):.2f}%"
             ))
             attachments.append({"filename": fname, "type": "pdf"})
         else:
-            fname = f"sales_data_{q}_{year}_{i+1}.csv"
+            fname = f"fund_holdings_{q}_{year}_{i+1}.csv"
             att_path = str(ATTACHMENTS_DIR / fname)
+            stocks = [
+                ("600519", "贵州茅台", "消费"), ("300750", "宁德时代", "新能源"),
+                ("601318", "中国平安", "金融"), ("002594", "比亚迪", "汽车"),
+                ("600036", "招商银行", "金融"), ("601012", "隆基绿能", "新能源"),
+                ("000858", "五粮液", "消费"), ("002415", "海康威视", "科技"),
+            ]
+            selected = random.sample(stocks, min(6, len(stocks)))
             make_csv_file(att_path,
-                ["Client", "Product", "Amount (万)", "Region", "Sales Rep"],
-                [
-                    [f"Client_{j}", random.choice(["Enterprise", "Standard", "Premium"]),
-                     str(random.randint(10, 200)), random.choice(["华东", "华北", "华南", "西南"]),
-                     random.choice([p["name"] for p in PEOPLE[:5]])]
-                    for j in range(random.randint(8, 15))
-                ]
+                ["Stock Code", "Stock Name", "Sector", "Weight %", "Market Value (万元)", "P/E Ratio"],
+                [[s[0], s[1], s[2], f"{random.uniform(2, 8):.1f}", str(random.randint(200, 3000)), str(random.randint(10, 50))]
+                 for s in selected]
             )
             attachments.append({"filename": fname, "type": "csv"})
 
@@ -305,79 +422,123 @@ def gen_finance_emails(start_id: int) -> list[dict]:
             "id": eid,
             "from": {"name": sender["name"], "email": sender["email"]},
             "to": [{"name": r["name"], "email": r["email"]} for r in recipients],
-            "cc": [{"name": PEOPLE[4]["name"], "email": PEOPLE[4]["email"]}],
+            "cc": [{"name": PEOPLE[6]["name"], "email": PEOPLE[6]["email"]}],
             "subject": subject,
             "body": body_text,
             "date": date,
-            "tags": ["财务", rname],
+            "tags": ["投资", fund],
             "attachments": attachments,
         })
     return emails
 
 
-def gen_meeting_emails(start_id: int) -> list[dict]:
-    """会议纪要 — 12封"""
+def gen_compliance_emails(start_id: int) -> list[dict]:
+    """合规/监管 — 12封"""
     emails = []
-    meeting_types = ["周会", "技术评审会", "产品规划会", "部门例会", "战略研讨会", "复盘会"]
+    topics = [
+        ("银保监会信托监管评级结果通知", "regulatory_rating"),
+        ("反洗钱自查报告", "aml_review"),
+        ("关联交易合规审查", "related_party"),
+        ("信托产品信息披露检查", "disclosure"),
+        ("投资者适当性管理自查", "suitability"),
+        ("资管新规整改进度报告", "asset_mgmt_reform"),
+        ("净资本管理月度报告", "net_capital"),
+        ("流动性风险监测报告", "liquidity"),
+        ("操作风险事件排查", "op_risk"),
+        ("数据治理合规报告", "data_governance"),
+        ("监管处罚案例学习", "regulatory_case"),
+        ("内控制度修订通知", "internal_control"),
+    ]
 
     for i in range(12):
         eid = f"email_{start_id + i:03d}"
-        mtype = meeting_types[i % len(meeting_types)]
-        sender = pick_sender()
+        topic_name, topic_key = topics[i]
+        sender = PEOPLE[2] if i % 2 == 0 else PEOPLE[7]  # 风控合规部 or 合规审计部
         recipients = pick_recipients(sender["email"], count=random.randint(3, 6))
         date = random_date()
-        week_num = random.randint(1, 52)
-        subject = f"第{week_num}周{mtype}纪要"
+        subject = f"[合规] {topic_name}"
 
         body_text = (
             f"各位同事，\n\n"
-            f"以下是本次{mtype}的会议纪要，详细内容见附件。\n\n"
-            f"会议时间：{date}\n"
-            f"参会人员：{', '.join(r['name'] for r in recipients)}\n\n"
-            f"主要议题：\n"
-            f"1. {random.choice(['系统性能优化方案讨论', 'Q3目标回顾与Q4规划', '新产品线规划', '客户反馈处理流程优化'])}\n"
-            f"2. {random.choice(['人员招聘进度', '技术债务清理', '用户增长策略', '预算调整'])}\n"
-            f"3. {random.choice(['跨部门协作流程', '代码审查规范', '客户满意度提升', '成本控制措施'])}\n\n"
-            f"Action Items 见附件。\n\n{sender['name']}"
+            f"{'现将' + topic_name + '发送如下' if i % 2 == 0 else '关于' + topic_name + '，通知如下'}：\n\n"
         )
+
+        if "反洗钱" in topic_name:
+            body_text += (
+                f"根据《反洗钱法》及银保监会相关规定，我司已完成{date[:4]}年度反洗钱自查工作：\n\n"
+                f"1. 客户身份识别：已对全部{random.randint(500, 2000)}名客户完成身份核实\n"
+                f"2. 大额交易报告：本期报送{random.randint(20, 100)}笔\n"
+                f"3. 可疑交易报告：本期报送{random.randint(5, 30)}笔\n"
+                f"4. 客户风险等级分类：高风险客户{random.randint(10, 50)}户\n\n"
+                f"详见附件报告。\n"
+            )
+        elif "净资本" in topic_name:
+            net_capital = random.randint(20, 80)
+            body_text += (
+                f"截至{date[:10]}，我司净资本情况如下：\n\n"
+                f"- 净资本：{net_capital}亿元\n"
+                f"- 各项业务风险资本之和：{random.randint(10, 40)}亿元\n"
+                f"- 净资本/各项业务风险资本之和：{random.randint(150, 300)}%（监管要求≥100%）\n"
+                f"- 净资本/净资产：{random.randint(70, 95)}%（监管要求≥40%）\n\n"
+                f"各项指标均满足监管要求。\n"
+            )
+        elif "资管新规" in topic_name:
+            body_text += (
+                f"按照资管新规过渡期安排，我司整改进度如下：\n\n"
+                f"1. 非标资产压降：已压降至{random.randint(100, 500)}亿，完成目标的{random.randint(70, 95)}%\n"
+                f"2. 多层嵌套清理：{random.randint(85, 100)}%已完成\n"
+                f"3. 资金池业务：已全部清理\n"
+                f"4. 估值方法切换：{random.randint(90, 100)}%产品已完成\n\n"
+            )
+        else:
+            body_text += (
+                f"请各部门认真学习并落实相关要求。\n"
+                f"如有违规事项，请立即上报合规部门。\n\n"
+                f"合规要点：\n"
+                f"- 严格执行投资者适当性管理要求\n"
+                f"- 确保信息披露的真实、准确、完整、及时\n"
+                f"- 加强关联交易管控，防范利益输送\n"
+            )
+
+        body_text += f"\n{sender['name']}\n{sender['dept']}"
 
         attachments = []
         if i % 2 == 0:
-            fname = f"meeting_minutes_w{week_num}_{i+1}.docx"
+            fname = f"compliance_{topic_key}_{i+1}.docx"
             att_path = str(ATTACHMENTS_DIR / fname)
-            make_docx(att_path, f"第{week_num}周{mtype}纪要", (
-                f"会议纪要\n\n"
-                f"会议类型：{mtype}\n"
-                f"会议时间：{date}\n"
-                f"主持人：{sender['name']}\n"
-                f"参会人：{', '.join(r['name'] for r in recipients)}\n\n"
-                f"一、议题讨论\n\n"
-                f"1. 系统优化方案\n"
-                f"经讨论，决定采用微服务架构重构现有系统。预计分三个阶段完成，第一阶段重点优化数据库查询性能。\n\n"
-                f"2. 人员安排\n"
-                f"新招聘的两名高级工程师将于下月入职，分配至{random.choice(['前端', '后端', '数据'])}团队。\n\n"
-                f"二、Action Items\n\n"
-                f"- {recipients[0]['name']}：完成技术方案文档，截止{date[:8]}28\n"
-                f"- {sender['name']}：协调资源分配\n"
-                f"- {recipients[-1]['name']}：更新项目排期"
+            make_docx(att_path, topic_name, (
+                f"华信金融信托有限公司\n{topic_name}\n\n"
+                f"报告期间：{date[:7]}\n编制部门：{sender['dept']}\n\n"
+                f"一、总体情况\n\n"
+                f"报告期内，公司各项业务运营合规，内部控制有效执行。"
+                f"根据监管要求和公司内控制度，对各业务条线进行了全面合规检查。\n\n"
+                f"二、检查发现\n\n"
+                f"本次检查共涉及{random.randint(10, 50)}项检查要点，"
+                f"发现{random.randint(0, 5)}项需改进事项，均为非重大问题。\n\n"
+                f"三、整改措施\n\n"
+                f"1. 完善相关业务流程文档\n"
+                f"2. 加强员工合规培训\n"
+                f"3. 优化系统控制节点\n\n"
+                f"四、后续计划\n\n"
+                f"将持续跟踪整改进度，确保在规定期限内完成全部整改工作。"
             ))
             attachments.append({"filename": fname, "type": "docx"})
         else:
-            fname = f"meeting_notes_w{week_num}_{i+1}.txt"
+            fname = f"compliance_{topic_key}_{i+1}.txt"
             att_path = str(ATTACHMENTS_DIR / fname)
             make_txt(att_path, (
-                f"== {mtype} 第{week_num}周 ==\n"
-                f"日期: {date}\n"
-                f"主持: {sender['name']}\n\n"
-                f"讨论要点:\n"
-                f"- 上周任务完成率: {random.randint(70,100)}%\n"
-                f"- 未完成事项: 接口联调、自动化测试用例补充\n"
-                f"- 本周重点: 性能压测、上线前checklist确认\n\n"
-                f"决议:\n"
-                f"1. 增加代码review频率，每个PR至少2人审核\n"
-                f"2. 启动自动化测试覆盖率提升计划，目标80%\n"
-                f"3. 下周三进行全链路压测\n\n"
-                f"下次会议: 下周{random.choice(['一', '三', '五'])} 10:00"
+                f"== {topic_name} ==\n"
+                f"日期: {date[:10]}\n"
+                f"编制: {sender['name']} ({sender['dept']})\n\n"
+                f"摘要:\n"
+                f"本报告对公司{topic_name.replace('报告', '').replace('通知', '')}相关事项进行了全面梳理。\n\n"
+                f"关键指标:\n"
+                f"- 合规检查覆盖率: {random.randint(95, 100)}%\n"
+                f"- 问题整改完成率: {random.randint(85, 100)}%\n"
+                f"- 员工合规培训完成率: {random.randint(90, 100)}%\n"
+                f"- 可疑交易监测有效率: {random.randint(95, 100)}%\n\n"
+                f"结论:\n"
+                f"公司合规管理体系运行有效，各项监管指标满足要求。"
             ))
             attachments.append({"filename": fname, "type": "txt"})
 
@@ -389,73 +550,231 @@ def gen_meeting_emails(start_id: int) -> list[dict]:
             "subject": subject,
             "body": body_text,
             "date": date,
-            "tags": ["会议", mtype],
+            "tags": ["合规", topic_key],
+            "attachments": attachments,
+        })
+    return emails
+
+
+def gen_risk_emails(start_id: int) -> list[dict]:
+    """风控报告 — 10封"""
+    emails = []
+    risk_topics = [
+        "信用风险监测周报", "市场风险日报", "流动性风险监测报告",
+        "集中度风险分析", "信托项目逾期预警", "压力测试报告",
+        "风险限额使用情况", "大额风险暴露报告", "风险事件应急预案",
+        "风险偏好声明书",
+    ]
+
+    for i in range(10):
+        eid = f"email_{start_id + i:03d}"
+        topic = risk_topics[i]
+        sender = PEOPLE[2]  # 风控合规部
+        recipients = pick_recipients(sender["email"], count=random.randint(2, 5))
+        date = random_date()
+        subject = f"[风控] {topic} - {date[:10]}"
+
+        body_text = (
+            f"各位领导好，\n\n"
+            f"附件为{topic}，截至{date[:10]}。\n\n"
+        )
+
+        if "信用风险" in topic:
+            body_text += (
+                f"信用风险概况：\n"
+                f"- 在管信托项目：{random.randint(50, 200)}个\n"
+                f"- 正常类：{random.randint(80, 95)}%\n"
+                f"- 关注类：{random.randint(3, 10)}%\n"
+                f"- 不良类：{random.randint(1, 5)}%\n"
+                f"- 加权平均信用评级：{random.choice(['AA', 'AA-', 'A+'])}\n"
+            )
+        elif "逾期" in topic:
+            body_text += (
+                f"逾期预警信息：\n"
+                f"- 本周新增逾期项目：{random.randint(0, 3)}个\n"
+                f"- 逾期金额：{random.randint(0, 5000)}万元\n"
+                f"- 已采取催收措施：{random.choice(['电话催收', '发送催收函', '启动法律程序'])}\n"
+                f"- 预计回收情况：{random.choice(['预计30日内全额回收', '已制定分期还款方案', '需要进一步评估'])}\n"
+            )
+        elif "压力测试" in topic:
+            body_text += (
+                f"压力测试结果：\n"
+                f"- 轻度压力情景：资本充足率{random.randint(130, 180)}%，满足监管要求\n"
+                f"- 中度压力情景：资本充足率{random.randint(100, 130)}%，满足监管要求\n"
+                f"- 重度压力情景：资本充足率{random.randint(80, 100)}%，{random.choice(['仍满足监管要求', '接近监管红线，需关注'])}\n"
+            )
+        else:
+            body_text += (
+                f"报告要点：\n"
+                f"- 各项风险指标在可控范围内\n"
+                f"- 未发现重大风险隐患\n"
+                f"- 风险限额使用率：{random.randint(40, 80)}%\n"
+            )
+
+        body_text += f"\n详见附件。\n\n{sender['name']}\n风控合规部"
+
+        attachments = []
+        if i % 2 == 0:
+            fname = f"risk_{topic.replace('/', '_')}_{i+1}.xlsx"
+            att_path = str(ATTACHMENTS_DIR / fname)
+            make_xlsx(att_path, "Risk Monitor", [
+                ["Project", "Scale (万元)", "Risk Level", "Rating", "Maturity", "Status"],
+                *[
+                    [f"Trust-{random.randint(100,999)}", random.randint(5000, 50000),
+                     random.choice(["Low", "Medium", "Low", "Low"]),
+                     random.choice(["AA+", "AA", "AA-", "A+"]),
+                     f"{date[:4]}-{random.randint(1,12):02d}-{random.randint(1,28):02d}",
+                     random.choice(["Normal", "Normal", "Normal", "Watch"])]
+                    for _ in range(8)
+                ],
+            ])
+            attachments.append({"filename": fname, "type": "xlsx"})
+        else:
+            fname = f"risk_{topic.replace('/', '_')}_{i+1}.pdf"
+            att_path = str(ATTACHMENTS_DIR / fname)
+            make_pdf(att_path, f"Risk Report - {date[:10]}", (
+                f"Huaxin Trust Risk Management Report\n\n"
+                f"Report: {topic}\n"
+                f"Date: {date[:10]}\n\n"
+                f"1. Risk Overview\n"
+                f"Total AUM under monitoring: RMB {random.randint(100, 800)} billion\n"
+                f"Number of active projects: {random.randint(50, 200)}\n\n"
+                f"2. Key Risk Indicators\n"
+                f"- NPL Ratio: {random.uniform(0.5, 3.0):.2f}%\n"
+                f"- Provision Coverage: {random.randint(150, 300)}%\n"
+                f"- Concentration Ratio (Top 10): {random.randint(20, 45)}%\n"
+                f"- Liquidity Coverage Ratio: {random.randint(120, 200)}%\n\n"
+                f"3. Risk Events\n"
+                f"No significant risk events during the reporting period.\n\n"
+                f"4. Recommendations\n"
+                f"- Continue monitoring macro-economic indicators\n"
+                f"- Enhance post-investment management for real estate projects\n"
+                f"- Review counterparty credit limits quarterly"
+            ))
+            attachments.append({"filename": fname, "type": "pdf"})
+
+        emails.append({
+            "id": eid,
+            "from": {"name": sender["name"], "email": sender["email"]},
+            "to": [{"name": r["name"], "email": r["email"]} for r in recipients],
+            "cc": [],
+            "subject": subject,
+            "body": body_text,
+            "date": date,
+            "tags": ["风控", topic],
             "attachments": attachments,
         })
     return emails
 
 
 def gen_legal_emails(start_id: int) -> list[dict]:
-    """合同/法务 — 10封"""
+    """法务/合同 — 12封"""
     emails = []
-    contract_types = ["服务协议", "采购合同", "保密协议(NDA)", "合作框架协议", "软件许可协议",
-                      "数据处理协议", "竞业禁止协议", "劳动合同补充", "知识产权协议", "外包服务合同"]
+    topics = [
+        ("信托合同审批", "trust_contract"),
+        ("投资顾问协议", "advisor_agreement"),
+        ("托管协议定稿", "custody_agreement"),
+        ("担保合同审查", "guarantee_contract"),
+        ("股权质押合同", "pledge_contract"),
+        ("保密协议(NDA)", "nda"),
+        ("资产转让协议", "asset_transfer"),
+        ("基金合同修订", "fund_amendment"),
+        ("合规法律意见书", "legal_opinion"),
+        ("诉讼案件进展通报", "litigation"),
+        ("监管问询回复函", "regulatory_response"),
+        ("知识产权许可协议", "ip_license"),
+    ]
 
-    for i in range(10):
+    for i in range(12):
         eid = f"email_{start_id + i:03d}"
-        ctype = contract_types[i]
-        sender = pick_sender()
+        topic_name, topic_key = topics[i]
+        sender = PEOPLE[3]  # 法务部 赵雪梅
         recipients = pick_recipients(sender["email"])
         date = random_date()
-        contract_no = f"CT-{date[:4]}-{random.randint(1000,9999)}"
-        subject = f"[法务] {ctype} - {contract_no}"
+        contract_no = f"HX-{date[:4]}-{random.randint(1000, 9999)}"
+        subject = f"[法务] {topic_name} - {contract_no}"
 
         body_text = (
-            f"您好，\n\n"
-            f"附件为{ctype}（合同编号：{contract_no}），请审阅。\n\n"
-            f"合同要点：\n"
-            f"- 合同期限：{random.choice(['1年', '2年', '3年'])}\n"
-            f"- 合同金额：{random.randint(10, 500)}万元\n"
-            f"- 生效日期：{date[:10]}\n"
-            f"- 付款方式：{random.choice(['月付', '季付', '年付', '里程碑付款'])}\n\n"
-            f"请在{random.randint(3,7)}个工作日内完成审阅并反馈意见。\n\n{sender['name']}\n法务部"
+            f"各位好，\n\n"
+            f"附件为{topic_name}（编号：{contract_no}），请审阅。\n\n"
         )
+
+        if "信托合同" in topic_name:
+            body_text += (
+                f"合同要点：\n"
+                f"- 信托类型：{random.choice(['集合资金信托', '单一资金信托', '财产权信托'])}\n"
+                f"- 信托规模：{random.randint(5000, 50000)}万元\n"
+                f"- 信托期限：{random.choice(['12', '18', '24', '36'])}个月\n"
+                f"- 受益人类型：{random.choice(['单一受益人', '多个受益人（同一顺序）', '优先/劣后受益人'])}\n"
+                f"- 信托报酬率：{random.uniform(0.3, 1.5):.2f}%/年\n"
+            )
+        elif "诉讼" in topic_name:
+            body_text += (
+                f"案件进展：\n"
+                f"- 案由：{random.choice(['金融借款合同纠纷', '信托纠纷', '担保合同纠纷', '票据纠纷'])}\n"
+                f"- 涉案金额：{random.randint(500, 10000)}万元\n"
+                f"- 当前阶段：{random.choice(['已立案', '举证阶段', '一审开庭', '等待判决', '执行阶段'])}\n"
+                f"- 预计结果：{random.choice(['胜诉概率较大', '正在积极调解', '已达成和解意向'])}\n"
+            )
+        elif "监管问询" in topic_name:
+            body_text += (
+                f"问询事项：\n"
+                f"- 问询机关：{random.choice(['银保监会', '地方银保监局', '中国信托登记有限责任公司'])}\n"
+                f"- 问询内容：{random.choice(['个别信托项目运行情况', '关联交易情况说明', '净资本计算方法'])}\n"
+                f"- 回复期限：收函后{random.randint(5, 15)}个工作日\n"
+                f"- 需要各部门配合提供材料，具体见附件。\n"
+            )
+        else:
+            body_text += (
+                f"合同金额：{random.randint(100, 50000)}万元\n"
+                f"签署方：华信金融信托有限公司 与 {random.choice(['恒丰投资有限公司', '龙泰财富管理有限公司', '中原资本集团'])}\n"
+                f"请在{random.randint(3, 7)}个工作日内完成审阅。\n"
+            )
+
+        body_text += f"\n{sender['name']}\n法务部"
 
         attachments = []
         if i % 2 == 0:
-            fname = f"contract_{contract_no}.pdf"
+            fname = f"legal_{topic_key}_{contract_no}.pdf"
             att_path = str(ATTACHMENTS_DIR / fname)
-            make_pdf(att_path, f"Contract {contract_no}", (
-                f"{ctype}\n\n"
-                f"Contract No: {contract_no}\n"
+            make_pdf(att_path, f"Legal Document - {contract_no}", (
+                f"Huaxin Trust Co., Ltd.\n"
+                f"Document: {topic_name}\n"
+                f"Reference: {contract_no}\n"
                 f"Date: {date[:10]}\n\n"
-                f"ARTICLE 1 - DEFINITIONS\n"
-                f"This agreement defines the terms and conditions between TechCorp and the counterparty.\n\n"
-                f"ARTICLE 2 - SCOPE OF SERVICES\n"
-                f"The service provider shall deliver software development and maintenance services.\n\n"
-                f"ARTICLE 3 - PAYMENT TERMS\n"
-                f"Payment shall be made within 30 days of invoice receipt.\n\n"
-                f"ARTICLE 4 - CONFIDENTIALITY\n"
-                f"Both parties agree to maintain strict confidentiality of all shared information.\n\n"
-                f"ARTICLE 5 - TERM AND TERMINATION\n"
-                f"This agreement shall remain in effect for the specified contract period."
+                f"ARTICLE 1 - PARTIES\n"
+                f"Trustee: Huaxin Financial Trust Co., Ltd.\n"
+                f"Settlor/Beneficiary: As specified in the Trust Deed\n\n"
+                f"ARTICLE 2 - PURPOSE\n"
+                f"This agreement establishes the terms for trust asset management.\n\n"
+                f"ARTICLE 3 - TRUST PROPERTY\n"
+                f"The trust property shall be managed in accordance with the trust deed.\n\n"
+                f"ARTICLE 4 - RIGHTS AND OBLIGATIONS\n"
+                f"The trustee shall exercise fiduciary duty with due care and diligence.\n\n"
+                f"ARTICLE 5 - FEES\n"
+                f"Management fee, custody fee, and performance fee as specified.\n\n"
+                f"ARTICLE 6 - TERMINATION\n"
+                f"This agreement terminates upon expiry or early termination conditions."
             ))
             attachments.append({"filename": fname, "type": "pdf"})
         else:
-            fname = f"contract_{contract_no}.docx"
+            fname = f"legal_{topic_key}_{contract_no}.docx"
             att_path = str(ATTACHMENTS_DIR / fname)
-            make_docx(att_path, f"{ctype} - {contract_no}", (
+            make_docx(att_path, f"{topic_name} - {contract_no}", (
                 f"合同编号：{contract_no}\n签订日期：{date[:10]}\n\n"
-                f"甲方：TechCorp 科技有限公司\n"
-                f"乙方：[对方公司名称]\n\n"
+                f"甲方（受托人）：华信金融信托有限公司\n"
+                f"乙方：[签约对方]\n\n"
                 f"第一条 合同目的\n\n"
-                f"本合同旨在明确双方在{ctype}相关事务中的权利和义务。\n\n"
-                f"第二条 服务内容\n\n"
-                f"乙方应按照甲方要求提供相关服务，确保服务质量符合行业标准。\n\n"
-                f"第三条 费用与支付\n\n"
-                f"合同总金额为人民币{random.randint(10,500)}万元整，按约定方式支付。\n\n"
-                f"第四条 保密条款\n\n"
-                f"双方应对在合同执行过程中知悉的对方商业秘密严格保密。"
+                f"本合同就{topic_name}相关事项达成如下协议，明确双方权利义务。\n\n"
+                f"第二条 信托财产\n\n"
+                f"信托财产的范围、管理方式、处分规则按照信托合同约定执行。"
+                f"受托人应以受益人利益最大化为原则管理信托财产。\n\n"
+                f"第三条 信息披露\n\n"
+                f"受托人应按照法律法规和监管要求，及时、准确、完整地向委托人和受益人披露信息。\n\n"
+                f"第四条 费用\n\n"
+                f"信托报酬：{random.uniform(0.3, 1.5):.2f}%/年\n"
+                f"托管费：{random.uniform(0.03, 0.1):.2f}%/年\n"
+                f"其他费用按实际发生额收取。"
             ))
             attachments.append({"filename": fname, "type": "docx"})
 
@@ -467,273 +786,132 @@ def gen_legal_emails(start_id: int) -> list[dict]:
             "subject": subject,
             "body": body_text,
             "date": date,
-            "tags": ["法务", "合同"],
+            "tags": ["法务", topic_key],
             "attachments": attachments,
         })
     return emails
 
 
-def gen_tech_emails(start_id: int) -> list[dict]:
-    """技术文档 — 12封"""
+def gen_operations_emails(start_id: int) -> list[dict]:
+    """运营管理/内部沟通 — 12封"""
     emails = []
     topics = [
-        ("微服务架构设计文档", "architecture"),
-        ("API接口规范 v2.0", "api_spec"),
-        ("数据库设计说明书", "db_design"),
-        ("部署运维手册", "deployment"),
-        ("安全审计报告", "security"),
-        ("性能测试报告", "perf_test"),
-        ("技术选型评估", "tech_eval"),
-        ("代码规范指南", "code_style"),
-        ("灾备方案", "disaster_recovery"),
-        ("监控告警方案", "monitoring"),
-        ("CI/CD流水线配置", "cicd"),
-        ("容器化迁移方案", "containerization"),
+        ("信托产品到期兑付通知", "redemption"),
+        ("新员工入职培训-信托基础知识", "training"),
+        ("IT系统升级通知-信托核算系统", "it_upgrade"),
+        ("客户投诉处理流程优化", "complaint"),
+        ("季度经营分析会纪要", "quarterly_review"),
+        ("信托登记系统操作规范", "registration_ops"),
+        ("年度合规培训安排", "compliance_training"),
+        ("办公场所安全检查", "safety"),
+        ("员工持证情况统计", "certification"),
+        ("部门年度预算编制", "budget"),
+        ("信托业务系统故障应急处理", "incident"),
+        ("跨部门协作流程规范", "workflow"),
     ]
 
     for i in range(12):
         eid = f"email_{start_id + i:03d}"
         topic_name, topic_key = topics[i]
         sender = pick_sender()
-        recipients = pick_recipients(sender["email"])
+        recipients = pick_recipients(sender["email"], count=random.randint(2, 6))
         date = random_date()
-        version = f"v{random.randint(1,3)}.{random.randint(0,9)}"
-        subject = f"[技术] {topic_name} {version}"
+        subject = f"[运营] {topic_name}"
 
         body_text = (
-            f"Hi all,\n\n"
-            f"附件是最新版本的{topic_name}（{version}），主要更新：\n\n"
-            f"1. 根据上次评审意见修改了架构方案\n"
-            f"2. 补充了异常处理和降级策略\n"
-            f"3. 更新了技术栈版本号\n\n"
-            f"请大家review后提出意见，计划在本周五前定稿。\n\n{sender['name']}"
+            f"各位同事，\n\n"
         )
 
-        attachments = []
-        if i % 4 == 0:
-            fname = f"tech_{topic_key}_{version}.pdf"
-            att_path = str(ATTACHMENTS_DIR / fname)
-            make_pdf(att_path, f"{topic_name} {version}", (
-                f"Technical Document: {topic_name}\n"
-                f"Version: {version}\n"
-                f"Author: {sender['name']}\n"
-                f"Date: {date[:10]}\n\n"
-                f"1. Overview\n"
-                f"This document describes the technical architecture and implementation details.\n\n"
-                f"2. System Architecture\n"
-                f"The system adopts a microservices architecture with the following components:\n"
-                f"- API Gateway (Kong/Nginx)\n"
-                f"- Service Discovery (Consul)\n"
-                f"- Message Queue (RabbitMQ)\n"
-                f"- Cache Layer (Redis)\n"
-                f"- Database (PostgreSQL + MongoDB)\n\n"
-                f"3. Performance Requirements\n"
-                f"- API Response Time: < 200ms (P99)\n"
-                f"- Throughput: > 10000 QPS\n"
-                f"- Availability: 99.99%"
-            ))
-            attachments.append({"filename": fname, "type": "pdf"})
-        elif i % 4 == 1:
-            fname = f"tech_{topic_key}_{version}.txt"
-            att_path = str(ATTACHMENTS_DIR / fname)
-            make_txt(att_path, (
-                f"# {topic_name} {version}\n\n"
-                f"## 概述\n"
-                f"本文档详细描述了系统的技术方案和实施细节。\n\n"
-                f"## 技术栈\n"
-                f"- 后端: Python 3.12 + FastAPI\n"
-                f"- 前端: React 18 + TypeScript\n"
-                f"- 数据库: PostgreSQL 16\n"
-                f"- 缓存: Redis 7\n"
-                f"- 消息队列: RabbitMQ 3.12\n\n"
-                f"## 接口设计\n"
-                f"RESTful API 风格，JSON 数据格式\n"
-                f"认证方式: JWT Token\n"
-                f"限流策略: 令牌桶算法，100次/分钟\n\n"
-                f"## 部署方案\n"
-                f"Kubernetes 集群部署，Docker 容器化\n"
-                f"CI/CD: GitHub Actions\n"
-                f"监控: Prometheus + Grafana"
-            ))
-            attachments.append({"filename": fname, "type": "txt"})
-        elif i % 4 == 2:
-            fname = f"tech_{topic_key}_{version}.zip"
-            att_path = str(ATTACHMENTS_DIR / fname)
-            make_zip(att_path, {
-                "README.md": f"# {topic_name}\n\nVersion: {version}\n\nSee docs/ folder for details.",
-                "docs/overview.md": f"# Overview\n\nThis project implements {topic_name}.",
-                "docs/api.md": "# API Reference\n\n## GET /api/health\nReturns service health status.\n\n## POST /api/data\nSubmit data for processing.",
-                "config/settings.yaml": f"app:\n  name: {topic_key}\n  version: {version}\n  debug: false\n  port: 8080",
-            })
-            attachments.append({"filename": fname, "type": "zip"})
-        else:
-            fname = f"tech_{topic_key}_{version}.pdf"
-            att_path = str(ATTACHMENTS_DIR / fname)
-            make_pdf(att_path, f"{topic_name}", (
-                f"Document: {topic_name} {version}\n\n"
-                f"1. Background\n"
-                f"Current system faces scalability challenges.\n\n"
-                f"2. Proposed Solution\n"
-                f"Migrate to cloud-native architecture with auto-scaling.\n\n"
-                f"3. Implementation Plan\n"
-                f"Phase 1: Containerization (2 weeks)\n"
-                f"Phase 2: Orchestration (3 weeks)\n"
-                f"Phase 3: Monitoring setup (1 week)\n\n"
-                f"4. Risk Assessment\n"
-                f"- Data migration risks: Medium\n"
-                f"- Service disruption: Low (blue-green deployment)\n"
-                f"- Cost increase: Temporary, offset by efficiency gains"
-            ))
-            attachments.append({"filename": fname, "type": "pdf"})
-
-        emails.append({
-            "id": eid,
-            "from": {"name": sender["name"], "email": sender["email"]},
-            "to": [{"name": r["name"], "email": r["email"]} for r in recipients],
-            "cc": [],
-            "subject": subject,
-            "body": body_text,
-            "date": date,
-            "tags": ["技术", topic_key],
-            "attachments": attachments,
-        })
-    return emails
-
-
-def gen_hr_emails(start_id: int) -> list[dict]:
-    """人事行政 — 10封"""
-    emails = []
-    hr_topics = [
-        "月度考勤统计", "培训计划通知", "年度体检安排", "绩效考核通知",
-        "员工活动通知", "办公用品采购", "新员工入职指南", "假期安排通知",
-        "薪酬调整通知", "部门组织架构调整",
-    ]
-
-    for i in range(10):
-        eid = f"email_{start_id + i:03d}"
-        topic = hr_topics[i]
-        sender = PEOPLE[3]  # 赵六 from HR
-        recipients = pick_recipients(sender["email"], count=random.randint(3, 8))
-        date = random_date()
-        month = random.randint(1, 12)
-        subject = f"[人事] {topic} - {date[:4]}年{month}月"
-
-        body_text = (
-            f"全体同事好，\n\n"
-            f"现发送{date[:4]}年{month}月{topic}，详情见附件。\n\n"
-        )
-
-        if "考勤" in topic:
-            body_text += "请各位核对个人考勤数据，如有异议请于3个工作日内反馈。\n"
-        elif "培训" in topic:
-            body_text += f"本次培训主题为「{random.choice(['项目管理', 'AI应用', '沟通技巧', '领导力'])}」，请相关同事准时参加。\n"
-        elif "绩效" in topic:
-            body_text += "请各部门经理于月底前完成绩效评估并提交。\n"
-
-        body_text += f"\n谢谢！\n{sender['name']}\n人事行政部"
-
-        attachments = []
-        if i % 2 == 0:
-            fname = f"hr_{topic.replace('/', '_')}_{month}_{i+1}.xlsx"
-            att_path = str(ATTACHMENTS_DIR / fname)
-            make_xlsx(att_path, topic[:31], [
-                ["Employee", "Department", "Working Days", "Leave Days", "Overtime (hrs)", "Status"],
-                *[
-                    [p["name"], p["dept"], random.randint(18, 23), random.randint(0, 3),
-                     random.randint(0, 20), random.choice(["Normal", "Late 1x", "Normal"])]
-                    for p in PEOPLE[:10]
-                ],
-            ])
-            attachments.append({"filename": fname, "type": "xlsx"})
-        else:
-            fname = f"hr_{topic.replace('/', '_')}_{month}_{i+1}.pdf"
-            att_path = str(ATTACHMENTS_DIR / fname)
-            make_pdf(att_path, f"{topic} - {date[:4]}年{month}月", (
-                f"TechCorp Human Resources\n"
-                f"{topic}\n\n"
-                f"Date: {date[:4]}-{month:02d}\n\n"
-                f"Details:\n"
-                f"- Applicable to all employees\n"
-                f"- Effective from {date[:10]}\n"
-                f"- Please review and acknowledge\n\n"
-                f"Contact HR department for questions."
-            ))
-            attachments.append({"filename": fname, "type": "pdf"})
-
-        emails.append({
-            "id": eid,
-            "from": {"name": sender["name"], "email": sender["email"]},
-            "to": [{"name": r["name"], "email": r["email"]} for r in recipients],
-            "cc": [],
-            "subject": subject,
-            "body": body_text,
-            "date": date,
-            "tags": ["人事", topic],
-            "attachments": attachments,
-        })
-    return emails
-
-
-def gen_daily_emails(start_id: int) -> list[dict]:
-    """日常沟通 — 12封"""
-    emails = []
-    topics = [
-        ("线上问题反馈：用户登录异常", "login_issue"),
-        ("产品截图确认", "screenshot_review"),
-        ("环境配置问题求助", "env_config"),
-        ("代码Review意见", "code_review"),
-        ("接口联调问题", "api_debug"),
-        ("测试环境故障通知", "test_env"),
-        ("功能验收反馈", "acceptance"),
-        ("UI设计稿确认", "ui_design"),
-        ("数据库慢查询告警", "slow_query"),
-        ("上线checklist确认", "deploy_check"),
-        ("Bug修复进度同步", "bug_fix"),
-        ("需求变更沟通", "req_change"),
-    ]
-
-    for i in range(12):
-        eid = f"email_{start_id + i:03d}"
-        topic_name, topic_key = topics[i]
-        sender = pick_sender()
-        recipients = pick_recipients(sender["email"], count=random.randint(1, 3))
-        date = random_date()
-        subject = topic_name
-
-        body_text = (
-            f"Hi {recipients[0]['name']}，\n\n"
-        )
-
-        attachments = []
-        if "截图" in topic_name or "UI" in topic_name:
+        if "兑付" in topic_name:
             body_text += (
-                f"附件是相关截图，请确认是否符合预期。\n\n"
-                f"具体问题：\n"
-                f"1. 页面{random.choice(['顶部导航栏', '侧边栏', '弹窗', '列表页'])}样式需要调整\n"
-                f"2. {random.choice(['字体大小', '间距', '颜色', '对齐方式'])}与设计稿不一致\n"
+                f"以下信托产品即将到期，请做好兑付准备：\n\n"
+                f"1. 华信·稳健增长1号 - 到期日：{date[:10]}，规模：{random.randint(5000, 20000)}万元\n"
+                f"2. 华信·城市发展3号 - 到期日：{date[:8]}28，规模：{random.randint(3000, 15000)}万元\n\n"
+                f"请运营部核实资金回款情况，财务部准备兑付资金，客服部做好客户通知工作。\n"
             )
-            if "截图" in topic_name:
-                fname = f"screenshot_{topic_key}_{i+1}.png"
-                att_path = str(ATTACHMENTS_DIR / fname)
-                make_png(att_path, f"Screenshot: {topic_name}\n\nUI Element Preview\nVersion: {date[:10]}")
-                attachments.append({"filename": fname, "type": "png"})
-            else:
-                fname = f"screenshot_{topic_key}_{i+1}.jpg"
-                att_path = str(ATTACHMENTS_DIR / fname)
-                make_jpg(att_path, f"Screenshot: {topic_name}\n\nDesign Review\n{date[:10]}")
-                attachments.append({"filename": fname, "type": "jpg"})
+        elif "培训" in topic_name:
+            body_text += (
+                f"本次培训安排如下：\n\n"
+                f"主题：{random.choice(['信托法律法规', '反洗钱实务', '信托产品设计', '风险管理框架', '投资者适当性管理'])}\n"
+                f"时间：{date[:10]} 14:00-17:00\n"
+                f"地点：{random.choice(['公司12楼培训室', '线上腾讯会议', '公司15楼大会议室'])}\n"
+                f"讲师：{random.choice(['外部专家', '合规部总经理', '业务部资深经理'])}\n\n"
+                f"请相关人员准时参加，签到考勤。\n"
+            )
+        elif "经营分析" in topic_name:
+            body_text += (
+                f"季度经营分析会主要议题：\n\n"
+                f"1. 信托资产管理规模：{random.randint(500, 2000)}亿元，同比{random.choice(['增长', '下降'])}{random.randint(3, 15)}%\n"
+                f"2. 信托报酬收入：{random.randint(2, 15)}亿元\n"
+                f"3. 新增项目：{random.randint(10, 50)}个，规模{random.randint(50, 300)}亿元\n"
+                f"4. 到期兑付：{random.randint(20, 80)}个项目正常兑付\n"
+                f"5. 不良信托资产处置进展\n\n"
+                f"详细纪要见附件。\n"
+            )
+        elif "持证" in topic_name:
+            body_text += (
+                f"请各部门配合统计员工持证情况：\n\n"
+                f"需统计的证书包括：\n"
+                f"- 基金从业资格证\n"
+                f"- 证券从业资格证\n"
+                f"- 银行从业资格证\n"
+                f"- CFA/CPA/FRM\n"
+                f"- 法律职业资格证\n\n"
+                f"请于{date[:8]}28前将统计表反馈至人事部。\n"
+            )
         else:
             body_text += (
-                f"关于{topic_name}的情况说明：\n\n"
-                f"现象：{random.choice(['接口超时', '页面白屏', '数据不一致', '功能异常'])}，"
-                f"影响范围：{random.choice(['部分用户', '全量用户', '测试环境', '内部系统'])}。\n\n"
-                f"初步分析原因是{random.choice(['配置错误', '代码逻辑问题', '第三方服务异常', '数据库连接池满'])}，"
-                f"目前正在排查中。\n\n"
-                f"预计{random.choice(['1小时', '2小时', '半天', '今天'])}内修复。\n"
+                f"关于{topic_name}，请各部门配合执行。\n"
+                f"详细内容和要求见附件。\n"
             )
 
         body_text += f"\n{sender['name']}"
 
+        attachments = []
+        if "截图" in topic_name or "系统" in topic_name:
+            if "故障" in topic_name:
+                fname = f"ops_{topic_key}_{i+1}.png"
+                att_path = str(ATTACHMENTS_DIR / fname)
+                make_png(att_path, f"System Alert: {topic_name}\n\nIncident Time: {date}\nSeverity: High\nStatus: Resolved")
+                attachments.append({"filename": fname, "type": "png"})
+            else:
+                fname = f"ops_{topic_key}_{i+1}.jpg"
+                att_path = str(ATTACHMENTS_DIR / fname)
+                make_jpg(att_path, f"System Screenshot\n{topic_name}\n{date[:10]}")
+                attachments.append({"filename": fname, "type": "jpg"})
+        elif i % 2 == 0:
+            fname = f"ops_{topic_key}_{i+1}.docx"
+            att_path = str(ATTACHMENTS_DIR / fname)
+            make_docx(att_path, topic_name, (
+                f"华信金融信托有限公司\n{topic_name}\n\n"
+                f"日期：{date[:10]}\n编制部门：{sender['dept']}\n\n"
+                f"一、背景\n\n"
+                f"为规范公司运营管理流程，提升工作效率，特制定本方案。\n\n"
+                f"二、具体内容\n\n"
+                f"1. 加强信托产品全生命周期管理\n"
+                f"2. 优化内部审批流程，提高效率\n"
+                f"3. 完善信息系统建设，提升数字化水平\n"
+                f"4. 加强人才培养和团队建设\n\n"
+                f"三、执行要求\n\n"
+                f"请各部门严格按照方案要求执行，确保各项工作落实到位。"
+            ))
+            attachments.append({"filename": fname, "type": "docx"})
+        else:
+            fname = f"ops_{topic_key}_{i+1}.txt"
+            att_path = str(ATTACHMENTS_DIR / fname)
+            make_txt(att_path, (
+                f"== {topic_name} ==\n"
+                f"日期: {date[:10]}\n\n"
+                f"要点:\n"
+                f"- 严格执行各项管理制度\n"
+                f"- 加强部门间沟通协作\n"
+                f"- 按时完成各项工作任务\n"
+                f"- 及时反馈执行中的问题\n\n"
+                f"联系人: {sender['name']} ({sender['dept']})\n"
+                f"电话: 010-8888-{random.randint(1000,9999)}"
+            ))
+            attachments.append({"filename": fname, "type": "txt"})
+
         emails.append({
             "id": eid,
             "from": {"name": sender["name"], "email": sender["email"]},
@@ -742,112 +920,128 @@ def gen_daily_emails(start_id: int) -> list[dict]:
             "subject": subject,
             "body": body_text,
             "date": date,
-            "tags": ["日常沟通"],
+            "tags": ["运营", topic_key],
             "attachments": attachments,
         })
     return emails
 
 
-def gen_client_emails(start_id: int) -> list[dict]:
-    """客户往来 — 14封"""
+def gen_wealth_emails(start_id: int) -> list[dict]:
+    """财富管理/客户服务 — 10封"""
     emails = []
-    clients = ["CloudMax", "DataPeak", "SmartFlow", "NetWave", "InfoLink", "DigiCore", "ByteRun"]
-    doc_types = [
-        ("报价单", "quotation"), ("需求确认书", "requirements"),
-        ("验收报告", "acceptance"), ("技术方案", "proposal"),
-        ("项目计划", "plan"), ("变更申请", "change_request"),
-        ("服务协议", "service_agreement"),
+    topics = [
+        "高净值客户资产配置方案", "家族信托设立咨询", "慈善信托方案设计",
+        "保险金信托合作方案", "客户KYC信息更新通知", "投资者教育活动方案",
+        "客户满意度调查报告", "理财经理考核标准", "客户资产配置季度回顾",
+        "高端客户服务标准手册",
     ]
 
-    for i in range(14):
+    for i in range(10):
         eid = f"email_{start_id + i:03d}"
-        client = clients[i % len(clients)]
-        doc_name, doc_key = doc_types[i % len(doc_types)]
+        topic = topics[i]
         sender = pick_sender()
         recipients = pick_recipients(sender["email"])
         date = random_date()
-        project_code = f"PRJ-{random.randint(100,999)}"
-        subject = f"[{client}] {doc_name} - {project_code}"
+        subject = f"[财富管理] {topic}"
 
         body_text = (
-            f"Dear {recipients[0]['name']}，\n\n"
-            f"附件为{client}项目（{project_code}）的{doc_name}，请查阅。\n\n"
+            f"各位好，\n\n"
         )
 
-        if "报价" in doc_name:
-            total = random.randint(50, 800)
+        if "家族信托" in topic:
             body_text += (
-                f"本次报价总金额：{total}万元\n"
-                f"有效期：30天\n"
-                f"包含：软件开发、测试、部署及3个月免费维护期\n"
+                f"关于家族信托设立咨询事项，整理如下：\n\n"
+                f"家族信托基本方案：\n"
+                f"- 信托规模：不低于{random.choice(['1000万', '3000万', '5000万', '1亿'])}元\n"
+                f"- 信托期限：{random.choice(['永续', '30年', '50年'])}\n"
+                f"- 受益人安排：可设定多层受益人，包括配偶、子女、孙辈\n"
+                f"- 分配规则：可按月/按季/按年分配，或设定条件分配（如教育、婚姻、创业等）\n"
+                f"- 资产类型：现金、股权、不动产、保险金等均可装入信托\n\n"
+                f"家族信托的核心优势：\n"
+                f"1. 资产隔离保护 — 信托财产独立于委托人、受托人、受益人的固有财产\n"
+                f"2. 财富传承规划 — 按照委托人意愿实现跨代际财富传承\n"
+                f"3. 税务筹划 — 合理的信托架构可实现税务优化\n"
+                f"4. 隐私保护 — 信托信息不公开\n\n"
+                f"详细方案见附件。\n"
             )
-        elif "验收" in doc_name:
+        elif "慈善信托" in topic:
             body_text += (
-                f"项目已完成全部交付物，主要成果：\n"
-                f"- 系统功能{random.randint(95,100)}%完成\n"
-                f"- 测试用例通过率{random.randint(97,100)}%\n"
-                f"- 性能指标全部达标\n"
+                f"慈善信托方案要点：\n\n"
+                f"- 信托目的：{random.choice(['教育扶贫', '医疗救助', '环境保护', '科技创新奖励'])}\n"
+                f"- 设立规模：{random.randint(100, 5000)}万元\n"
+                f"- 信托期限：永续\n"
+                f"- 受益人：不特定社会公众\n"
+                f"- 监察人：{random.choice(['民政局指定', '委托人推荐的第三方机构'])}\n\n"
+                f"根据《慈善法》和银保监会相关规定，慈善信托需在民政部门备案。\n"
             )
-        elif "需求" in doc_name:
+        elif "资产配置" in topic:
             body_text += (
-                f"经与{client}确认，需求要点如下：\n"
-                f"- 用户管理模块：支持RBAC权限体系\n"
-                f"- 数据分析模块：实时报表和数据可视化\n"
-                f"- 系统对接：与现有ERP系统API对接\n"
+                f"本季度资产配置建议：\n\n"
+                f"保守型客户：\n"
+                f"- 固收类信托：{random.randint(40, 60)}%\n"
+                f"- 债券基金：{random.randint(20, 30)}%\n"
+                f"- 现金管理：{random.randint(10, 20)}%\n\n"
+                f"平衡型客户：\n"
+                f"- 固收类信托：{random.randint(30, 40)}%\n"
+                f"- 混合基金：{random.randint(20, 30)}%\n"
+                f"- 股权投资：{random.randint(10, 20)}%\n"
+                f"- 现金管理：{random.randint(10, 15)}%\n\n"
+                f"进取型客户：\n"
+                f"- 股权投资信托：{random.randint(30, 40)}%\n"
+                f"- 权益类基金：{random.randint(20, 30)}%\n"
+                f"- 另类投资：{random.randint(10, 20)}%\n"
+                f"- 固收类：{random.randint(10, 15)}%\n"
+            )
+        elif "KYC" in topic:
+            body_text += (
+                f"根据反洗钱法规要求，以下客户的KYC信息需要更新：\n\n"
+                f"- 需更新客户数量：{random.randint(50, 200)}户\n"
+                f"- 更新内容：身份证件、职业信息、资产证明、风险偏好\n"
+                f"- 截止日期：{date[:8]}28\n\n"
+                f"请理财经理尽快联系客户完成信息更新。\n"
             )
         else:
-            body_text += f"请在收到后3个工作日内反馈意见。\n"
+            body_text += f"详细内容见附件。\n"
 
-        body_text += f"\n祝好！\n{sender['name']}"
+        body_text += f"\n{sender['name']}\n{sender['dept']}"
 
         attachments = []
-        if i % 3 == 0:
-            fname = f"client_{client}_{doc_key}_{project_code}.pdf"
+        if i % 2 == 0:
+            fname = f"wealth_{topic.replace('/', '_')}_{i+1}.pdf"
             att_path = str(ATTACHMENTS_DIR / fname)
-            make_pdf(att_path, f"{client} - {doc_name}", (
-                f"Client: {client}\n"
-                f"Project: {project_code}\n"
-                f"Document: {doc_name}\n"
+            make_pdf(att_path, f"Wealth Management - {topic}", (
+                f"Huaxin Trust Wealth Management\n\n"
+                f"Document: {topic}\n"
                 f"Date: {date[:10]}\n\n"
-                f"1. Project Scope\n"
-                f"Development of enterprise management system including:\n"
-                f"- User authentication and authorization\n"
-                f"- Business process management\n"
-                f"- Data analytics and reporting\n"
-                f"- System integration via REST APIs\n\n"
-                f"2. Deliverables\n"
-                f"- Source code and documentation\n"
-                f"- Test reports\n"
-                f"- Deployment guide\n"
-                f"- Training materials"
+                f"1. Overview\n"
+                f"Huaxin Trust provides comprehensive wealth management services\n"
+                f"for high-net-worth individuals and families.\n\n"
+                f"2. Service Offerings\n"
+                f"- Family Trust: Asset protection and succession planning\n"
+                f"- Charitable Trust: Philanthropic giving with tax benefits\n"
+                f"- Insurance Trust: Life insurance integrated with trust\n"
+                f"- Investment Advisory: Customized portfolio management\n\n"
+                f"3. Client Segmentation\n"
+                f"- Ultra HNW (>50M RMB): Dedicated family office service\n"
+                f"- HNW (10-50M RMB): Senior wealth advisor\n"
+                f"- Affluent (3-10M RMB): Personal wealth advisor\n\n"
+                f"4. Compliance\n"
+                f"All services comply with Trust Law and CBIRC regulations."
             ))
             attachments.append({"filename": fname, "type": "pdf"})
-        elif i % 3 == 1:
-            fname = f"client_{client}_{doc_key}_{project_code}.docx"
-            att_path = str(ATTACHMENTS_DIR / fname)
-            make_docx(att_path, f"{client} - {doc_name}", (
-                f"项目编号：{project_code}\n客户：{client}\n日期：{date[:10]}\n\n"
-                f"一、项目概述\n\n"
-                f"为{client}开发企业级管理系统，涵盖用户管理、业务流程、数据分析等模块。\n\n"
-                f"二、具体内容\n\n"
-                f"1. 功能需求：{random.randint(15,30)}个功能模块\n"
-                f"2. 非功能需求：支持{random.randint(500,5000)}并发用户\n"
-                f"3. 交付周期：{random.randint(2,6)}个月\n\n"
-                f"三、费用明细\n\n"
-                f"开发费用：{random.randint(30,300)}万元\n"
-                f"维护费用：{random.randint(5,30)}万元/年"
-            ))
-            attachments.append({"filename": fname, "type": "docx"})
         else:
-            fname = f"client_{client}_{doc_key}_{project_code}.xlsx"
+            fname = f"wealth_{topic.replace('/', '_')}_{i+1}.xlsx"
             att_path = str(ATTACHMENTS_DIR / fname)
-            make_xlsx(att_path, doc_name[:31], [
-                ["Item", "Description", "Quantity", "Unit Price (万)", "Total (万)"],
-                ["Software Development", "Custom development", 1, random.randint(50, 200), random.randint(50, 200)],
-                ["Testing", "QA and testing", 1, random.randint(10, 30), random.randint(10, 30)],
-                ["Deployment", "Production deployment", 1, random.randint(5, 15), random.randint(5, 15)],
-                ["Training", "User training", random.randint(2, 5), 2, random.randint(4, 10)],
-                ["Maintenance", "Annual maintenance", 1, random.randint(10, 50), random.randint(10, 50)],
+            make_xlsx(att_path, "Client Data", [
+                ["Client Type", "Count", "AUM (亿元)", "Avg AUM (万元)", "Products Held"],
+                ["Ultra HNW", random.randint(20, 80), random.randint(50, 200), random.randint(5000, 20000), random.randint(3, 8)],
+                ["HNW", random.randint(100, 500), random.randint(100, 500), random.randint(1000, 5000), random.randint(2, 5)],
+                ["Affluent", random.randint(500, 2000), random.randint(200, 800), random.randint(300, 1000), random.randint(1, 3)],
+                ["", "", "", "", ""],
+                ["Product Type", "AUM (亿元)", "Client Count", "Avg Return", "Maturity"],
+                ["Fixed Income Trust", random.randint(100, 400), random.randint(200, 800), f"{random.uniform(5, 7):.1f}%", "12-24M"],
+                ["Equity Trust", random.randint(30, 100), random.randint(50, 200), f"{random.uniform(8, 15):.1f}%", "24-36M"],
+                ["Family Trust", random.randint(50, 200), random.randint(20, 80), "N/A", "Perpetual"],
             ])
             attachments.append({"filename": fname, "type": "xlsx"})
 
@@ -859,7 +1053,159 @@ def gen_client_emails(start_id: int) -> list[dict]:
             "subject": subject,
             "body": body_text,
             "date": date,
-            "tags": ["客户", client],
+            "tags": ["财富管理", topic],
+            "attachments": attachments,
+        })
+    return emails
+
+
+def gen_research_emails(start_id: int) -> list[dict]:
+    """投研/市场分析 — 14封"""
+    emails = []
+    topics = [
+        ("宏观经济月度研判", "macro"),
+        ("房地产行业分析报告", "real_estate"),
+        ("地方政府融资平台分析", "lgfv"),
+        ("信托行业发展趋势报告", "industry_trend"),
+        ("利率走势分析与预测", "interest_rate"),
+        ("股票市场策略周报", "equity_strategy"),
+        ("债券市场分析报告", "bond_market"),
+        ("另类投资机会研究", "alternatives"),
+        ("ESG投资研究报告", "esg"),
+        ("科技行业投资机会", "tech_sector"),
+        ("消费行业深度研究", "consumer"),
+        ("新能源产业链分析", "new_energy"),
+        ("医药行业政策解读", "pharma_policy"),
+        ("海外市场配置建议", "overseas"),
+    ]
+
+    for i in range(14):
+        eid = f"email_{start_id + i:03d}"
+        topic_name, topic_key = topics[i]
+        sender = pick_sender()
+        recipients = pick_recipients(sender["email"], count=random.randint(3, 8))
+        date = random_date()
+        subject = f"[投研] {topic_name} - {date[:7]}"
+
+        body_text = (
+            f"各位同事好，\n\n"
+            f"附件为最新的{topic_name}，核心观点如下：\n\n"
+        )
+
+        if "宏观" in topic_name:
+            body_text += (
+                f"1. GDP增速预测：{random.uniform(4.5, 6.5):.1f}%（前值{random.uniform(4.0, 6.0):.1f}%）\n"
+                f"2. CPI同比：{random.uniform(0.5, 3.0):.1f}%，通胀温和\n"
+                f"3. PMI：{random.uniform(49.0, 52.0):.1f}，{random.choice(['处于扩张区间', '接近荣枯线'])}\n"
+                f"4. 社融增速：{random.uniform(9.0, 12.0):.1f}%\n"
+                f"5. 政策展望：{random.choice(['货币政策保持稳健偏松', '财政政策积极发力', '预计将出台定向降准'])}\n"
+            )
+        elif "房地产" in topic_name:
+            body_text += (
+                f"1. 商品房销售面积同比{random.choice(['增长', '下降'])}{random.randint(3, 20)}%\n"
+                f"2. 土地出让收入同比{random.choice(['增长', '下降'])}{random.randint(5, 30)}%\n"
+                f"3. 房企融资环境：{random.choice(['边际改善', '仍然偏紧', '分化明显'])}\n"
+                f"4. 政策面：{random.choice(['限购政策有所放松', '保交楼政策持续推进', 'LPR下调利好需求端'])}\n"
+                f"5. 投资建议：{random.choice(['关注优质房企的融资类信托', '审慎介入，控制集中度', '优选一二线城市项目'])}\n"
+            )
+        elif "地方政府" in topic_name or "lgfv" in topic_key:
+            body_text += (
+                f"1. 城投债发行规模：{random.randint(3000, 8000)}亿元\n"
+                f"2. 城投平台信用利差：{random.randint(50, 200)}BP\n"
+                f"3. 重点关注区域：{random.choice(['江浙地区城投整体稳健', '西南地区需警惕尾部风险', '山东区域分化加剧'])}\n"
+                f"4. 隐性债务化解进展：{random.choice(['化债方案稳步推进', '特殊再融资债发行加速', '部分区域仍有压力'])}\n"
+                f"5. 投资建议：优选经济财力强的区域，控制平台层级\n"
+            )
+        elif "利率" in topic_name:
+            body_text += (
+                f"1. 10年期国债收益率：{random.uniform(2.5, 3.5):.2f}%\n"
+                f"2. 1年期MLF利率：{random.uniform(2.5, 3.0):.2f}%\n"
+                f"3. DR007：{random.uniform(1.5, 2.5):.2f}%\n"
+                f"4. 预测：{random.choice(['利率中枢下移趋势延续', '短期利率或有小幅反弹', '长端利率已处历史低位，下行空间有限'])}\n"
+            )
+        else:
+            body_text += (
+                f"1. 行业增速：{random.randint(5, 30)}%\n"
+                f"2. 市场规模：{random.randint(1000, 50000)}亿元\n"
+                f"3. 投资机会：{random.choice(['行业处于高速发展期', '估值处于历史低位', '政策红利释放中'])}\n"
+                f"4. 风险提示：{random.choice(['政策不确定性', '技术路径变化', '竞争格局重塑', '估值偏高'])}\n"
+            )
+
+        body_text += f"\n请参考附件了解详情。\n\n{sender['name']}\n投资研究部"
+
+        attachments = []
+        if i % 3 == 0:
+            fname = f"research_{topic_key}_{i+1}.pdf"
+            att_path = str(ATTACHMENTS_DIR / fname)
+            make_pdf(att_path, f"Research Report - {topic_name}", (
+                f"Huaxin Trust Investment Research\n\n"
+                f"Report: {topic_name}\n"
+                f"Date: {date[:10]}\n"
+                f"Analyst: {sender['name']}\n\n"
+                f"Executive Summary\n"
+                f"This report provides analysis on {topic_name}.\n\n"
+                f"Key Findings:\n"
+                f"- Market conditions remain {random.choice(['favorable', 'challenging', 'mixed'])}\n"
+                f"- Sector rotation suggests {random.choice(['growth to value shift', 'defensive positioning', 'cyclical recovery'])}\n"
+                f"- Risk-adjusted returns are {random.choice(['above average', 'in line with expectations', 'below historical norms'])}\n\n"
+                f"Investment Recommendations:\n"
+                f"- Maintain {random.choice(['overweight', 'neutral', 'underweight'])} position\n"
+                f"- Target allocation: {random.randint(5, 20)}% of portfolio\n"
+                f"- Risk rating: {random.choice(['Low', 'Medium', 'Medium-High'])}"
+            ))
+            attachments.append({"filename": fname, "type": "pdf"})
+        elif i % 3 == 1:
+            fname = f"research_{topic_key}_{i+1}.docx"
+            att_path = str(ATTACHMENTS_DIR / fname)
+            make_docx(att_path, f"投研报告 - {topic_name}", (
+                f"华信金融信托有限公司\n投资研究部\n\n"
+                f"报告主题：{topic_name}\n"
+                f"报告日期：{date[:10]}\n"
+                f"分析师：{sender['name']}\n\n"
+                f"一、市场回顾\n\n"
+                f"本报告期内，市场整体呈现{random.choice(['震荡上行', '窄幅整理', '先扬后抑', '稳步回升'])}态势。"
+                f"主要受{random.choice(['货币政策宽松', '经济数据改善', '外资持续流入', '政策预期提振'])}驱动。\n\n"
+                f"二、核心观点\n\n"
+                f"基于宏观经济分析和行业研究，我们认为当前{topic_name.replace('报告', '').replace('分析', '')}领域"
+                f"{random.choice(['存在结构性机会', '风险收益比较优', '需审慎对待', '配置价值凸显'])}。\n\n"
+                f"三、投资建议\n\n"
+                f"建议{random.choice(['积极配置', '适度参与', '防御为主', '精选个券'])}，"
+                f"重点关注{random.choice(['优质龙头企业', '高股息标的', '景气度向上的细分赛道', '被低估的价值标的'])}。"
+            ))
+            attachments.append({"filename": fname, "type": "docx"})
+        else:
+            fname = f"research_{topic_key}_{i+1}.zip"
+            att_path = str(ATTACHMENTS_DIR / fname)
+            make_zip(att_path, {
+                f"{topic_key}_report.md": (
+                    f"# {topic_name}\n\n"
+                    f"## Summary\n"
+                    f"This research covers key developments in {topic_name}.\n\n"
+                    f"## Data Sources\n"
+                    f"- Wind Financial Terminal\n"
+                    f"- CEIC\n"
+                    f"- Company filings\n"
+                    f"- Industry associations"
+                ),
+                f"{topic_key}_data.csv": (
+                    "Date,Indicator,Value,YoY%,MoM%\n"
+                    f"{date[:10]},GDP Growth,{random.uniform(4,7):.1f},{random.uniform(-2,5):.1f},{random.uniform(-1,2):.1f}\n"
+                    f"{date[:10]},CPI,{random.uniform(0.5,3):.1f},{random.uniform(-1,3):.1f},{random.uniform(-0.5,1):.1f}\n"
+                    f"{date[:10]},PMI,{random.uniform(49,52):.1f},{random.uniform(-2,2):.1f},{random.uniform(-1,1):.1f}"
+                ),
+                f"disclaimer.txt": "This report is for internal use only. Not investment advice.",
+            })
+            attachments.append({"filename": fname, "type": "zip"})
+
+        emails.append({
+            "id": eid,
+            "from": {"name": sender["name"], "email": sender["email"]},
+            "to": [{"name": r["name"], "email": r["email"]} for r in recipients],
+            "cc": [],
+            "subject": subject,
+            "body": body_text,
+            "date": date,
+            "tags": ["投研", topic_key],
             "attachments": attachments,
         })
     return emails
@@ -872,24 +1218,27 @@ def gen_client_emails(start_id: int) -> list[dict]:
 def main():
     random.seed(42)
 
-    # 创建目录
     EMAILS_DIR.mkdir(parents=True, exist_ok=True)
     ATTACHMENTS_DIR.mkdir(parents=True, exist_ok=True)
 
-    print("Generating email data...")
+    # 清理旧附件
+    for f in ATTACHMENTS_DIR.iterdir():
+        f.unlink()
+
+    print("Generating financial email data...")
 
     all_emails = []
     offset = 1
 
     generators = [
-        ("项目进度汇报", gen_project_emails, 15),
-        ("财务/销售报表", gen_finance_emails, 15),
-        ("会议纪要", gen_meeting_emails, 12),
-        ("合同/法务", gen_legal_emails, 10),
-        ("技术文档", gen_tech_emails, 12),
-        ("人事行政", gen_hr_emails, 10),
-        ("日常沟通", gen_daily_emails, 12),
-        ("客户往来", gen_client_emails, 14),
+        ("信托业务", gen_trust_emails, 15),
+        ("基金/投资报告", gen_fund_emails, 15),
+        ("合规/监管", gen_compliance_emails, 12),
+        ("风控报告", gen_risk_emails, 10),
+        ("法务/合同", gen_legal_emails, 12),
+        ("运营管理", gen_operations_emails, 12),
+        ("财富管理", gen_wealth_emails, 10),
+        ("投研/市场分析", gen_research_emails, 14),
     ]
 
     for name, gen_func, count in generators:
@@ -898,7 +1247,6 @@ def main():
         all_emails.extend(emails)
         offset += count
 
-    # 保存邮件 JSON
     emails_file = EMAILS_DIR / "emails.json"
     with open(emails_file, "w", encoding="utf-8") as f:
         json.dump(all_emails, f, ensure_ascii=False, indent=2)
@@ -907,7 +1255,6 @@ def main():
     print(f"  Emails JSON: {emails_file}")
     print(f"  Attachments: {ATTACHMENTS_DIR}")
 
-    # 统计附件
     att_types: dict[str, int] = {}
     for email in all_emails:
         for att in email["attachments"]:

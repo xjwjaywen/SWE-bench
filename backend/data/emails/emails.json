@@ -2,26 +2,26 @@
   {
     "id": "email_001",
     "from": {
-      "name": "林涛",
-      "email": "lintao@techcorp.com"
+      "name": "林国栋",
+      "email": "lingd@huaxintrust.com"
     },
     "to": [
       {
-        "name": "张三",
-        "email": "zhangsan@techcorp.com"
+        "name": "张明远",
+        "email": "zhangmy@huaxintrust.com"
       }
     ],
     "cc": [],
-    "subject": "Phoenix项目周报 - 2025-01",
-    "body": "各位好，\n\n以下是Phoenix项目的周报：\n\n1. 本周完成了核心模块的开发和测试\n2. 解决了3个关键bug，系统稳定性提升20%\n3. 与客户完成了第1轮需求确认\n4. 下周计划进入集成测试阶段\n\n详情见附件。\n\n林涛",
+    "subject": "[信托业务] 华信·稳健增长1号集合资金信托计划 - 信托计划设立方案",
+    "body": "各位同事好，\n\n关于华信·稳健增长1号集合资金信托计划的设立方案，现将相关材料发送如下：\n\n一、信托计划基本要素：\n- 信托规模：2亿元\n- 信托期限：18个月\n- 预期收益率：5.78%/年\n- 投资方向：基础设施建设\n- 风控措施：优先/劣后结构化设计\n\n二、信托计划设立流程：\n1. 项目立项审批\n2. 尽职调查\n3. 信托文件起草与审批\n4. 监管报备\n5. 产品推介与资金募集\n6. 信托计划成立\n\n请审阅附件中的详细方案，如有意见请于本周五前反馈。\n\n林国栋\n信托业务部",
     "date": "2025-01-14 00:00:00",
     "tags": [
-      "项目",
-      "Phoenix"
+      "信托业务",
+      "setup"
     ],
     "attachments": [
       {
-        "filename": "Phoenix_progress_1.docx",
+        "filename": "trust_setup_1.docx",
         "type": "docx"
       }
     ]
@@ -29,26 +29,26 @@
   {
     "id": "email_002",
     "from": {
-      "name": "赵六",
-      "email": "zhaoliu@techcorp.com"
+      "name": "张明远",
+      "email": "zhangmy@huaxintrust.com"
     },
     "to": [
       {
-        "name": "王五",
-        "email": "wangwu@techcorp.com"
+        "name": "王建华",
+        "email": "wangjh@huaxintrust.com"
       }
     ],
     "cc": [],
-    "subject": "Aurora项目月度汇报 - 2025-01",
-    "body": "各位好，\n\n以下是Aurora项目的月度汇报：\n\n1. 本周完成了核心模块的开发和测试\n2. 解决了3个关键bug，系统稳定性提升20%\n3. 与客户完成了第2轮需求确认\n4. 下周计划进入集成测试阶段\n\n详情见附件。\n\n赵六",
-    "date": "2025-01-12 00:00:00",
+    "subject": "[信托业务] 华信·产业投资2号单一资金信托计划 - 信托计划推介材料",
+    "body": "各位同事好，\n\n附件为华信·产业投资2号单一资金信托计划的信托计划推介材料，请审阅。\n\n主要内容：\n- 信托资产运行情况正常\n- 融资方按期支付利息\n- 抵押物价值稳定\n- 合规审查无异常\n\n如有疑问请联系信托业务部。\n\n张明远",
+    "date": "2024-04-21 00:00:00",
     "tags": [
-      "项目",
-      "Aurora"
+      "信托业务",
+      "pitch"
     ],
     "attachments": [
       {
-        "filename": "Aurora_presentation_2.pptx",
+        "filename": "trust_pitch_2.pptx",
         "type": "pptx"
       }
     ]
@@ -56,34 +56,26 @@
   {
     "id": "email_003",
     "from": {
-      "name": "李四",
-      "email": "lisi@techcorp.com"
+      "name": "孙浩然",
+      "email": "sunhr@huaxintrust.com"
     },
     "to": [
       {
-        "name": "郑十",
-        "email": "zhengshi@techcorp.com"
-      },
-      {
-        "name": "张三",
-        "email": "zhangsan@techcorp.com"
-      },
-      {
-        "name": "杨帆",
-        "email": "yangfan@clientcorp.com"
+        "name": "杨芳",
+        "email": "yangf@longtaiwealth.com"
       }
     ],
     "cc": [],
-    "subject": "Titan项目里程碑报告 - 2024-02",
-    "body": "各位好，\n\n以下是Titan项目的里程碑报告：\n\n1. 本周完成了核心模块的开发和测试\n2. 解决了3个关键bug，系统稳定性提升20%\n3. 与客户完成了第3轮需求确认\n4. 下周计划进入集成测试阶段\n\n详情见附件。\n\n李四",
-    "date": "2024-02-17 00:00:00",
+    "subject": "[信托业务] 华信·城市发展3号集合资金信托计划 - 信托合同定稿",
+    "body": "各位同事好，\n\n附件为华信·城市发展3号集合资金信托计划的信托合同定稿，请审阅。\n\n主要内容：\n- 信托资产运行情况正常\n- 融资方按期支付利息\n- 抵押物价值稳定\n- 合规审查无异常\n\n如有疑问请联系信托业务部。\n\n孙浩然",
+    "date": "2025-02-16 00:00:00",
     "tags": [
-      "项目",
-      "Titan"
+      "信托业务",
+      "contract"
     ],
     "attachments": [
       {
-        "filename": "Titan_tasks_3.xlsx",
+        "filename": "trust_contract_3.xlsx",
         "type": "xlsx"
       }
     ]
@@ -91,26 +83,30 @@
   {
     "id": "email_004",
     "from": {
-      "name": "赵六",
-      "email": "zhaoliu@techcorp.com"
+      "name": "刘德伟",
+      "email": "liudw@hengfundinvest.com"
     },
     "to": [
       {
-        "name": "陈静",
-        "email": "chenjing@techcorp.com"
+        "name": "李文博",
+        "email": "liwb@huaxintrust.com"
+      },
+      {
+        "name": "马骏",
+        "email": "maj@zhongyuancapital.com"
       }
     ],
     "cc": [],
-    "subject": "Neptune项目周报 - 2024-11",
-    "body": "各位好，\n\n以下是Neptune项目的周报：\n\n1. 本周完成了核心模块的开发和测试\n2. 解决了3个关键bug，系统稳定性提升20%\n3. 与客户完成了第4轮需求确认\n4. 下周计划进入集成测试阶段\n\n详情见附件。\n\n赵六",
-    "date": "2024-11-04 00:00:00",
+    "subject": "[信托业务] 华信·医疗健康专项信托计划 - 受托人报告",
+    "body": "各位同事好，\n\n附件为华信·医疗健康专项信托计划的受托人报告，请审阅。\n\n主要内容：\n- 信托资产运行情况正常\n- 融资方按期支付利息\n- 抵押物价值稳定\n- 合规审查无异常\n\n如有疑问请联系信托业务部。\n\n刘德伟",
+    "date": "2024-07-13 00:00:00",
     "tags": [
-      "项目",
-      "Neptune"
+      "信托业务",
+      "trustee_report"
     ],
     "attachments": [
       {
-        "filename": "Neptune_progress_4.docx",
+        "filename": "trust_trustee_report_4.docx",
         "type": "docx"
       }
     ]
@@ -118,26 +114,26 @@
   {
     "id": "email_005",
     "from": {
-      "name": "钱磊",
-      "email": "qianlei@techcorp.com"
+      "name": "孙浩然",
+      "email": "sunhr@huaxintrust.com"
     },
     "to": [
       {
-        "name": "刘洋",
-        "email": "liuyang@clientcorp.com"
+        "name": "刘德伟",
+        "email": "liudw@hengfundinvest.com"
       }
     ],
     "cc": [],
-    "subject": "Atlas项目月度汇报 - 2024-11",
-    "body": "各位好，\n\n以下是Atlas项目的月度汇报：\n\n1. 本周完成了核心模块的开发和测试\n2. 解决了3个关键bug，系统稳定性提升20%\n3. 与客户完成了第5轮需求确认\n4. 下周计划进入集成测试阶段\n\n详情见附件。\n\n钱磊",
-    "date": "2024-11-28 00:00:00",
+    "subject": "[信托业务] 华信·科技创新股权投资信托计划 - 信托财产管理报告",
+    "body": "各位同事好，\n\n附件为华信·科技创新股权投资信托计划的信托财产管理报告，请审阅。\n\n主要内容：\n- 信托资产运行情况正常\n- 融资方按期支付利息\n- 抵押物价值稳定\n- 合规审查无异常\n\n如有疑问请联系信托业务部。\n\n孙浩然",
+    "date": "2024-08-23 00:00:00",
     "tags": [
-      "项目",
-      "Atlas"
+      "信托业务",
+      "asset_report"
     ],
     "attachments": [
       {
-        "filename": "Atlas_presentation_5.pptx",
+        "filename": "trust_asset_report_5.pptx",
         "type": "pptx"
       }
     ]
@@ -145,30 +141,30 @@
   {
     "id": "email_006",
     "from": {
-      "name": "赵六",
-      "email": "zhaoliu@techcorp.com"
+      "name": "陈思远",
+      "email": "chensy@huaxintrust.com"
     },
     "to": [
       {
-        "name": "林涛",
-        "email": "lintao@techcorp.com"
+        "name": "林国栋",
+        "email": "lingd@huaxintrust.com"
       },
       {
-        "name": "周八",
-        "email": "zhouba@techcorp.com"
+        "name": "赵雪梅",
+        "email": "zhaoxm@huaxintrust.com"
       }
     ],
     "cc": [],
-    "subject": "Phoenix项目里程碑报告 - 2025-02",
-    "body": "各位好，\n\n以下是Phoenix项目的里程碑报告：\n\n1. 本周完成了核心模块的开发和测试\n2. 解决了3个关键bug，系统稳定性提升20%\n3. 与客户完成了第6轮需求确认\n4. 下周计划进入集成测试阶段\n\n详情见附件。\n\n赵六",
-    "date": "2025-02-18 00:00:00",
+    "subject": "[信托业务] 华信·稳健增长1号集合资金信托计划 - 信托计划季度运营报告",
+    "body": "各位同事好，\n\n附件为华信·稳健增长1号集合资金信托计划的信托计划季度运营报告，请审阅。\n\n主要内容：\n- 信托资产运行情况正常\n- 融资方按期支付利息\n- 抵押物价值稳定\n- 合规审查无异常\n\n如有疑问请联系信托业务部。\n\n陈思远",
+    "date": "2024-12-26 00:00:00",
     "tags": [
-      "项目",
-      "Phoenix"
+      "信托业务",
+      "quarterly"
     ],
     "attachments": [
       {
-        "filename": "Phoenix_tasks_6.xlsx",
+        "filename": "trust_quarterly_6.xlsx",
         "type": "xlsx"
       }
     ]
@@ -176,26 +172,26 @@
   {
     "id": "email_007",
     "from": {
-      "name": "杨帆",
-      "email": "yangfan@clientcorp.com"
+      "name": "杨芳",
+      "email": "yangf@longtaiwealth.com"
     },
     "to": [
       {
-        "name": "刘洋",
-        "email": "liuyang@clientcorp.com"
+        "name": "马骏",
+        "email": "maj@zhongyuancapital.com"
       }
     ],
     "cc": [],
-    "subject": "Aurora项目周报 - 2025-02",
-    "body": "各位好，\n\n以下是Aurora项目的周报：\n\n1. 本周完成了核心模块的开发和测试\n2. 解决了3个关键bug，系统稳定性提升20%\n3. 与客户完成了第7轮需求确认\n4. 下周计划进入集成测试阶段\n\n详情见附件。\n\n杨帆",
-    "date": "2025-02-16 00:00:00",
+    "subject": "[信托业务] 华信·产业投资2号单一资金信托计划 - 信托资金投放通知",
+    "body": "各位同事好，\n\n附件为华信·产业投资2号单一资金信托计划的信托资金投放通知，请审阅。\n\n主要内容：\n- 信托资产运行情况正常\n- 融资方按期支付利息\n- 抵押物价值稳定\n- 合规审查无异常\n\n如有疑问请联系信托业务部。\n\n杨芳",
+    "date": "2024-02-21 00:00:00",
     "tags": [
-      "项目",
-      "Aurora"
+      "信托业务",
+      "funding"
     ],
     "attachments": [
       {
-        "filename": "Aurora_progress_7.docx",
+        "filename": "trust_funding_7.docx",
         "type": "docx"
       }
     ]
@@ -203,30 +199,30 @@
   {
     "id": "email_008",
     "from": {
-      "name": "黄蕾",
-      "email": "huanglei@techcorp.com"
+      "name": "杨芳",
+      "email": "yangf@longtaiwealth.com"
     },
     "to": [
       {
-        "name": "周八",
-        "email": "zhouba@techcorp.com"
+        "name": "王建华",
+        "email": "wangjh@huaxintrust.com"
       },
       {
-        "name": "孙七",
-        "email": "sunqi@techcorp.com"
+        "name": "周丽萍",
+        "email": "zhoulp@huaxintrust.com"
       }
     ],
     "cc": [],
-    "subject": "Titan项目月度汇报 - 2024-03",
-    "body": "各位好，\n\n以下是Titan项目的月度汇报：\n\n1. 本周完成了核心模块的开发和测试\n2. 解决了3个关键bug，系统稳定性提升20%\n3. 与客户完成了第8轮需求确认\n4. 下周计划进入集成测试阶段\n\n详情见附件。\n\n黄蕾",
-    "date": "2024-03-20 00:00:00",
+    "subject": "[信托业务] 华信·城市发展3号集合资金信托计划 - 信托收益分配方案",
+    "body": "各位委托人/同事好，\n\n关于华信·城市发展3号集合资金信托计划的收益分配事宜，通知如下：\n\n本期分配方案：\n- 分配基准日：2024-06-30\n- 本期应分配收益：2216万元\n- 年化收益率：7.18%\n- 分配方式：银行转账至委托人指定账户\n- 预计到账时间：T+3个工作日\n\n请各位确认账户信息是否有变更。\n\n杨芳",
+    "date": "2024-06-30 00:00:00",
     "tags": [
-      "项目",
-      "Titan"
+      "信托业务",
+      "distribution"
     ],
     "attachments": [
       {
-        "filename": "Titan_presentation_8.pptx",
+        "filename": "trust_distribution_8.pptx",
         "type": "pptx"
       }
     ]
@@ -234,26 +230,30 @@
   {
     "id": "email_009",
     "from": {
-      "name": "李四",
-      "email": "lisi@techcorp.com"
+      "name": "吴志强",
+      "email": "wuzq@huaxintrust.com"
     },
     "to": [
       {
-        "name": "郑十",
-        "email": "zhengshi@techcorp.com"
+        "name": "黄永华",
+        "email": "huangyh@huaxintrust.com"
+      },
+      {
+        "name": "刘德伟",
+        "email": "liudw@hengfundinvest.com"
       }
     ],
     "cc": [],
-    "subject": "Neptune项目里程碑报告 - 2024-02",
-    "body": "各位好，\n\n以下是Neptune项目的里程碑报告：\n\n1. 本周完成了核心模块的开发和测试\n2. 解决了3个关键bug，系统稳定性提升20%\n3. 与客户完成了第9轮需求确认\n4. 下周计划进入集成测试阶段\n\n详情见附件。\n\n李四",
-    "date": "2024-02-19 00:00:00",
+    "subject": "[信托业务] 华信·医疗健康专项信托计划 - 信托计划延期公告",
+    "body": "各位同事好，\n\n附件为华信·医疗健康专项信托计划的信托计划延期公告，请审阅。\n\n主要内容：\n- 信托资产运行情况正常\n- 融资方按期支付利息\n- 抵押物价值稳定\n- 合规审查无异常\n\n如有疑问请联系信托业务部。\n\n吴志强",
+    "date": "2024-10-12 00:00:00",
     "tags": [
-      "项目",
-      "Neptune"
+      "信托业务",
+      "extension"
     ],
     "attachments": [
       {
-        "filename": "Neptune_tasks_9.xlsx",
+        "filename": "trust_extension_9.xlsx",
         "type": "xlsx"
       }
     ]
@@ -261,30 +261,26 @@
   {
     "id": "email_010",
     "from": {
-      "name": "周八",
-      "email": "zhouba@techcorp.com"
+      "name": "杨芳",
+      "email": "yangf@longtaiwealth.com"
     },
     "to": [
       {
-        "name": "林涛",
-        "email": "lintao@techcorp.com"
-      },
-      {
-        "name": "孙七",
-        "email": "sunqi@techcorp.com"
+        "name": "刘德伟",
+        "email": "liudw@hengfundinvest.com"
       }
     ],
     "cc": [],
-    "subject": "Atlas项目周报 - 2025-02",
-    "body": "各位好，\n\n以下是Atlas项目的周报：\n\n1. 本周完成了核心模块的开发和测试\n2. 解决了3个关键bug，系统稳定性提升20%\n3. 与客户完成了第10轮需求确认\n4. 下周计划进入集成测试阶段\n\n详情见附件。\n\n周八",
-    "date": "2025-02-17 00:00:00",
+    "subject": "[信托业务] 华信·科技创新股权投资信托计划 - 信托清算报告",
+    "body": "各位好，\n\n华信·科技创新股权投资信托计划已于2024-06-10到期，现进入清算阶段。\n\n清算情况：\n- 信托本金：已全额收回\n- 累计收益：4086万元\n- 清算费用：27万元\n- 预计分配总额：14337万元\n\n清算报告详见附件，请审阅。\n\n杨芳",
+    "date": "2024-06-10 00:00:00",
     "tags": [
-      "项目",
-      "Atlas"
+      "信托业务",
+      "liquidation"
     ],
     "attachments": [
       {
-        "filename": "Atlas_progress_10.docx",
+        "filename": "trust_liquidation_10.docx",
         "type": "docx"
       }
     ]
@@ -292,30 +288,30 @@
   {
     "id": "email_011",
     "from": {
-      "name": "黄蕾",
-      "email": "huanglei@techcorp.com"
+      "name": "林国栋",
+      "email": "lingd@huaxintrust.com"
     },
     "to": [
       {
-        "name": "钱磊",
-        "email": "qianlei@techcorp.com"
+        "name": "吴志强",
+        "email": "wuzq@huaxintrust.com"
       },
       {
-        "name": "李四",
-        "email": "lisi@techcorp.com"
+        "name": "黄永华",
+        "email": "huangyh@huaxintrust.com"
       }
     ],
     "cc": [],
-    "subject": "Phoenix项目月度汇报 - 2024-07",
-    "body": "各位好，\n\n以下是Phoenix项目的月度汇报：\n\n1. 本周完成了核心模块的开发和测试\n2. 解决了3个关键bug，系统稳定性提升20%\n3. 与客户完成了第11轮需求确认\n4. 下周计划进入集成测试阶段\n\n详情见附件。\n\n黄蕾",
-    "date": "2024-07-12 00:00:00",
+    "subject": "[信托业务] 华信·稳健增长1号集合资金信托计划 - 信托项目尽调报告",
+    "body": "各位好，\n\n附件为华信·稳健增长1号集合资金信托计划的尽职调查报告，主要调查结果如下：\n\n1. 融资方主体信用评级：AA\n2. 融资方近三年营收复合增长率：16%\n3. 资产负债率：44%\n4. 抵押物评估价值：9亿元\n5. 抵押率：63%\n\n风险提示：\n- 区域经济下行压力需关注\n- 建议增加信息披露频率要求\n\n林国栋",
+    "date": "2024-08-22 00:00:00",
     "tags": [
-      "项目",
-      "Phoenix"
+      "信托业务",
+      "due_diligence"
     ],
     "attachments": [
       {
-        "filename": "Phoenix_presentation_11.pptx",
+        "filename": "trust_due_diligence_11.pptx",
         "type": "pptx"
       }
     ]
@@ -323,34 +319,26 @@
   {
     "id": "email_012",
     "from": {
-      "name": "孙七",
-      "email": "sunqi@techcorp.com"
+      "name": "李文博",
+      "email": "liwb@huaxintrust.com"
     },
     "to": [
       {
-        "name": "林涛",
-        "email": "lintao@techcorp.com"
-      },
-      {
-        "name": "吴九",
-        "email": "wujiu@techcorp.com"
-      },
-      {
-        "name": "马丽",
-        "email": "mali@partnercorp.com"
+        "name": "马骏",
+        "email": "maj@zhongyuancapital.com"
       }
     ],
     "cc": [],
-    "subject": "Aurora项目里程碑报告 - 2024-04",
-    "body": "各位好，\n\n以下是Aurora项目的里程碑报告：\n\n1. 本周完成了核心模块的开发和测试\n2. 解决了3个关键bug，系统稳定性提升20%\n3. 与客户完成了第12轮需求确认\n4. 下周计划进入集成测试阶段\n\n详情见附件。\n\n孙七",
-    "date": "2024-04-08 00:00:00",
+    "subject": "[信托业务] 华信·产业投资2号单一资金信托计划 - 信托计划变更公告",
+    "body": "各位同事好，\n\n附件为华信·产业投资2号单一资金信托计划的信托计划变更公告，请审阅。\n\n主要内容：\n- 信托资产运行情况正常\n- 融资方按期支付利息\n- 抵押物价值稳定\n- 合规审查无异常\n\n如有疑问请联系信托业务部。\n\n李文博",
+    "date": "2024-02-26 00:00:00",
     "tags": [
-      "项目",
-      "Aurora"
+      "信托业务",
+      "amendment"
     ],
     "attachments": [
       {
-        "filename": "Aurora_tasks_12.xlsx",
+        "filename": "trust_amendment_12.xlsx",
         "type": "xlsx"
       }
     ]
@@ -358,26 +346,30 @@
   {
     "id": "email_013",
     "from": {
-      "name": "黄蕾",
-      "email": "huanglei@techcorp.com"
+      "name": "李文博",
+      "email": "liwb@huaxintrust.com"
     },
     "to": [
       {
-        "name": "张三",
-        "email": "zhangsan@techcorp.com"
+        "name": "郑晓东",
+        "email": "zhengxd@huaxintrust.com"
+      },
+      {
+        "name": "林国栋",
+        "email": "lingd@huaxintrust.com"
       }
     ],
     "cc": [],
-    "subject": "Titan项目周报 - 2024-12",
-    "body": "各位好，\n\n以下是Titan项目的周报：\n\n1. 本周完成了核心模块的开发和测试\n2. 解决了3个关键bug，系统稳定性提升20%\n3. 与客户完成了第13轮需求确认\n4. 下周计划进入集成测试阶段\n\n详情见附件。\n\n黄蕾",
-    "date": "2024-12-04 00:00:00",
+    "subject": "[信托业务] 华信·城市发展3号集合资金信托计划 - 委托人大会通知",
+    "body": "各位同事好，\n\n附件为华信·城市发展3号集合资金信托计划的委托人大会通知，请审阅。\n\n主要内容：\n- 信托资产运行情况正常\n- 融资方按期支付利息\n- 抵押物价值稳定\n- 合规审查无异常\n\n如有疑问请联系信托业务部。\n\n李文博",
+    "date": "2024-08-27 00:00:00",
     "tags": [
-      "项目",
-      "Titan"
+      "信托业务",
+      "meeting"
     ],
     "attachments": [
       {
-        "filename": "Titan_progress_13.docx",
+        "filename": "trust_meeting_13.docx",
         "type": "docx"
       }
     ]
@@ -385,30 +377,34 @@
   {
     "id": "email_014",
     "from": {
-      "name": "刘洋",
-      "email": "liuyang@clientcorp.com"
+      "name": "林国栋",
+      "email": "lingd@huaxintrust.com"
     },
     "to": [
       {
-        "name": "李四",
-        "email": "lisi@techcorp.com"
+        "name": "李文博",
+        "email": "liwb@huaxintrust.com"
       },
       {
-        "name": "赵六",
-        "email": "zhaoliu@techcorp.com"
+        "name": "黄永华",
+        "email": "huangyh@huaxintrust.com"
+      },
+      {
+        "name": "钱海燕",
+        "email": "qianhy@huaxintrust.com"
       }
     ],
     "cc": [],
-    "subject": "Neptune项目月度汇报 - 2025-03",
-    "body": "各位好，\n\n以下是Neptune项目的月度汇报：\n\n1. 本周完成了核心模块的开发和测试\n2. 解决了3个关键bug，系统稳定性提升20%\n3. 与客户完成了第14轮需求确认\n4. 下周计划进入集成测试阶段\n\n详情见附件。\n\n刘洋",
-    "date": "2025-03-19 00:00:00",
+    "subject": "[信托业务] 华信·医疗健康专项信托计划 - 信托登记信息",
+    "body": "各位同事好，\n\n附件为华信·医疗健康专项信托计划的信托登记信息，请审阅。\n\n主要内容：\n- 信托资产运行情况正常\n- 融资方按期支付利息\n- 抵押物价值稳定\n- 合规审查无异常\n\n如有疑问请联系信托业务部。\n\n林国栋",
+    "date": "2025-01-19 00:00:00",
     "tags": [
-      "项目",
-      "Neptune"
+      "信托业务",
+      "registration"
     ],
     "attachments": [
       {
-        "filename": "Neptune_presentation_14.pptx",
+        "filename": "trust_registration_14.pptx",
         "type": "pptx"
       }
     ]
@@ -416,30 +412,34 @@
   {
     "id": "email_015",
     "from": {
-      "name": "孙七",
-      "email": "sunqi@techcorp.com"
+      "name": "马骏",
+      "email": "maj@zhongyuancapital.com"
     },
     "to": [
       {
-        "name": "黄蕾",
-        "email": "huanglei@techcorp.com"
+        "name": "孙浩然",
+        "email": "sunhr@huaxintrust.com"
       },
       {
-        "name": "吴九",
-        "email": "wujiu@techcorp.com"
+        "name": "钱海燕",
+        "email": "qianhy@huaxintrust.com"
+      },
+      {
+        "name": "王建华",
+        "email": "wangjh@huaxintrust.com"
       }
     ],
     "cc": [],
-    "subject": "Atlas项目里程碑报告 - 2024-03",
-    "body": "各位好，\n\n以下是Atlas项目的里程碑报告：\n\n1. 本周完成了核心模块的开发和测试\n2. 解决了3个关键bug，系统稳定性提升20%\n3. 与客户完成了第15轮需求确认\n4. 下周计划进入集成测试阶段\n\n详情见附件。\n\n孙七",
-    "date": "2024-03-24 00:00:00",
+    "subject": "[信托业务] 华信·科技创新股权投资信托计划 - 信托项目风险评估",
+    "body": "各位同事好，\n\n附件为华信·科技创新股权投资信托计划的信托项目风险评估，请审阅。\n\n主要内容：\n- 信托资产运行情况正常\n- 融资方按期支付利息\n- 抵押物价值稳定\n- 合规审查无异常\n\n如有疑问请联系信托业务部。\n\n马骏",
+    "date": "2024-09-16 00:00:00",
     "tags": [
-      "项目",
-      "Atlas"
+      "信托业务",
+      "risk_assessment"
     ],
     "attachments": [
       {
-        "filename": "Atlas_tasks_15.xlsx",
+        "filename": "trust_risk_assessment_15.xlsx",
         "type": "xlsx"
       }
     ]
@@ -447,35 +447,31 @@
   {
     "id": "email_016",
     "from": {
-      "name": "周八",
-      "email": "zhouba@techcorp.com"
+      "name": "陈思远",
+      "email": "chensy@huaxintrust.com"
     },
     "to": [
       {
-        "name": "赵六",
-        "email": "zhaoliu@techcorp.com"
-      },
-      {
-        "name": "黄蕾",
-        "email": "huanglei@techcorp.com"
+        "name": "王建华",
+        "email": "wangjh@huaxintrust.com"
       }
     ],
     "cc": [
       {
-        "name": "孙七",
-        "email": "sunqi@techcorp.com"
+        "name": "吴志强",
+        "email": "wuzq@huaxintrust.com"
       }
     ],
-    "subject": "2024年Q1销售报告",
-    "body": "各位领导好，\n\n附件为2024年Q1的销售报告，请查阅。\n\n本季度概要：\n- 营收：1937万元，同比增长24%\n- 成本：273万元\n- 净利润：1664万元\n- 新签客户：50家\n\n如有疑问请随时沟通。\n\n周八",
-    "date": "2024-05-16 00:00:00",
+    "subject": "[投资] 华信价值成长混合基金 2024Q1 净值报告",
+    "body": "各位好，\n\n附件为华信价值成长混合基金2024年Q1的净值报告。\n\n基金概况：\n- 单位净值：1.46元\n- 累计净值：1.7758元\n- 基金规模：74514万元\n- 本季度收益率：7.10%\n- 同期业绩基准：2.59%\n\n市场分析：\n本季度大宗商品价格上涨，基金通过增持科技板块应对市场变化。\n\n详情见附件。\n\n陈思远\n投资研究部",
+    "date": "2024-07-10 00:00:00",
     "tags": [
-      "财务",
-      "销售报告"
+      "投资",
+      "华信价值成长混合基金"
     ],
     "attachments": [
       {
-        "filename": "finance_Q1_2024_1.xlsx",
+        "filename": "fund_Q1_2024_1.xlsx",
         "type": "xlsx"
       }
     ]
@@ -483,35 +479,39 @@
   {
     "id": "email_017",
     "from": {
-      "name": "郑十",
-      "email": "zhengshi@techcorp.com"
+      "name": "刘德伟",
+      "email": "liudw@hengfundinvest.com"
     },
     "to": [
       {
-        "name": "孙七",
-        "email": "sunqi@techcorp.com"
+        "name": "杨芳",
+        "email": "yangf@longtaiwealth.com"
       },
       {
-        "name": "黄蕾",
-        "email": "huanglei@techcorp.com"
+        "name": "王建华",
+        "email": "wangjh@huaxintrust.com"
+      },
+      {
+        "name": "马骏",
+        "email": "maj@zhongyuancapital.com"
       }
     ],
     "cc": [
       {
-        "name": "孙七",
-        "email": "sunqi@techcorp.com"
+        "name": "吴志强",
+        "email": "wuzq@huaxintrust.com"
       }
     ],
-    "subject": "2024年Q2预算执行表",
-    "body": "各位领导好，\n\n附件为2024年Q2的预算执行表，请查阅。\n\n本季度概要：\n- 营收：1640万元，同比增长26%\n- 成本：424万元\n- 净利润：1216万元\n- 新签客户：30家\n\n如有疑问请随时沟通。\n\n郑十",
-    "date": "2024-12-18 00:00:00",
+    "subject": "[投资] 华信稳健债券基金 2024Q2 投资运作报告",
+    "body": "各位好，\n\n附件为华信稳健债券基金2024年Q2的投资运作报告。\n\n基金概况：\n- 单位净值：1.2302元\n- 累计净值：1.5501元\n- 基金规模：39741万元\n- 本季度收益率：2.80%\n- 同期业绩基准：2.64%\n\n市场分析：\n本季度债券市场利率下行，基金通过降低仓位控制回撤应对市场变化。\n\n详情见附件。\n\n刘德伟\n投资研究部",
+    "date": "2024-12-03 00:00:00",
     "tags": [
-      "财务",
-      "预算执行表"
+      "投资",
+      "华信稳健债券基金"
     ],
     "attachments": [
       {
-        "filename": "finance_Q2_2024_2.pdf",
+        "filename": "fund_Q2_2024_2.pdf",
         "type": "pdf"
       }
     ]
@@ -519,31 +519,39 @@
   {
     "id": "email_018",
     "from": {
-      "name": "赵六",
-      "email": "zhaoliu@techcorp.com"
+      "name": "陈思远",
+      "email": "chensy@huaxintrust.com"
     },
     "to": [
       {
-        "name": "杨帆",
-        "email": "yangfan@clientcorp.com"
+        "name": "赵雪梅",
+        "email": "zhaoxm@huaxintrust.com"
+      },
+      {
+        "name": "林国栋",
+        "email": "lingd@huaxintrust.com"
+      },
+      {
+        "name": "马骏",
+        "email": "maj@zhongyuancapital.com"
       }
     ],
     "cc": [
       {
-        "name": "孙七",
-        "email": "sunqi@techcorp.com"
+        "name": "吴志强",
+        "email": "wuzq@huaxintrust.com"
       }
     ],
-    "subject": "2024年Q3成本分析",
-    "body": "各位领导好，\n\n附件为2024年Q3的成本分析，请查阅。\n\n本季度概要：\n- 营收：1321万元，同比增长7%\n- 成本：474万元\n- 净利润：847万元\n- 新签客户：23家\n\n如有疑问请随时沟通。\n\n赵六",
-    "date": "2024-06-10 00:00:00",
+    "subject": "[投资] 华信量化对冲基金 2024Q3 基金年报",
+    "body": "各位好，\n\n附件为华信量化对冲基金2024年Q3的基金年报。\n\n基金概况：\n- 单位净值：0.9068元\n- 累计净值：1.2592元\n- 基金规模：35007万元\n- 本季度收益率：-2.26%\n- 同期业绩基准：-0.81%\n\n市场分析：\n本季度港股市场波动加剧，基金通过增持科技板块应对市场变化。\n\n详情见附件。\n\n陈思远\n投资研究部",
+    "date": "2024-01-04 00:00:00",
     "tags": [
-      "财务",
-      "成本分析"
+      "投资",
+      "华信量化对冲基金"
     ],
     "attachments": [
       {
-        "filename": "sales_data_Q3_2024_3.csv",
+        "filename": "fund_holdings_Q3_2024_3.csv",
         "type": "csv"
       }
     ]
@@ -551,39 +559,31 @@
   {
     "id": "email_019",
     "from": {
-      "name": "杨帆",
-      "email": "yangfan@clientcorp.com"
+      "name": "赵雪梅",
+      "email": "zhaoxm@huaxintrust.com"
     },
     "to": [
       {
-        "name": "钱磊",
-        "email": "qianlei@techcorp.com"
-      },
-      {
-        "name": "陈静",
-        "email": "chenjing@techcorp.com"
-      },
-      {
-        "name": "赵六",
-        "email": "zhaoliu@techcorp.com"
+        "name": "孙浩然",
+        "email": "sunhr@huaxintrust.com"
       }
     ],
     "cc": [
       {
-        "name": "孙七",
-        "email": "sunqi@techcorp.com"
+        "name": "吴志强",
+        "email": "wuzq@huaxintrust.com"
       }
     ],
-    "subject": "2024年Q4收入统计",
-    "body": "各位领导好，\n\n附件为2024年Q4的收入统计，请查阅。\n\n本季度概要：\n- 营收：1265万元，同比增长22%\n- 成本：365万元\n- 净利润：900万元\n- 新签客户：43家\n\n如有疑问请随时沟通。\n\n杨帆",
-    "date": "2024-03-19 00:00:00",
+    "subject": "[投资] 华信新能源产业基金 2024Q4 持仓分析",
+    "body": "各位好，\n\n附件为华信新能源产业基金2024年Q4的持仓分析。\n\n基金概况：\n- 单位净值：1.2089元\n- 累计净值：1.4777元\n- 基金规模：41509万元\n- 本季度收益率：2.09%\n- 同期业绩基准：4.25%\n\n市场分析：\n本季度A股市场震荡上行，基金通过调整行业配置应对市场变化。\n\n详情见附件。\n\n赵雪梅\n投资研究部",
+    "date": "2024-10-01 00:00:00",
     "tags": [
-      "财务",
-      "收入统计"
+      "投资",
+      "华信新能源产业基金"
     ],
     "attachments": [
       {
-        "filename": "finance_Q4_2024_4.xlsx",
+        "filename": "fund_Q4_2024_4.xlsx",
         "type": "xlsx"
       }
     ]
@@ -591,31 +591,35 @@
   {
     "id": "email_020",
     "from": {
-      "name": "张三",
-      "email": "zhangsan@techcorp.com"
+      "name": "赵雪梅",
+      "email": "zhaoxm@huaxintrust.com"
     },
     "to": [
       {
-        "name": "吴九",
-        "email": "wujiu@techcorp.com"
+        "name": "张明远",
+        "email": "zhangmy@huaxintrust.com"
+      },
+      {
+        "name": "王建华",
+        "email": "wangjh@huaxintrust.com"
       }
     ],
     "cc": [
       {
-        "name": "孙七",
-        "email": "sunqi@techcorp.com"
+        "name": "吴志强",
+        "email": "wuzq@huaxintrust.com"
       }
     ],
-    "subject": "2025年Q1利润报表",
-    "body": "各位领导好，\n\n附件为2025年Q1的利润报表，请查阅。\n\n本季度概要：\n- 营收：1129万元，同比增长6%\n- 成本：445万元\n- 净利润：684万元\n- 新签客户：25家\n\n如有疑问请随时沟通。\n\n张三",
-    "date": "2025-03-25 00:00:00",
+    "subject": "[投资] 华信医药健康基金 2024Q1 业绩归因",
+    "body": "各位好，\n\n附件为华信医药健康基金2024年Q1的业绩归因。\n\n基金概况：\n- 单位净值：0.8517元\n- 累计净值：1.1079元\n- 基金规模：64638万元\n- 本季度收益率：0.14%\n- 同期业绩基准：3.18%\n\n市场分析：\n本季度大宗商品价格上涨，基金通过降低仓位控制回撤应对市场变化。\n\n详情见附件。\n\n赵雪梅\n投资研究部",
+    "date": "2024-07-13 00:00:00",
     "tags": [
-      "财务",
-      "利润报表"
+      "投资",
+      "华信医药健康基金"
     ],
     "attachments": [
       {
-        "filename": "finance_Q1_2025_5.pdf",
+        "filename": "fund_Q1_2024_5.pdf",
         "type": "pdf"
       }
     ]
@@ -623,39 +627,39 @@
   {
     "id": "email_021",
     "from": {
-      "name": "李四",
-      "email": "lisi@techcorp.com"
+      "name": "杨芳",
+      "email": "yangf@longtaiwealth.com"
     },
     "to": [
       {
-        "name": "钱磊",
-        "email": "qianlei@techcorp.com"
+        "name": "王建华",
+        "email": "wangjh@huaxintrust.com"
       },
       {
-        "name": "王五",
-        "email": "wangwu@techcorp.com"
+        "name": "张明远",
+        "email": "zhangmy@huaxintrust.com"
       },
       {
-        "name": "陈静",
-        "email": "chenjing@techcorp.com"
+        "name": "钱海燕",
+        "email": "qianhy@huaxintrust.com"
       }
     ],
     "cc": [
       {
-        "name": "孙七",
-        "email": "sunqi@techcorp.com"
+        "name": "吴志强",
+        "email": "wuzq@huaxintrust.com"
       }
     ],
-    "subject": "2025年Q2销售报告",
-    "body": "各位领导好，\n\n附件为2025年Q2的销售报告，请查阅。\n\n本季度概要：\n- 营收：757万元，同比增长26%\n- 成本：331万元\n- 净利润：426万元\n- 新签客户：40家\n\n如有疑问请随时沟通。\n\n李四",
-    "date": "2025-01-27 00:00:00",
+    "subject": "[投资] 华信价值成长混合基金 2024Q2 净值报告",
+    "body": "各位好，\n\n附件为华信价值成长混合基金2024年Q2的净值报告。\n\n基金概况：\n- 单位净值：1.5311元\n- 累计净值：1.6585元\n- 基金规模：13907万元\n- 本季度收益率：4.43%\n- 同期业绩基准：0.41%\n\n市场分析：\n本季度A股市场震荡上行，基金通过降低仓位控制回撤应对市场变化。\n\n详情见附件。\n\n杨芳\n投资研究部",
+    "date": "2024-02-11 00:00:00",
     "tags": [
-      "财务",
-      "销售报告"
+      "投资",
+      "华信价值成长混合基金"
     ],
     "attachments": [
       {
-        "filename": "sales_data_Q2_2025_6.csv",
+        "filename": "fund_holdings_Q2_2024_6.csv",
         "type": "csv"
       }
     ]
@@ -663,39 +667,31 @@
   {
     "id": "email_022",
     "from": {
-      "name": "王五",
-      "email": "wangwu@techcorp.com"
+      "name": "马骏",
+      "email": "maj@zhongyuancapital.com"
     },
     "to": [
       {
-        "name": "林涛",
-        "email": "lintao@techcorp.com"
-      },
-      {
-        "name": "马丽",
-        "email": "mali@partnercorp.com"
-      },
-      {
-        "name": "钱磊",
-        "email": "qianlei@techcorp.com"
+        "name": "周丽萍",
+        "email": "zhoulp@huaxintrust.com"
       }
     ],
     "cc": [
       {
-        "name": "孙七",
-        "email": "sunqi@techcorp.com"
+        "name": "吴志强",
+        "email": "wuzq@huaxintrust.com"
       }
     ],
-    "subject": "2024年Q3预算执行表",
-    "body": "各位领导好，\n\n附件为2024年Q3的预算执行表，请查阅。\n\n本季度概要：\n- 营收：1468万元，同比增长11%\n- 成本：616万元\n- 净利润：852万元\n- 新签客户：16家\n\n如有疑问请随时沟通。\n\n王五",
-    "date": "2024-05-04 00:00:00",
+    "subject": "[投资] 华信稳健债券基金 2024Q3 投资运作报告",
+    "body": "各位好，\n\n附件为华信稳健债券基金2024年Q3的投资运作报告。\n\n基金概况：\n- 单位净值：0.9762元\n- 累计净值：1.4097元\n- 基金规模：44651万元\n- 本季度收益率：3.73%\n- 同期业绩基准：4.92%\n\n市场分析：\n本季度A股市场震荡上行，基金通过增配高等级信用债应对市场变化。\n\n详情见附件。\n\n马骏\n投资研究部",
+    "date": "2024-05-25 00:00:00",
     "tags": [
-      "财务",
-      "预算执行表"
+      "投资",
+      "华信稳健债券基金"
     ],
     "attachments": [
       {
-        "filename": "finance_Q3_2024_7.xlsx",
+        "filename": "fund_Q3_2024_7.xlsx",
         "type": "xlsx"
       }
     ]
@@ -703,35 +699,39 @@
   {
     "id": "email_023",
     "from": {
-      "name": "吴九",
-      "email": "wujiu@techcorp.com"
+      "name": "赵雪梅",
+      "email": "zhaoxm@huaxintrust.com"
     },
     "to": [
       {
-        "name": "马丽",
-        "email": "mali@partnercorp.com"
+        "name": "吴志强",
+        "email": "wuzq@huaxintrust.com"
       },
       {
-        "name": "刘洋",
-        "email": "liuyang@clientcorp.com"
+        "name": "孙浩然",
+        "email": "sunhr@huaxintrust.com"
+      },
+      {
+        "name": "黄永华",
+        "email": "huangyh@huaxintrust.com"
       }
     ],
     "cc": [
       {
-        "name": "孙七",
-        "email": "sunqi@techcorp.com"
+        "name": "吴志强",
+        "email": "wuzq@huaxintrust.com"
       }
     ],
-    "subject": "2024年Q4成本分析",
-    "body": "各位领导好，\n\n附件为2024年Q4的成本分析，请查阅。\n\n本季度概要：\n- 营收：1879万元，同比增长6%\n- 成本：300万元\n- 净利润：1579万元\n- 新签客户：35家\n\n如有疑问请随时沟通。\n\n吴九",
-    "date": "2024-01-28 00:00:00",
+    "subject": "[投资] 华信量化对冲基金 2024Q4 基金年报",
+    "body": "各位好，\n\n附件为华信量化对冲基金2024年Q4的基金年报。\n\n基金概况：\n- 单位净值：1.5323元\n- 累计净值：1.8345元\n- 基金规模：37914万元\n- 本季度收益率：6.96%\n- 同期业绩基准：4.08%\n\n市场分析：\n本季度A股市场震荡上行，基金通过调整行业配置应对市场变化。\n\n详情见附件。\n\n赵雪梅\n投资研究部",
+    "date": "2024-11-20 00:00:00",
     "tags": [
-      "财务",
-      "成本分析"
+      "投资",
+      "华信量化对冲基金"
     ],
     "attachments": [
       {
-        "filename": "finance_Q4_2024_8.pdf",
+        "filename": "fund_Q4_2024_8.pdf",
         "type": "pdf"
       }
     ]
@@ -739,31 +739,31 @@
   {
     "id": "email_024",
     "from": {
-      "name": "杨帆",
-      "email": "yangfan@clientcorp.com"
+      "name": "钱海燕",
+      "email": "qianhy@huaxintrust.com"
     },
     "to": [
       {
-        "name": "赵六",
-        "email": "zhaoliu@techcorp.com"
+        "name": "李文博",
+        "email": "liwb@huaxintrust.com"
       }
     ],
     "cc": [
       {
-        "name": "孙七",
-        "email": "sunqi@techcorp.com"
+        "name": "吴志强",
+        "email": "wuzq@huaxintrust.com"
       }
     ],
-    "subject": "2024年Q1收入统计",
-    "body": "各位领导好，\n\n附件为2024年Q1的收入统计，请查阅。\n\n本季度概要：\n- 营收：889万元，同比增长19%\n- 成本：749万元\n- 净利润：140万元\n- 新签客户：18家\n\n如有疑问请随时沟通。\n\n杨帆",
-    "date": "2024-04-08 00:00:00",
+    "subject": "[投资] 华信新能源产业基金 2024Q1 持仓分析",
+    "body": "各位好，\n\n附件为华信新能源产业基金2024年Q1的持仓分析。\n\n基金概况：\n- 单位净值：1.606元\n- 累计净值：1.9824元\n- 基金规模：24536万元\n- 本季度收益率：3.00%\n- 同期业绩基准：4.01%\n\n市场分析：\n本季度债券市场利率下行，基金通过调整行业配置应对市场变化。\n\n详情见附件。\n\n钱海燕\n投资研究部",
+    "date": "2024-02-08 00:00:00",
     "tags": [
-      "财务",
-      "收入统计"
+      "投资",
+      "华信新能源产业基金"
     ],
     "attachments": [
       {
-        "filename": "sales_data_Q1_2024_9.csv",
+        "filename": "fund_holdings_Q1_2024_9.csv",
         "type": "csv"
       }
     ]
@@ -771,39 +771,39 @@
   {
     "id": "email_025",
     "from": {
-      "name": "李四",
-      "email": "lisi@techcorp.com"
+      "name": "王建华",
+      "email": "wangjh@huaxintrust.com"
     },
     "to": [
       {
-        "name": "孙七",
-        "email": "sunqi@techcorp.com"
+        "name": "李文博",
+        "email": "liwb@huaxintrust.com"
       },
       {
-        "name": "林涛",
-        "email": "lintao@techcorp.com"
+        "name": "郑晓东",
+        "email": "zhengxd@huaxintrust.com"
       },
       {
-        "name": "杨帆",
-        "email": "yangfan@clientcorp.com"
+        "name": "张明远",
+        "email": "zhangmy@huaxintrust.com"
       }
     ],
     "cc": [
       {
-        "name": "孙七",
-        "email": "sunqi@techcorp.com"
+        "name": "吴志强",
+        "email": "wuzq@huaxintrust.com"
       }
     ],
-    "subject": "2024年Q2利润报表",
-    "body": "各位领导好，\n\n附件为2024年Q2的利润报表，请查阅。\n\n本季度概要：\n- 营收：1768万元，同比增长18%\n- 成本：283万元\n- 净利润：1485万元\n- 新签客户：47家\n\n如有疑问请随时沟通。\n\n李四",
-    "date": "2024-01-21 00:00:00",
+    "subject": "[投资] 华信医药健康基金 2025Q2 业绩归因",
+    "body": "各位好，\n\n附件为华信医药健康基金2025年Q2的业绩归因。\n\n基金概况：\n- 单位净值：1.2266元\n- 累计净值：1.4064元\n- 基金规模：65332万元\n- 本季度收益率：0.85%\n- 同期业绩基准：3.92%\n\n市场分析：\n本季度债券市场利率下行，基金通过降低仓位控制回撤应对市场变化。\n\n详情见附件。\n\n王建华\n投资研究部",
+    "date": "2025-03-15 00:00:00",
     "tags": [
-      "财务",
-      "利润报表"
+      "投资",
+      "华信医药健康基金"
     ],
     "attachments": [
       {
-        "filename": "finance_Q2_2024_10.xlsx",
+        "filename": "fund_Q2_2025_10.xlsx",
         "type": "xlsx"
       }
     ]
@@ -811,39 +811,31 @@
   {
     "id": "email_026",
     "from": {
-      "name": "赵六",
-      "email": "zhaoliu@techcorp.com"
+      "name": "张明远",
+      "email": "zhangmy@huaxintrust.com"
     },
     "to": [
       {
-        "name": "刘洋",
-        "email": "liuyang@clientcorp.com"
-      },
-      {
-        "name": "吴九",
-        "email": "wujiu@techcorp.com"
-      },
-      {
-        "name": "孙七",
-        "email": "sunqi@techcorp.com"
+        "name": "周丽萍",
+        "email": "zhoulp@huaxintrust.com"
       }
     ],
     "cc": [
       {
-        "name": "孙七",
-        "email": "sunqi@techcorp.com"
+        "name": "吴志强",
+        "email": "wuzq@huaxintrust.com"
       }
     ],
-    "subject": "2024年Q3销售报告",
-    "body": "各位领导好，\n\n附件为2024年Q3的销售报告，请查阅。\n\n本季度概要：\n- 营收：1310万元，同比增长26%\n- 成本：334万元\n- 净利润：976万元\n- 新签客户：29家\n\n如有疑问请随时沟通。\n\n赵六",
-    "date": "2024-05-15 00:00:00",
+    "subject": "[投资] 华信价值成长混合基金 2024Q3 净值报告",
+    "body": "各位好，\n\n附件为华信价值成长混合基金2024年Q3的净值报告。\n\n基金概况：\n- 单位净值：1.3145元\n- 累计净值：1.8079元\n- 基金规模：10014万元\n- 本季度收益率：-1.81%\n- 同期业绩基准：1.61%\n\n市场分析：\n本季度港股市场波动加剧，基金通过调整行业配置应对市场变化。\n\n详情见附件。\n\n张明远\n投资研究部",
+    "date": "2024-04-01 00:00:00",
     "tags": [
-      "财务",
-      "销售报告"
+      "投资",
+      "华信价值成长混合基金"
     ],
     "attachments": [
       {
-        "filename": "finance_Q3_2024_11.pdf",
+        "filename": "fund_Q3_2024_11.pdf",
         "type": "pdf"
       }
     ]
@@ -851,31 +843,39 @@
   {
     "id": "email_027",
     "from": {
-      "name": "刘洋",
-      "email": "liuyang@clientcorp.com"
+      "name": "林国栋",
+      "email": "lingd@huaxintrust.com"
     },
     "to": [
       {
-        "name": "张三",
-        "email": "zhangsan@techcorp.com"
+        "name": "刘德伟",
+        "email": "liudw@hengfundinvest.com"
+      },
+      {
+        "name": "马骏",
+        "email": "maj@zhongyuancapital.com"
+      },
+      {
+        "name": "黄永华",
+        "email": "huangyh@huaxintrust.com"
       }
     ],
     "cc": [
       {
-        "name": "孙七",
-        "email": "sunqi@techcorp.com"
+        "name": "吴志强",
+        "email": "wuzq@huaxintrust.com"
       }
     ],
-    "subject": "2024年Q4预算执行表",
-    "body": "各位领导好，\n\n附件为2024年Q4的预算执行表，请查阅。\n\n本季度概要：\n- 营收：1772万元，同比增长8%\n- 成本：776万元\n- 净利润：996万元\n- 新签客户：14家\n\n如有疑问请随时沟通。\n\n刘洋",
-    "date": "2024-08-22 00:00:00",
+    "subject": "[投资] 华信稳健债券基金 2024Q4 投资运作报告",
+    "body": "各位好，\n\n附件为华信稳健债券基金2024年Q4的投资运作报告。\n\n基金概况：\n- 单位净值：1.1414元\n- 累计净值：1.2694元\n- 基金规模：48279万元\n- 本季度收益率：3.85%\n- 同期业绩基准：2.98%\n\n市场分析：\n本季度A股市场震荡上行，基金通过增配高等级信用债应对市场变化。\n\n详情见附件。\n\n林国栋\n投资研究部",
+    "date": "2024-04-10 00:00:00",
     "tags": [
-      "财务",
-      "预算执行表"
+      "投资",
+      "华信稳健债券基金"
     ],
     "attachments": [
       {
-        "filename": "sales_data_Q4_2024_12.csv",
+        "filename": "fund_holdings_Q4_2024_12.csv",
         "type": "csv"
       }
     ]
@@ -883,35 +883,35 @@
   {
     "id": "email_028",
     "from": {
-      "name": "张三",
-      "email": "zhangsan@techcorp.com"
+      "name": "郑晓东",
+      "email": "zhengxd@huaxintrust.com"
     },
     "to": [
       {
-        "name": "杨帆",
-        "email": "yangfan@clientcorp.com"
+        "name": "黄永华",
+        "email": "huangyh@huaxintrust.com"
       },
       {
-        "name": "赵六",
-        "email": "zhaoliu@techcorp.com"
+        "name": "赵雪梅",
+        "email": "zhaoxm@huaxintrust.com"
       }
     ],
     "cc": [
       {
-        "name": "孙七",
-        "email": "sunqi@techcorp.com"
+        "name": "吴志强",
+        "email": "wuzq@huaxintrust.com"
       }
     ],
-    "subject": "2024年Q1成本分析",
-    "body": "各位领导好，\n\n附件为2024年Q1的成本分析，请查阅。\n\n本季度概要：\n- 营收：1036万元，同比增长28%\n- 成本：365万元\n- 净利润：671万元\n- 新签客户：38家\n\n如有疑问请随时沟通。\n\n张三",
-    "date": "2024-11-22 00:00:00",
+    "subject": "[投资] 华信量化对冲基金 2024Q1 基金年报",
+    "body": "各位好，\n\n附件为华信量化对冲基金2024年Q1的基金年报。\n\n基金概况：\n- 单位净值：1.2285元\n- 累计净值：1.689元\n- 基金规模：27241万元\n- 本季度收益率：4.25%\n- 同期业绩基准：0.70%\n\n市场分析：\n本季度港股市场波动加剧，基金通过增持科技板块应对市场变化。\n\n详情见附件。\n\n郑晓东\n投资研究部",
+    "date": "2024-09-18 00:00:00",
     "tags": [
-      "财务",
-      "成本分析"
+      "投资",
+      "华信量化对冲基金"
     ],
     "attachments": [
       {
-        "filename": "finance_Q1_2024_13.xlsx",
+        "filename": "fund_Q1_2024_13.xlsx",
         "type": "xlsx"
       }
     ]
@@ -919,31 +919,35 @@
   {
     "id": "email_029",
     "from": {
-      "name": "李四",
-      "email": "lisi@techcorp.com"
+      "name": "郑晓东",
+      "email": "zhengxd@huaxintrust.com"
     },
     "to": [
       {
-        "name": "刘洋",
-        "email": "liuyang@clientcorp.com"
+        "name": "黄永华",
+        "email": "huangyh@huaxintrust.com"
+      },
+      {
+        "name": "林国栋",
+        "email": "lingd@huaxintrust.com"
       }
     ],
     "cc": [
       {
-        "name": "孙七",
-        "email": "sunqi@techcorp.com"
+        "name": "吴志强",
+        "email": "wuzq@huaxintrust.com"
       }
     ],
-    "subject": "2024年Q2收入统计",
-    "body": "各位领导好，\n\n附件为2024年Q2的收入统计，请查阅。\n\n本季度概要：\n- 营收：1617万元，同比增长16%\n- 成本：236万元\n- 净利润：1381万元\n- 新签客户：47家\n\n如有疑问请随时沟通。\n\n李四",
-    "date": "2024-03-17 00:00:00",
+    "subject": "[投资] 华信新能源产业基金 2024Q2 持仓分析",
+    "body": "各位好，\n\n附件为华信新能源产业基金2024年Q2的持仓分析。\n\n基金概况：\n- 单位净值：1.4247元\n- 累计净值：1.6783元\n- 基金规模：57383万元\n- 本季度收益率：-0.32%\n- 同期业绩基准：2.94%\n\n市场分析：\n本季度A股市场震荡上行，基金通过增持科技板块应对市场变化。\n\n详情见附件。\n\n郑晓东\n投资研究部",
+    "date": "2024-04-09 00:00:00",
     "tags": [
-      "财务",
-      "收入统计"
+      "投资",
+      "华信新能源产业基金"
     ],
     "attachments": [
       {
-        "filename": "finance_Q2_2024_14.pdf",
+        "filename": "fund_Q2_2024_14.pdf",
         "type": "pdf"
       }
     ]
@@ -951,31 +955,35 @@
   {
     "id": "email_030",
     "from": {
-      "name": "王五",
-      "email": "wangwu@techcorp.com"
+      "name": "王建华",
+      "email": "wangjh@huaxintrust.com"
     },
     "to": [
       {
-        "name": "周八",
-        "email": "zhouba@techcorp.com"
+        "name": "黄永华",
+        "email": "huangyh@huaxintrust.com"
+      },
+      {
+        "name": "陈思远",
+        "email": "chensy@huaxintrust.com"
       }
     ],
     "cc": [
       {
-        "name": "孙七",
-        "email": "sunqi@techcorp.com"
+        "name": "吴志强",
+        "email": "wuzq@huaxintrust.com"
       }
     ],
-    "subject": "2024年Q3利润报表",
-    "body": "各位领导好，\n\n附件为2024年Q3的利润报表，请查阅。\n\n本季度概要：\n- 营收：581万元，同比增长11%\n- 成本：566万元\n- 净利润：15万元\n- 新签客户：25家\n\n如有疑问请随时沟通。\n\n王五",
-    "date": "2024-07-05 00:00:00",
+    "subject": "[投资] 华信医药健康基金 2024Q3 业绩归因",
+    "body": "各位好，\n\n附件为华信医药健康基金2024年Q3的业绩归因。\n\n基金概况：\n- 单位净值：1.3264元\n- 累计净值：1.8064元\n- 基金规模：63008万元\n- 本季度收益率：3.74%\n- 同期业绩基准：3.32%\n\n市场分析：\n本季度大宗商品价格上涨，基金通过调整行业配置应对市场变化。\n\n详情见附件。\n\n王建华\n投资研究部",
+    "date": "2024-10-13 00:00:00",
     "tags": [
-      "财务",
-      "利润报表"
+      "投资",
+      "华信医药健康基金"
     ],
     "attachments": [
       {
-        "filename": "sales_data_Q3_2024_15.csv",
+        "filename": "fund_holdings_Q3_2024_15.csv",
         "type": "csv"
       }
     ]
@@ -983,46 +991,34 @@
   {
     "id": "email_031",
     "from": {
-      "name": "周八",
-      "email": "zhouba@techcorp.com"
+      "name": "王建华",
+      "email": "wangjh@huaxintrust.com"
     },
     "to": [
       {
-        "name": "黄蕾",
-        "email": "huanglei@techcorp.com"
+        "name": "郑晓东",
+        "email": "zhengxd@huaxintrust.com"
       },
       {
-        "name": "陈静",
-        "email": "chenjing@techcorp.com"
+        "name": "马骏",
+        "email": "maj@zhongyuancapital.com"
       },
       {
-        "name": "吴九",
-        "email": "wujiu@techcorp.com"
-      },
-      {
-        "name": "张三",
-        "email": "zhangsan@techcorp.com"
-      },
-      {
-        "name": "李四",
-        "email": "lisi@techcorp.com"
-      },
-      {
-        "name": "孙七",
-        "email": "sunqi@techcorp.com"
+        "name": "吴志强",
+        "email": "wuzq@huaxintrust.com"
       }
     ],
     "cc": [],
-    "subject": "第38周周会纪要",
-    "body": "各位同事，\n\n以下是本次周会的会议纪要，详细内容见附件。\n\n会议时间：2024-04-01 00:00:00\n参会人员：黄蕾, 陈静, 吴九, 张三, 李四, 孙七\n\n主要议题：\n1. 新产品线规划\n2. 人员招聘进度\n3. 跨部门协作流程\n\nAction Items 见附件。\n\n周八",
-    "date": "2024-04-01 00:00:00",
+    "subject": "[合规] 银保监会信托监管评级结果通知",
+    "body": "各位同事，\n\n现将银保监会信托监管评级结果通知发送如下：\n\n请各部门认真学习并落实相关要求。\n如有违规事项，请立即上报合规部门。\n\n合规要点：\n- 严格执行投资者适当性管理要求\n- 确保信息披露的真实、准确、完整、及时\n- 加强关联交易管控，防范利益输送\n\n王建华\n风控合规部",
+    "date": "2024-10-04 00:00:00",
     "tags": [
-      "会议",
-      "周会"
+      "合规",
+      "regulatory_rating"
     ],
     "attachments": [
       {
-        "filename": "meeting_minutes_w38_1.docx",
+        "filename": "compliance_regulatory_rating_1.docx",
         "type": "docx"
       }
     ]
@@ -1030,42 +1026,34 @@
   {
     "id": "email_032",
     "from": {
-      "name": "吴九",
-      "email": "wujiu@techcorp.com"
+      "name": "郑晓东",
+      "email": "zhengxd@huaxintrust.com"
     },
     "to": [
       {
-        "name": "刘洋",
-        "email": "liuyang@clientcorp.com"
+        "name": "赵雪梅",
+        "email": "zhaoxm@huaxintrust.com"
       },
       {
-        "name": "杨帆",
-        "email": "yangfan@clientcorp.com"
+        "name": "吴志强",
+        "email": "wuzq@huaxintrust.com"
       },
       {
-        "name": "周八",
-        "email": "zhouba@techcorp.com"
-      },
-      {
-        "name": "郑十",
-        "email": "zhengshi@techcorp.com"
-      },
-      {
-        "name": "林涛",
-        "email": "lintao@techcorp.com"
+        "name": "杨芳",
+        "email": "yangf@longtaiwealth.com"
       }
     ],
     "cc": [],
-    "subject": "第8周技术评审会纪要",
-    "body": "各位同事，\n\n以下是本次技术评审会的会议纪要，详细内容见附件。\n\n会议时间：2024-09-18 00:00:00\n参会人员：刘洋, 杨帆, 周八, 郑十, 林涛\n\n主要议题：\n1. 客户反馈处理流程优化\n2. 技术债务清理\n3. 客户满意度提升\n\nAction Items 见附件。\n\n吴九",
-    "date": "2024-09-18 00:00:00",
+    "subject": "[合规] 反洗钱自查报告",
+    "body": "各位同事，\n\n关于反洗钱自查报告，通知如下：\n\n根据《反洗钱法》及银保监会相关规定，我司已完成2025年度反洗钱自查工作：\n\n1. 客户身份识别：已对全部1696名客户完成身份核实\n2. 大额交易报告：本期报送22笔\n3. 可疑交易报告：本期报送29笔\n4. 客户风险等级分类：高风险客户46户\n\n详见附件报告。\n\n郑晓东\n合规审计部",
+    "date": "2025-01-29 00:00:00",
     "tags": [
-      "会议",
-      "技术评审会"
+      "合规",
+      "aml_review"
     ],
     "attachments": [
       {
-        "filename": "meeting_notes_w8_2.txt",
+        "filename": "compliance_aml_review_2.txt",
         "type": "txt"
       }
     ]
@@ -1073,34 +1061,42 @@
   {
     "id": "email_033",
     "from": {
-      "name": "吴九",
-      "email": "wujiu@techcorp.com"
+      "name": "王建华",
+      "email": "wangjh@huaxintrust.com"
     },
     "to": [
       {
-        "name": "陈静",
-        "email": "chenjing@techcorp.com"
+        "name": "杨芳",
+        "email": "yangf@longtaiwealth.com"
       },
       {
-        "name": "杨帆",
-        "email": "yangfan@clientcorp.com"
+        "name": "郑晓东",
+        "email": "zhengxd@huaxintrust.com"
       },
       {
-        "name": "马丽",
-        "email": "mali@partnercorp.com"
+        "name": "马骏",
+        "email": "maj@zhongyuancapital.com"
+      },
+      {
+        "name": "陈思远",
+        "email": "chensy@huaxintrust.com"
+      },
+      {
+        "name": "黄永华",
+        "email": "huangyh@huaxintrust.com"
       }
     ],
     "cc": [],
-    "subject": "第47周产品规划会纪要",
-    "body": "各位同事，\n\n以下是本次产品规划会的会议纪要，详细内容见附件。\n\n会议时间：2024-12-17 00:00:00\n参会人员：陈静, 杨帆, 马丽\n\n主要议题：\n1. Q3目标回顾与Q4规划\n2. 用户增长策略\n3. 成本控制措施\n\nAction Items 见附件。\n\n吴九",
-    "date": "2024-12-17 00:00:00",
+    "subject": "[合规] 关联交易合规审查",
+    "body": "各位同事，\n\n现将关联交易合规审查发送如下：\n\n请各部门认真学习并落实相关要求。\n如有违规事项，请立即上报合规部门。\n\n合规要点：\n- 严格执行投资者适当性管理要求\n- 确保信息披露的真实、准确、完整、及时\n- 加强关联交易管控，防范利益输送\n\n王建华\n风控合规部",
+    "date": "2025-02-13 00:00:00",
     "tags": [
-      "会议",
-      "产品规划会"
+      "合规",
+      "related_party"
     ],
     "attachments": [
       {
-        "filename": "meeting_minutes_w47_3.docx",
+        "filename": "compliance_related_party_3.docx",
         "type": "docx"
       }
     ]
@@ -1108,42 +1104,46 @@
   {
     "id": "email_034",
     "from": {
-      "name": "林涛",
-      "email": "lintao@techcorp.com"
+      "name": "郑晓东",
+      "email": "zhengxd@huaxintrust.com"
     },
     "to": [
       {
-        "name": "陈静",
-        "email": "chenjing@techcorp.com"
+        "name": "赵雪梅",
+        "email": "zhaoxm@huaxintrust.com"
       },
       {
-        "name": "周八",
-        "email": "zhouba@techcorp.com"
+        "name": "孙浩然",
+        "email": "sunhr@huaxintrust.com"
       },
       {
-        "name": "黄蕾",
-        "email": "huanglei@techcorp.com"
+        "name": "吴志强",
+        "email": "wuzq@huaxintrust.com"
       },
       {
-        "name": "李四",
-        "email": "lisi@techcorp.com"
+        "name": "钱海燕",
+        "email": "qianhy@huaxintrust.com"
       },
       {
-        "name": "孙七",
-        "email": "sunqi@techcorp.com"
+        "name": "张明远",
+        "email": "zhangmy@huaxintrust.com"
+      },
+      {
+        "name": "刘德伟",
+        "email": "liudw@hengfundinvest.com"
       }
     ],
     "cc": [],
-    "subject": "第20周部门例会纪要",
-    "body": "各位同事，\n\n以下是本次部门例会的会议纪要，详细内容见附件。\n\n会议时间：2024-09-16 00:00:00\n参会人员：陈静, 周八, 黄蕾, 李四, 孙七\n\n主要议题：\n1. 客户反馈处理流程优化\n2. 用户增长策略\n3. 成本控制措施\n\nAction Items 见附件。\n\n林涛",
-    "date": "2024-09-16 00:00:00",
+    "subject": "[合规] 信托产品信息披露检查",
+    "body": "各位同事，\n\n关于信托产品信息披露检查，通知如下：\n\n请各部门认真学习并落实相关要求。\n如有违规事项，请立即上报合规部门。\n\n合规要点：\n- 严格执行投资者适当性管理要求\n- 确保信息披露的真实、准确、完整、及时\n- 加强关联交易管控，防范利益输送\n\n郑晓东\n合规审计部",
+    "date": "2024-06-21 00:00:00",
     "tags": [
-      "会议",
-      "部门例会"
+      "合规",
+      "disclosure"
     ],
     "attachments": [
       {
-        "filename": "meeting_notes_w20_4.txt",
+        "filename": "compliance_disclosure_4.txt",
         "type": "txt"
       }
     ]
@@ -1151,38 +1151,38 @@
   {
     "id": "email_035",
     "from": {
-      "name": "钱磊",
-      "email": "qianlei@techcorp.com"
+      "name": "王建华",
+      "email": "wangjh@huaxintrust.com"
     },
     "to": [
       {
-        "name": "赵六",
-        "email": "zhaoliu@techcorp.com"
+        "name": "林国栋",
+        "email": "lingd@huaxintrust.com"
       },
       {
-        "name": "吴九",
-        "email": "wujiu@techcorp.com"
+        "name": "陈思远",
+        "email": "chensy@huaxintrust.com"
       },
       {
-        "name": "黄蕾",
-        "email": "huanglei@techcorp.com"
+        "name": "张明远",
+        "email": "zhangmy@huaxintrust.com"
       },
       {
-        "name": "杨帆",
-        "email": "yangfan@clientcorp.com"
+        "name": "郑晓东",
+        "email": "zhengxd@huaxintrust.com"
       }
     ],
     "cc": [],
-    "subject": "第48周战略研讨会纪要",
-    "body": "各位同事，\n\n以下是本次战略研讨会的会议纪要，详细内容见附件。\n\n会议时间：2024-12-12 00:00:00\n参会人员：赵六, 吴九, 黄蕾, 杨帆\n\n主要议题：\n1. Q3目标回顾与Q4规划\n2. 用户增长策略\n3. 成本控制措施\n\nAction Items 见附件。\n\n钱磊",
-    "date": "2024-12-12 00:00:00",
+    "subject": "[合规] 投资者适当性管理自查",
+    "body": "各位同事，\n\n现将投资者适当性管理自查发送如下：\n\n请各部门认真学习并落实相关要求。\n如有违规事项，请立即上报合规部门。\n\n合规要点：\n- 严格执行投资者适当性管理要求\n- 确保信息披露的真实、准确、完整、及时\n- 加强关联交易管控，防范利益输送\n\n王建华\n风控合规部",
+    "date": "2024-10-30 00:00:00",
     "tags": [
-      "会议",
-      "战略研讨会"
+      "合规",
+      "suitability"
     ],
     "attachments": [
       {
-        "filename": "meeting_minutes_w48_5.docx",
+        "filename": "compliance_suitability_5.docx",
         "type": "docx"
       }
     ]
@@ -1190,34 +1190,34 @@
   {
     "id": "email_036",
     "from": {
-      "name": "杨帆",
-      "email": "yangfan@clientcorp.com"
+      "name": "郑晓东",
+      "email": "zhengxd@huaxintrust.com"
     },
     "to": [
       {
-        "name": "孙七",
-        "email": "sunqi@techcorp.com"
+        "name": "李文博",
+        "email": "liwb@huaxintrust.com"
       },
       {
-        "name": "马丽",
-        "email": "mali@partnercorp.com"
+        "name": "黄永华",
+        "email": "huangyh@huaxintrust.com"
       },
       {
-        "name": "赵六",
-        "email": "zhaoliu@techcorp.com"
+        "name": "吴志强",
+        "email": "wuzq@huaxintrust.com"
       }
     ],
     "cc": [],
-    "subject": "第51周复盘会纪要",
-    "body": "各位同事，\n\n以下是本次复盘会的会议纪要，详细内容见附件。\n\n会议时间：2024-08-08 00:00:00\n参会人员：孙七, 马丽, 赵六\n\n主要议题：\n1. 新产品线规划\n2. 预算调整\n3. 成本控制措施\n\nAction Items 见附件。\n\n杨帆",
-    "date": "2024-08-08 00:00:00",
+    "subject": "[合规] 资管新规整改进度报告",
+    "body": "各位同事，\n\n关于资管新规整改进度报告，通知如下：\n\n按照资管新规过渡期安排，我司整改进度如下：\n\n1. 非标资产压降：已压降至336亿，完成目标的75%\n2. 多层嵌套清理：86%已完成\n3. 资金池业务：已全部清理\n4. 估值方法切换：94%产品已完成\n\n\n郑晓东\n合规审计部",
+    "date": "2024-03-10 00:00:00",
     "tags": [
-      "会议",
-      "复盘会"
+      "合规",
+      "asset_mgmt_reform"
     ],
     "attachments": [
       {
-        "filename": "meeting_notes_w51_6.txt",
+        "filename": "compliance_asset_mgmt_reform_6.txt",
         "type": "txt"
       }
     ]
@@ -1225,46 +1225,42 @@
   {
     "id": "email_037",
     "from": {
-      "name": "赵六",
-      "email": "zhaoliu@techcorp.com"
+      "name": "王建华",
+      "email": "wangjh@huaxintrust.com"
     },
     "to": [
       {
-        "name": "杨帆",
-        "email": "yangfan@clientcorp.com"
+        "name": "吴志强",
+        "email": "wuzq@huaxintrust.com"
       },
       {
-        "name": "马丽",
-        "email": "mali@partnercorp.com"
+        "name": "杨芳",
+        "email": "yangf@longtaiwealth.com"
       },
       {
-        "name": "刘洋",
-        "email": "liuyang@clientcorp.com"
+        "name": "郑晓东",
+        "email": "zhengxd@huaxintrust.com"
       },
       {
-        "name": "王五",
-        "email": "wangwu@techcorp.com"
+        "name": "周丽萍",
+        "email": "zhoulp@huaxintrust.com"
       },
       {
-        "name": "李四",
-        "email": "lisi@techcorp.com"
-      },
-      {
-        "name": "周八",
-        "email": "zhouba@techcorp.com"
+        "name": "刘德伟",
+        "email": "liudw@hengfundinvest.com"
       }
     ],
     "cc": [],
-    "subject": "第43周周会纪要",
-    "body": "各位同事，\n\n以下是本次周会的会议纪要，详细内容见附件。\n\n会议时间：2024-09-20 00:00:00\n参会人员：杨帆, 马丽, 刘洋, 王五, 李四, 周八\n\n主要议题：\n1. 新产品线规划\n2. 人员招聘进度\n3. 代码审查规范\n\nAction Items 见附件。\n\n赵六",
-    "date": "2024-09-20 00:00:00",
+    "subject": "[合规] 净资本管理月度报告",
+    "body": "各位同事，\n\n现将净资本管理月度报告发送如下：\n\n截至2024-05-09，我司净资本情况如下：\n\n- 净资本：73亿元\n- 各项业务风险资本之和：12亿元\n- 净资本/各项业务风险资本之和：270%（监管要求≥100%）\n- 净资本/净资产：70%（监管要求≥40%）\n\n各项指标均满足监管要求。\n\n王建华\n风控合规部",
+    "date": "2024-05-09 00:00:00",
     "tags": [
-      "会议",
-      "周会"
+      "合规",
+      "net_capital"
     ],
     "attachments": [
       {
-        "filename": "meeting_minutes_w43_7.docx",
+        "filename": "compliance_net_capital_7.docx",
         "type": "docx"
       }
     ]
@@ -1272,38 +1268,42 @@
   {
     "id": "email_038",
     "from": {
-      "name": "孙七",
-      "email": "sunqi@techcorp.com"
+      "name": "郑晓东",
+      "email": "zhengxd@huaxintrust.com"
     },
     "to": [
       {
-        "name": "杨帆",
-        "email": "yangfan@clientcorp.com"
+        "name": "赵雪梅",
+        "email": "zhaoxm@huaxintrust.com"
       },
       {
-        "name": "赵六",
-        "email": "zhaoliu@techcorp.com"
+        "name": "黄永华",
+        "email": "huangyh@huaxintrust.com"
       },
       {
-        "name": "王五",
-        "email": "wangwu@techcorp.com"
+        "name": "李文博",
+        "email": "liwb@huaxintrust.com"
       },
       {
-        "name": "张三",
-        "email": "zhangsan@techcorp.com"
+        "name": "杨芳",
+        "email": "yangf@longtaiwealth.com"
+      },
+      {
+        "name": "张明远",
+        "email": "zhangmy@huaxintrust.com"
       }
     ],
     "cc": [],
-    "subject": "第16周技术评审会纪要",
-    "body": "各位同事，\n\n以下是本次技术评审会的会议纪要，详细内容见附件。\n\n会议时间：2024-01-24 00:00:00\n参会人员：杨帆, 赵六, 王五, 张三\n\n主要议题：\n1. 客户反馈处理流程优化\n2. 人员招聘进度\n3. 成本控制措施\n\nAction Items 见附件。\n\n孙七",
-    "date": "2024-01-24 00:00:00",
+    "subject": "[合规] 流动性风险监测报告",
+    "body": "各位同事，\n\n关于流动性风险监测报告，通知如下：\n\n请各部门认真学习并落实相关要求。\n如有违规事项，请立即上报合规部门。\n\n合规要点：\n- 严格执行投资者适当性管理要求\n- 确保信息披露的真实、准确、完整、及时\n- 加强关联交易管控，防范利益输送\n\n郑晓东\n合规审计部",
+    "date": "2025-01-21 00:00:00",
     "tags": [
-      "会议",
-      "技术评审会"
+      "合规",
+      "liquidity"
     ],
     "attachments": [
       {
-        "filename": "meeting_notes_w16_8.txt",
+        "filename": "compliance_liquidity_8.txt",
         "type": "txt"
       }
     ]
@@ -1311,38 +1311,38 @@
   {
     "id": "email_039",
     "from": {
-      "name": "陈静",
-      "email": "chenjing@techcorp.com"
+      "name": "王建华",
+      "email": "wangjh@huaxintrust.com"
     },
     "to": [
       {
-        "name": "刘洋",
-        "email": "liuyang@clientcorp.com"
+        "name": "孙浩然",
+        "email": "sunhr@huaxintrust.com"
       },
       {
-        "name": "马丽",
-        "email": "mali@partnercorp.com"
+        "name": "赵雪梅",
+        "email": "zhaoxm@huaxintrust.com"
       },
       {
-        "name": "吴九",
-        "email": "wujiu@techcorp.com"
+        "name": "钱海燕",
+        "email": "qianhy@huaxintrust.com"
       },
       {
-        "name": "郑十",
-        "email": "zhengshi@techcorp.com"
+        "name": "黄永华",
+        "email": "huangyh@huaxintrust.com"
       }
     ],
     "cc": [],
-    "subject": "第16周产品规划会纪要",
-    "body": "各位同事，\n\n以下是本次产品规划会的会议纪要，详细内容见附件。\n\n会议时间：2024-07-23 00:00:00\n参会人员：刘洋, 马丽, 吴九, 郑十\n\n主要议题：\n1. Q3目标回顾与Q4规划\n2. 人员招聘进度\n3. 跨部门协作流程\n\nAction Items 见附件。\n\n陈静",
-    "date": "2024-07-23 00:00:00",
+    "subject": "[合规] 操作风险事件排查",
+    "body": "各位同事，\n\n现将操作风险事件排查发送如下：\n\n请各部门认真学习并落实相关要求。\n如有违规事项，请立即上报合规部门。\n\n合规要点：\n- 严格执行投资者适当性管理要求\n- 确保信息披露的真实、准确、完整、及时\n- 加强关联交易管控，防范利益输送\n\n王建华\n风控合规部",
+    "date": "2024-02-28 00:00:00",
     "tags": [
-      "会议",
-      "产品规划会"
+      "合规",
+      "op_risk"
     ],
     "attachments": [
       {
-        "filename": "meeting_minutes_w16_9.docx",
+        "filename": "compliance_op_risk_9.docx",
         "type": "docx"
       }
     ]
@@ -1350,38 +1350,46 @@
   {
     "id": "email_040",
     "from": {
-      "name": "赵六",
-      "email": "zhaoliu@techcorp.com"
+      "name": "郑晓东",
+      "email": "zhengxd@huaxintrust.com"
     },
     "to": [
       {
-        "name": "杨帆",
-        "email": "yangfan@clientcorp.com"
+        "name": "刘德伟",
+        "email": "liudw@hengfundinvest.com"
       },
       {
-        "name": "刘洋",
-        "email": "liuyang@clientcorp.com"
+        "name": "孙浩然",
+        "email": "sunhr@huaxintrust.com"
       },
       {
-        "name": "陈静",
-        "email": "chenjing@techcorp.com"
+        "name": "周丽萍",
+        "email": "zhoulp@huaxintrust.com"
       },
       {
-        "name": "钱磊",
-        "email": "qianlei@techcorp.com"
+        "name": "王建华",
+        "email": "wangjh@huaxintrust.com"
+      },
+      {
+        "name": "林国栋",
+        "email": "lingd@huaxintrust.com"
+      },
+      {
+        "name": "李文博",
+        "email": "liwb@huaxintrust.com"
       }
     ],
     "cc": [],
-    "subject": "第36周部门例会纪要",
-    "body": "各位同事，\n\n以下是本次部门例会的会议纪要，详细内容见附件。\n\n会议时间：2024-01-26 00:00:00\n参会人员：杨帆, 刘洋, 陈静, 钱磊\n\n主要议题：\n1. Q3目标回顾与Q4规划\n2. 人员招聘进度\n3. 成本控制措施\n\nAction Items 见附件。\n\n赵六",
-    "date": "2024-01-26 00:00:00",
+    "subject": "[合规] 数据治理合规报告",
+    "body": "各位同事，\n\n关于数据治理合规报告，通知如下：\n\n请各部门认真学习并落实相关要求。\n如有违规事项，请立即上报合规部门。\n\n合规要点：\n- 严格执行投资者适当性管理要求\n- 确保信息披露的真实、准确、完整、及时\n- 加强关联交易管控，防范利益输送\n\n郑晓东\n合规审计部",
+    "date": "2025-02-02 00:00:00",
     "tags": [
-      "会议",
-      "部门例会"
+      "合规",
+      "data_governance"
     ],
     "attachments": [
       {
-        "filename": "meeting_notes_w36_10.txt",
+        "filename": "compliance_data_governance_10.txt",
         "type": "txt"
       }
     ]
@@ -1389,42 +1397,34 @@
   {
     "id": "email_041",
     "from": {
-      "name": "林涛",
-      "email": "lintao@techcorp.com"
+      "name": "王建华",
+      "email": "wangjh@huaxintrust.com"
     },
     "to": [
       {
-        "name": "杨帆",
-        "email": "yangfan@clientcorp.com"
+        "name": "周丽萍",
+        "email": "zhoulp@huaxintrust.com"
       },
       {
-        "name": "郑十",
-        "email": "zhengshi@techcorp.com"
+        "name": "林国栋",
+        "email": "lingd@huaxintrust.com"
       },
       {
-        "name": "陈静",
-        "email": "chenjing@techcorp.com"
-      },
-      {
-        "name": "钱磊",
-        "email": "qianlei@techcorp.com"
-      },
-      {
-        "name": "吴九",
-        "email": "wujiu@techcorp.com"
+        "name": "黄永华",
+        "email": "huangyh@huaxintrust.com"
       }
     ],
     "cc": [],
-    "subject": "第36周战略研讨会纪要",
-    "body": "各位同事，\n\n以下是本次战略研讨会的会议纪要，详细内容见附件。\n\n会议时间：2025-03-01 00:00:00\n参会人员：杨帆, 郑十, 陈静, 钱磊, 吴九\n\n主要议题：\n1. 客户反馈处理流程优化\n2. 技术债务清理\n3. 成本控制措施\n\nAction Items 见附件。\n\n林涛",
-    "date": "2025-03-01 00:00:00",
+    "subject": "[合规] 监管处罚案例学习",
+    "body": "各位同事，\n\n现将监管处罚案例学习发送如下：\n\n请各部门认真学习并落实相关要求。\n如有违规事项，请立即上报合规部门。\n\n合规要点：\n- 严格执行投资者适当性管理要求\n- 确保信息披露的真实、准确、完整、及时\n- 加强关联交易管控，防范利益输送\n\n王建华\n风控合规部",
+    "date": "2024-07-11 00:00:00",
     "tags": [
-      "会议",
-      "战略研讨会"
+      "合规",
+      "regulatory_case"
     ],
     "attachments": [
       {
-        "filename": "meeting_minutes_w36_11.docx",
+        "filename": "compliance_regulatory_case_11.docx",
         "type": "docx"
       }
     ]
@@ -1432,38 +1432,38 @@
   {
     "id": "email_042",
     "from": {
-      "name": "孙七",
-      "email": "sunqi@techcorp.com"
+      "name": "郑晓东",
+      "email": "zhengxd@huaxintrust.com"
     },
     "to": [
       {
-        "name": "马丽",
-        "email": "mali@partnercorp.com"
+        "name": "李文博",
+        "email": "liwb@huaxintrust.com"
       },
       {
-        "name": "黄蕾",
-        "email": "huanglei@techcorp.com"
+        "name": "林国栋",
+        "email": "lingd@huaxintrust.com"
       },
       {
-        "name": "周八",
-        "email": "zhouba@techcorp.com"
+        "name": "刘德伟",
+        "email": "liudw@hengfundinvest.com"
       },
       {
-        "name": "陈静",
-        "email": "chenjing@techcorp.com"
+        "name": "黄永华",
+        "email": "huangyh@huaxintrust.com"
       }
     ],
     "cc": [],
-    "subject": "第41周复盘会纪要",
-    "body": "各位同事，\n\n以下是本次复盘会的会议纪要，详细内容见附件。\n\n会议时间：2024-09-05 00:00:00\n参会人员：马丽, 黄蕾, 周八, 陈静\n\n主要议题：\n1. Q3目标回顾与Q4规划\n2. 用户增长策略\n3. 成本控制措施\n\nAction Items 见附件。\n\n孙七",
-    "date": "2024-09-05 00:00:00",
+    "subject": "[合规] 内控制度修订通知",
+    "body": "各位同事，\n\n关于内控制度修订通知，通知如下：\n\n请各部门认真学习并落实相关要求。\n如有违规事项，请立即上报合规部门。\n\n合规要点：\n- 严格执行投资者适当性管理要求\n- 确保信息披露的真实、准确、完整、及时\n- 加强关联交易管控，防范利益输送\n\n郑晓东\n合规审计部",
+    "date": "2024-05-04 00:00:00",
     "tags": [
-      "会议",
-      "复盘会"
+      "合规",
+      "internal_control"
     ],
     "attachments": [
       {
-        "filename": "meeting_notes_w41_12.txt",
+        "filename": "compliance_internal_control_12.txt",
         "type": "txt"
       }
     ]
@@ -1471,374 +1471,421 @@
   {
     "id": "email_043",
     "from": {
-      "name": "孙七",
-      "email": "sunqi@techcorp.com"
+      "name": "王建华",
+      "email": "wangjh@huaxintrust.com"
     },
     "to": [
       {
-        "name": "周八",
-        "email": "zhouba@techcorp.com"
-      }
-    ],
-    "cc": [
+        "name": "杨芳",
+        "email": "yangf@longtaiwealth.com"
+      },
       {
-        "name": "郑十",
-        "email": "zhengshi@techcorp.com"
+        "name": "林国栋",
+        "email": "lingd@huaxintrust.com"
       }
     ],
-    "subject": "[法务] 服务协议 - CT-2024-6238",
-    "body": "您好，\n\n附件为服务协议（合同编号：CT-2024-6238），请审阅。\n\n合同要点：\n- 合同期限：3年\n- 合同金额：51万元\n- 生效日期：2024-06-20\n- 付款方式：季付\n\n请在4个工作日内完成审阅并反馈意见。\n\n孙七\n法务部",
-    "date": "2024-06-20 00:00:00",
+    "cc": [],
+    "subject": "[风控] 信用风险监测周报 - 2025-02-04",
+    "body": "各位领导好，\n\n附件为信用风险监测周报，截至2025-02-04。\n\n信用风险概况：\n- 在管信托项目：60个\n- 正常类：91%\n- 关注类：9%\n- 不良类：3%\n- 加权平均信用评级：AA\n\n详见附件。\n\n王建华\n风控合规部",
+    "date": "2025-02-04 00:00:00",
     "tags": [
-      "法务",
-      "合同"
+      "风控",
+      "信用风险监测周报"
     ],
     "attachments": [
       {
-        "filename": "contract_CT-2024-6238.pdf",
-        "type": "pdf"
+        "filename": "risk_信用风险监测周报_1.xlsx",
+        "type": "xlsx"
       }
     ]
   },
   {
     "id": "email_044",
     "from": {
-      "name": "赵六",
-      "email": "zhaoliu@techcorp.com"
+      "name": "王建华",
+      "email": "wangjh@huaxintrust.com"
     },
     "to": [
       {
-        "name": "刘洋",
-        "email": "liuyang@clientcorp.com"
+        "name": "杨芳",
+        "email": "yangf@longtaiwealth.com"
       },
       {
-        "name": "王五",
-        "email": "wangwu@techcorp.com"
-      }
-    ],
-    "cc": [
+        "name": "张明远",
+        "email": "zhangmy@huaxintrust.com"
+      },
       {
-        "name": "郑十",
-        "email": "zhengshi@techcorp.com"
+        "name": "李文博",
+        "email": "liwb@huaxintrust.com"
+      },
+      {
+        "name": "周丽萍",
+        "email": "zhoulp@huaxintrust.com"
+      },
+      {
+        "name": "孙浩然",
+        "email": "sunhr@huaxintrust.com"
       }
     ],
-    "subject": "[法务] 采购合同 - CT-2024-4505",
-    "body": "您好，\n\n附件为采购合同（合同编号：CT-2024-4505），请审阅。\n\n合同要点：\n- 合同期限：1年\n- 合同金额：222万元\n- 生效日期：2024-12-27\n- 付款方式：里程碑付款\n\n请在5个工作日内完成审阅并反馈意见。\n\n赵六\n法务部",
-    "date": "2024-12-27 00:00:00",
+    "cc": [],
+    "subject": "[风控] 市场风险日报 - 2024-07-26",
+    "body": "各位领导好，\n\n附件为市场风险日报，截至2024-07-26。\n\n报告要点：\n- 各项风险指标在可控范围内\n- 未发现重大风险隐患\n- 风险限额使用率：55%\n\n详见附件。\n\n王建华\n风控合规部",
+    "date": "2024-07-26 00:00:00",
     "tags": [
-      "法务",
-      "合同"
+      "风控",
+      "市场风险日报"
     ],
     "attachments": [
       {
-        "filename": "contract_CT-2024-4505.docx",
-        "type": "docx"
+        "filename": "risk_市场风险日报_2.pdf",
+        "type": "pdf"
       }
     ]
   },
   {
     "id": "email_045",
     "from": {
-      "name": "郑十",
-      "email": "zhengshi@techcorp.com"
+      "name": "王建华",
+      "email": "wangjh@huaxintrust.com"
     },
     "to": [
       {
-        "name": "张三",
-        "email": "zhangsan@techcorp.com"
+        "name": "刘德伟",
+        "email": "liudw@hengfundinvest.com"
       },
       {
-        "name": "赵六",
-        "email": "zhaoliu@techcorp.com"
-      }
-    ],
-    "cc": [
+        "name": "陈思远",
+        "email": "chensy@huaxintrust.com"
+      },
       {
-        "name": "郑十",
-        "email": "zhengshi@techcorp.com"
+        "name": "吴志强",
+        "email": "wuzq@huaxintrust.com"
+      },
+      {
+        "name": "马骏",
+        "email": "maj@zhongyuancapital.com"
+      },
+      {
+        "name": "钱海燕",
+        "email": "qianhy@huaxintrust.com"
       }
     ],
-    "subject": "[法务] 保密协议(NDA) - CT-2025-7883",
-    "body": "您好，\n\n附件为保密协议(NDA)（合同编号：CT-2025-7883），请审阅。\n\n合同要点：\n- 合同期限：2年\n- 合同金额：473万元\n- 生效日期：2025-03-02\n- 付款方式：月付\n\n请在7个工作日内完成审阅并反馈意见。\n\n郑十\n法务部",
-    "date": "2025-03-02 00:00:00",
+    "cc": [],
+    "subject": "[风控] 流动性风险监测报告 - 2024-05-18",
+    "body": "各位领导好，\n\n附件为流动性风险监测报告，截至2024-05-18。\n\n报告要点：\n- 各项风险指标在可控范围内\n- 未发现重大风险隐患\n- 风险限额使用率：59%\n\n详见附件。\n\n王建华\n风控合规部",
+    "date": "2024-05-18 00:00:00",
     "tags": [
-      "法务",
-      "合同"
+      "风控",
+      "流动性风险监测报告"
     ],
     "attachments": [
       {
-        "filename": "contract_CT-2025-7883.pdf",
-        "type": "pdf"
+        "filename": "risk_流动性风险监测报告_3.xlsx",
+        "type": "xlsx"
       }
     ]
   },
   {
     "id": "email_046",
     "from": {
-      "name": "吴九",
-      "email": "wujiu@techcorp.com"
+      "name": "王建华",
+      "email": "wangjh@huaxintrust.com"
     },
     "to": [
       {
-        "name": "张三",
-        "email": "zhangsan@techcorp.com"
+        "name": "孙浩然",
+        "email": "sunhr@huaxintrust.com"
       },
       {
-        "name": "周八",
-        "email": "zhouba@techcorp.com"
+        "name": "李文博",
+        "email": "liwb@huaxintrust.com"
       }
     ],
-    "cc": [
-      {
-        "name": "郑十",
-        "email": "zhengshi@techcorp.com"
-      }
-    ],
-    "subject": "[法务] 合作框架协议 - CT-2024-7389",
-    "body": "您好，\n\n附件为合作框架协议（合同编号：CT-2024-7389），请审阅。\n\n合同要点：\n- 合同期限：2年\n- 合同金额：285万元\n- 生效日期：2024-06-01\n- 付款方式：季付\n\n请在6个工作日内完成审阅并反馈意见。\n\n吴九\n法务部",
-    "date": "2024-06-01 00:00:00",
+    "cc": [],
+    "subject": "[风控] 集中度风险分析 - 2024-10-12",
+    "body": "各位领导好，\n\n附件为集中度风险分析，截至2024-10-12。\n\n报告要点：\n- 各项风险指标在可控范围内\n- 未发现重大风险隐患\n- 风险限额使用率：66%\n\n详见附件。\n\n王建华\n风控合规部",
+    "date": "2024-10-12 00:00:00",
     "tags": [
-      "法务",
-      "合同"
+      "风控",
+      "集中度风险分析"
     ],
     "attachments": [
       {
-        "filename": "contract_CT-2024-7389.docx",
-        "type": "docx"
+        "filename": "risk_集中度风险分析_4.pdf",
+        "type": "pdf"
       }
     ]
   },
   {
     "id": "email_047",
     "from": {
-      "name": "孙七",
-      "email": "sunqi@techcorp.com"
+      "name": "王建华",
+      "email": "wangjh@huaxintrust.com"
     },
     "to": [
       {
-        "name": "钱磊",
-        "email": "qianlei@techcorp.com"
+        "name": "马骏",
+        "email": "maj@zhongyuancapital.com"
       },
       {
-        "name": "张三",
-        "email": "zhangsan@techcorp.com"
-      }
-    ],
-    "cc": [
+        "name": "林国栋",
+        "email": "lingd@huaxintrust.com"
+      },
       {
-        "name": "郑十",
-        "email": "zhengshi@techcorp.com"
+        "name": "郑晓东",
+        "email": "zhengxd@huaxintrust.com"
+      },
+      {
+        "name": "周丽萍",
+        "email": "zhoulp@huaxintrust.com"
       }
     ],
-    "subject": "[法务] 软件许可协议 - CT-2024-6507",
-    "body": "您好，\n\n附件为软件许可协议（合同编号：CT-2024-6507），请审阅。\n\n合同要点：\n- 合同期限：3年\n- 合同金额：357万元\n- 生效日期：2024-07-18\n- 付款方式：里程碑付款\n\n请在4个工作日内完成审阅并反馈意见。\n\n孙七\n法务部",
-    "date": "2024-07-18 00:00:00",
+    "cc": [],
+    "subject": "[风控] 信托项目逾期预警 - 2024-10-18",
+    "body": "各位领导好，\n\n附件为信托项目逾期预警，截至2024-10-18。\n\n逾期预警信息：\n- 本周新增逾期项目：0个\n- 逾期金额：4994万元\n- 已采取催收措施：启动法律程序\n- 预计回收情况：预计30日内全额回收\n\n详见附件。\n\n王建华\n风控合规部",
+    "date": "2024-10-18 00:00:00",
     "tags": [
-      "法务",
-      "合同"
+      "风控",
+      "信托项目逾期预警"
     ],
     "attachments": [
       {
-        "filename": "contract_CT-2024-6507.pdf",
-        "type": "pdf"
+        "filename": "risk_信托项目逾期预警_5.xlsx",
+        "type": "xlsx"
       }
     ]
   },
   {
     "id": "email_048",
     "from": {
-      "name": "杨帆",
-      "email": "yangfan@clientcorp.com"
+      "name": "王建华",
+      "email": "wangjh@huaxintrust.com"
     },
     "to": [
       {
-        "name": "王五",
-        "email": "wangwu@techcorp.com"
+        "name": "刘德伟",
+        "email": "liudw@hengfundinvest.com"
       },
       {
-        "name": "陈静",
-        "email": "chenjing@techcorp.com"
-      }
-    ],
-    "cc": [
+        "name": "吴志强",
+        "email": "wuzq@huaxintrust.com"
+      },
       {
-        "name": "郑十",
-        "email": "zhengshi@techcorp.com"
+        "name": "林国栋",
+        "email": "lingd@huaxintrust.com"
+      },
+      {
+        "name": "周丽萍",
+        "email": "zhoulp@huaxintrust.com"
+      },
+      {
+        "name": "张明远",
+        "email": "zhangmy@huaxintrust.com"
       }
     ],
-    "subject": "[法务] 数据处理协议 - CT-2024-1441",
-    "body": "您好，\n\n附件为数据处理协议（合同编号：CT-2024-1441），请审阅。\n\n合同要点：\n- 合同期限：2年\n- 合同金额：313万元\n- 生效日期：2024-09-30\n- 付款方式：月付\n\n请在3个工作日内完成审阅并反馈意见。\n\n杨帆\n法务部",
-    "date": "2024-09-30 00:00:00",
+    "cc": [],
+    "subject": "[风控] 压力测试报告 - 2024-02-16",
+    "body": "各位领导好，\n\n附件为压力测试报告，截至2024-02-16。\n\n压力测试结果：\n- 轻度压力情景：资本充足率144%，满足监管要求\n- 中度压力情景：资本充足率130%，满足监管要求\n- 重度压力情景：资本充足率98%，仍满足监管要求\n\n详见附件。\n\n王建华\n风控合规部",
+    "date": "2024-02-16 00:00:00",
     "tags": [
-      "法务",
-      "合同"
+      "风控",
+      "压力测试报告"
     ],
     "attachments": [
       {
-        "filename": "contract_CT-2024-1441.docx",
-        "type": "docx"
+        "filename": "risk_压力测试报告_6.pdf",
+        "type": "pdf"
       }
     ]
   },
   {
     "id": "email_049",
     "from": {
-      "name": "吴九",
-      "email": "wujiu@techcorp.com"
+      "name": "王建华",
+      "email": "wangjh@huaxintrust.com"
     },
     "to": [
       {
-        "name": "马丽",
-        "email": "mali@partnercorp.com"
-      }
-    ],
-    "cc": [
+        "name": "周丽萍",
+        "email": "zhoulp@huaxintrust.com"
+      },
       {
-        "name": "郑十",
-        "email": "zhengshi@techcorp.com"
+        "name": "赵雪梅",
+        "email": "zhaoxm@huaxintrust.com"
+      },
+      {
+        "name": "林国栋",
+        "email": "lingd@huaxintrust.com"
+      },
+      {
+        "name": "郑晓东",
+        "email": "zhengxd@huaxintrust.com"
+      },
+      {
+        "name": "钱海燕",
+        "email": "qianhy@huaxintrust.com"
       }
     ],
-    "subject": "[法务] 竞业禁止协议 - CT-2024-3977",
-    "body": "您好，\n\n附件为竞业禁止协议（合同编号：CT-2024-3977），请审阅。\n\n合同要点：\n- 合同期限：1年\n- 合同金额：143万元\n- 生效日期：2024-08-24\n- 付款方式：里程碑付款\n\n请在5个工作日内完成审阅并反馈意见。\n\n吴九\n法务部",
-    "date": "2024-08-24 00:00:00",
+    "cc": [],
+    "subject": "[风控] 风险限额使用情况 - 2024-02-16",
+    "body": "各位领导好，\n\n附件为风险限额使用情况，截至2024-02-16。\n\n报告要点：\n- 各项风险指标在可控范围内\n- 未发现重大风险隐患\n- 风险限额使用率：70%\n\n详见附件。\n\n王建华\n风控合规部",
+    "date": "2024-02-16 00:00:00",
     "tags": [
-      "法务",
-      "合同"
+      "风控",
+      "风险限额使用情况"
     ],
     "attachments": [
       {
-        "filename": "contract_CT-2024-3977.pdf",
-        "type": "pdf"
+        "filename": "risk_风险限额使用情况_7.xlsx",
+        "type": "xlsx"
       }
     ]
   },
   {
     "id": "email_050",
     "from": {
-      "name": "赵六",
-      "email": "zhaoliu@techcorp.com"
+      "name": "王建华",
+      "email": "wangjh@huaxintrust.com"
     },
     "to": [
       {
-        "name": "吴九",
-        "email": "wujiu@techcorp.com"
+        "name": "钱海燕",
+        "email": "qianhy@huaxintrust.com"
       },
       {
-        "name": "马丽",
-        "email": "mali@partnercorp.com"
-      }
-    ],
-    "cc": [
+        "name": "刘德伟",
+        "email": "liudw@hengfundinvest.com"
+      },
       {
-        "name": "郑十",
-        "email": "zhengshi@techcorp.com"
+        "name": "周丽萍",
+        "email": "zhoulp@huaxintrust.com"
       }
     ],
-    "subject": "[法务] 劳动合同补充 - CT-2025-7211",
-    "body": "您好，\n\n附件为劳动合同补充（合同编号：CT-2025-7211），请审阅。\n\n合同要点：\n- 合同期限：2年\n- 合同金额：395万元\n- 生效日期：2025-01-24\n- 付款方式：里程碑付款\n\n请在5个工作日内完成审阅并反馈意见。\n\n赵六\n法务部",
-    "date": "2025-01-24 00:00:00",
+    "cc": [],
+    "subject": "[风控] 大额风险暴露报告 - 2024-09-17",
+    "body": "各位领导好，\n\n附件为大额风险暴露报告，截至2024-09-17。\n\n报告要点：\n- 各项风险指标在可控范围内\n- 未发现重大风险隐患\n- 风险限额使用率：57%\n\n详见附件。\n\n王建华\n风控合规部",
+    "date": "2024-09-17 00:00:00",
     "tags": [
-      "法务",
-      "合同"
+      "风控",
+      "大额风险暴露报告"
     ],
     "attachments": [
       {
-        "filename": "contract_CT-2025-7211.docx",
-        "type": "docx"
+        "filename": "risk_大额风险暴露报告_8.pdf",
+        "type": "pdf"
       }
     ]
   },
   {
     "id": "email_051",
     "from": {
-      "name": "李四",
-      "email": "lisi@techcorp.com"
+      "name": "王建华",
+      "email": "wangjh@huaxintrust.com"
     },
     "to": [
       {
-        "name": "张三",
-        "email": "zhangsan@techcorp.com"
+        "name": "郑晓东",
+        "email": "zhengxd@huaxintrust.com"
       },
       {
-        "name": "刘洋",
-        "email": "liuyang@clientcorp.com"
-      }
-    ],
-    "cc": [
+        "name": "孙浩然",
+        "email": "sunhr@huaxintrust.com"
+      },
       {
-        "name": "郑十",
-        "email": "zhengshi@techcorp.com"
+        "name": "林国栋",
+        "email": "lingd@huaxintrust.com"
       }
     ],
-    "subject": "[法务] 知识产权协议 - CT-2024-1853",
-    "body": "您好，\n\n附件为知识产权协议（合同编号：CT-2024-1853），请审阅。\n\n合同要点：\n- 合同期限：2年\n- 合同金额：124万元\n- 生效日期：2024-10-03\n- 付款方式：月付\n\n请在3个工作日内完成审阅并反馈意见。\n\n李四\n法务部",
-    "date": "2024-10-03 00:00:00",
+    "cc": [],
+    "subject": "[风控] 风险事件应急预案 - 2024-09-17",
+    "body": "各位领导好，\n\n附件为风险事件应急预案，截至2024-09-17。\n\n报告要点：\n- 各项风险指标在可控范围内\n- 未发现重大风险隐患\n- 风险限额使用率：48%\n\n详见附件。\n\n王建华\n风控合规部",
+    "date": "2024-09-17 00:00:00",
     "tags": [
-      "法务",
-      "合同"
+      "风控",
+      "风险事件应急预案"
     ],
     "attachments": [
       {
-        "filename": "contract_CT-2024-1853.pdf",
-        "type": "pdf"
+        "filename": "risk_风险事件应急预案_9.xlsx",
+        "type": "xlsx"
       }
     ]
   },
   {
     "id": "email_052",
     "from": {
-      "name": "刘洋",
-      "email": "liuyang@clientcorp.com"
+      "name": "王建华",
+      "email": "wangjh@huaxintrust.com"
     },
     "to": [
       {
-        "name": "赵六",
-        "email": "zhaoliu@techcorp.com"
-      }
-    ],
-    "cc": [
+        "name": "林国栋",
+        "email": "lingd@huaxintrust.com"
+      },
       {
-        "name": "郑十",
-        "email": "zhengshi@techcorp.com"
+        "name": "刘德伟",
+        "email": "liudw@hengfundinvest.com"
+      },
+      {
+        "name": "郑晓东",
+        "email": "zhengxd@huaxintrust.com"
+      },
+      {
+        "name": "黄永华",
+        "email": "huangyh@huaxintrust.com"
       }
     ],
-    "subject": "[法务] 外包服务合同 - CT-2024-1333",
-    "body": "您好，\n\n附件为外包服务合同（合同编号：CT-2024-1333），请审阅。\n\n合同要点：\n- 合同期限：3年\n- 合同金额：88万元\n- 生效日期：2024-04-12\n- 付款方式：季付\n\n请在4个工作日内完成审阅并反馈意见。\n\n刘洋\n法务部",
-    "date": "2024-04-12 00:00:00",
+    "cc": [],
+    "subject": "[风控] 风险偏好声明书 - 2024-02-11",
+    "body": "各位领导好，\n\n附件为风险偏好声明书，截至2024-02-11。\n\n报告要点：\n- 各项风险指标在可控范围内\n- 未发现重大风险隐患\n- 风险限额使用率：61%\n\n详见附件。\n\n王建华\n风控合规部",
+    "date": "2024-02-11 00:00:00",
     "tags": [
-      "法务",
-      "合同"
+      "风控",
+      "风险偏好声明书"
     ],
     "attachments": [
       {
-        "filename": "contract_CT-2024-1333.docx",
-        "type": "docx"
+        "filename": "risk_风险偏好声明书_10.pdf",
+        "type": "pdf"
       }
     ]
   },
   {
     "id": "email_053",
     "from": {
-      "name": "林涛",
-      "email": "lintao@techcorp.com"
+      "name": "赵雪梅",
+      "email": "zhaoxm@huaxintrust.com"
     },
     "to": [
       {
-        "name": "陈静",
-        "email": "chenjing@techcorp.com"
+        "name": "张明远",
+        "email": "zhangmy@huaxintrust.com"
+      },
+      {
+        "name": "林国栋",
+        "email": "lingd@huaxintrust.com"
+      },
+      {
+        "name": "李文博",
+        "email": "liwb@huaxintrust.com"
       }
     ],
-    "cc": [],
-    "subject": "[技术] 微服务架构设计文档 v2.4",
-    "body": "Hi all,\n\n附件是最新版本的微服务架构设计文档（v2.4），主要更新：\n\n1. 根据上次评审意见修改了架构方案\n2. 补充了异常处理和降级策略\n3. 更新了技术栈版本号\n\n请大家review后提出意见，计划在本周五前定稿。\n\n林涛",
-    "date": "2024-04-21 00:00:00",
+    "cc": [
+      {
+        "name": "郑晓东",
+        "email": "zhengxd@huaxintrust.com"
+      }
+    ],
+    "subject": "[法务] 信托合同审批 - HX-2024-5708",
+    "body": "各位好，\n\n附件为信托合同审批（编号：HX-2024-5708），请审阅。\n\n合同要点：\n- 信托类型：集合资金信托\n- 信托规模：10923万元\n- 信托期限：36个月\n- 受益人类型：单一受益人\n- 信托报酬率：1.21%/年\n\n赵雪梅\n法务部",
+    "date": "2024-04-30 00:00:00",
     "tags": [
-      "技术",
-      "architecture"
+      "法务",
+      "trust_contract"
     ],
     "attachments": [
       {
-        "filename": "tech_architecture_v2.4.pdf",
+        "filename": "legal_trust_contract_HX-2024-5708.pdf",
         "type": "pdf"
       }
     ]
@@ -1846,123 +1893,139 @@
   {
     "id": "email_054",
     "from": {
-      "name": "刘洋",
-      "email": "liuyang@clientcorp.com"
+      "name": "赵雪梅",
+      "email": "zhaoxm@huaxintrust.com"
     },
     "to": [
       {
-        "name": "王五",
-        "email": "wangwu@techcorp.com"
+        "name": "马骏",
+        "email": "maj@zhongyuancapital.com"
       },
       {
-        "name": "陈静",
-        "email": "chenjing@techcorp.com"
+        "name": "李文博",
+        "email": "liwb@huaxintrust.com"
+      },
+      {
+        "name": "钱海燕",
+        "email": "qianhy@huaxintrust.com"
       }
     ],
-    "cc": [],
-    "subject": "[技术] API接口规范 v2.0 v3.1",
-    "body": "Hi all,\n\n附件是最新版本的API接口规范 v2.0（v3.1），主要更新：\n\n1. 根据上次评审意见修改了架构方案\n2. 补充了异常处理和降级策略\n3. 更新了技术栈版本号\n\n请大家review后提出意见，计划在本周五前定稿。\n\n刘洋",
-    "date": "2024-11-06 00:00:00",
+    "cc": [
+      {
+        "name": "郑晓东",
+        "email": "zhengxd@huaxintrust.com"
+      }
+    ],
+    "subject": "[法务] 投资顾问协议 - HX-2024-5906",
+    "body": "各位好，\n\n附件为投资顾问协议（编号：HX-2024-5906），请审阅。\n\n合同金额：1997万元\n签署方：华信金融信托有限公司 与 恒丰投资有限公司\n请在5个工作日内完成审阅。\n\n赵雪梅\n法务部",
+    "date": "2024-03-26 00:00:00",
     "tags": [
-      "技术",
-      "api_spec"
+      "法务",
+      "advisor_agreement"
     ],
     "attachments": [
       {
-        "filename": "tech_api_spec_v3.1.txt",
-        "type": "txt"
+        "filename": "legal_advisor_agreement_HX-2024-5906.docx",
+        "type": "docx"
       }
     ]
   },
   {
     "id": "email_055",
     "from": {
-      "name": "刘洋",
-      "email": "liuyang@clientcorp.com"
+      "name": "赵雪梅",
+      "email": "zhaoxm@huaxintrust.com"
     },
     "to": [
       {
-        "name": "孙七",
-        "email": "sunqi@techcorp.com"
+        "name": "郑晓东",
+        "email": "zhengxd@huaxintrust.com"
+      },
+      {
+        "name": "王建华",
+        "email": "wangjh@huaxintrust.com"
       }
     ],
-    "cc": [],
-    "subject": "[技术] 数据库设计说明书 v3.0",
-    "body": "Hi all,\n\n附件是最新版本的数据库设计说明书（v3.0），主要更新：\n\n1. 根据上次评审意见修改了架构方案\n2. 补充了异常处理和降级策略\n3. 更新了技术栈版本号\n\n请大家review后提出意见，计划在本周五前定稿。\n\n刘洋",
-    "date": "2024-02-25 00:00:00",
+    "cc": [
+      {
+        "name": "郑晓东",
+        "email": "zhengxd@huaxintrust.com"
+      }
+    ],
+    "subject": "[法务] 托管协议定稿 - HX-2024-9702",
+    "body": "各位好，\n\n附件为托管协议定稿（编号：HX-2024-9702），请审阅。\n\n合同金额：27104万元\n签署方：华信金融信托有限公司 与 中原资本集团\n请在4个工作日内完成审阅。\n\n赵雪梅\n法务部",
+    "date": "2024-05-05 00:00:00",
     "tags": [
-      "技术",
-      "db_design"
+      "法务",
+      "custody_agreement"
     ],
     "attachments": [
       {
-        "filename": "tech_db_design_v3.0.zip",
-        "type": "zip"
+        "filename": "legal_custody_agreement_HX-2024-9702.pdf",
+        "type": "pdf"
       }
     ]
   },
   {
     "id": "email_056",
     "from": {
-      "name": "马丽",
-      "email": "mali@partnercorp.com"
+      "name": "赵雪梅",
+      "email": "zhaoxm@huaxintrust.com"
     },
     "to": [
       {
-        "name": "陈静",
-        "email": "chenjing@techcorp.com"
-      },
-      {
-        "name": "林涛",
-        "email": "lintao@techcorp.com"
+        "name": "王建华",
+        "email": "wangjh@huaxintrust.com"
       }
     ],
-    "cc": [],
-    "subject": "[技术] 部署运维手册 v2.3",
-    "body": "Hi all,\n\n附件是最新版本的部署运维手册（v2.3），主要更新：\n\n1. 根据上次评审意见修改了架构方案\n2. 补充了异常处理和降级策略\n3. 更新了技术栈版本号\n\n请大家review后提出意见，计划在本周五前定稿。\n\n马丽",
-    "date": "2024-07-11 00:00:00",
+    "cc": [
+      {
+        "name": "郑晓东",
+        "email": "zhengxd@huaxintrust.com"
+      }
+    ],
+    "subject": "[法务] 担保合同审查 - HX-2024-7267",
+    "body": "各位好，\n\n附件为担保合同审查（编号：HX-2024-7267），请审阅。\n\n合同金额：40713万元\n签署方：华信金融信托有限公司 与 中原资本集团\n请在4个工作日内完成审阅。\n\n赵雪梅\n法务部",
+    "date": "2024-02-10 00:00:00",
     "tags": [
-      "技术",
-      "deployment"
+      "法务",
+      "guarantee_contract"
     ],
     "attachments": [
       {
-        "filename": "tech_deployment_v2.3.pdf",
-        "type": "pdf"
+        "filename": "legal_guarantee_contract_HX-2024-7267.docx",
+        "type": "docx"
       }
     ]
   },
   {
     "id": "email_057",
     "from": {
-      "name": "李四",
-      "email": "lisi@techcorp.com"
+      "name": "赵雪梅",
+      "email": "zhaoxm@huaxintrust.com"
     },
     "to": [
       {
-        "name": "刘洋",
-        "email": "liuyang@clientcorp.com"
-      },
-      {
-        "name": "黄蕾",
-        "email": "huanglei@techcorp.com"
-      },
-      {
-        "name": "孙七",
-        "email": "sunqi@techcorp.com"
+        "name": "钱海燕",
+        "email": "qianhy@huaxintrust.com"
       }
     ],
-    "cc": [],
-    "subject": "[技术] 安全审计报告 v3.4",
-    "body": "Hi all,\n\n附件是最新版本的安全审计报告（v3.4），主要更新：\n\n1. 根据上次评审意见修改了架构方案\n2. 补充了异常处理和降级策略\n3. 更新了技术栈版本号\n\n请大家review后提出意见，计划在本周五前定稿。\n\n李四",
-    "date": "2024-02-22 00:00:00",
+    "cc": [
+      {
+        "name": "郑晓东",
+        "email": "zhengxd@huaxintrust.com"
+      }
+    ],
+    "subject": "[法务] 股权质押合同 - HX-2024-5161",
+    "body": "各位好，\n\n附件为股权质押合同（编号：HX-2024-5161），请审阅。\n\n合同金额：30218万元\n签署方：华信金融信托有限公司 与 龙泰财富管理有限公司\n请在3个工作日内完成审阅。\n\n赵雪梅\n法务部",
+    "date": "2024-11-22 00:00:00",
     "tags": [
-      "技术",
-      "security"
+      "法务",
+      "pledge_contract"
     ],
     "attachments": [
       {
-        "filename": "tech_security_v3.4.pdf",
+        "filename": "legal_pledge_contract_HX-2024-5161.pdf",
         "type": "pdf"
       }
     ]
@@ -1970,131 +2033,139 @@
   {
     "id": "email_058",
     "from": {
-      "name": "杨帆",
-      "email": "yangfan@clientcorp.com"
+      "name": "赵雪梅",
+      "email": "zhaoxm@huaxintrust.com"
     },
     "to": [
       {
-        "name": "陈静",
-        "email": "chenjing@techcorp.com"
+        "name": "周丽萍",
+        "email": "zhoulp@huaxintrust.com"
       },
       {
-        "name": "刘洋",
-        "email": "liuyang@clientcorp.com"
-      },
-      {
-        "name": "李四",
-        "email": "lisi@techcorp.com"
+        "name": "黄永华",
+        "email": "huangyh@huaxintrust.com"
       }
     ],
-    "cc": [],
-    "subject": "[技术] 性能测试报告 v3.0",
-    "body": "Hi all,\n\n附件是最新版本的性能测试报告（v3.0），主要更新：\n\n1. 根据上次评审意见修改了架构方案\n2. 补充了异常处理和降级策略\n3. 更新了技术栈版本号\n\n请大家review后提出意见，计划在本周五前定稿。\n\n杨帆",
-    "date": "2025-02-11 00:00:00",
+    "cc": [
+      {
+        "name": "郑晓东",
+        "email": "zhengxd@huaxintrust.com"
+      }
+    ],
+    "subject": "[法务] 保密协议(NDA) - HX-2024-3588",
+    "body": "各位好，\n\n附件为保密协议(NDA)（编号：HX-2024-3588），请审阅。\n\n合同金额：4940万元\n签署方：华信金融信托有限公司 与 龙泰财富管理有限公司\n请在5个工作日内完成审阅。\n\n赵雪梅\n法务部",
+    "date": "2024-10-06 00:00:00",
     "tags": [
-      "技术",
-      "perf_test"
+      "法务",
+      "nda"
     ],
     "attachments": [
       {
-        "filename": "tech_perf_test_v3.0.txt",
-        "type": "txt"
+        "filename": "legal_nda_HX-2024-3588.docx",
+        "type": "docx"
       }
     ]
   },
   {
     "id": "email_059",
     "from": {
-      "name": "周八",
-      "email": "zhouba@techcorp.com"
+      "name": "赵雪梅",
+      "email": "zhaoxm@huaxintrust.com"
     },
     "to": [
       {
-        "name": "郑十",
-        "email": "zhengshi@techcorp.com"
+        "name": "刘德伟",
+        "email": "liudw@hengfundinvest.com"
       },
       {
-        "name": "黄蕾",
-        "email": "huanglei@techcorp.com"
-      },
-      {
-        "name": "吴九",
-        "email": "wujiu@techcorp.com"
+        "name": "周丽萍",
+        "email": "zhoulp@huaxintrust.com"
       }
     ],
-    "cc": [],
-    "subject": "[技术] 技术选型评估 v3.5",
-    "body": "Hi all,\n\n附件是最新版本的技术选型评估（v3.5），主要更新：\n\n1. 根据上次评审意见修改了架构方案\n2. 补充了异常处理和降级策略\n3. 更新了技术栈版本号\n\n请大家review后提出意见，计划在本周五前定稿。\n\n周八",
-    "date": "2024-02-05 00:00:00",
+    "cc": [
+      {
+        "name": "郑晓东",
+        "email": "zhengxd@huaxintrust.com"
+      }
+    ],
+    "subject": "[法务] 资产转让协议 - HX-2024-5949",
+    "body": "各位好，\n\n附件为资产转让协议（编号：HX-2024-5949），请审阅。\n\n合同金额：13155万元\n签署方：华信金融信托有限公司 与 龙泰财富管理有限公司\n请在6个工作日内完成审阅。\n\n赵雪梅\n法务部",
+    "date": "2024-08-21 00:00:00",
     "tags": [
-      "技术",
-      "tech_eval"
+      "法务",
+      "asset_transfer"
     ],
     "attachments": [
       {
-        "filename": "tech_tech_eval_v3.5.zip",
-        "type": "zip"
+        "filename": "legal_asset_transfer_HX-2024-5949.pdf",
+        "type": "pdf"
       }
     ]
   },
   {
     "id": "email_060",
     "from": {
-      "name": "张三",
-      "email": "zhangsan@techcorp.com"
+      "name": "赵雪梅",
+      "email": "zhaoxm@huaxintrust.com"
     },
     "to": [
       {
-        "name": "马丽",
-        "email": "mali@partnercorp.com"
-      },
-      {
-        "name": "钱磊",
-        "email": "qianlei@techcorp.com"
+        "name": "孙浩然",
+        "email": "sunhr@huaxintrust.com"
       }
     ],
-    "cc": [],
-    "subject": "[技术] 代码规范指南 v2.5",
-    "body": "Hi all,\n\n附件是最新版本的代码规范指南（v2.5），主要更新：\n\n1. 根据上次评审意见修改了架构方案\n2. 补充了异常处理和降级策略\n3. 更新了技术栈版本号\n\n请大家review后提出意见，计划在本周五前定稿。\n\n张三",
-    "date": "2024-02-24 00:00:00",
+    "cc": [
+      {
+        "name": "郑晓东",
+        "email": "zhengxd@huaxintrust.com"
+      }
+    ],
+    "subject": "[法务] 基金合同修订 - HX-2024-6881",
+    "body": "各位好，\n\n附件为基金合同修订（编号：HX-2024-6881），请审阅。\n\n合同金额：37770万元\n签署方：华信金融信托有限公司 与 龙泰财富管理有限公司\n请在5个工作日内完成审阅。\n\n赵雪梅\n法务部",
+    "date": "2024-07-14 00:00:00",
     "tags": [
-      "技术",
-      "code_style"
+      "法务",
+      "fund_amendment"
     ],
     "attachments": [
       {
-        "filename": "tech_code_style_v2.5.pdf",
-        "type": "pdf"
+        "filename": "legal_fund_amendment_HX-2024-6881.docx",
+        "type": "docx"
       }
     ]
   },
   {
     "id": "email_061",
     "from": {
-      "name": "林涛",
-      "email": "lintao@techcorp.com"
+      "name": "赵雪梅",
+      "email": "zhaoxm@huaxintrust.com"
     },
     "to": [
       {
-        "name": "刘洋",
-        "email": "liuyang@clientcorp.com"
+        "name": "周丽萍",
+        "email": "zhoulp@huaxintrust.com"
       },
       {
-        "name": "王五",
-        "email": "wangwu@techcorp.com"
+        "name": "张明远",
+        "email": "zhangmy@huaxintrust.com"
       }
     ],
-    "cc": [],
-    "subject": "[技术] 灾备方案 v1.8",
-    "body": "Hi all,\n\n附件是最新版本的灾备方案（v1.8），主要更新：\n\n1. 根据上次评审意见修改了架构方案\n2. 补充了异常处理和降级策略\n3. 更新了技术栈版本号\n\n请大家review后提出意见，计划在本周五前定稿。\n\n林涛",
-    "date": "2024-08-10 00:00:00",
+    "cc": [
+      {
+        "name": "郑晓东",
+        "email": "zhengxd@huaxintrust.com"
+      }
+    ],
+    "subject": "[法务] 合规法律意见书 - HX-2024-1803",
+    "body": "各位好，\n\n附件为合规法律意见书（编号：HX-2024-1803），请审阅。\n\n合同金额：39841万元\n签署方：华信金融信托有限公司 与 中原资本集团\n请在6个工作日内完成审阅。\n\n赵雪梅\n法务部",
+    "date": "2024-10-16 00:00:00",
     "tags": [
-      "技术",
-      "disaster_recovery"
+      "法务",
+      "legal_opinion"
     ],
     "attachments": [
       {
-        "filename": "tech_disaster_recovery_v1.8.pdf",
+        "filename": "legal_legal_opinion_HX-2024-1803.pdf",
         "type": "pdf"
       }
     ]
@@ -2102,899 +2173,972 @@
   {
     "id": "email_062",
     "from": {
-      "name": "林涛",
-      "email": "lintao@techcorp.com"
+      "name": "赵雪梅",
+      "email": "zhaoxm@huaxintrust.com"
     },
     "to": [
       {
-        "name": "陈静",
-        "email": "chenjing@techcorp.com"
+        "name": "杨芳",
+        "email": "yangf@longtaiwealth.com"
       },
       {
-        "name": "杨帆",
-        "email": "yangfan@clientcorp.com"
+        "name": "马骏",
+        "email": "maj@zhongyuancapital.com"
       }
     ],
-    "cc": [],
-    "subject": "[技术] 监控告警方案 v2.7",
-    "body": "Hi all,\n\n附件是最新版本的监控告警方案（v2.7），主要更新：\n\n1. 根据上次评审意见修改了架构方案\n2. 补充了异常处理和降级策略\n3. 更新了技术栈版本号\n\n请大家review后提出意见，计划在本周五前定稿。\n\n林涛",
-    "date": "2024-10-02 00:00:00",
+    "cc": [
+      {
+        "name": "郑晓东",
+        "email": "zhengxd@huaxintrust.com"
+      }
+    ],
+    "subject": "[法务] 诉讼案件进展通报 - HX-2024-6772",
+    "body": "各位好，\n\n附件为诉讼案件进展通报（编号：HX-2024-6772），请审阅。\n\n案件进展：\n- 案由：信托纠纷\n- 涉案金额：3615万元\n- 当前阶段：执行阶段\n- 预计结果：正在积极调解\n\n赵雪梅\n法务部",
+    "date": "2024-04-27 00:00:00",
     "tags": [
-      "技术",
-      "monitoring"
+      "法务",
+      "litigation"
     ],
     "attachments": [
       {
-        "filename": "tech_monitoring_v2.7.txt",
-        "type": "txt"
+        "filename": "legal_litigation_HX-2024-6772.docx",
+        "type": "docx"
       }
     ]
   },
   {
     "id": "email_063",
     "from": {
-      "name": "吴九",
-      "email": "wujiu@techcorp.com"
+      "name": "赵雪梅",
+      "email": "zhaoxm@huaxintrust.com"
     },
     "to": [
       {
-        "name": "林涛",
-        "email": "lintao@techcorp.com"
+        "name": "黄永华",
+        "email": "huangyh@huaxintrust.com"
       },
       {
-        "name": "孙七",
-        "email": "sunqi@techcorp.com"
+        "name": "王建华",
+        "email": "wangjh@huaxintrust.com"
       },
       {
-        "name": "周八",
-        "email": "zhouba@techcorp.com"
+        "name": "马骏",
+        "email": "maj@zhongyuancapital.com"
       }
     ],
-    "cc": [],
-    "subject": "[技术] CI/CD流水线配置 v1.1",
-    "body": "Hi all,\n\n附件是最新版本的CI/CD流水线配置（v1.1），主要更新：\n\n1. 根据上次评审意见修改了架构方案\n2. 补充了异常处理和降级策略\n3. 更新了技术栈版本号\n\n请大家review后提出意见，计划在本周五前定稿。\n\n吴九",
-    "date": "2025-03-12 00:00:00",
+    "cc": [
+      {
+        "name": "郑晓东",
+        "email": "zhengxd@huaxintrust.com"
+      }
+    ],
+    "subject": "[法务] 监管问询回复函 - HX-2024-1645",
+    "body": "各位好，\n\n附件为监管问询回复函（编号：HX-2024-1645），请审阅。\n\n问询事项：\n- 问询机关：地方银保监局\n- 问询内容：关联交易情况说明\n- 回复期限：收函后5个工作日\n- 需要各部门配合提供材料，具体见附件。\n\n赵雪梅\n法务部",
+    "date": "2024-02-19 00:00:00",
     "tags": [
-      "技术",
-      "cicd"
+      "法务",
+      "regulatory_response"
     ],
     "attachments": [
       {
-        "filename": "tech_cicd_v1.1.zip",
-        "type": "zip"
+        "filename": "legal_regulatory_response_HX-2024-1645.pdf",
+        "type": "pdf"
       }
     ]
   },
   {
     "id": "email_064",
     "from": {
-      "name": "孙七",
-      "email": "sunqi@techcorp.com"
+      "name": "赵雪梅",
+      "email": "zhaoxm@huaxintrust.com"
     },
     "to": [
       {
-        "name": "赵六",
-        "email": "zhaoliu@techcorp.com"
+        "name": "吴志强",
+        "email": "wuzq@huaxintrust.com"
       },
       {
-        "name": "杨帆",
-        "email": "yangfan@clientcorp.com"
+        "name": "刘德伟",
+        "email": "liudw@hengfundinvest.com"
+      },
+      {
+        "name": "王建华",
+        "email": "wangjh@huaxintrust.com"
       }
     ],
-    "cc": [],
-    "subject": "[技术] 容器化迁移方案 v3.9",
-    "body": "Hi all,\n\n附件是最新版本的容器化迁移方案（v3.9），主要更新：\n\n1. 根据上次评审意见修改了架构方案\n2. 补充了异常处理和降级策略\n3. 更新了技术栈版本号\n\n请大家review后提出意见，计划在本周五前定稿。\n\n孙七",
-    "date": "2024-08-25 00:00:00",
+    "cc": [
+      {
+        "name": "郑晓东",
+        "email": "zhengxd@huaxintrust.com"
+      }
+    ],
+    "subject": "[法务] 知识产权许可协议 - HX-2024-5835",
+    "body": "各位好，\n\n附件为知识产权许可协议（编号：HX-2024-5835），请审阅。\n\n合同金额：21511万元\n签署方：华信金融信托有限公司 与 中原资本集团\n请在6个工作日内完成审阅。\n\n赵雪梅\n法务部",
+    "date": "2024-02-16 00:00:00",
     "tags": [
-      "技术",
-      "containerization"
+      "法务",
+      "ip_license"
     ],
     "attachments": [
       {
-        "filename": "tech_containerization_v3.9.pdf",
-        "type": "pdf"
+        "filename": "legal_ip_license_HX-2024-5835.docx",
+        "type": "docx"
       }
     ]
   },
   {
     "id": "email_065",
     "from": {
-      "name": "赵六",
-      "email": "zhaoliu@techcorp.com"
+      "name": "钱海燕",
+      "email": "qianhy@huaxintrust.com"
     },
     "to": [
       {
-        "name": "郑十",
-        "email": "zhengshi@techcorp.com"
+        "name": "陈思远",
+        "email": "chensy@huaxintrust.com"
       },
       {
-        "name": "吴九",
-        "email": "wujiu@techcorp.com"
+        "name": "马骏",
+        "email": "maj@zhongyuancapital.com"
       },
       {
-        "name": "张三",
-        "email": "zhangsan@techcorp.com"
+        "name": "孙浩然",
+        "email": "sunhr@huaxintrust.com"
       },
       {
-        "name": "钱磊",
-        "email": "qianlei@techcorp.com"
-      },
-      {
-        "name": "杨帆",
-        "email": "yangfan@clientcorp.com"
-      },
-      {
-        "name": "王五",
-        "email": "wangwu@techcorp.com"
-      },
-      {
-        "name": "黄蕾",
-        "email": "huanglei@techcorp.com"
-      },
-      {
-        "name": "李四",
-        "email": "lisi@techcorp.com"
+        "name": "王建华",
+        "email": "wangjh@huaxintrust.com"
       }
     ],
     "cc": [],
-    "subject": "[人事] 月度考勤统计 - 2024年5月",
-    "body": "全体同事好，\n\n现发送2024年5月月度考勤统计，详情见附件。\n\n请各位核对个人考勤数据，如有异议请于3个工作日内反馈。\n\n谢谢！\n赵六\n人事行政部",
-    "date": "2024-06-30 00:00:00",
+    "subject": "[运营] 信托产品到期兑付通知",
+    "body": "各位同事，\n\n以下信托产品即将到期，请做好兑付准备：\n\n1. 华信·稳健增长1号 - 到期日：2024-05-11，规模：19975万元\n2. 华信·城市发展3号 - 到期日：2024-05-28，规模：10894万元\n\n请运营部核实资金回款情况，财务部准备兑付资金，客服部做好客户通知工作。\n\n钱海燕",
+    "date": "2024-05-11 00:00:00",
     "tags": [
-      "人事",
-      "月度考勤统计"
+      "运营",
+      "redemption"
     ],
     "attachments": [
       {
-        "filename": "hr_月度考勤统计_5_1.xlsx",
-        "type": "xlsx"
+        "filename": "ops_redemption_1.docx",
+        "type": "docx"
       }
     ]
   },
   {
     "id": "email_066",
     "from": {
-      "name": "赵六",
-      "email": "zhaoliu@techcorp.com"
+      "name": "刘德伟",
+      "email": "liudw@hengfundinvest.com"
     },
     "to": [
       {
-        "name": "周八",
-        "email": "zhouba@techcorp.com"
+        "name": "黄永华",
+        "email": "huangyh@huaxintrust.com"
       },
       {
-        "name": "马丽",
-        "email": "mali@partnercorp.com"
+        "name": "周丽萍",
+        "email": "zhoulp@huaxintrust.com"
       },
       {
-        "name": "杨帆",
-        "email": "yangfan@clientcorp.com"
+        "name": "李文博",
+        "email": "liwb@huaxintrust.com"
       },
       {
-        "name": "孙七",
-        "email": "sunqi@techcorp.com"
-      },
-      {
-        "name": "李四",
-        "email": "lisi@techcorp.com"
-      },
-      {
-        "name": "黄蕾",
-        "email": "huanglei@techcorp.com"
+        "name": "郑晓东",
+        "email": "zhengxd@huaxintrust.com"
       }
     ],
     "cc": [],
-    "subject": "[人事] 培训计划通知 - 2024年2月",
-    "body": "全体同事好，\n\n现发送2024年2月培训计划通知，详情见附件。\n\n本次培训主题为「AI应用」，请相关同事准时参加。\n\n谢谢！\n赵六\n人事行政部",
-    "date": "2024-06-10 00:00:00",
+    "subject": "[运营] 新员工入职培训-信托基础知识",
+    "body": "各位同事，\n\n本次培训安排如下：\n\n主题：反洗钱实务\n时间：2024-02-08 14:00-17:00\n地点：公司12楼培训室\n讲师：业务部资深经理\n\n请相关人员准时参加，签到考勤。\n\n刘德伟",
+    "date": "2024-02-08 00:00:00",
     "tags": [
-      "人事",
-      "培训计划通知"
+      "运营",
+      "training"
     ],
     "attachments": [
       {
-        "filename": "hr_培训计划通知_2_2.pdf",
-        "type": "pdf"
+        "filename": "ops_training_2.txt",
+        "type": "txt"
       }
     ]
   },
   {
     "id": "email_067",
     "from": {
-      "name": "赵六",
-      "email": "zhaoliu@techcorp.com"
+      "name": "杨芳",
+      "email": "yangf@longtaiwealth.com"
     },
     "to": [
       {
-        "name": "孙七",
-        "email": "sunqi@techcorp.com"
+        "name": "周丽萍",
+        "email": "zhoulp@huaxintrust.com"
       },
       {
-        "name": "刘洋",
-        "email": "liuyang@clientcorp.com"
+        "name": "李文博",
+        "email": "liwb@huaxintrust.com"
       },
       {
-        "name": "钱磊",
-        "email": "qianlei@techcorp.com"
+        "name": "吴志强",
+        "email": "wuzq@huaxintrust.com"
       },
       {
-        "name": "周八",
-        "email": "zhouba@techcorp.com"
+        "name": "张明远",
+        "email": "zhangmy@huaxintrust.com"
+      },
+      {
+        "name": "孙浩然",
+        "email": "sunhr@huaxintrust.com"
+      },
+      {
+        "name": "钱海燕",
+        "email": "qianhy@huaxintrust.com"
       }
     ],
     "cc": [],
-    "subject": "[人事] 年度体检安排 - 2025年10月",
-    "body": "全体同事好，\n\n现发送2025年10月年度体检安排，详情见附件。\n\n\n谢谢！\n赵六\n人事行政部",
-    "date": "2025-01-05 00:00:00",
+    "subject": "[运营] IT系统升级通知-信托核算系统",
+    "body": "各位同事，\n\n关于IT系统升级通知-信托核算系统，请各部门配合执行。\n详细内容和要求见附件。\n\n杨芳",
+    "date": "2024-03-04 00:00:00",
     "tags": [
-      "人事",
-      "年度体检安排"
+      "运营",
+      "it_upgrade"
     ],
     "attachments": [
       {
-        "filename": "hr_年度体检安排_10_3.xlsx",
-        "type": "xlsx"
+        "filename": "ops_it_upgrade_3.jpg",
+        "type": "jpg"
       }
     ]
   },
   {
     "id": "email_068",
     "from": {
-      "name": "赵六",
-      "email": "zhaoliu@techcorp.com"
+      "name": "郑晓东",
+      "email": "zhengxd@huaxintrust.com"
     },
     "to": [
       {
-        "name": "周八",
-        "email": "zhouba@techcorp.com"
+        "name": "黄永华",
+        "email": "huangyh@huaxintrust.com"
       },
       {
-        "name": "李四",
-        "email": "lisi@techcorp.com"
+        "name": "刘德伟",
+        "email": "liudw@hengfundinvest.com"
       },
       {
-        "name": "孙七",
-        "email": "sunqi@techcorp.com"
+        "name": "马骏",
+        "email": "maj@zhongyuancapital.com"
       },
       {
-        "name": "杨帆",
-        "email": "yangfan@clientcorp.com"
-      },
-      {
-        "name": "陈静",
-        "email": "chenjing@techcorp.com"
-      },
-      {
-        "name": "郑十",
-        "email": "zhengshi@techcorp.com"
-      },
-      {
-        "name": "刘洋",
-        "email": "liuyang@clientcorp.com"
+        "name": "孙浩然",
+        "email": "sunhr@huaxintrust.com"
       }
     ],
     "cc": [],
-    "subject": "[人事] 绩效考核通知 - 2025年9月",
-    "body": "全体同事好，\n\n现发送2025年9月绩效考核通知，详情见附件。\n\n请各部门经理于月底前完成绩效评估并提交。\n\n谢谢！\n赵六\n人事行政部",
-    "date": "2025-02-01 00:00:00",
+    "subject": "[运营] 客户投诉处理流程优化",
+    "body": "各位同事，\n\n关于客户投诉处理流程优化，请各部门配合执行。\n详细内容和要求见附件。\n\n郑晓东",
+    "date": "2024-10-26 00:00:00",
     "tags": [
-      "人事",
-      "绩效考核通知"
+      "运营",
+      "complaint"
     ],
     "attachments": [
       {
-        "filename": "hr_绩效考核通知_9_4.pdf",
-        "type": "pdf"
+        "filename": "ops_complaint_4.txt",
+        "type": "txt"
       }
     ]
   },
   {
     "id": "email_069",
     "from": {
-      "name": "赵六",
-      "email": "zhaoliu@techcorp.com"
+      "name": "杨芳",
+      "email": "yangf@longtaiwealth.com"
     },
     "to": [
       {
-        "name": "钱磊",
-        "email": "qianlei@techcorp.com"
+        "name": "李文博",
+        "email": "liwb@huaxintrust.com"
       },
       {
-        "name": "马丽",
-        "email": "mali@partnercorp.com"
+        "name": "林国栋",
+        "email": "lingd@huaxintrust.com"
       },
       {
-        "name": "周八",
-        "email": "zhouba@techcorp.com"
+        "name": "赵雪梅",
+        "email": "zhaoxm@huaxintrust.com"
       },
       {
-        "name": "林涛",
-        "email": "lintao@techcorp.com"
-      },
-      {
-        "name": "郑十",
-        "email": "zhengshi@techcorp.com"
-      },
-      {
-        "name": "刘洋",
-        "email": "liuyang@clientcorp.com"
+        "name": "郑晓东",
+        "email": "zhengxd@huaxintrust.com"
       }
     ],
     "cc": [],
-    "subject": "[人事] 员工活动通知 - 2024年10月",
-    "body": "全体同事好，\n\n现发送2024年10月员工活动通知，详情见附件。\n\n\n谢谢！\n赵六\n人事行政部",
-    "date": "2024-10-18 00:00:00",
+    "subject": "[运营] 季度经营分析会纪要",
+    "body": "各位同事，\n\n季度经营分析会主要议题：\n\n1. 信托资产管理规模：1768亿元，同比下降12%\n2. 信托报酬收入：5亿元\n3. 新增项目：14个，规模212亿元\n4. 到期兑付：72个项目正常兑付\n5. 不良信托资产处置进展\n\n详细纪要见附件。\n\n杨芳",
+    "date": "2024-01-13 00:00:00",
     "tags": [
-      "人事",
-      "员工活动通知"
+      "运营",
+      "quarterly_review"
     ],
     "attachments": [
       {
-        "filename": "hr_员工活动通知_10_5.xlsx",
-        "type": "xlsx"
+        "filename": "ops_quarterly_review_5.docx",
+        "type": "docx"
       }
     ]
   },
   {
     "id": "email_070",
     "from": {
-      "name": "赵六",
-      "email": "zhaoliu@techcorp.com"
+      "name": "郑晓东",
+      "email": "zhengxd@huaxintrust.com"
     },
     "to": [
       {
-        "name": "杨帆",
-        "email": "yangfan@clientcorp.com"
+        "name": "黄永华",
+        "email": "huangyh@huaxintrust.com"
       },
       {
-        "name": "周八",
-        "email": "zhouba@techcorp.com"
+        "name": "吴志强",
+        "email": "wuzq@huaxintrust.com"
       },
       {
-        "name": "林涛",
-        "email": "lintao@techcorp.com"
+        "name": "李文博",
+        "email": "liwb@huaxintrust.com"
       },
       {
-        "name": "刘洋",
-        "email": "liuyang@clientcorp.com"
+        "name": "王建华",
+        "email": "wangjh@huaxintrust.com"
       }
     ],
     "cc": [],
-    "subject": "[人事] 办公用品采购 - 2024年8月",
-    "body": "全体同事好，\n\n现发送2024年8月办公用品采购，详情见附件。\n\n\n谢谢！\n赵六\n人事行政部",
-    "date": "2024-05-27 00:00:00",
+    "subject": "[运营] 信托登记系统操作规范",
+    "body": "各位同事，\n\n关于信托登记系统操作规范，请各部门配合执行。\n详细内容和要求见附件。\n\n郑晓东",
+    "date": "2024-01-24 00:00:00",
     "tags": [
-      "人事",
-      "办公用品采购"
+      "运营",
+      "registration_ops"
     ],
     "attachments": [
       {
-        "filename": "hr_办公用品采购_8_6.pdf",
-        "type": "pdf"
+        "filename": "ops_registration_ops_6.jpg",
+        "type": "jpg"
       }
     ]
   },
   {
     "id": "email_071",
     "from": {
-      "name": "赵六",
-      "email": "zhaoliu@techcorp.com"
+      "name": "张明远",
+      "email": "zhangmy@huaxintrust.com"
     },
     "to": [
       {
-        "name": "钱磊",
-        "email": "qianlei@techcorp.com"
+        "name": "钱海燕",
+        "email": "qianhy@huaxintrust.com"
       },
       {
-        "name": "刘洋",
-        "email": "liuyang@clientcorp.com"
+        "name": "王建华",
+        "email": "wangjh@huaxintrust.com"
       },
       {
-        "name": "周八",
-        "email": "zhouba@techcorp.com"
+        "name": "杨芳",
+        "email": "yangf@longtaiwealth.com"
+      },
+      {
+        "name": "孙浩然",
+        "email": "sunhr@huaxintrust.com"
       }
     ],
     "cc": [],
-    "subject": "[人事] 新员工入职指南 - 2024年7月",
-    "body": "全体同事好，\n\n现发送2024年7月新员工入职指南，详情见附件。\n\n\n谢谢！\n赵六\n人事行政部",
-    "date": "2024-12-24 00:00:00",
+    "subject": "[运营] 年度合规培训安排",
+    "body": "各位同事，\n\n本次培训安排如下：\n\n主题：反洗钱实务\n时间：2024-10-02 14:00-17:00\n地点：线上腾讯会议\n讲师：合规部总经理\n\n请相关人员准时参加，签到考勤。\n\n张明远",
+    "date": "2024-10-02 00:00:00",
     "tags": [
-      "人事",
-      "新员工入职指南"
+      "运营",
+      "compliance_training"
     ],
     "attachments": [
       {
-        "filename": "hr_新员工入职指南_7_7.xlsx",
-        "type": "xlsx"
+        "filename": "ops_compliance_training_7.docx",
+        "type": "docx"
       }
     ]
   },
   {
     "id": "email_072",
     "from": {
-      "name": "赵六",
-      "email": "zhaoliu@techcorp.com"
+      "name": "周丽萍",
+      "email": "zhoulp@huaxintrust.com"
     },
     "to": [
       {
-        "name": "郑十",
-        "email": "zhengshi@techcorp.com"
+        "name": "郑晓东",
+        "email": "zhengxd@huaxintrust.com"
       },
       {
-        "name": "杨帆",
-        "email": "yangfan@clientcorp.com"
+        "name": "林国栋",
+        "email": "lingd@huaxintrust.com"
       },
       {
-        "name": "陈静",
-        "email": "chenjing@techcorp.com"
+        "name": "刘德伟",
+        "email": "liudw@hengfundinvest.com"
       },
       {
-        "name": "张三",
-        "email": "zhangsan@techcorp.com"
+        "name": "王建华",
+        "email": "wangjh@huaxintrust.com"
       },
       {
-        "name": "钱磊",
-        "email": "qianlei@techcorp.com"
+        "name": "马骏",
+        "email": "maj@zhongyuancapital.com"
       },
       {
-        "name": "李四",
-        "email": "lisi@techcorp.com"
-      },
-      {
-        "name": "吴九",
-        "email": "wujiu@techcorp.com"
-      },
-      {
-        "name": "王五",
-        "email": "wangwu@techcorp.com"
+        "name": "李文博",
+        "email": "liwb@huaxintrust.com"
       }
     ],
     "cc": [],
-    "subject": "[人事] 假期安排通知 - 2024年2月",
-    "body": "全体同事好，\n\n现发送2024年2月假期安排通知，详情见附件。\n\n\n谢谢！\n赵六\n人事行政部",
-    "date": "2024-06-14 00:00:00",
+    "subject": "[运营] 办公场所安全检查",
+    "body": "各位同事，\n\n关于办公场所安全检查，请各部门配合执行。\n详细内容和要求见附件。\n\n周丽萍",
+    "date": "2025-03-02 00:00:00",
     "tags": [
-      "人事",
-      "假期安排通知"
+      "运营",
+      "safety"
     ],
     "attachments": [
       {
-        "filename": "hr_假期安排通知_2_8.pdf",
-        "type": "pdf"
+        "filename": "ops_safety_8.txt",
+        "type": "txt"
       }
     ]
   },
   {
     "id": "email_073",
     "from": {
-      "name": "赵六",
-      "email": "zhaoliu@techcorp.com"
+      "name": "陈思远",
+      "email": "chensy@huaxintrust.com"
     },
     "to": [
       {
-        "name": "马丽",
-        "email": "mali@partnercorp.com"
+        "name": "孙浩然",
+        "email": "sunhr@huaxintrust.com"
       },
       {
-        "name": "陈静",
-        "email": "chenjing@techcorp.com"
+        "name": "张明远",
+        "email": "zhangmy@huaxintrust.com"
       },
       {
-        "name": "张三",
-        "email": "zhangsan@techcorp.com"
+        "name": "刘德伟",
+        "email": "liudw@hengfundinvest.com"
       },
       {
-        "name": "黄蕾",
-        "email": "huanglei@techcorp.com"
+        "name": "周丽萍",
+        "email": "zhoulp@huaxintrust.com"
       },
       {
-        "name": "杨帆",
-        "email": "yangfan@clientcorp.com"
-      },
-      {
-        "name": "钱磊",
-        "email": "qianlei@techcorp.com"
+        "name": "赵雪梅",
+        "email": "zhaoxm@huaxintrust.com"
       }
     ],
     "cc": [],
-    "subject": "[人事] 薪酬调整通知 - 2024年1月",
-    "body": "全体同事好，\n\n现发送2024年1月薪酬调整通知，详情见附件。\n\n\n谢谢！\n赵六\n人事行政部",
-    "date": "2024-07-30 00:00:00",
+    "subject": "[运营] 员工持证情况统计",
+    "body": "各位同事，\n\n请各部门配合统计员工持证情况：\n\n需统计的证书包括：\n- 基金从业资格证\n- 证券从业资格证\n- 银行从业资格证\n- CFA/CPA/FRM\n- 法律职业资格证\n\n请于2024-08-28前将统计表反馈至人事部。\n\n陈思远",
+    "date": "2024-08-15 00:00:00",
     "tags": [
-      "人事",
-      "薪酬调整通知"
+      "运营",
+      "certification"
     ],
     "attachments": [
       {
-        "filename": "hr_薪酬调整通知_1_9.xlsx",
-        "type": "xlsx"
+        "filename": "ops_certification_9.docx",
+        "type": "docx"
       }
     ]
   },
   {
     "id": "email_074",
     "from": {
-      "name": "赵六",
-      "email": "zhaoliu@techcorp.com"
+      "name": "郑晓东",
+      "email": "zhengxd@huaxintrust.com"
     },
     "to": [
       {
-        "name": "郑十",
-        "email": "zhengshi@techcorp.com"
+        "name": "马骏",
+        "email": "maj@zhongyuancapital.com"
       },
       {
-        "name": "孙七",
-        "email": "sunqi@techcorp.com"
+        "name": "周丽萍",
+        "email": "zhoulp@huaxintrust.com"
       },
       {
-        "name": "林涛",
-        "email": "lintao@techcorp.com"
-      },
-      {
-        "name": "陈静",
-        "email": "chenjing@techcorp.com"
+        "name": "李文博",
+        "email": "liwb@huaxintrust.com"
       }
     ],
     "cc": [],
-    "subject": "[人事] 部门组织架构调整 - 2025年3月",
-    "body": "全体同事好，\n\n现发送2025年3月部门组织架构调整，详情见附件。\n\n\n谢谢！\n赵六\n人事行政部",
-    "date": "2025-01-17 00:00:00",
+    "subject": "[运营] 部门年度预算编制",
+    "body": "各位同事，\n\n关于部门年度预算编制，请各部门配合执行。\n详细内容和要求见附件。\n\n郑晓东",
+    "date": "2024-12-17 00:00:00",
     "tags": [
-      "人事",
-      "部门组织架构调整"
+      "运营",
+      "budget"
     ],
     "attachments": [
       {
-        "filename": "hr_部门组织架构调整_3_10.pdf",
-        "type": "pdf"
+        "filename": "ops_budget_10.txt",
+        "type": "txt"
       }
     ]
   },
   {
     "id": "email_075",
     "from": {
-      "name": "杨帆",
-      "email": "yangfan@clientcorp.com"
+      "name": "钱海燕",
+      "email": "qianhy@huaxintrust.com"
     },
     "to": [
       {
-        "name": "孙七",
-        "email": "sunqi@techcorp.com"
+        "name": "张明远",
+        "email": "zhangmy@huaxintrust.com"
+      },
+      {
+        "name": "吴志强",
+        "email": "wuzq@huaxintrust.com"
+      },
+      {
+        "name": "孙浩然",
+        "email": "sunhr@huaxintrust.com"
+      },
+      {
+        "name": "赵雪梅",
+        "email": "zhaoxm@huaxintrust.com"
       }
     ],
     "cc": [],
-    "subject": "线上问题反馈：用户登录异常",
-    "body": "Hi 孙七，\n\n关于线上问题反馈：用户登录异常的情况说明：\n\n现象：功能异常，影响范围：测试环境。\n\n初步分析原因是第三方服务异常，目前正在排查中。\n\n预计1小时内修复。\n\n杨帆",
-    "date": "2025-01-30 00:00:00",
+    "subject": "[运营] 信托业务系统故障应急处理",
+    "body": "各位同事，\n\n关于信托业务系统故障应急处理，请各部门配合执行。\n详细内容和要求见附件。\n\n钱海燕",
+    "date": "2024-03-03 00:00:00",
     "tags": [
-      "日常沟通"
+      "运营",
+      "incident"
     ],
-    "attachments": []
+    "attachments": [
+      {
+        "filename": "ops_incident_11.png",
+        "type": "png"
+      }
+    ]
   },
   {
     "id": "email_076",
     "from": {
-      "name": "孙七",
-      "email": "sunqi@techcorp.com"
+      "name": "杨芳",
+      "email": "yangf@longtaiwealth.com"
     },
     "to": [
       {
-        "name": "周八",
-        "email": "zhouba@techcorp.com"
+        "name": "李文博",
+        "email": "liwb@huaxintrust.com"
       },
       {
-        "name": "林涛",
-        "email": "lintao@techcorp.com"
+        "name": "林国栋",
+        "email": "lingd@huaxintrust.com"
       },
       {
-        "name": "杨帆",
-        "email": "yangfan@clientcorp.com"
+        "name": "赵雪梅",
+        "email": "zhaoxm@huaxintrust.com"
+      },
+      {
+        "name": "刘德伟",
+        "email": "liudw@hengfundinvest.com"
+      },
+      {
+        "name": "陈思远",
+        "email": "chensy@huaxintrust.com"
       }
     ],
     "cc": [],
-    "subject": "产品截图确认",
-    "body": "Hi 周八，\n\n附件是相关截图，请确认是否符合预期。\n\n具体问题：\n1. 页面列表页样式需要调整\n2. 间距与设计稿不一致\n\n孙七",
-    "date": "2024-12-03 00:00:00",
+    "subject": "[运营] 跨部门协作流程规范",
+    "body": "各位同事，\n\n关于跨部门协作流程规范，请各部门配合执行。\n详细内容和要求见附件。\n\n杨芳",
+    "date": "2024-01-11 00:00:00",
     "tags": [
-      "日常沟通"
+      "运营",
+      "workflow"
     ],
     "attachments": [
       {
-        "filename": "screenshot_screenshot_review_2.png",
-        "type": "png"
+        "filename": "ops_workflow_12.txt",
+        "type": "txt"
       }
     ]
   },
   {
     "id": "email_077",
     "from": {
-      "name": "郑十",
-      "email": "zhengshi@techcorp.com"
+      "name": "刘德伟",
+      "email": "liudw@hengfundinvest.com"
     },
     "to": [
       {
-        "name": "钱磊",
-        "email": "qianlei@techcorp.com"
+        "name": "赵雪梅",
+        "email": "zhaoxm@huaxintrust.com"
       },
       {
-        "name": "周八",
-        "email": "zhouba@techcorp.com"
-      },
-      {
-        "name": "杨帆",
-        "email": "yangfan@clientcorp.com"
+        "name": "王建华",
+        "email": "wangjh@huaxintrust.com"
       }
     ],
     "cc": [],
-    "subject": "环境配置问题求助",
-    "body": "Hi 钱磊，\n\n关于环境配置问题求助的情况说明：\n\n现象：功能异常，影响范围：内部系统。\n\n初步分析原因是第三方服务异常，目前正在排查中。\n\n预计2小时内修复。\n\n郑十",
-    "date": "2024-10-09 00:00:00",
+    "subject": "[财富管理] 高净值客户资产配置方案",
+    "body": "各位好，\n\n本季度资产配置建议：\n\n保守型客户：\n- 固收类信托：58%\n- 债券基金：23%\n- 现金管理：11%\n\n平衡型客户：\n- 固收类信托：38%\n- 混合基金：23%\n- 股权投资：19%\n- 现金管理：11%\n\n进取型客户：\n- 股权投资信托：33%\n- 权益类基金：25%\n- 另类投资：12%\n- 固收类：14%\n\n刘德伟\n恒丰投资",
+    "date": "2025-02-06 00:00:00",
     "tags": [
-      "日常沟通"
+      "财富管理",
+      "高净值客户资产配置方案"
     ],
-    "attachments": []
+    "attachments": [
+      {
+        "filename": "wealth_高净值客户资产配置方案_1.pdf",
+        "type": "pdf"
+      }
+    ]
   },
   {
     "id": "email_078",
     "from": {
-      "name": "黄蕾",
-      "email": "huanglei@techcorp.com"
+      "name": "张明远",
+      "email": "zhangmy@huaxintrust.com"
     },
     "to": [
       {
-        "name": "陈静",
-        "email": "chenjing@techcorp.com"
+        "name": "马骏",
+        "email": "maj@zhongyuancapital.com"
+      },
+      {
+        "name": "赵雪梅",
+        "email": "zhaoxm@huaxintrust.com"
       }
     ],
     "cc": [],
-    "subject": "代码Review意见",
-    "body": "Hi 陈静，\n\n关于代码Review意见的情况说明：\n\n现象：页面白屏，影响范围：内部系统。\n\n初步分析原因是配置错误，目前正在排查中。\n\n预计半天内修复。\n\n黄蕾",
-    "date": "2024-07-15 00:00:00",
+    "subject": "[财富管理] 家族信托设立咨询",
+    "body": "各位好，\n\n关于家族信托设立咨询事项，整理如下：\n\n家族信托基本方案：\n- 信托规模：不低于5000万元\n- 信托期限：永续\n- 受益人安排：可设定多层受益人，包括配偶、子女、孙辈\n- 分配规则：可按月/按季/按年分配，或设定条件分配（如教育、婚姻、创业等）\n- 资产类型：现金、股权、不动产、保险金等均可装入信托\n\n家族信托的核心优势：\n1. 资产隔离保护 — 信托财产独立于委托人、受托人、受益人的固有财产\n2. 财富传承规划 — 按照委托人意愿实现跨代际财富传承\n3. 税务筹划 — 合理的信托架构可实现税务优化\n4. 隐私保护 — 信托信息不公开\n\n详细方案见附件。\n\n张明远\n信托业务部",
+    "date": "2024-03-07 00:00:00",
     "tags": [
-      "日常沟通"
+      "财富管理",
+      "家族信托设立咨询"
     ],
-    "attachments": []
+    "attachments": [
+      {
+        "filename": "wealth_家族信托设立咨询_2.xlsx",
+        "type": "xlsx"
+      }
+    ]
   },
   {
     "id": "email_079",
     "from": {
-      "name": "黄蕾",
-      "email": "huanglei@techcorp.com"
+      "name": "陈思远",
+      "email": "chensy@huaxintrust.com"
     },
     "to": [
       {
-        "name": "刘洋",
-        "email": "liuyang@clientcorp.com"
-      },
-      {
-        "name": "杨帆",
-        "email": "yangfan@clientcorp.com"
+        "name": "郑晓东",
+        "email": "zhengxd@huaxintrust.com"
       }
     ],
     "cc": [],
-    "subject": "接口联调问题",
-    "body": "Hi 刘洋，\n\n关于接口联调问题的情况说明：\n\n现象：功能异常，影响范围：全量用户。\n\n初步分析原因是数据库连接池满，目前正在排查中。\n\n预计1小时内修复。\n\n黄蕾",
-    "date": "2024-07-14 00:00:00",
+    "subject": "[财富管理] 慈善信托方案设计",
+    "body": "各位好，\n\n慈善信托方案要点：\n\n- 信托目的：医疗救助\n- 设立规模：455万元\n- 信托期限：永续\n- 受益人：不特定社会公众\n- 监察人：委托人推荐的第三方机构\n\n根据《慈善法》和银保监会相关规定，慈善信托需在民政部门备案。\n\n陈思远\n信托业务部",
+    "date": "2024-09-14 00:00:00",
     "tags": [
-      "日常沟通"
+      "财富管理",
+      "慈善信托方案设计"
     ],
-    "attachments": []
+    "attachments": [
+      {
+        "filename": "wealth_慈善信托方案设计_3.pdf",
+        "type": "pdf"
+      }
+    ]
   },
   {
     "id": "email_080",
     "from": {
-      "name": "王五",
-      "email": "wangwu@techcorp.com"
+      "name": "郑晓东",
+      "email": "zhengxd@huaxintrust.com"
     },
     "to": [
       {
-        "name": "林涛",
-        "email": "lintao@techcorp.com"
+        "name": "张明远",
+        "email": "zhangmy@huaxintrust.com"
       },
       {
-        "name": "吴九",
-        "email": "wujiu@techcorp.com"
+        "name": "马骏",
+        "email": "maj@zhongyuancapital.com"
       },
       {
-        "name": "李四",
-        "email": "lisi@techcorp.com"
+        "name": "钱海燕",
+        "email": "qianhy@huaxintrust.com"
       }
     ],
     "cc": [],
-    "subject": "测试环境故障通知",
-    "body": "Hi 林涛，\n\n关于测试环境故障通知的情况说明：\n\n现象：功能异常，影响范围：部分用户。\n\n初步分析原因是数据库连接池满，目前正在排查中。\n\n预计1小时内修复。\n\n王五",
-    "date": "2025-03-23 00:00:00",
+    "subject": "[财富管理] 保险金信托合作方案",
+    "body": "各位好，\n\n详细内容见附件。\n\n郑晓东\n合规审计部",
+    "date": "2025-03-09 00:00:00",
     "tags": [
-      "日常沟通"
+      "财富管理",
+      "保险金信托合作方案"
     ],
-    "attachments": []
+    "attachments": [
+      {
+        "filename": "wealth_保险金信托合作方案_4.xlsx",
+        "type": "xlsx"
+      }
+    ]
   },
   {
     "id": "email_081",
     "from": {
-      "name": "黄蕾",
-      "email": "huanglei@techcorp.com"
+      "name": "郑晓东",
+      "email": "zhengxd@huaxintrust.com"
     },
     "to": [
       {
-        "name": "吴九",
-        "email": "wujiu@techcorp.com"
+        "name": "林国栋",
+        "email": "lingd@huaxintrust.com"
+      },
+      {
+        "name": "吴志强",
+        "email": "wuzq@huaxintrust.com"
+      },
+      {
+        "name": "李文博",
+        "email": "liwb@huaxintrust.com"
       }
     ],
     "cc": [],
-    "subject": "功能验收反馈",
-    "body": "Hi 吴九，\n\n关于功能验收反馈的情况说明：\n\n现象：页面白屏，影响范围：部分用户。\n\n初步分析原因是数据库连接池满，目前正在排查中。\n\n预计半天内修复。\n\n黄蕾",
-    "date": "2025-03-21 00:00:00",
+    "subject": "[财富管理] 客户KYC信息更新通知",
+    "body": "各位好，\n\n根据反洗钱法规要求，以下客户的KYC信息需要更新：\n\n- 需更新客户数量：79户\n- 更新内容：身份证件、职业信息、资产证明、风险偏好\n- 截止日期：2025-02-28\n\n请理财经理尽快联系客户完成信息更新。\n\n郑晓东\n合规审计部",
+    "date": "2025-02-10 00:00:00",
     "tags": [
-      "日常沟通"
+      "财富管理",
+      "客户KYC信息更新通知"
     ],
-    "attachments": []
+    "attachments": [
+      {
+        "filename": "wealth_客户KYC信息更新通知_5.pdf",
+        "type": "pdf"
+      }
+    ]
   },
   {
     "id": "email_082",
     "from": {
-      "name": "周八",
-      "email": "zhouba@techcorp.com"
+      "name": "杨芳",
+      "email": "yangf@longtaiwealth.com"
     },
     "to": [
       {
-        "name": "刘洋",
-        "email": "liuyang@clientcorp.com"
+        "name": "林国栋",
+        "email": "lingd@huaxintrust.com"
       },
       {
-        "name": "郑十",
-        "email": "zhengshi@techcorp.com"
+        "name": "刘德伟",
+        "email": "liudw@hengfundinvest.com"
       },
       {
-        "name": "黄蕾",
-        "email": "huanglei@techcorp.com"
+        "name": "钱海燕",
+        "email": "qianhy@huaxintrust.com"
       }
     ],
     "cc": [],
-    "subject": "UI设计稿确认",
-    "body": "Hi 刘洋，\n\n附件是相关截图，请确认是否符合预期。\n\n具体问题：\n1. 页面弹窗样式需要调整\n2. 对齐方式与设计稿不一致\n\n周八",
-    "date": "2024-02-11 00:00:00",
+    "subject": "[财富管理] 投资者教育活动方案",
+    "body": "各位好，\n\n详细内容见附件。\n\n杨芳\n龙泰财富",
+    "date": "2025-01-04 00:00:00",
     "tags": [
-      "日常沟通"
+      "财富管理",
+      "投资者教育活动方案"
     ],
     "attachments": [
       {
-        "filename": "screenshot_ui_design_8.jpg",
-        "type": "jpg"
+        "filename": "wealth_投资者教育活动方案_6.xlsx",
+        "type": "xlsx"
       }
     ]
   },
   {
     "id": "email_083",
     "from": {
-      "name": "周八",
-      "email": "zhouba@techcorp.com"
+      "name": "李文博",
+      "email": "liwb@huaxintrust.com"
     },
     "to": [
       {
-        "name": "刘洋",
-        "email": "liuyang@clientcorp.com"
-      },
-      {
-        "name": "杨帆",
-        "email": "yangfan@clientcorp.com"
-      },
-      {
-        "name": "钱磊",
-        "email": "qianlei@techcorp.com"
+        "name": "王建华",
+        "email": "wangjh@huaxintrust.com"
       }
     ],
     "cc": [],
-    "subject": "数据库慢查询告警",
-    "body": "Hi 刘洋，\n\n关于数据库慢查询告警的情况说明：\n\n现象：接口超时，影响范围：部分用户。\n\n初步分析原因是代码逻辑问题，目前正在排查中。\n\n预计半天内修复。\n\n周八",
-    "date": "2025-03-22 00:00:00",
+    "subject": "[财富管理] 客户满意度调查报告",
+    "body": "各位好，\n\n详细内容见附件。\n\n李文博\n财富管理部",
+    "date": "2024-08-09 00:00:00",
     "tags": [
-      "日常沟通"
+      "财富管理",
+      "客户满意度调查报告"
     ],
-    "attachments": []
+    "attachments": [
+      {
+        "filename": "wealth_客户满意度调查报告_7.pdf",
+        "type": "pdf"
+      }
+    ]
   },
   {
     "id": "email_084",
     "from": {
-      "name": "赵六",
-      "email": "zhaoliu@techcorp.com"
+      "name": "李文博",
+      "email": "liwb@huaxintrust.com"
     },
     "to": [
       {
-        "name": "李四",
-        "email": "lisi@techcorp.com"
+        "name": "刘德伟",
+        "email": "liudw@hengfundinvest.com"
       },
       {
-        "name": "郑十",
-        "email": "zhengshi@techcorp.com"
+        "name": "吴志强",
+        "email": "wuzq@huaxintrust.com"
       },
       {
-        "name": "马丽",
-        "email": "mali@partnercorp.com"
+        "name": "赵雪梅",
+        "email": "zhaoxm@huaxintrust.com"
       }
     ],
     "cc": [],
-    "subject": "上线checklist确认",
-    "body": "Hi 李四，\n\n关于上线checklist确认的情况说明：\n\n现象：接口超时，影响范围：内部系统。\n\n初步分析原因是代码逻辑问题，目前正在排查中。\n\n预计半天内修复。\n\n赵六",
-    "date": "2025-01-24 00:00:00",
+    "subject": "[财富管理] 理财经理考核标准",
+    "body": "各位好，\n\n详细内容见附件。\n\n李文博\n财富管理部",
+    "date": "2024-10-11 00:00:00",
     "tags": [
-      "日常沟通"
+      "财富管理",
+      "理财经理考核标准"
     ],
-    "attachments": []
+    "attachments": [
+      {
+        "filename": "wealth_理财经理考核标准_8.xlsx",
+        "type": "xlsx"
+      }
+    ]
   },
   {
     "id": "email_085",
     "from": {
-      "name": "马丽",
-      "email": "mali@partnercorp.com"
+      "name": "杨芳",
+      "email": "yangf@longtaiwealth.com"
     },
     "to": [
       {
-        "name": "张三",
-        "email": "zhangsan@techcorp.com"
+        "name": "周丽萍",
+        "email": "zhoulp@huaxintrust.com"
       }
     ],
     "cc": [],
-    "subject": "Bug修复进度同步",
-    "body": "Hi 张三，\n\n关于Bug修复进度同步的情况说明：\n\n现象：接口超时，影响范围：测试环境。\n\n初步分析原因是第三方服务异常，目前正在排查中。\n\n预计半天内修复。\n\n马丽",
-    "date": "2024-06-15 00:00:00",
+    "subject": "[财富管理] 客户资产配置季度回顾",
+    "body": "各位好，\n\n本季度资产配置建议：\n\n保守型客户：\n- 固收类信托：57%\n- 债券基金：25%\n- 现金管理：11%\n\n平衡型客户：\n- 固收类信托：34%\n- 混合基金：29%\n- 股权投资：13%\n- 现金管理：13%\n\n进取型客户：\n- 股权投资信托：38%\n- 权益类基金：29%\n- 另类投资：19%\n- 固收类：15%\n\n杨芳\n龙泰财富",
+    "date": "2025-03-08 00:00:00",
     "tags": [
-      "日常沟通"
+      "财富管理",
+      "客户资产配置季度回顾"
     ],
-    "attachments": []
+    "attachments": [
+      {
+        "filename": "wealth_客户资产配置季度回顾_9.pdf",
+        "type": "pdf"
+      }
+    ]
   },
   {
     "id": "email_086",
     "from": {
-      "name": "吴九",
-      "email": "wujiu@techcorp.com"
+      "name": "林国栋",
+      "email": "lingd@huaxintrust.com"
     },
     "to": [
       {
-        "name": "赵六",
-        "email": "zhaoliu@techcorp.com"
+        "name": "张明远",
+        "email": "zhangmy@huaxintrust.com"
+      },
+      {
+        "name": "陈思远",
+        "email": "chensy@huaxintrust.com"
+      },
+      {
+        "name": "黄永华",
+        "email": "huangyh@huaxintrust.com"
       }
     ],
     "cc": [],
-    "subject": "需求变更沟通",
-    "body": "Hi 赵六，\n\n关于需求变更沟通的情况说明：\n\n现象：功能异常，影响范围：全量用户。\n\n初步分析原因是代码逻辑问题，目前正在排查中。\n\n预计2小时内修复。\n\n吴九",
-    "date": "2024-09-28 00:00:00",
+    "subject": "[财富管理] 高端客户服务标准手册",
+    "body": "各位好，\n\n详细内容见附件。\n\n林国栋\n投资研究部",
+    "date": "2025-02-28 00:00:00",
     "tags": [
-      "日常沟通"
+      "财富管理",
+      "高端客户服务标准手册"
     ],
-    "attachments": []
+    "attachments": [
+      {
+        "filename": "wealth_高端客户服务标准手册_10.xlsx",
+        "type": "xlsx"
+      }
+    ]
   },
   {
     "id": "email_087",
     "from": {
-      "name": "李四",
-      "email": "lisi@techcorp.com"
+      "name": "黄永华",
+      "email": "huangyh@huaxintrust.com"
     },
     "to": [
       {
-        "name": "马丽",
-        "email": "mali@partnercorp.com"
+        "name": "赵雪梅",
+        "email": "zhaoxm@huaxintrust.com"
       },
       {
-        "name": "郑十",
-        "email": "zhengshi@techcorp.com"
+        "name": "吴志强",
+        "email": "wuzq@huaxintrust.com"
       },
       {
-        "name": "林涛",
-        "email": "lintao@techcorp.com"
+        "name": "杨芳",
+        "email": "yangf@longtaiwealth.com"
+      },
+      {
+        "name": "郑晓东",
+        "email": "zhengxd@huaxintrust.com"
+      },
+      {
+        "name": "周丽萍",
+        "email": "zhoulp@huaxintrust.com"
+      },
+      {
+        "name": "王建华",
+        "email": "wangjh@huaxintrust.com"
+      },
+      {
+        "name": "陈思远",
+        "email": "chensy@huaxintrust.com"
       }
     ],
     "cc": [],
-    "subject": "[CloudMax] 报价单 - PRJ-346",
-    "body": "Dear 马丽，\n\n附件为CloudMax项目（PRJ-346）的报价单，请查阅。\n\n本次报价总金额：559万元\n有效期：30天\n包含：软件开发、测试、部署及3个月免费维护期\n\n祝好！\n李四",
-    "date": "2024-12-15 00:00:00",
+    "subject": "[投研] 宏观经济月度研判 - 2024-06",
+    "body": "各位同事好，\n\n附件为最新的宏观经济月度研判，核心观点如下：\n\n1. GDP增速预测：5.9%（前值5.6%）\n2. CPI同比：1.9%，通胀温和\n3. PMI：49.3，处于扩张区间\n4. 社融增速：9.5%\n5. 政策展望：预计将出台定向降准\n\n请参考附件了解详情。\n\n黄永华\n投资研究部",
+    "date": "2024-06-08 00:00:00",
     "tags": [
-      "客户",
-      "CloudMax"
+      "投研",
+      "macro"
     ],
     "attachments": [
       {
-        "filename": "client_CloudMax_quotation_PRJ-346.pdf",
+        "filename": "research_macro_1.pdf",
         "type": "pdf"
       }
     ]
@@ -3002,34 +3146,46 @@
   {
     "id": "email_088",
     "from": {
-      "name": "马丽",
-      "email": "mali@partnercorp.com"
+      "name": "吴志强",
+      "email": "wuzq@huaxintrust.com"
     },
     "to": [
       {
-        "name": "王五",
-        "email": "wangwu@techcorp.com"
+        "name": "林国栋",
+        "email": "lingd@huaxintrust.com"
       },
       {
-        "name": "赵六",
-        "email": "zhaoliu@techcorp.com"
+        "name": "钱海燕",
+        "email": "qianhy@huaxintrust.com"
       },
       {
-        "name": "郑十",
-        "email": "zhengshi@techcorp.com"
+        "name": "郑晓东",
+        "email": "zhengxd@huaxintrust.com"
+      },
+      {
+        "name": "孙浩然",
+        "email": "sunhr@huaxintrust.com"
+      },
+      {
+        "name": "赵雪梅",
+        "email": "zhaoxm@huaxintrust.com"
+      },
+      {
+        "name": "陈思远",
+        "email": "chensy@huaxintrust.com"
       }
     ],
     "cc": [],
-    "subject": "[DataPeak] 需求确认书 - PRJ-360",
-    "body": "Dear 王五，\n\n附件为DataPeak项目（PRJ-360）的需求确认书，请查阅。\n\n经与DataPeak确认，需求要点如下：\n- 用户管理模块：支持RBAC权限体系\n- 数据分析模块：实时报表和数据可视化\n- 系统对接：与现有ERP系统API对接\n\n祝好！\n马丽",
-    "date": "2024-11-22 00:00:00",
+    "subject": "[投研] 房地产行业分析报告 - 2024-02",
+    "body": "各位同事好，\n\n附件为最新的房地产行业分析报告，核心观点如下：\n\n1. 商品房销售面积同比下降16%\n2. 土地出让收入同比增长14%\n3. 房企融资环境：分化明显\n4. 政策面：LPR下调利好需求端\n5. 投资建议：优选一二线城市项目\n\n请参考附件了解详情。\n\n吴志强\n投资研究部",
+    "date": "2024-02-28 00:00:00",
     "tags": [
-      "客户",
-      "DataPeak"
+      "投研",
+      "real_estate"
     ],
     "attachments": [
       {
-        "filename": "client_DataPeak_requirements_PRJ-360.docx",
+        "filename": "research_real_estate_2.docx",
         "type": "docx"
       }
     ]
@@ -3037,69 +3193,89 @@
   {
     "id": "email_089",
     "from": {
-      "name": "林涛",
-      "email": "lintao@techcorp.com"
+      "name": "陈思远",
+      "email": "chensy@huaxintrust.com"
     },
     "to": [
       {
-        "name": "王五",
-        "email": "wangwu@techcorp.com"
+        "name": "张明远",
+        "email": "zhangmy@huaxintrust.com"
       },
       {
-        "name": "李四",
-        "email": "lisi@techcorp.com"
+        "name": "赵雪梅",
+        "email": "zhaoxm@huaxintrust.com"
       },
       {
-        "name": "郑十",
-        "email": "zhengshi@techcorp.com"
+        "name": "孙浩然",
+        "email": "sunhr@huaxintrust.com"
       }
     ],
     "cc": [],
-    "subject": "[SmartFlow] 验收报告 - PRJ-701",
-    "body": "Dear 王五，\n\n附件为SmartFlow项目（PRJ-701）的验收报告，请查阅。\n\n项目已完成全部交付物，主要成果：\n- 系统功能97%完成\n- 测试用例通过率100%\n- 性能指标全部达标\n\n祝好！\n林涛",
-    "date": "2024-06-25 00:00:00",
+    "subject": "[投研] 地方政府融资平台分析 - 2024-04",
+    "body": "各位同事好，\n\n附件为最新的地方政府融资平台分析，核心观点如下：\n\n1. 城投债发行规模：4124亿元\n2. 城投平台信用利差：115BP\n3. 重点关注区域：西南地区需警惕尾部风险\n4. 隐性债务化解进展：特殊再融资债发行加速\n5. 投资建议：优选经济财力强的区域，控制平台层级\n\n请参考附件了解详情。\n\n陈思远\n投资研究部",
+    "date": "2024-04-18 00:00:00",
     "tags": [
-      "客户",
-      "SmartFlow"
+      "投研",
+      "lgfv"
     ],
     "attachments": [
       {
-        "filename": "client_SmartFlow_acceptance_PRJ-701.xlsx",
-        "type": "xlsx"
+        "filename": "research_lgfv_3.zip",
+        "type": "zip"
       }
     ]
   },
   {
     "id": "email_090",
     "from": {
-      "name": "周八",
-      "email": "zhouba@techcorp.com"
+      "name": "吴志强",
+      "email": "wuzq@huaxintrust.com"
     },
     "to": [
       {
-        "name": "孙七",
-        "email": "sunqi@techcorp.com"
+        "name": "张明远",
+        "email": "zhangmy@huaxintrust.com"
       },
       {
-        "name": "刘洋",
-        "email": "liuyang@clientcorp.com"
+        "name": "郑晓东",
+        "email": "zhengxd@huaxintrust.com"
       },
       {
-        "name": "马丽",
-        "email": "mali@partnercorp.com"
+        "name": "马骏",
+        "email": "maj@zhongyuancapital.com"
+      },
+      {
+        "name": "钱海燕",
+        "email": "qianhy@huaxintrust.com"
+      },
+      {
+        "name": "李文博",
+        "email": "liwb@huaxintrust.com"
+      },
+      {
+        "name": "周丽萍",
+        "email": "zhoulp@huaxintrust.com"
+      },
+      {
+        "name": "杨芳",
+        "email": "yangf@longtaiwealth.com"
+      },
+      {
+        "name": "孙浩然",
+        "email": "sunhr@huaxintrust.com"
       }
     ],
     "cc": [],
-    "subject": "[NetWave] 技术方案 - PRJ-949",
-    "body": "Dear 孙七，\n\n附件为NetWave项目（PRJ-949）的技术方案，请查阅。\n\n请在收到后3个工作日内反馈意见。\n\n祝好！\n周八",
-    "date": "2024-01-12 00:00:00",
+    "subject": "[投研] 信托行业发展趋势报告 - 2024-07",
+    "body": "各位同事好，\n\n附件为最新的信托行业发展趋势报告，核心观点如下：\n\n1. 行业增速：27%\n2. 市场规模：42952亿元\n3. 投资机会：估值处于历史低位\n4. 风险提示：竞争格局重塑\n\n请参考附件了解详情。\n\n吴志强\n投资研究部",
+    "date": "2024-07-26 00:00:00",
     "tags": [
-      "客户",
-      "NetWave"
+      "投研",
+      "industry_trend"
     ],
     "attachments": [
       {
-        "filename": "client_NetWave_proposal_PRJ-949.pdf",
+        "filename": "research_industry_trend_4.pdf",
         "type": "pdf"
       }
     ]
@@ -3107,30 +3283,54 @@
   {
     "id": "email_091",
     "from": {
-      "name": "林涛",
-      "email": "lintao@techcorp.com"
+      "name": "郑晓东",
+      "email": "zhengxd@huaxintrust.com"
     },
     "to": [
       {
-        "name": "孙七",
-        "email": "sunqi@techcorp.com"
+        "name": "周丽萍",
+        "email": "zhoulp@huaxintrust.com"
       },
       {
-        "name": "张三",
-        "email": "zhangsan@techcorp.com"
+        "name": "李文博",
+        "email": "liwb@huaxintrust.com"
+      },
+      {
+        "name": "吴志强",
+        "email": "wuzq@huaxintrust.com"
+      },
+      {
+        "name": "杨芳",
+        "email": "yangf@longtaiwealth.com"
+      },
+      {
+        "name": "赵雪梅",
+        "email": "zhaoxm@huaxintrust.com"
+      },
+      {
+        "name": "刘德伟",
+        "email": "liudw@hengfundinvest.com"
+      },
+      {
+        "name": "陈思远",
+        "email": "chensy@huaxintrust.com"
+      },
+      {
+        "name": "孙浩然",
+        "email": "sunhr@huaxintrust.com"
       }
     ],
     "cc": [],
-    "subject": "[InfoLink] 项目计划 - PRJ-985",
-    "body": "Dear 孙七，\n\n附件为InfoLink项目（PRJ-985）的项目计划，请查阅。\n\n请在收到后3个工作日内反馈意见。\n\n祝好！\n林涛",
-    "date": "2024-10-16 00:00:00",
+    "subject": "[投研] 利率走势分析与预测 - 2024-02",
+    "body": "各位同事好，\n\n附件为最新的利率走势分析与预测，核心观点如下：\n\n1. 10年期国债收益率：2.90%\n2. 1年期MLF利率：2.66%\n3. DR007：1.84%\n4. 预测：短期利率或有小幅反弹\n\n请参考附件了解详情。\n\n郑晓东\n投资研究部",
+    "date": "2024-02-10 00:00:00",
     "tags": [
-      "客户",
-      "InfoLink"
+      "投研",
+      "interest_rate"
     ],
     "attachments": [
       {
-        "filename": "client_InfoLink_plan_PRJ-985.docx",
+        "filename": "research_interest_rate_5.docx",
         "type": "docx"
       }
     ]
@@ -3138,61 +3338,97 @@
   {
     "id": "email_092",
     "from": {
-      "name": "刘洋",
-      "email": "liuyang@clientcorp.com"
+      "name": "周丽萍",
+      "email": "zhoulp@huaxintrust.com"
     },
     "to": [
       {
-        "name": "赵六",
-        "email": "zhaoliu@techcorp.com"
+        "name": "马骏",
+        "email": "maj@zhongyuancapital.com"
       },
       {
-        "name": "林涛",
-        "email": "lintao@techcorp.com"
+        "name": "黄永华",
+        "email": "huangyh@huaxintrust.com"
+      },
+      {
+        "name": "王建华",
+        "email": "wangjh@huaxintrust.com"
+      },
+      {
+        "name": "赵雪梅",
+        "email": "zhaoxm@huaxintrust.com"
+      },
+      {
+        "name": "李文博",
+        "email": "liwb@huaxintrust.com"
+      },
+      {
+        "name": "刘德伟",
+        "email": "liudw@hengfundinvest.com"
+      },
+      {
+        "name": "孙浩然",
+        "email": "sunhr@huaxintrust.com"
+      },
+      {
+        "name": "林国栋",
+        "email": "lingd@huaxintrust.com"
       }
     ],
     "cc": [],
-    "subject": "[DigiCore] 变更申请 - PRJ-735",
-    "body": "Dear 赵六，\n\n附件为DigiCore项目（PRJ-735）的变更申请，请查阅。\n\n请在收到后3个工作日内反馈意见。\n\n祝好！\n刘洋",
-    "date": "2024-04-07 00:00:00",
+    "subject": "[投研] 股票市场策略周报 - 2024-03",
+    "body": "各位同事好，\n\n附件为最新的股票市场策略周报，核心观点如下：\n\n1. 行业增速：24%\n2. 市场规模：11018亿元\n3. 投资机会：政策红利释放中\n4. 风险提示：政策不确定性\n\n请参考附件了解详情。\n\n周丽萍\n投资研究部",
+    "date": "2024-03-29 00:00:00",
     "tags": [
-      "客户",
-      "DigiCore"
+      "投研",
+      "equity_strategy"
     ],
     "attachments": [
       {
-        "filename": "client_DigiCore_change_request_PRJ-735.xlsx",
-        "type": "xlsx"
+        "filename": "research_equity_strategy_6.zip",
+        "type": "zip"
       }
     ]
   },
   {
     "id": "email_093",
     "from": {
-      "name": "陈静",
-      "email": "chenjing@techcorp.com"
+      "name": "陈思远",
+      "email": "chensy@huaxintrust.com"
     },
     "to": [
       {
-        "name": "刘洋",
-        "email": "liuyang@clientcorp.com"
+        "name": "马骏",
+        "email": "maj@zhongyuancapital.com"
       },
       {
-        "name": "王五",
-        "email": "wangwu@techcorp.com"
+        "name": "黄永华",
+        "email": "huangyh@huaxintrust.com"
+      },
+      {
+        "name": "周丽萍",
+        "email": "zhoulp@huaxintrust.com"
+      },
+      {
+        "name": "王建华",
+        "email": "wangjh@huaxintrust.com"
+      },
+      {
+        "name": "郑晓东",
+        "email": "zhengxd@huaxintrust.com"
       }
     ],
     "cc": [],
-    "subject": "[ByteRun] 服务协议 - PRJ-402",
-    "body": "Dear 刘洋，\n\n附件为ByteRun项目（PRJ-402）的服务协议，请查阅。\n\n请在收到后3个工作日内反馈意见。\n\n祝好！\n陈静",
-    "date": "2024-02-16 00:00:00",
+    "subject": "[投研] 债券市场分析报告 - 2024-02",
+    "body": "各位同事好，\n\n附件为最新的债券市场分析报告，核心观点如下：\n\n1. 行业增速：20%\n2. 市场规模：29980亿元\n3. 投资机会：政策红利释放中\n4. 风险提示：竞争格局重塑\n\n请参考附件了解详情。\n\n陈思远\n投资研究部",
+    "date": "2024-02-04 00:00:00",
     "tags": [
-      "客户",
-      "ByteRun"
+      "投研",
+      "bond_market"
     ],
     "attachments": [
       {
-        "filename": "client_ByteRun_service_agreement_PRJ-402.pdf",
+        "filename": "research_bond_market_7.pdf",
         "type": "pdf"
       }
     ]
@@ -3200,34 +3436,46 @@
   {
     "id": "email_094",
     "from": {
-      "name": "周八",
-      "email": "zhouba@techcorp.com"
+      "name": "郑晓东",
+      "email": "zhengxd@huaxintrust.com"
     },
     "to": [
       {
-        "name": "郑十",
-        "email": "zhengshi@techcorp.com"
+        "name": "张明远",
+        "email": "zhangmy@huaxintrust.com"
       },
       {
-        "name": "王五",
-        "email": "wangwu@techcorp.com"
+        "name": "马骏",
+        "email": "maj@zhongyuancapital.com"
       },
       {
-        "name": "赵六",
-        "email": "zhaoliu@techcorp.com"
+        "name": "周丽萍",
+        "email": "zhoulp@huaxintrust.com"
+      },
+      {
+        "name": "孙浩然",
+        "email": "sunhr@huaxintrust.com"
+      },
+      {
+        "name": "李文博",
+        "email": "liwb@huaxintrust.com"
+      },
+      {
+        "name": "林国栋",
+        "email": "lingd@huaxintrust.com"
       }
     ],
     "cc": [],
-    "subject": "[CloudMax] 报价单 - PRJ-905",
-    "body": "Dear 郑十，\n\n附件为CloudMax项目（PRJ-905）的报价单，请查阅。\n\n本次报价总金额：602万元\n有效期：30天\n包含：软件开发、测试、部署及3个月免费维护期\n\n祝好！\n周八",
-    "date": "2024-03-08 00:00:00",
+    "subject": "[投研] 另类投资机会研究 - 2024-11",
+    "body": "各位同事好，\n\n附件为最新的另类投资机会研究，核心观点如下：\n\n1. 行业增速：24%\n2. 市场规模：34231亿元\n3. 投资机会：估值处于历史低位\n4. 风险提示：估值偏高\n\n请参考附件了解详情。\n\n郑晓东\n投资研究部",
+    "date": "2024-11-10 00:00:00",
     "tags": [
-      "客户",
-      "CloudMax"
+      "投研",
+      "alternatives"
     ],
     "attachments": [
       {
-        "filename": "client_CloudMax_quotation_PRJ-905.docx",
+        "filename": "research_alternatives_8.docx",
         "type": "docx"
       }
     ]
@@ -3235,61 +3483,89 @@
   {
     "id": "email_095",
     "from": {
-      "name": "孙七",
-      "email": "sunqi@techcorp.com"
+      "name": "钱海燕",
+      "email": "qianhy@huaxintrust.com"
     },
     "to": [
       {
-        "name": "杨帆",
-        "email": "yangfan@clientcorp.com"
+        "name": "张明远",
+        "email": "zhangmy@huaxintrust.com"
       },
       {
-        "name": "周八",
-        "email": "zhouba@techcorp.com"
+        "name": "郑晓东",
+        "email": "zhengxd@huaxintrust.com"
+      },
+      {
+        "name": "李文博",
+        "email": "liwb@huaxintrust.com"
+      },
+      {
+        "name": "周丽萍",
+        "email": "zhoulp@huaxintrust.com"
       }
     ],
     "cc": [],
-    "subject": "[DataPeak] 需求确认书 - PRJ-991",
-    "body": "Dear 杨帆，\n\n附件为DataPeak项目（PRJ-991）的需求确认书，请查阅。\n\n经与DataPeak确认，需求要点如下：\n- 用户管理模块：支持RBAC权限体系\n- 数据分析模块：实时报表和数据可视化\n- 系统对接：与现有ERP系统API对接\n\n祝好！\n孙七",
-    "date": "2025-01-17 00:00:00",
+    "subject": "[投研] ESG投资研究报告 - 2024-12",
+    "body": "各位同事好，\n\n附件为最新的ESG投资研究报告，核心观点如下：\n\n1. 行业增速：7%\n2. 市场规模：34066亿元\n3. 投资机会：政策红利释放中\n4. 风险提示：技术路径变化\n\n请参考附件了解详情。\n\n钱海燕\n投资研究部",
+    "date": "2024-12-31 00:00:00",
     "tags": [
-      "客户",
-      "DataPeak"
+      "投研",
+      "esg"
     ],
     "attachments": [
       {
-        "filename": "client_DataPeak_requirements_PRJ-991.xlsx",
-        "type": "xlsx"
+        "filename": "research_esg_9.zip",
+        "type": "zip"
       }
     ]
   },
   {
     "id": "email_096",
     "from": {
-      "name": "李四",
-      "email": "lisi@techcorp.com"
+      "name": "林国栋",
+      "email": "lingd@huaxintrust.com"
     },
     "to": [
       {
-        "name": "张三",
-        "email": "zhangsan@techcorp.com"
+        "name": "张明远",
+        "email": "zhangmy@huaxintrust.com"
       },
       {
-        "name": "周八",
-        "email": "zhouba@techcorp.com"
+        "name": "杨芳",
+        "email": "yangf@longtaiwealth.com"
+      },
+      {
+        "name": "黄永华",
+        "email": "huangyh@huaxintrust.com"
+      },
+      {
+        "name": "刘德伟",
+        "email": "liudw@hengfundinvest.com"
+      },
+      {
+        "name": "周丽萍",
+        "email": "zhoulp@huaxintrust.com"
+      },
+      {
+        "name": "李文博",
+        "email": "liwb@huaxintrust.com"
+      },
+      {
+        "name": "陈思远",
+        "email": "chensy@huaxintrust.com"
       }
     ],
     "cc": [],
-    "subject": "[SmartFlow] 验收报告 - PRJ-226",
-    "body": "Dear 张三，\n\n附件为SmartFlow项目（PRJ-226）的验收报告，请查阅。\n\n项目已完成全部交付物，主要成果：\n- 系统功能98%完成\n- 测试用例通过率99%\n- 性能指标全部达标\n\n祝好！\n李四",
-    "date": "2024-10-01 00:00:00",
+    "subject": "[投研] 科技行业投资机会 - 2024-02",
+    "body": "各位同事好，\n\n附件为最新的科技行业投资机会，核心观点如下：\n\n1. 行业增速：22%\n2. 市场规模：45458亿元\n3. 投资机会：估值处于历史低位\n4. 风险提示：竞争格局重塑\n\n请参考附件了解详情。\n\n林国栋\n投资研究部",
+    "date": "2024-02-18 00:00:00",
     "tags": [
-      "客户",
-      "SmartFlow"
+      "投研",
+      "tech_sector"
     ],
     "attachments": [
       {
-        "filename": "client_SmartFlow_acceptance_PRJ-226.pdf",
+        "filename": "research_tech_sector_10.pdf",
         "type": "pdf"
       }
     ]
@@ -3297,34 +3573,50 @@
   {
     "id": "email_097",
     "from": {
-      "name": "林涛",
-      "email": "lintao@techcorp.com"
+      "name": "李文博",
+      "email": "liwb@huaxintrust.com"
     },
     "to": [
       {
-        "name": "黄蕾",
-        "email": "huanglei@techcorp.com"
+        "name": "黄永华",
+        "email": "huangyh@huaxintrust.com"
       },
       {
-        "name": "孙七",
-        "email": "sunqi@techcorp.com"
+        "name": "赵雪梅",
+        "email": "zhaoxm@huaxintrust.com"
       },
       {
-        "name": "陈静",
-        "email": "chenjing@techcorp.com"
+        "name": "吴志强",
+        "email": "wuzq@huaxintrust.com"
+      },
+      {
+        "name": "周丽萍",
+        "email": "zhoulp@huaxintrust.com"
+      },
+      {
+        "name": "郑晓东",
+        "email": "zhengxd@huaxintrust.com"
+      },
+      {
+        "name": "杨芳",
+        "email": "yangf@longtaiwealth.com"
+      },
+      {
+        "name": "王建华",
+        "email": "wangjh@huaxintrust.com"
       }
     ],
     "cc": [],
-    "subject": "[NetWave] 技术方案 - PRJ-942",
-    "body": "Dear 黄蕾，\n\n附件为NetWave项目（PRJ-942）的技术方案，请查阅。\n\n请在收到后3个工作日内反馈意见。\n\n祝好！\n林涛",
-    "date": "2024-07-14 00:00:00",
+    "subject": "[投研] 消费行业深度研究 - 2024-06",
+    "body": "各位同事好，\n\n附件为最新的消费行业深度研究，核心观点如下：\n\n1. 行业增速：22%\n2. 市场规模：25686亿元\n3. 投资机会：政策红利释放中\n4. 风险提示：竞争格局重塑\n\n请参考附件了解详情。\n\n李文博\n投资研究部",
+    "date": "2024-06-07 00:00:00",
     "tags": [
-      "客户",
-      "NetWave"
+      "投研",
+      "consumer"
     ],
     "attachments": [
       {
-        "filename": "client_NetWave_proposal_PRJ-942.docx",
+        "filename": "research_consumer_11.docx",
         "type": "docx"
       }
     ]
@@ -3332,61 +3624,81 @@
   {
     "id": "email_098",
     "from": {
-      "name": "陈静",
-      "email": "chenjing@techcorp.com"
+      "name": "周丽萍",
+      "email": "zhoulp@huaxintrust.com"
     },
     "to": [
       {
-        "name": "周八",
-        "email": "zhouba@techcorp.com"
+        "name": "王建华",
+        "email": "wangjh@huaxintrust.com"
       },
       {
-        "name": "林涛",
-        "email": "lintao@techcorp.com"
+        "name": "赵雪梅",
+        "email": "zhaoxm@huaxintrust.com"
       },
       {
-        "name": "赵六",
-        "email": "zhaoliu@techcorp.com"
+        "name": "吴志强",
+        "email": "wuzq@huaxintrust.com"
+      },
+      {
+        "name": "钱海燕",
+        "email": "qianhy@huaxintrust.com"
+      },
+      {
+        "name": "杨芳",
+        "email": "yangf@longtaiwealth.com"
       }
     ],
     "cc": [],
-    "subject": "[InfoLink] 项目计划 - PRJ-164",
-    "body": "Dear 周八，\n\n附件为InfoLink项目（PRJ-164）的项目计划，请查阅。\n\n请在收到后3个工作日内反馈意见。\n\n祝好！\n陈静",
-    "date": "2024-11-27 00:00:00",
+    "subject": "[投研] 新能源产业链分析 - 2024-04",
+    "body": "各位同事好，\n\n附件为最新的新能源产业链分析，核心观点如下：\n\n1. 行业增速：9%\n2. 市场规模：11154亿元\n3. 投资机会：行业处于高速发展期\n4. 风险提示：竞争格局重塑\n\n请参考附件了解详情。\n\n周丽萍\n投资研究部",
+    "date": "2024-04-25 00:00:00",
     "tags": [
-      "客户",
-      "InfoLink"
+      "投研",
+      "new_energy"
     ],
     "attachments": [
       {
-        "filename": "client_InfoLink_plan_PRJ-164.xlsx",
-        "type": "xlsx"
+        "filename": "research_new_energy_12.zip",
+        "type": "zip"
       }
     ]
   },
   {
     "id": "email_099",
     "from": {
-      "name": "李四",
-      "email": "lisi@techcorp.com"
+      "name": "吴志强",
+      "email": "wuzq@huaxintrust.com"
     },
     "to": [
       {
-        "name": "孙七",
-        "email": "sunqi@techcorp.com"
+        "name": "王建华",
+        "email": "wangjh@huaxintrust.com"
+      },
+      {
+        "name": "马骏",
+        "email": "maj@zhongyuancapital.com"
+      },
+      {
+        "name": "刘德伟",
+        "email": "liudw@hengfundinvest.com"
+      },
+      {
+        "name": "林国栋",
+        "email": "lingd@huaxintrust.com"
       }
     ],
     "cc": [],
-    "subject": "[DigiCore] 变更申请 - PRJ-238",
-    "body": "Dear 孙七，\n\n附件为DigiCore项目（PRJ-238）的变更申请，请查阅。\n\n请在收到后3个工作日内反馈意见。\n\n祝好！\n李四",
-    "date": "2024-10-02 00:00:00",
+    "subject": "[投研] 医药行业政策解读 - 2025-02",
+    "body": "各位同事好，\n\n附件为最新的医药行业政策解读，核心观点如下：\n\n1. 行业增速：10%\n2. 市场规模：48263亿元\n3. 投资机会：估值处于历史低位\n4. 风险提示：政策不确定性\n\n请参考附件了解详情。\n\n吴志强\n投资研究部",
+    "date": "2025-02-18 00:00:00",
     "tags": [
-      "客户",
-      "DigiCore"
+      "投研",
+      "pharma_policy"
     ],
     "attachments": [
       {
-        "filename": "client_DigiCore_change_request_PRJ-238.pdf",
+        "filename": "research_pharma_policy_13.pdf",
         "type": "pdf"
       }
     ]
@@ -3394,30 +3706,42 @@
   {
     "id": "email_100",
     "from": {
-      "name": "吴九",
-      "email": "wujiu@techcorp.com"
+      "name": "陈思远",
+      "email": "chensy@huaxintrust.com"
     },
     "to": [
       {
-        "name": "周八",
-        "email": "zhouba@techcorp.com"
+        "name": "杨芳",
+        "email": "yangf@longtaiwealth.com"
       },
       {
-        "name": "黄蕾",
-        "email": "huanglei@techcorp.com"
+        "name": "刘德伟",
+        "email": "liudw@hengfundinvest.com"
+      },
+      {
+        "name": "郑晓东",
+        "email": "zhengxd@huaxintrust.com"
+      },
+      {
+        "name": "赵雪梅",
+        "email": "zhaoxm@huaxintrust.com"
+      },
+      {
+        "name": "钱海燕",
+        "email": "qianhy@huaxintrust.com"
       }
     ],
     "cc": [],
-    "subject": "[ByteRun] 服务协议 - PRJ-813",
-    "body": "Dear 周八，\n\n附件为ByteRun项目（PRJ-813）的服务协议，请查阅。\n\n请在收到后3个工作日内反馈意见。\n\n祝好！\n吴九",
-    "date": "2025-01-15 00:00:00",
+    "subject": "[投研] 海外市场配置建议 - 2024-05",
+    "body": "各位同事好，\n\n附件为最新的海外市场配置建议，核心观点如下：\n\n1. 行业增速：14%\n2. 市场规模：31737亿元\n3. 投资机会：行业处于高速发展期\n4. 风险提示：竞争格局重塑\n\n请参考附件了解详情。\n\n陈思远\n投资研究部",
+    "date": "2024-05-02 00:00:00",
     "tags": [
-      "客户",
-      "ByteRun"
+      "投研",
+      "overseas"
     ],
     "attachments": [
       {
-        "filename": "client_ByteRun_service_agreement_PRJ-813.docx",
+        "filename": "research_overseas_14.docx",
         "type": "docx"
       }
     ]

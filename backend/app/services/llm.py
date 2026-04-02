@@ -67,6 +67,45 @@ def get_chat_model():
     return MINIMAX_CHAT_MODEL if USE_MINIMAX else OPENAI_CHAT_MODEL
 
 
+def rewrite_query(query: str, conversation_history: list[dict] | None) -> str:
+    """结合对话历史改写查询，解析指代词（如"它"、"这个"）。"""
+    if not conversation_history:
+        return query
+
+    # 检测是否含指代词
+    pronouns = ["它", "这个", "那个", "该", "其", "上面", "前面", "刚才"]
+    if not any(p in query for p in pronouns):
+        return query
+
+    # 用 LLM 改写查询
+    try:
+        client = get_llm_client()
+        model = get_chat_model()
+
+        # 取最近几轮对话作为上下文
+        recent = conversation_history[-6:]
+        history_text = "\n".join(f"{m['role']}: {m['content'][:200]}" for m in recent)
+
+        resp = client.chat.completions.create(
+            model=model,
+            messages=[
+                {"role": "system", "content": (
+                    "你的任务是改写用户的查询，将其中的指代词（如'它'、'这个'）替换为对话历史中提到的具体实体。"
+                    "只输出改写后的查询，不要解释。如果不需要改写，原样输出。"
+                )},
+                {"role": "user", "content": f"对话历史:\n{history_text}\n\n当前查询: {query}\n\n改写后的查询:"},
+            ],
+            temperature=0,
+        )
+        rewritten = (resp.choices[0].message.content or "").strip()
+        rewritten = strip_think_tags(rewritten)
+        if rewritten and len(rewritten) < 200:
+            return rewritten
+    except Exception:
+        pass
+    return query
+
+
 def generate_answer(
     query: str,
     conversation_history: list[dict] | None = None,
@@ -76,7 +115,10 @@ def generate_answer(
     # 闲聊不走检索
     is_casual = bool(CASUAL_PATTERNS.match(query.strip()))
 
-    sources = [] if is_casual else retrieve(query)
+    # 多轮对话时，改写查询解析指代词
+    search_query = query if is_casual else rewrite_query(query, conversation_history)
+
+    sources = [] if is_casual else retrieve(search_query)
     context = build_context(sources)
 
     system_parts = [SYSTEM_PROMPT]

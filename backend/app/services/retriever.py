@@ -7,19 +7,47 @@ from app.services.indexer import get_collection
 
 
 def _extract_keywords(query: str) -> list[str]:
-    """从查询中提取有意义的关键词（≥2字符）。"""
-    # 去掉常见停用词
+    """从查询中提取有意义的关键词。支持中文多粒度切分。"""
     stop_words = {"的", "了", "吗", "呢", "是", "有", "在", "被", "把", "和", "与",
                   "还", "也", "都", "就", "会", "能", "要", "可以", "什么", "怎么",
-                  "哪些", "多少", "如何", "是否", "关于", "最近", "目前"}
-    # 中文按字切分不太好，按常见分隔拆
-    words = re.split(r"[，。？！\s,.\?!、]+", query)
+                  "哪些", "多少", "如何", "是否", "关于", "最近", "目前", "请问",
+                  "告诉", "一下", "这个", "那个", "哪个"}
+
     keywords = []
-    for w in words:
-        w = w.strip()
-        if len(w) >= 2 and w not in stop_words:
-            keywords.append(w)
-    return keywords
+    # 先按标点和空格拆
+    segments = re.split(r"[，。？！\s,.\?!、：:；;]+", query)
+    for seg in segments:
+        seg = seg.strip()
+        if not seg:
+            continue
+        # 去掉停用词
+        for sw in stop_words:
+            seg = seg.replace(sw, " ")
+        # 按空格拆出子片段
+        for w in seg.split():
+            w = w.strip()
+            if len(w) >= 2:
+                keywords.append(w)
+
+    # 对长关键词做滑动窗口切分（2-4字符），提升中文匹配率
+    extra = []
+    for kw in keywords:
+        if len(kw) > 4:
+            # 切成2字符和4字符的片段
+            for size in [2, 3, 4]:
+                for i in range(len(kw) - size + 1):
+                    sub = kw[i:i + size]
+                    if sub not in stop_words and sub not in keywords:
+                        extra.append(sub)
+
+    # 原始关键词在前，子片段在后，去重
+    seen = set()
+    result = []
+    for kw in keywords + extra:
+        if kw not in seen:
+            seen.add(kw)
+            result.append(kw)
+    return result
 
 
 def _keyword_search(keywords: list[str], top_k: int) -> list[dict]:

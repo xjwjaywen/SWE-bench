@@ -100,7 +100,7 @@ def generate_answer(
         simple_sources.append({
             "email_id": src["email_id"],
             "subject": src["subject"],
-            "from": src["from_name"],
+            "from_": src["from_name"],
             "from_email": src["from_email"],
             "date": src["date"],
             "attachments": [a.strip() for a in src["attachments"].split(",") if a.strip()],

@@ -12,8 +12,17 @@ ATTACHMENTS_DIR = DATA_DIR / "attachments"
 DB_PATH = DATA_DIR / "app.db"
 CHROMA_DIR = DATA_DIR / "chroma"
 
+# MiniMax API 配置
+MINIMAX_API_KEY = os.getenv("MINIMAX_API_KEY", "")
+MINIMAX_BASE_URL = "https://api.minimax.chat/v1"
+MINIMAX_CHAT_MODEL = "abab6.5s-chat"
+
+# OpenAI API 配置（备用）
 OPENAI_API_KEY = os.getenv("OPENAI_API_KEY", "")
 OPENAI_EMBEDDING_MODEL = "text-embedding-3-small"
 OPENAI_CHAT_MODEL = "gpt-4o"
 
 RETRIEVAL_TOP_K = 5
+
+# 使用 MiniMax 还是 OpenAI
+USE_MINIMAX = bool(MINIMAX_API_KEY)

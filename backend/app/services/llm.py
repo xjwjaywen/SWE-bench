@@ -2,7 +2,14 @@
 
 from openai import OpenAI
 
-from app.config import OPENAI_API_KEY, OPENAI_CHAT_MODEL
+from app.config import (
+    MINIMAX_API_KEY,
+    MINIMAX_BASE_URL,
+    MINIMAX_CHAT_MODEL,
+    OPENAI_API_KEY,
+    OPENAI_CHAT_MODEL,
+    USE_MINIMAX,
+)
 from app.services.retriever import retrieve
 
 SYSTEM_PROMPT = """你是一个邮件检索助手。用户会问关于历史邮件的问题，你需要根据检索到的邮件内容生成准确的回答。
@@ -33,57 +40,61 @@ def build_context(sources: list[dict]) -> str:
     return "\n".join(parts)
 
 
+def get_llm_client():
+    """获取 LLM 客户端，自动选择 MiniMax 或 OpenAI。"""
+    if USE_MINIMAX:
+        return OpenAI(api_key=MINIMAX_API_KEY, base_url=MINIMAX_BASE_URL)
+    return OpenAI(api_key=OPENAI_API_KEY)
+
+
+def get_chat_model():
+    """获取聊天模型名称。"""
+    return MINIMAX_CHAT_MODEL if USE_MINIMAX else OPENAI_CHAT_MODEL
+
+
 def generate_answer(
     query: str,
     conversation_history: list[dict] | None = None,
     memory_context: str = "",
 ) -> tuple[str, list[dict]]:
-    """生成 RAG 回答。
-
-    Args:
-        query: 用户问题
-        conversation_history: 对话历史 [{"role": "user"/"assistant", "content": "..."}]
-        memory_context: 用户 Memory 上下文
-
-    Returns:
-        (answer_text, sources_list)
-    """
+    """生成 RAG 回答。"""
     # 检索相关邮件
     sources = retrieve(query)
 
     # 构建上下文
     context = build_context(sources)
 
-    messages = [{"role": "system", "content": SYSTEM_PROMPT}]
-
+    # MiniMax 不支持多个 system 消息，合并为一个
+    system_parts = [SYSTEM_PROMPT]
     if memory_context:
-        messages.append({
-            "role": "system",
-            "content": f"用户偏好和关注点：\n{memory_context}",
-        })
+        system_parts.append(f"用户偏好和关注点：\n{memory_context}")
+    system_parts.append(f"以下是检索到的相关邮件内容：\n\n{context}")
 
-    messages.append({
-        "role": "system",
-        "content": f"以下是检索到的相关邮件内容：\n\n{context}",
-    })
+    messages = [{"role": "system", "content": "\n\n".join(system_parts)}]
 
     # 添加对话历史
     if conversation_history:
-        messages.extend(conversation_history[-10:])  # 最近10轮
+        messages.extend(conversation_history[-10:])
 
     messages.append({"role": "user", "content": query})
 
-    client = OpenAI(api_key=OPENAI_API_KEY)
-    response = client.chat.completions.create(
-        model=OPENAI_CHAT_MODEL,
-        messages=messages,
-        temperature=0.3,
-        max_tokens=1500,
-    )
+    client = get_llm_client()
+    model = get_chat_model()
+
+    # MiniMax 和 OpenAI 的参数略有不同
+    kwargs = {
+        "model": model,
+        "messages": messages,
+        "temperature": 0.3,
+    }
+    if not USE_MINIMAX:
+        kwargs["max_tokens"] = 1500
+
+    response = client.chat.completions.create(**kwargs)
 
     answer = response.choices[0].message.content or ""
 
-    # 返回简化的来源信息（不含完整文档内容）
+    # 返回简化的来源信息
     simple_sources = []
     for src in sources:
         simple_sources.append({

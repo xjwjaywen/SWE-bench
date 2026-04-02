@@ -1,0 +1,27 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+*.egg-info/
+.pytest_cache/
+
+# Data (generated, don't commit)
+backend/data/
+
+# Node
+node_modules/
+frontend/dist/
+
+# IDE
+.vscode/
+.idea/
+
+# Environment
+.env
+*.db
+
+# ChromaDB
+backend/data/chroma/
+
+# OS
+.DS_Store

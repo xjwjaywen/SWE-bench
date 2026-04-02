@@ -154,6 +154,11 @@ def generate_answer(
     # 清理 <think> 标签
     answer = strip_think_tags(answer)
 
+    # 如果回答表示没找到相关内容，不返回来源
+    no_result_phrases = ["没有找到", "未找到", "没有相关", "不包含", "无法找到", "没有涉及"]
+    if any(p in answer for p in no_result_phrases):
+        return answer, []
+
     # 返回简化的来源信息
     simple_sources = []
     for src in sources:

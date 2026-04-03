@@ -147,9 +147,11 @@ def generate_answer(
     if not USE_MINIMAX:
         kwargs["max_tokens"] = 1500
 
-    response = client.chat.completions.create(**kwargs)
-
-    answer = response.choices[0].message.content or ""
+    try:
+        response = client.chat.completions.create(**kwargs)
+        answer = response.choices[0].message.content or ""
+    except Exception as e:
+        answer = f"抱歉，AI 服务暂时无法响应，请稍后重试。（错误：{type(e).__name__}）"
 
     # 清理 <think> 标签
     answer = strip_think_tags(answer)

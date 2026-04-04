@@ -182,17 +182,37 @@ def gen_trust_emails(start_id: int) -> list[dict]:
         date = random_date()
         subject = f"[信托业务] {trust} - {topic_name}"
 
+        # 预先生成共享数据（邮件正文和附件使用相同数值，保持一致）
+        trust_scale_wan = random.randint(5000, 50000)
+        trust_duration_str = random.choice(['12个月', '18个月', '24个月', '36个月'])
+        trust_rate_pct = round(random.uniform(5.0, 8.5), 2)
+        trust_invest_dir = random.choice(['基础设施建设', '房地产开发', '工商企业贷款', '证券投资', '股权投资'])
+        trust_risk_measure = random.choice(['土地抵押+应收账款质押', '股权质押+担保', '优先/劣后结构化设计'])
+        due_diligence_rating = random.choice(['AA+', 'AA', 'AA-', 'A+'])
+        due_diligence_growth = random.randint(8, 25)
+        due_diligence_debt = random.randint(40, 70)
+        due_diligence_collateral = random.randint(2, 20)
+        due_diligence_ltv = random.randint(40, 65)
+        dist_amount_wan = random.randint(500, 5000)
+        dist_rate_pct = round(random.uniform(5.5, 8.0), 2)
+        liquidation_earnings = random.randint(800, 8000)
+        liquidation_cost = random.randint(10, 50)
+        liquidation_total = random.randint(10000, 50000)
+        att_loan_assets = random.randint(3000, 30000)
+        att_cash_assets = random.randint(500, 3000)
+        att_interest_recv = random.randint(100, 800)
+
         # 根据不同主题生成不同邮件正文
         if "设立" in topic_name:
             body_text = (
                 f"各位同事好，\n\n"
                 f"关于{trust}的设立方案，现将相关材料发送如下：\n\n"
                 f"一、信托计划基本要素：\n"
-                f"- 信托规模：{random.choice(['5000万', '1亿', '2亿', '5亿', '10亿'])}元\n"
-                f"- 信托期限：{random.choice(['12个月', '18个月', '24个月', '36个月'])}\n"
-                f"- 预期收益率：{random.uniform(5.0, 8.5):.2f}%/年\n"
-                f"- 投资方向：{random.choice(['基础设施建设', '房地产开发', '工商企业贷款', '证券投资', '股权投资'])}\n"
-                f"- 风控措施：{random.choice(['土地抵押+应收账款质押', '股权质押+担保', '优先/劣后结构化设计'])}\n\n"
+                f"- 信托规模：{trust_scale_wan}万元\n"
+                f"- 信托期限：{trust_duration_str}\n"
+                f"- 预期收益率：{trust_rate_pct}%/年\n"
+                f"- 投资方向：{trust_invest_dir}\n"
+                f"- 风控措施：{trust_risk_measure}\n\n"
                 f"二、信托计划设立流程：\n"
                 f"1. 项目立项审批\n"
                 f"2. 尽职调查\n"
@@ -206,11 +226,11 @@ def gen_trust_emails(start_id: int) -> list[dict]:
             body_text = (
                 f"各位好，\n\n"
                 f"附件为{trust}的尽职调查报告，主要调查结果如下：\n\n"
-                f"1. 融资方主体信用评级：{random.choice(['AA+', 'AA', 'AA-', 'A+'])}\n"
-                f"2. 融资方近三年营收复合增长率：{random.randint(8, 25)}%\n"
-                f"3. 资产负债率：{random.randint(40, 70)}%\n"
-                f"4. 抵押物评估价值：{random.randint(2, 20)}亿元\n"
-                f"5. 抵押率：{random.randint(40, 65)}%\n\n"
+                f"1. 融资方主体信用评级：{due_diligence_rating}\n"
+                f"2. 融资方近三年营收复合增长率：{due_diligence_growth}%\n"
+                f"3. 资产负债率：{due_diligence_debt}%\n"
+                f"4. 抵押物评估价值：{due_diligence_collateral}亿元\n"
+                f"5. 抵押率：{due_diligence_ltv}%\n\n"
                 f"风险提示：\n"
                 f"- {random.choice(['融资方所在行业存在周期性波动', '抵押物变现存在一定流动性风险', '区域经济下行压力需关注'])}\n"
                 f"- 建议增加{random.choice(['保证金账户监管', '现金流归集', '信息披露频率'])}要求\n\n"
@@ -222,8 +242,8 @@ def gen_trust_emails(start_id: int) -> list[dict]:
                 f"关于{trust}的收益分配事宜，通知如下：\n\n"
                 f"本期分配方案：\n"
                 f"- 分配基准日：{date[:10]}\n"
-                f"- 本期应分配收益：{random.randint(500, 5000)}万元\n"
-                f"- 年化收益率：{random.uniform(5.5, 8.0):.2f}%\n"
+                f"- 本期应分配收益：{dist_amount_wan}万元\n"
+                f"- 年化收益率：{dist_rate_pct}%\n"
                 f"- 分配方式：银行转账至委托人指定账户\n"
                 f"- 预计到账时间：T+3个工作日\n\n"
                 f"请各位确认账户信息是否有变更。\n\n{sender['name']}"
@@ -234,9 +254,9 @@ def gen_trust_emails(start_id: int) -> list[dict]:
                 f"{trust}已于{date[:10]}到期，现进入清算阶段。\n\n"
                 f"清算情况：\n"
                 f"- 信托本金：已全额收回\n"
-                f"- 累计收益：{random.randint(800, 8000)}万元\n"
-                f"- 清算费用：{random.randint(10, 50)}万元\n"
-                f"- 预计分配总额：{random.randint(10000, 50000)}万元\n\n"
+                f"- 累计收益：{liquidation_earnings}万元\n"
+                f"- 清算费用：{liquidation_cost}万元\n"
+                f"- 预计分配总额：{liquidation_total}万元\n\n"
                 f"清算报告详见附件，请审阅。\n\n{sender['name']}"
             )
         else:
@@ -264,10 +284,10 @@ def gen_trust_emails(start_id: int) -> list[dict]:
                 f"本信托计划由华信金融信托有限公司作为受托人，按照委托人意愿，以受托人名义对信托财产进行管理和处分。"
                 f"信托目的为通过专业化的资产管理，实现信托财产的保值增值。\n\n"
                 f"二、信托财产管理情况\n\n"
-                f"截至报告期末，信托财产总规模为{random.randint(5000, 50000)}万元，其中：\n"
-                f"- 贷款类资产：{random.randint(3000, 30000)}万元\n"
-                f"- 现金及银行存款：{random.randint(500, 3000)}万元\n"
-                f"- 应收利息：{random.randint(100, 800)}万元\n\n"
+                f"截至报告期末，信托财产总规模为{trust_scale_wan}万元，其中：\n"
+                f"- 贷款类资产：{att_loan_assets}万元\n"
+                f"- 现金及银行存款：{att_cash_assets}万元\n"
+                f"- 应收利息：{att_interest_recv}万元\n\n"
                 f"三、风险管理\n\n"
                 f"本报告期内，信托项目运行正常，融资方财务状况稳定，抵押物价值充足，"
                 f"各项风控措施执行到位。受托人已按照信托合同约定履行管理职责。\n\n"
@@ -281,16 +301,16 @@ def gen_trust_emails(start_id: int) -> list[dict]:
             att_path = str(ATTACHMENTS_DIR / fname)
             make_pptx(att_path, f"{trust}", [
                 ("Trust Plan Overview",
-                 f"Scale: {random.randint(50, 500)} million RMB\n"
-                 f"Duration: {random.choice(['12', '18', '24', '36'])} months\n"
-                 f"Expected Return: {random.uniform(5.5, 8.5):.1f}% p.a."),
+                 f"Scale: {round(trust_scale_wan / 100, 1)} million RMB\n"
+                 f"Duration: {trust_duration_str}\n"
+                 f"Expected Return: {trust_rate_pct}% p.a."),
                 ("Investment Structure",
                  f"Senior Tranche: {random.randint(60, 80)}%\n"
                  f"Subordinate Tranche: {random.randint(20, 40)}%\n"
-                 f"Risk Mitigation: Land mortgage + Equity pledge"),
+                 f"Risk Mitigation: {trust_risk_measure}"),
                 ("Risk Assessment",
-                 f"Credit Rating: {random.choice(['AA+', 'AA', 'AA-'])}\n"
-                 f"LTV Ratio: {random.randint(40, 60)}%\n"
+                 f"Credit Rating: {due_diligence_rating}\n"
+                 f"LTV Ratio: {due_diligence_ltv}%\n"
                  f"Debt Service Coverage: {random.uniform(1.2, 2.0):.1f}x"),
             ])
             attachments.append({"filename": fname, "type": "pptx"})
@@ -299,8 +319,8 @@ def gen_trust_emails(start_id: int) -> list[dict]:
             att_path = str(ATTACHMENTS_DIR / fname)
             make_xlsx(att_path, "Trust Data", [
                 ["Item", "Amount (万元)", "Ratio", "Status", "Due Date"],
-                ["Trust Principal", random.randint(10000, 50000), "100%", "Normal", date[:10]],
-                ["Accrued Interest", random.randint(200, 2000), f"{random.uniform(5, 8):.1f}%", "Received", date[:10]],
+                ["Trust Principal", trust_scale_wan, "100%", "Normal", date[:10]],
+                ["Accrued Interest", att_interest_recv, f"{trust_rate_pct}%", "Received", date[:10]],
                 ["Management Fee", random.randint(50, 300), "0.3%", "Collected", date[:10]],
                 ["Custody Fee", random.randint(10, 50), "0.05%", "Collected", date[:10]],
                 ["Reserve Fund", random.randint(100, 500), "1%", "Adequate", date[:10]],
@@ -1087,6 +1107,14 @@ def gen_research_emails(start_id: int) -> list[dict]:
         date = random_date()
         subject = f"[投研] {topic_name} - {date[:7]}"
 
+        # 预先生成宏观数据共享变量
+        macro_gdp = round(random.uniform(4.5, 6.5), 1)
+        macro_gdp_prev = round(random.uniform(4.0, 6.0), 1)
+        macro_cpi = round(random.uniform(0.5, 3.0), 1)
+        macro_pmi = round(random.uniform(49.0, 52.0), 1)
+        macro_pmi_desc = random.choice(['处于扩张区间', '接近荣枯线'])
+        macro_social_finance = round(random.uniform(9.0, 12.0), 1)
+
         body_text = (
             f"各位同事好，\n\n"
             f"附件为最新的{topic_name}，核心观点如下：\n\n"
@@ -1094,10 +1122,10 @@ def gen_research_emails(start_id: int) -> list[dict]:
 
         if "宏观" in topic_name:
             body_text += (
-                f"1. GDP增速预测：{random.uniform(4.5, 6.5):.1f}%（前值{random.uniform(4.0, 6.0):.1f}%）\n"
-                f"2. CPI同比：{random.uniform(0.5, 3.0):.1f}%，通胀温和\n"
-                f"3. PMI：{random.uniform(49.0, 52.0):.1f}，{random.choice(['处于扩张区间', '接近荣枯线'])}\n"
-                f"4. 社融增速：{random.uniform(9.0, 12.0):.1f}%\n"
+                f"1. GDP增速预测：{macro_gdp}%（前值{macro_gdp_prev}%）\n"
+                f"2. CPI同比：{macro_cpi}%，通胀温和\n"
+                f"3. PMI：{macro_pmi}，{macro_pmi_desc}\n"
+                f"4. 社融增速：{macro_social_finance}%\n"
                 f"5. 政策展望：{random.choice(['货币政策保持稳健偏松', '财政政策积极发力', '预计将出台定向降准'])}\n"
             )
         elif "房地产" in topic_name:
@@ -1137,22 +1165,40 @@ def gen_research_emails(start_id: int) -> list[dict]:
         if i % 3 == 0:
             fname = f"research_{topic_key}_{i+1}.pdf"
             att_path = str(ATTACHMENTS_DIR / fname)
-            make_pdf(att_path, f"Research Report - {topic_name}", (
-                f"Huaxin Trust Investment Research\n\n"
-                f"Report: {topic_name}\n"
-                f"Date: {date[:10]}\n"
-                f"Analyst: {sender['name']}\n\n"
-                f"Executive Summary\n"
-                f"This report provides analysis on {topic_name}.\n\n"
-                f"Key Findings:\n"
-                f"- Market conditions remain {random.choice(['favorable', 'challenging', 'mixed'])}\n"
-                f"- Sector rotation suggests {random.choice(['growth to value shift', 'defensive positioning', 'cyclical recovery'])}\n"
-                f"- Risk-adjusted returns are {random.choice(['above average', 'in line with expectations', 'below historical norms'])}\n\n"
-                f"Investment Recommendations:\n"
-                f"- Maintain {random.choice(['overweight', 'neutral', 'underweight'])} position\n"
-                f"- Target allocation: {random.randint(5, 20)}% of portfolio\n"
-                f"- Risk rating: {random.choice(['Low', 'Medium', 'Medium-High'])}"
-            ))
+            if "宏观" in topic_name:
+                macro_content = (
+                    f"Huaxin Trust Investment Research\n\n"
+                    f"Report: {topic_name}\n"
+                    f"Date: {date[:10]}\n"
+                    f"Analyst: {sender['name']}\n\n"
+                    f"Macroeconomic Key Indicators\n\n"
+                    f"GDP Growth Forecast: {macro_gdp}% (prev: {macro_gdp_prev}%)\n"
+                    f"CPI YoY: {macro_cpi}% (mild inflation)\n"
+                    f"PMI: {macro_pmi} ({macro_pmi_desc})\n"
+                    f"Social Financing Growth: {macro_social_finance}%\n\n"
+                    f"Investment Recommendations:\n"
+                    f"- Maintain {random.choice(['overweight', 'neutral', 'underweight'])} position\n"
+                    f"- Target allocation: {random.randint(5, 20)}% of portfolio\n"
+                    f"- Risk rating: {random.choice(['Low', 'Medium', 'Medium-High'])}"
+                )
+            else:
+                macro_content = (
+                    f"Huaxin Trust Investment Research\n\n"
+                    f"Report: {topic_name}\n"
+                    f"Date: {date[:10]}\n"
+                    f"Analyst: {sender['name']}\n\n"
+                    f"Executive Summary\n"
+                    f"This report provides analysis on {topic_name}.\n\n"
+                    f"Key Findings:\n"
+                    f"- Market conditions remain {random.choice(['favorable', 'challenging', 'mixed'])}\n"
+                    f"- Sector rotation suggests {random.choice(['growth to value shift', 'defensive positioning', 'cyclical recovery'])}\n"
+                    f"- Risk-adjusted returns are {random.choice(['above average', 'in line with expectations', 'below historical norms'])}\n\n"
+                    f"Investment Recommendations:\n"
+                    f"- Maintain {random.choice(['overweight', 'neutral', 'underweight'])} position\n"
+                    f"- Target allocation: {random.randint(5, 20)}% of portfolio\n"
+                    f"- Risk rating: {random.choice(['Low', 'Medium', 'Medium-High'])}"
+                )
+            make_pdf(att_path, f"Research Report - {topic_name}", macro_content)
             attachments.append({"filename": fname, "type": "pdf"})
         elif i % 3 == 1:
             fname = f"research_{topic_key}_{i+1}.docx"
@@ -1189,9 +1235,9 @@ def gen_research_emails(start_id: int) -> list[dict]:
                 ),
                 f"{topic_key}_data.csv": (
                     "Date,Indicator,Value,YoY%,MoM%\n"
-                    f"{date[:10]},GDP Growth,{random.uniform(4,7):.1f},{random.uniform(-2,5):.1f},{random.uniform(-1,2):.1f}\n"
-                    f"{date[:10]},CPI,{random.uniform(0.5,3):.1f},{random.uniform(-1,3):.1f},{random.uniform(-0.5,1):.1f}\n"
-                    f"{date[:10]},PMI,{random.uniform(49,52):.1f},{random.uniform(-2,2):.1f},{random.uniform(-1,1):.1f}"
+                    f"{date[:10]},GDP Growth,{macro_gdp},{round(macro_gdp - macro_gdp_prev, 1)},{round(random.uniform(-1,2), 1)}\n"
+                    f"{date[:10]},CPI,{macro_cpi},{round(random.uniform(-1,3), 1)},{round(random.uniform(-0.5,1), 1)}\n"
+                    f"{date[:10]},PMI,{macro_pmi},{round(random.uniform(-2,2), 1)},{round(random.uniform(-1,1), 1)}"
                 ),
                 f"disclaimer.txt": "This report is for internal use only. Not investment advice.",
             })

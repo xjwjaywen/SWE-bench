@@ -31,13 +31,13 @@ from openai import AsyncOpenAI, APIError
 from sentence_transformers import SentenceTransformer
 
 
-MODEL = "MiniMax-M2"
+MODEL = os.environ.get("MINIMAX_MODEL", "MiniMax-M2")  # swap without editing
 BASE_URL = "https://api.minimaxi.com/v1"
 
 # Reflection hyperparameters
-REFLECTION_THRESHOLD = 50.0        # cumulative importance to trigger reflect
-N_REFLECTIONS_PER_CYCLE = 3        # how many insights per reflection call
-REFLECTION_IMPORTANCE = 8.0        # reflections are usually more weighty than trivia
+REFLECTION_THRESHOLD = 30.0        # lowered from 50 so short conversations still trigger
+N_REFLECTIONS_PER_CYCLE = 3
+REFLECTION_IMPORTANCE = 8.0
 
 client = AsyncOpenAI(
     api_key=os.environ.get("MINIMAX_API_KEY", ""),
@@ -95,7 +95,12 @@ async def score_importance(content: str) -> float:
 记忆内容: "{content}"
 
 只输出一个 1-10 的整数,不要其他任何文字。"""
-    raw = await _llm_call(prompt, temperature=0.0)
+    try:
+        raw = await _llm_call(prompt, temperature=0.0)
+    except APIError:
+        # API overloaded after all retries — fall back so the run doesn't crash
+        print("  ⚠ importance scoring failed, defaulting to 5.0")
+        return 5.0
     m = re.search(r"\b([1-9]|10)\b", raw)
     return float(m.group(1)) if m else 5.0
 
@@ -249,8 +254,18 @@ async def conversation(a: Agent, b: Agent, rounds: int, scene: str):
         utt = await agent_speak(speaker, listener, scene)
         print(f"[{speaker.name}] {utt}")
 
-        await speaker.remember(f"我对 {listener.name} 说: {utt}")
-        await listener.remember(f"{speaker.name} 对我说: {utt}")
+        # Share one importance score across both sides of the same utterance.
+        # Cuts LLM calls per turn from 3 -> 2.
+        shared_score = await score_importance(f"对话内容: {utt}")
+
+        await speaker.remember(
+            f"我对 {listener.name} 说: {utt}",
+            importance=shared_score,
+        )
+        await listener.remember(
+            f"{speaker.name} 对我说: {utt}",
+            importance=shared_score,
+        )
 
         speaker, listener = listener, speaker
 

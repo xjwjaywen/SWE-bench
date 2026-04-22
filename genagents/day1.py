@@ -13,10 +13,11 @@ Run:
 
 import asyncio
 import os
+import re
 from dataclasses import dataclass, field
 from datetime import datetime
 
-from openai import AsyncOpenAI
+from openai import AsyncOpenAI, APIError
 
 
 MODEL = "MiniMax-M2"
@@ -25,7 +26,16 @@ BASE_URL = "https://api.minimaxi.com/v1"   # 国内站; 国际站用 https://api
 client = AsyncOpenAI(
     api_key=os.environ.get("MINIMAX_API_KEY", ""),
     base_url=BASE_URL,
+    max_retries=3,
+    timeout=60.0,
 )
+
+# MiniMax M2 can't be told to disable thinking — strip <think>…</think> ourselves.
+THINK_PATTERN = re.compile(r"<think>.*?</think>\s*", re.DOTALL)
+
+
+def strip_thinking(text: str) -> str:
+    return THINK_PATTERN.sub("", text).strip()
 
 
 # ============ data structures ============
@@ -74,12 +84,21 @@ async def agent_speak(speaker: Agent, listener: Agent, scene: str) -> str:
 
 请用一句自然、符合人格的话回应(≤40字)。直接输出内容,不要任何前缀、引号、解释。"""
 
-    resp = await client.chat.completions.create(
-        model=MODEL,
-        messages=[{"role": "user", "content": prompt}],
-        temperature=0.8,
-    )
-    return resp.choices[0].message.content.strip()
+    # MiniMax 偶发 5xx 过载;指数退避重试
+    for attempt in range(5):
+        try:
+            resp = await client.chat.completions.create(
+                model=MODEL,
+                messages=[{"role": "user", "content": prompt}],
+                temperature=0.8,
+            )
+            return strip_thinking(resp.choices[0].message.content)
+        except APIError as e:
+            if attempt == 4:
+                raise
+            wait = 2 ** attempt   # 1, 2, 4, 8 秒
+            print(f"  ⚠ retry {attempt + 1}/5 after {wait}s ({type(e).__name__})")
+            await asyncio.sleep(wait)
 
 
 # ============ conversation loop ============

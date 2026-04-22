@@ -16,10 +16,16 @@ import os
 from dataclasses import dataclass, field
 from datetime import datetime
 
-from litellm import acompletion
+from openai import AsyncOpenAI
 
 
-MODEL = "minimax/MiniMax-M2"
+MODEL = "MiniMax-M2"
+BASE_URL = "https://api.minimax.io/v1"
+
+client = AsyncOpenAI(
+    api_key=os.environ.get("MINIMAX_API_KEY", ""),
+    base_url=BASE_URL,
+)
 
 
 # ============ data structures ============
@@ -68,7 +74,7 @@ async def agent_speak(speaker: Agent, listener: Agent, scene: str) -> str:
 
 请用一句自然、符合人格的话回应(≤40字)。直接输出内容,不要任何前缀、引号、解释。"""
 
-    resp = await acompletion(
+    resp = await client.chat.completions.create(
         model=MODEL,
         messages=[{"role": "user", "content": prompt}],
         temperature=0.8,

@@ -7,7 +7,7 @@
 - [x] Day 1 — 两个 agent 对话 + 极简 memory stream (`day1.py`)
 - [x] Day 2 — 三因子检索 (recency × relevance × importance) + LLM 打 importance (`day2.py`)
 - [x] Day 3 — reflection 触发与生成 (`day3.py`)
-- [ ] Day 4 — plan 生成 + 时间推进
+- [x] Day 4 — 日计划生成 + hourly 时间推进 + 同地点触发对话 (`day4.py`)
 - [ ] Day 5 — 加第 3 个 agent,测试信息传播
 - [ ] Day 6 — world model (地点/移动/时间系统)
 - [ ] Day 7 — 简单评估 (信息扩散 + 人格一致性)

@@ -112,18 +112,24 @@ async def score_importance(content: str) -> float:
     return float(m.group(1)) if m else 5.0
 
 
-REFLECTION_PROMPT = """基于 {agent_name} 最近经历的重要记忆,请总结 {n} 条关于对方 / 自己 / 当前情况的高层判断或模式。
+REFLECTION_PROMPT = """基于 {agent_name} 最近经历的重要观察,请总结 {n} 条关于对方 / 自己 / 当前情况的高层判断或模式。
 
-{agent_name} 最近的重要记忆(按重要性降序):
+{agent_name} 已经有过的反思判断(**不要重复或同义改写这些**,要带来新角度):
+{existing_reflections}
+
+{agent_name} 最近的重要观察(按重要性降序):
 {memories}
 
 要求:
 1. 每条必须是抽象的陈述句,不是对某次事件的简单复述
-2. 应该能指导 {agent_name} 在未来的决策中如何行动
-3. 可以是对某人性格的判断、某类情况的规律、自己的情绪状态等
+2. **不能是已有反思的同义改写** — 每条要带来新信息、新视角或新推断
+3. 应该能指导 {agent_name} 在未来的决策中如何行动
+4. 可以是对某人性格的判断、某类情况的规律、自己的情绪状态、关系变化等
 
-好例子: "Maria 对热闹社交回避";"我追问 party 让 Maria 有压力"
-不好例子: "Maria 说过'我考虑一下'";"Klaus 上周点了拿铁"
+好例子: "Maria 对热闹社交回避";"我追问 party 让 Maria 有压力";"Maria 虽然嘴上说'有空再来',其实对邀请心动"
+不好例子: "Maria 说过'我考虑一下'"(太具体);
+          "Maria 喜欢安静"(如已有 "Maria 偏好独处" 就是同义改写);
+          "Klaus 上周点了拿铁"(琐事)
 
 输出格式(必须严格):
 1. <judgment>
@@ -144,22 +150,22 @@ PLAN_PROMPT = """你是 {agent_name}。
 输出必须是 24 行,每行严格格式为:
 HH:00 | 地点 | 活动
 
-可用地点(只能从这几个里选):
-- 家(你的公寓/住处)
-- Hobbs Cafe
-- 图书馆
-- 公园
-- 街上(散步/通勤)
+可用地点(只能从这几个里选,**地点字符串必须完全照抄**,连"的家"前缀都不能漏):
+- {agent_name}的家(你自己的公寓/住处,只有你能去)
+- Hobbs Cafe(公共咖啡馆)
+- 图书馆(公共)
+- 公园(公共)
+- 街上(通勤/散步)
 
 要求:
-- 作息要符合你的人格(内向者可能大部分时间在家/图书馆;外向经营者大部分时间在 Cafe)
+- 作息要符合你的人格(内向者可能大部分时间在 {agent_name}的家/图书馆;外向经营者大部分时间在 Cafe)
 - 地点切换要自然(不要每小时都跳来跳去)
-- 0:00-6:00 一般在家睡觉
+- 0:00-6:00 一般在 {agent_name}的家 睡觉
 - 不要解释,只输出 24 行
 
-示例格式:
-00:00 | 家 | 睡觉
-01:00 | 家 | 睡觉
+示例格式(注意"的家"前缀):
+00:00 | {agent_name}的家 | 睡觉
+01:00 | {agent_name}的家 | 睡觉
 ...
 08:00 | 街上 | 去咖啡馆通勤
 09:00 | Hobbs Cafe | 准备开店
@@ -210,12 +216,21 @@ class Agent:
                 self.importance_buffer = 0.0
 
     async def reflect(self, context_note: str = ""):
-        top = sorted(self.memories, key=lambda m: -m.importance)[:20]
-        mem_text = "\n".join(f"- [{m.importance:.0f}] {m.content}" for m in top)
+        # Only observations feed the source pool — reflecting on reflections
+        # is what made Day 4 output so repetitive.
+        observations = [m for m in self.memories if m.type == "observation"]
+        top_obs = sorted(observations, key=lambda m: -m.importance)[:20]
+        mem_text = "\n".join(f"- [{m.importance:.0f}] {m.content}" for m in top_obs) or "(暂无观察)"
+
+        # Existing reflections are shown separately with a "don't repeat" instruction.
+        existing = [m for m in self.memories if m.type == "reflection"]
+        existing_text = "\n".join(f"- {m.content}" for m in existing[-10:]) or "(暂无)"
+
         prompt = REFLECTION_PROMPT.format(
             agent_name=self.name,
             n=N_REFLECTIONS_PER_CYCLE,
             memories=mem_text,
+            existing_reflections=existing_text,
         )
         if context_note:
             prompt = context_note + "\n\n" + prompt

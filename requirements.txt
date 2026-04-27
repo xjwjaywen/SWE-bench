@@ -1,0 +1,24 @@
+# ============================================================
+# Phase 2 Week 1 — Mac 本地能装 (不需要 GPU)
+# 用途: 数据准备、API 调用、跑评测脚本骨架
+# ============================================================
+transformers>=4.45
+datasets>=3.0
+openai>=1.50
+python-dotenv>=1.0
+tqdm>=4.66
+
+# ============================================================
+# Week 2+ — 必须在 L20 服务器上装 (需要 CUDA + GPU)
+# 在 Mac 上不要装下面这些, 会报错或装不上
+# ============================================================
+# torch>=2.4              # PyTorch GPU 版
+# unsloth                 # LoRA 训练加速 (省显存 + 提速)
+# trl>=0.11               # Hugging Face SFT/DPO/GRPO 库
+# bitsandbytes            # 4-bit 量化 (省显存关键)
+# peft                    # Parameter-Efficient Fine-Tuning
+# accelerate              # 训练分布式工具 (Unsloth 依赖)
+# wandb                   # loss 曲线记录 (可选但强烈推荐)
+
+# τ-bench 从 GitHub 装:
+# pip install git+https://github.com/sierra-research/tau-bench.git

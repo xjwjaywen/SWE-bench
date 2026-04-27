@@ -6,3 +6,13 @@ __pycache__/
 .DS_Store
 traces/
 *.log
+
+# Project artifacts
+data/*.jsonl
+outputs/*
+!outputs/.gitkeep
+models/
+*.pt
+*.bin
+*.safetensors
+wandb/

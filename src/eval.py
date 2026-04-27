@@ -68,7 +68,10 @@ def main():
                         help="评测结果保存路径")
     parser.add_argument("--max_new_tokens", type=int, default=1024,
                         help="模型生成最长长度, MATH 解答可以很长")
-    parser.add_argument("--dataset", default="lighteval/MATH")
+    parser.add_argument("--dataset", default="HuggingFaceH4/MATH-500",
+                        help="评测数据集. MATH-500 是论文标准 500 题, 速度快可比")
+    parser.add_argument("--split", default="test", choices=["train", "test"],
+                        help="数据集 split. MATH-500 只有 test split")
     args = parser.parse_args()
 
     args.out.parent.mkdir(parents=True, exist_ok=True)
@@ -90,8 +93,8 @@ def main():
     FastLanguageModel.for_inference(model)
 
     # ─── 2. 加载数据 ─────────────────────────────────────────────────────
-    print(f"加载 {args.dataset} test 前 {args.num_problems} 题...")
-    ds = load_dataset(args.dataset, split="test")
+    print(f"加载 {args.dataset} ({args.split}) 前 {args.num_problems} 题...")
+    ds = load_dataset(args.dataset, split=args.split)
     ds = ds.select(range(min(args.num_problems, len(ds))))
 
     # ─── 3. 推理 + 判分循环 ──────────────────────────────────────────────

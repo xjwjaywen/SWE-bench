@@ -3,29 +3,30 @@ train.py — SFT 训练 Qwen2.5-7B + LoRA on MATH
 
 干啥的:
     读 data_prep.py 生成的 jsonl, 用 Unsloth + TRL 微调 Qwen2.5-7B,
-    只训 LoRA 补丁 (~1600 万参数), 不动 base 模型 (70 亿参数).
+    只训 LoRA 补丁 (~16M 参数), 不动 base 模型 (70 亿参数).
+    用 train_on_responses_only 让 loss 只算 assistant 部分.
     训完保存 LoRA 文件 (~50MB) 到 outputs/.
 
-输入:  data/sft_train.jsonl
-输出:  outputs/v01_sft/   (LoRA adapter + tokenizer)
+输入:  data/sft_train.jsonl   (来自 data_prep.py, 12500 条)
+输出:  outputs/v01_sft/       (LoRA adapter + tokenizer)
 
-什么时候跑:
-    Week 2 Day 4-5, 在 L20 服务器上跑.
-    单卡 4-8 小时, 多卡更快但本阶段单卡就够.
-
-依赖 (服务器):
-    pip install torch unsloth trl bitsandbytes peft accelerate
-
-跑法 (强烈建议指定 GPU 避开别人):
-    CUDA_VISIBLE_DEVICES=2 python -m src.train --data data/sft_train.jsonl --out outputs/v01_sft
+跑法 (避开别人占用的 GPU):
+    CUDA_VISIBLE_DEVICES=3 python -m src.train --data data/sft_train.jsonl --out outputs/v01_sft
 
 预期看到:
-    loss 数字从 ~1.5 一路降到 ~0.6 左右, 这就是训练成功的标志.
-    显存占用 ~16-20 GB (L20 48GB 够).
+    loss 数字从 ~1.5 一路降到 ~0.5-0.8 左右, 这就是训练成功的标志.
+    显存占用 ~16-20 GB.
+    训练时长: 12500 题 × 3 epoch / (2*8) eff batch ≈ 2300 步, 约 2-4 小时.
 """
 
 import argparse
 from pathlib import Path
+
+import torch
+from datasets import load_dataset
+from trl import SFTTrainer, SFTConfig
+from unsloth import FastLanguageModel
+from unsloth.chat_templates import train_on_responses_only
 
 
 def main():
@@ -35,63 +36,129 @@ def main():
     parser.add_argument("--out", type=Path, required=True,
                         help="输出目录, 训完的 LoRA 存这里")
     parser.add_argument("--model", default="unsloth/Qwen2.5-7B-Instruct",
-                        help="base 模型, Unsloth 版自带 4-bit 量化")
+                        help="base 模型 (Unsloth 4-bit 版)")
     parser.add_argument("--epochs", type=int, default=3,
-                        help="数据过几遍, MATH 这种数学题 3 epoch 比较稳")
+                        help="数据过几遍, MATH 任务 3 epoch 比较稳")
     parser.add_argument("--lr", type=float, default=2e-4,
                         help="学习率, LoRA 用 1e-4 ~ 5e-4 都行")
     parser.add_argument("--lora_r", type=int, default=16,
-                        help="LoRA 补丁宽度, 越大越能学但越慢")
+                        help="LoRA 补丁宽度, 越大学得多但越慢")
     parser.add_argument("--max_seq_length", type=int, default=2048,
-                        help="单条数据最长 token 数, MATH 解答有时很长可调到 4096")
+                        help="单条数据最长 token 数")
     parser.add_argument("--batch_size", type=int, default=2,
-                        help="一次喂几条, L20 + 7B 大概 2-4")
+                        help="一次喂几条")
     parser.add_argument("--grad_accum", type=int, default=8,
-                        help="梯度累积, 等效 batch_size = batch_size * grad_accum")
+                        help="梯度累积, eff batch = batch_size × grad_accum")
+    parser.add_argument("--logging_steps", type=int, default=10,
+                        help="多少步打一次 loss")
+    parser.add_argument("--save_steps", type=int, default=500,
+                        help="多少步存一次 checkpoint")
     args = parser.parse_args()
 
     args.out.mkdir(parents=True, exist_ok=True)
 
-    # TODO Week 2 Day 4-5:
-    #   1. from unsloth import FastLanguageModel
-    #      model, tokenizer = FastLanguageModel.from_pretrained(
-    #          args.model, max_seq_length=args.max_seq_length, load_in_4bit=True)
-    #   2. model = FastLanguageModel.get_peft_model(
-    #          model, r=args.lora_r,
-    #          target_modules=["q_proj","k_proj","v_proj","o_proj",
-    #                          "gate_proj","up_proj","down_proj"])
-    #   3. from datasets import load_dataset
-    #      dataset = load_dataset("json", data_files=str(args.data), split="train")
-    #   4. # 用 tokenizer 把 messages 应用 chat template, 转成训练用的 text
-    #      def format_fn(ex):
-    #          ex["text"] = tokenizer.apply_chat_template(ex["messages"], tokenize=False)
-    #          return ex
-    #      dataset = dataset.map(format_fn)
-    #   5. from trl import SFTTrainer, SFTConfig
-    #      trainer = SFTTrainer(
-    #          model=model, train_dataset=dataset,
-    #          args=SFTConfig(
-    #              output_dir=str(args.out),
-    #              num_train_epochs=args.epochs,
-    #              learning_rate=args.lr,
-    #              per_device_train_batch_size=args.batch_size,
-    #              gradient_accumulation_steps=args.grad_accum,
-    #              logging_steps=10,
-    #              save_strategy="epoch",
-    #              # response_template="<|im_start|>assistant",  # 让 loss 只算 assistant 部分
-    #          ))
-    #   6. trainer.train()
-    #   7. model.save_pretrained(str(args.out))
-    #      tokenizer.save_pretrained(str(args.out))
+    # ─── 1. 加载 base 模型 + 4-bit 量化 ──────────────────────────────────
+    print(f"━━━ 加载 base model: {args.model} ━━━")
+    model, tokenizer = FastLanguageModel.from_pretrained(
+        args.model,
+        max_seq_length=args.max_seq_length,
+        load_in_4bit=True,
+        device_map={"": 0},
+    )
 
-    print(f"[骨架] 训练 {args.model}")
-    print(f"[骨架]   数据:        {args.data}")
-    print(f"[骨架]   输出:        {args.out}")
-    print(f"[骨架]   epochs:      {args.epochs}")
-    print(f"[骨架]   lr:          {args.lr}")
-    print(f"[骨架]   lora_r:      {args.lora_r}")
-    print(f"[骨架]   batch:       {args.batch_size} × grad_accum={args.grad_accum} = {args.batch_size * args.grad_accum} eff")
-    print("[骨架] Week 2 Day 4-5 实现具体逻辑")
+    # ─── 2. 给模型贴 LoRA 补丁 ──────────────────────────────────────────
+    # target_modules: 把 LoRA 贴在 attention (q/k/v/o) + MLP (gate/up/down)
+    # 全贴比只贴 attention 效果好, 显存代价小
+    print(f"━━━ 加 LoRA 补丁 (r={args.lora_r}) ━━━")
+    model = FastLanguageModel.get_peft_model(
+        model,
+        r=args.lora_r,
+        lora_alpha=args.lora_r * 2,        # alpha 一般 = 2*r, 是 LoRA 缩放系数
+        lora_dropout=0.0,                  # SFT 数据多时不需要 dropout
+        bias="none",
+        target_modules=[
+            "q_proj", "k_proj", "v_proj", "o_proj",   # attention
+            "gate_proj", "up_proj", "down_proj",       # MLP / FFN
+        ],
+        use_gradient_checkpointing="unsloth",   # 省显存关键, Unsloth 自家优化版
+    )
+
+    # ─── 3. 加载数据 + 套上 chat template ────────────────────────────────
+    print(f"━━━ 加载数据: {args.data} ━━━")
+    dataset = load_dataset("json", data_files=str(args.data), split="train")
+
+    def format_with_template(ex):
+        # 把 messages JSON → 模型期望的字符串 (含 <|im_start|>...<|im_end|> 标记)
+        ex["text"] = tokenizer.apply_chat_template(
+            ex["messages"],
+            tokenize=False,
+            add_generation_prompt=False,   # SFT 不要末尾的 prompt 引导
+        )
+        return ex
+
+    dataset = dataset.map(format_with_template)
+    print(f"  数据集大小: {len(dataset)}")
+    print(f"  示例 (前 300 字符):\n{dataset[0]['text'][:300]}...\n")
+
+    # ─── 4. 训练配置 ─────────────────────────────────────────────────────
+    eff_batch = args.batch_size * args.grad_accum
+    total_steps = (len(dataset) * args.epochs) // eff_batch
+    print(f"━━━ 训练配置 ━━━")
+    print(f"  per_device_batch:  {args.batch_size}")
+    print(f"  grad_accum:        {args.grad_accum}")
+    print(f"  effective batch:   {eff_batch}")
+    print(f"  total updates ≈    {total_steps}")
+    print(f"  epochs:            {args.epochs}")
+    print(f"  lr:                {args.lr}")
+
+    sft_config = SFTConfig(
+        output_dir=str(args.out),
+        num_train_epochs=args.epochs,
+        learning_rate=args.lr,
+        per_device_train_batch_size=args.batch_size,
+        gradient_accumulation_steps=args.grad_accum,
+        warmup_ratio=0.03,                 # 前 3% steps 学习率从 0 慢慢升上来, 训练更稳
+        lr_scheduler_type="cosine",        # 学习率随训练步衰减 (余弦)
+        bf16=True,                         # L20 支持, 比 fp16 训练更稳
+        logging_steps=args.logging_steps,
+        save_steps=args.save_steps,
+        save_strategy="steps",
+        save_total_limit=2,                # 只保留最近 2 个 checkpoint, 省磁盘
+        max_seq_length=args.max_seq_length,
+        dataset_text_field="text",
+        report_to="none",                  # 不上传 wandb (要的话改 "wandb")
+        seed=42,
+    )
+
+    trainer = SFTTrainer(
+        model=model,
+        train_dataset=dataset,
+        args=sft_config,
+        tokenizer=tokenizer,
+    )
+
+    # ─── 5. 关键: loss 只算 assistant 部分 ───────────────────────────────
+    # Unsloth 的工具, 自动在 user 部分把 label 设为 -100 (pytorch loss 忽略)
+    # Qwen2.5 ChatML 格式: <|im_start|>user\n...\n<|im_end|>\n<|im_start|>assistant\n...
+    trainer = train_on_responses_only(
+        trainer,
+        instruction_part="<|im_start|>user\n",
+        response_part="<|im_start|>assistant\n",
+    )
+
+    # ─── 6. 训练 ─────────────────────────────────────────────────────────
+    print(f"\n━━━ 开始训练 (预计 2-4 小时) ━━━\n")
+    trainer.train()
+
+    # ─── 7. 保存 LoRA + tokenizer ───────────────────────────────────────
+    print(f"\n━━━ 保存 LoRA → {args.out} ━━━")
+    model.save_pretrained(str(args.out))
+    tokenizer.save_pretrained(str(args.out))
+
+    print(f"\n✅ 训练完成")
+    print(f"   LoRA 文件大小: " +
+          f"{sum(p.stat().st_size for p in args.out.glob('*.safetensors'))/1e6:.1f} MB")
+    print(f"   下一步: python -m src.eval --num_problems 100 --lora {args.out}")
 
 
 if __name__ == "__main__":

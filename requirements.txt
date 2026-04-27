@@ -1,24 +1,31 @@
 # ============================================================
-# Phase 2 Week 1 — Mac 本地能装 (不需要 GPU)
-# 用途: 数据准备、API 调用、跑评测脚本骨架
+# 公共依赖 (Mac 本地 + L20 服务器都装)
 # ============================================================
 transformers>=4.45
-datasets>=3.0
-openai>=1.50
+datasets>=3.0          # 用来加载 MATH 数据集
 python-dotenv>=1.0
 tqdm>=4.66
 
+# MATH 答案比对用 (LaTeX → 数学表达式 → 等价判断)
+sympy>=1.13
+# antlr4-python3-runtime  # latex2sympy 依赖, 装了 sympy 后可选
+
 # ============================================================
-# Week 2+ — 必须在 L20 服务器上装 (需要 CUDA + GPU)
-# 在 Mac 上不要装下面这些, 会报错或装不上
+# 仅 L20 服务器装 (需要 CUDA + GPU)
+# Mac 上不要装下面这些, 会报错或装不上
 # ============================================================
-# torch>=2.4              # PyTorch GPU 版
+# torch>=2.4              # PyTorch GPU 版, 用 cu121 渠道装
 # unsloth                 # LoRA 训练加速 (省显存 + 提速)
-# trl>=0.11               # Hugging Face SFT/DPO/GRPO 库
+# trl>=0.11               # SFT/DPO/GRPO 训练库
 # bitsandbytes            # 4-bit 量化 (省显存关键)
 # peft                    # Parameter-Efficient Fine-Tuning
-# accelerate              # 训练分布式工具 (Unsloth 依赖)
+# accelerate              # 训练分布式工具
+# deepspeed               # v0.3+ 多卡训练用
 # wandb                   # loss 曲线记录 (可选但强烈推荐)
+# vllm                    # v0.3 RL rollout 加速 (生成快 5-10x)
 
-# τ-bench 从 GitHub 装:
-# pip install git+https://github.com/sierra-research/tau-bench.git
+# ============================================================
+# 可选: 数据增强用 (v0.2+ 才用得到)
+# 如果想用 DeepSeek/MiniMax API 帮你扩 SFT 数据
+# ============================================================
+# openai>=1.50            # 兼容 DeepSeek/MiniMax 的 OpenAI 风格 API

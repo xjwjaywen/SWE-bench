@@ -97,8 +97,9 @@ def main():
                         help="RL 用很小的 lr, SFT 是 2e-4, GRPO 一般 1e-6 ~ 1e-5")
     parser.add_argument("--batch_size", type=int, default=1,
                         help="每张卡每步几道 prompt (每道再生成 N 个), 默认 1")
-    parser.add_argument("--grad_accum", type=int, default=4,
-                        help="梯度累积, eff prompt batch = batch_size × grad_accum")
+    parser.add_argument("--grad_accum", type=int, default=8,
+                        help="梯度累积, eff prompt batch = batch_size × grad_accum. "
+                             "TRL 0.18+ 要求 batch_size × grad_accum 能整除 num_generations")
     parser.add_argument("--epochs", type=int, default=1,
                         help="GRPO 一般 1 epoch 就够, 多了容易崩")
     parser.add_argument("--beta", type=float, default=0.04,
